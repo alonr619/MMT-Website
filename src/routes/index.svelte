@@ -3,7 +3,17 @@
 </script>
 
 <script>
-	import Counter from '$lib/Counter.svelte';
+	import Button from '$lib/components/Button.svelte';
+	import Heading from '$lib/components/Heading.svelte';
+	import Input from '$lib/components/Input.svelte';
+	import Link from '$lib/components/Link.svelte';
+	import Text from '$lib/components/Text.svelte';
+	
+	let buttonClickCount = 0;
+    // function for testing Button
+    function clickButton() {
+        buttonClickCount++;
+    }
 </script>
 
 <svelte:head>
@@ -11,49 +21,17 @@
 </svelte:head>
 
 <section>
-	<h1>
-		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</div>
+	<Heading text="Hello!"></Heading>
+	<Button text="Click me!" onClick={clickButton} textColor="red" />
+    <Text text="Clicks: {buttonClickCount}" />
 
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-
-	<Counter />
+    <Link url="https://www.google.com/?1" />
+    <Link url="https://www.google.com/?2" text="Google" />
+    <Link url="https://www.google.com/?3" text="Google" textColor="green" />
+    <Link url="https://www.google.com/?4" text="Google" textColor="green" visitedColor="gold" />
+    <Link url="https://www.google.com/?5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" alt="Google logo">
+    </Link>
+	<Heading text = "texting!" textColor = "blue" />
+	<Input placeholder = "Enter an answer" placeholderColor="red" />
 </section>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
-</style>
