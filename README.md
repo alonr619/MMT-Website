@@ -13,12 +13,12 @@ https://linguinecode.com/post/how-to-pass-children-elements-in-svelte - children
 # Process for Making Components
 1. Take one of the open issues
 2. Make a branch if you don't have one already. If you do have a branch, delete and make a new one with the same name to refresh changes
-3. Code the component locally
-    a. Required attributes do not need to have a default value
-    b. Optional attributes *still need to be in your component*. They simply need to have a default value
-    c. All components will go into `/src/lib/components`. This has the added advantage that, when we import the component, we can simply refer to it as `$lib/components/[component name].svelte`, so we don't need to worry about relative paths
-    d. Name your component file name with a capital starting letter, so we can differentiate between user-made components and default HTML tags.
+3. Code the component locally  
+    a. Required attributes do not need to have a default value  
+    b. Optional attributes *still need to be in your component*. They simply need to have a default value  
+    c. All components will go into `/src/lib/components`. This has the added advantage that, when we import the component, we can simply refer to it as `$lib/components/[component name].svelte`, so we don't need to worry about relative paths  
+    d. Name your component file name with a capital starting letter, so we can differentiate between user-made components and default HTML tags.  
 4. Test it out in `/src/routes/index.svelte`
-5. Push your commits to your branch, then make a pull request
+5. Push your commits to your branch, then make a pull request  
     a. If there are any errors, my automatic comment below will tell you
 6. I will merge it to main if it is good
