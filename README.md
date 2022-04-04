@@ -1,44 +1,22 @@
-# SvelteKit
+# Instructions for Setting up Local Environment
+1. Clone repo. I recommend to use GitHub Desktop for this, since it's easier, but you can also do it with terminal
+2. Open in VSCode (any text editor works, but I recommend this), and install the Svelte plugin for code coloring
+3. Open up a terminal in VSCode, and enter `npm install` and `npm run dev -- --open`
+4. Start coding! :)
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte), deployed to [Vercel](https://vercel.com).
+# Links
+https://svelte.dev - You can find all the tutorials and examples for Svelte here
+https://kit.svelte.dev - Will be relevant once we start making the actual website. I recommend to read the pages section, as we won't be having a backend
+https://docs.google.com/document/d/1Gt61MZgAF_WwUiybIuf0nMSMYmLgYby1-loBxoR5eVI/edit#heading=h.c9v07snpdcl8 - internal documentation, update after every component is made
+https://linguinecode.com/post/how-to-pass-children-elements-in-svelte - children with Svelte components
 
-## Deploy Your Own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fvercel%2Ftree%2Fmain%2Fexamples%2Fsveltekit&project-name=sveltekit-vercel&repository-name=sveltekit-vercel&demo-title=SvelteKit%20%2B%20Vercel&demo-description=A%20SvelteKit%20app%20optimized%20Edge-first.&demo-url=https%3A%2F%2Fsveltekit-template.vercel.app%2F)
-
-_Live Example: https://sveltekit-template.vercel.app_
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-This uses the adapter-auto for SvelteKit, which detects Vercel and runs adapter-vercel on your behalf.
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+# Process for Making Components
+1. Take one of the open issues
+2. Make a branch if you don't have one already. If you do have a branch, delete and make a new one with the same name to refresh changes
+3. Code the component locally
+    a. Required attributes do not need to have a default value
+    b. Optional attributes *still need to be in your component*. They simply need to have a default value
+4. Test it out in `/src/routes/index.svelte`
+5. Push your commits to your branch, then make a pull request
+    a. If there are any errors, my automatic comment below will tell you
+6. I will merge it to main if it is good
