@@ -22,3 +22,6 @@ https://linguinecode.com/post/how-to-pass-children-elements-in-svelte - children
 5. Push your commits to your branch, then make a pull request  
     a. If there are any errors, my automatic comment below will tell you
 6. I will merge it to main if it is good
+
+# Debugging
+One problem I noticed was that it would say there's an error with the opening `<script>` tag in multiple Svelte files, then when you hover over the tag, it would say that there's a problem with the `svelte.config.js` file. For some reason, making a small change in `svelte.config.js`, then deleting the change, then saving the file seems to take away these errors. I believe it's a "problem" caused by the fact that `node_modules` is not automatically imported when you clone this project, rather it is only imported after you run `npm install`.
