@@ -49,5 +49,5 @@
 		<FlexItem height=70 width=5>9</FlexItem>
 	</FlexBox>
 	<Table data={[{"Name": "Bob", "Age": 17}, {"Name": "Joe", "Age": 14}, {"Name": "Jeff", "Age": 69}, {"Name": "Billy", "Age": 2}]} />
-	<Image url="/static/favicon.png" alt="hi" />
+	<Image url="static/favicon.png" alt="hi" />
 </section>
