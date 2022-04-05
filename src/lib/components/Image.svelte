@@ -6,11 +6,11 @@
 </script>
 
 {#if height === "" && width === ""}
-<img url={url} alt={alt} />
+<img src={url} alt={alt} />
 {:else if height === "" }
-<img url={url} alt={alt} width={width} />
+<img src={url} alt={alt} width={width} />
 {:else if width === ""}
-<img url={url} alt={alt} height={height} />
+<img src={url} alt={alt} height={height} />
 {:else}
-<img url={url} alt={alt} width={width} height={height} />
+<img src={url} alt={alt} width={width} height={height} />
 {/if}
