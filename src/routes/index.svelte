@@ -11,6 +11,7 @@
 	import FlexBox from '$lib/components/FlexBox.svelte';
 	import FlexItem from '$lib/components/FlexItem.svelte';
 	import Table from '$lib/components/Table.svelte';
+	import Image from '$lib/components/Image.svelte';
 	
 	let buttonClickCount = 0;
     // function for testing Button
@@ -48,4 +49,5 @@
 		<FlexItem height=70 width=5>9</FlexItem>
 	</FlexBox>
 	<Table data={[{"Name": "Bob", "Age": 17}, {"Name": "Joe", "Age": 14}, {"Name": "Jeff", "Age": 69}, {"Name": "Billy", "Age": 2}]} />
+	<Image url="favicon.png" alt="hi" />
 </section>
