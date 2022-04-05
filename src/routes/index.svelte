@@ -10,6 +10,7 @@
 	import Text from '$lib/components/Text.svelte';
 	import FlexBox from '$lib/components/FlexBox.svelte';
 	import FlexItem from '$lib/components/FlexItem.svelte';
+	import Table from '$lib/components/Table.svelte';
 	
 	let buttonClickCount = 0;
     // function for testing Button
@@ -46,4 +47,5 @@
 		<FlexItem color="black">8</FlexItem>
 		<FlexItem height=70 width=5>9</FlexItem>
 	</FlexBox>
+	<Table data={[{"Name": "Bob", "Age": 17}, {"Name": "Joe", "Age": 14}, {"Name": "Jeff", "Age": 69}, {"Name": "Billy", "Age": 2}]} />
 </section>
