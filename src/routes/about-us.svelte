@@ -1,7 +1,3 @@
-<script context="module">
-	export const prerender = true;
-</script>
-
 <script>
 	import Button from '$lib/components/Button.svelte';
 	import Heading from '$lib/components/Heading.svelte';
@@ -12,18 +8,12 @@
 	import FlexItem from '$lib/components/FlexItem.svelte';
 	import Table from '$lib/components/Table.svelte';
 	import Image from '$lib/components/Image.svelte';
-	
-	let buttonClickCount = 0;
-    // function for testing Button
-    function clickButton() {
-        buttonClickCount++;
-    }
 </script>
 
 <svelte:head>
-	<title>Mustang Math Tournament</title>
+	<title>About Us</title>
 </svelte:head>
 
 <section>
-	<Heading text="Happening on May 28, 2022" />
+	<Heading text="About Us" boxed={true} />
 </section>
