@@ -26,16 +26,17 @@
 	<title>Mustang Math Tournament</title>
 </svelte:head>
 
-<Section color="#177012">
-	<Heading text="Happening on May 28, 2022" size={2} textColor="white" />
-	<Box color="white">
-		<Heading text="Mustang Math Tournament" size={4} textColor="white" />
-		<Text text="A Math Tournament for Middle Schoolers!" align="center" size={1.5} textColor="white" />
-	</Box>
-	<Heading text="Register Now!" size={3} textColor="white" />
+<Section>
+	<Heading text="Mustang Math Tournament" size={4} textColor="#177012" />
+    <Button text="Register for MMT 2022" backgroundColor="#1B9AAA" textColor="white" borderRadius=2 />
+	<Heading text="MMT 2022 on May 28!" size={2} textColor="#177012" />
 </Section>
+<hr />
 
-<Section color="#177012">
-	<Text text="A Fun, Unique Math Competition for Middle Schoolers!" align="center" size={2} textColor="white" />
-	<Button text="Register for MMT 2022!" />
+<Section>
+    <Heading text="Mission Statement Header" size={2} textColor="#1B9AAA" alignment="right" />
+    <Text text="Mission Statement" />
+    <Heading text="Sponsors" size={2} textColor="#1B9AAA" />
+    <!-- sponsor stuff will go here -->
+    <Heading text="Subscribe to our Newsletter" size={2} textColor="#1B9AAA" />
 </Section>
