@@ -17,7 +17,7 @@
             <Text text={position} />
         </div>
     </div>
-    <br width="5px" />
+    <br class="person-br" />
 </div>
 
 <style>
@@ -25,8 +25,18 @@
         background-color: white;
         width: 21em;
         padding: 10px;
-        border-radius: 25px;
+        border-radius: 15px;
         margin: 10px;
+        box-shadow: 5px 10px 10px rgb(0,0,0,0.1);
+        transition: 0.5s;
+    }
+    .person-box:hover{
+        box-shadow: 10px 20px 10px rgb(0,0,0,0.1);
+        margin-bottom:15px;
+        margin-right:15px;
+    }
+    .person-br{
+        width: 5px;
     }
     .person-flex{
         display: flex;
