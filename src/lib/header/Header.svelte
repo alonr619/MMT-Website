@@ -28,7 +28,7 @@
 	.corner {
 		width: 4em;
 		height: 4em;
-		background-color:  rgb(0,0,0,0.01);
+		background-color: #06D6A0;
 	}
 
 	.corner a {
