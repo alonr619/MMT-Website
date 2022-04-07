@@ -13,9 +13,10 @@
     let marginRight = 100-width;
     export let fontSize = 1.5; // This is in em
     export let height = 3; // This is in em
+    export let borderRadius = 0; // Also in em
 </script>
 
-<button on:click={onClick} style="height: {height}em; color: {textColor}; background-color: {backgroundColor}; font-size: {fontSize.toString()}em; --width-button: {width.toString()}%; --margin-center: {marginCenter.toString()}%; --margin-right: {marginRight.toString()}%">{text}</button>
+<button on:click={onClick} style="height: {height}em; color: {textColor}; background-color: {backgroundColor}; font-size: {fontSize.toString()}em; --width-button: {width.toString()}%; --margin-center: {marginCenter.toString()}%; --margin-right: {marginRight.toString()}%; border-radius: {borderRadius}em">{text}</button>
 
 {#if alignment === "center"}
 <style>
