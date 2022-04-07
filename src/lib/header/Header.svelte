@@ -12,7 +12,7 @@
 
 	<nav>
 		<ul>
-			<li class:active={$page.url.pathname === '/'} style="text-align: left; width: 100%; font-weight: bold;"><a sveltekit:prefetch href="/">Mustang Math Tournament</a></li>
+			<li class:active={$page.url.pathname === '/'} style="text-align: left; width: 100%; font-weight: bold; text-decoration: none;"><a sveltekit:prefetch href="/" style="font-size: 1.25rem;">Mustang Math Tournament</a></li>
 			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
 			<li class:active={$page.url.pathname === '/about-us'}><a sveltekit:prefetch href="/about-us">About Us</a></li>
 		</ul>
@@ -28,7 +28,7 @@
 	.corner {
 		width: 4em;
 		height: 4em;
-		background-color: rgba(255, 255, 255, 0.7);
+		background-color: #06D6A0;
 	}
 
 	.corner a {
@@ -48,7 +48,7 @@
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
+		--background: #06D6A0;
 		width: 100%;
 	}
 
@@ -72,7 +72,7 @@
 	}
 
 	li.active {
-		font-weight: bold;
+		text-decoration: underline;
 	}
 
 	nav a {
@@ -80,7 +80,7 @@
 		height: 100%;
 		align-items: center;
 		padding: 0 1em;
-		color: var(--heading-color);
+		color: #177012;
 		font-size: 1rem;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
@@ -89,6 +89,6 @@
 	}
 
 	a:hover {
-		color: var(--accent-color);
+		font-weight: bold;
 	}
 </style>
