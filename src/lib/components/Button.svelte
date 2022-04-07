@@ -7,7 +7,7 @@
     export let onClick = nullFunction();
     export let textColor = "black";
     export let backgroundColor = "white";
-    export let alignment = "center" // left, center, or right
+    export let alignment = "center"; // left, center, or right
     export let width = 30; // This is a percentage, not in em
     let marginCenter = (100-width)/2;
     let marginRight = 100-width;
