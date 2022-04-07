@@ -8,6 +8,7 @@
 	import FlexItem from '$lib/components/FlexItem.svelte';
 	import Table from '$lib/components/Table.svelte';
 	import Image from '$lib/components/Image.svelte';
+	import Person from '$lib/components/Person.svelte';
 </script>
 
 <svelte:head>
@@ -15,5 +16,15 @@
 </svelte:head>
 
 <section>
-	<Heading text="About Us" boxed={true} />
+	<Heading text="About Us" />
+	<FlexBox wrap={true}>
+		<Person pic="about-us-images/alon-ragoler.png" name="Alon Ragoler" position="Tech Lead" />
+		<Person pic="about-us-images/alon-ragoler.png" name="Alon Ragoler" position="Tech Lead" />
+		<Person pic="about-us-images/alon-ragoler.png" name="Alon Ragoler" position="Tech Lead" />
+		<Person pic="about-us-images/alon-ragoler.png" name="Alon Ragoler" position="Tech Lead" />
+		<Person pic="about-us-images/alon-ragoler.png" name="Alon Ragoler" position="Tech Lead" />
+		<Person pic="about-us-images/alon-ragoler.png" name="Alon Ragoler" position="Tech Lead" />
+		<Person pic="about-us-images/alon-ragoler.png" name="Alon Ragoler" position="Tech Lead" />
+		<Person pic="about-us-images/alon-ragoler.png" name="Alon Ragoler" position="Tech Lead" />
+	</FlexBox>
 </section>
