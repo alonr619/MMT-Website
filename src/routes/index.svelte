@@ -29,7 +29,7 @@
 <hr />
 
 <Section>
-    <Heading text="Mission Statement Header" size={2} textColor="#1B9AAA" alignment="right" />
+    <Heading text="Mission Statement Header" size={2} textColor="#1B9AAA" />
     <Text text="Mission Statement" />
     <Heading text="Sponsors" size={2} textColor="#1B9AAA" />
     <Section>
