@@ -14,12 +14,7 @@
 	import Image from '$lib/components/Image.svelte';
 	import Box from '$lib/components/Box.svelte';
 	import Section from '$lib/components/Section.svelte';
-	
-	let buttonClickCount = 0;
-    // function for testing Button
-    function clickButton() {
-        buttonClickCount++;
-    }
+    let sponsorTiers = ["Stallion", "Colt", "Foal"]; // Name of sponsor tiers from best to worst
 </script>
 
 <svelte:head>
@@ -37,6 +32,29 @@
     <Heading text="Mission Statement Header" size={2} textColor="#1B9AAA" alignment="right" />
     <Text text="Mission Statement" />
     <Heading text="Sponsors" size={2} textColor="#1B9AAA" />
-    <!-- sponsor stuff will go here -->
+    <Section>
+        <Heading text="{sponsorTiers[0]} Sponsors" size={1.5} />
+        <FlexBox wrap={true}>
+                <Image url="about-us-images/alon-ragoler.png" alt="tech carry" link="https://cia.gov" />
+                <Image url="about-us-images/alon-ragoler.png" alt="tech carry" link="https://cia.gov" />
+                <Image url="about-us-images/alon-ragoler.png" alt="tech carry" link="https://cia.gov" />
+        </FlexBox>
+    </Section>
+    <Section>
+        <Heading text="{sponsorTiers[1]} Sponsors" size={1.5} />
+        <FlexBox wrap={true}>
+                <Image url="about-us-images/alon-ragoler.png" alt="tech carry" link="https://cia.gov" />
+                <Image url="about-us-images/alon-ragoler.png" alt="tech carry" link="https://cia.gov" />
+                <Image url="about-us-images/alon-ragoler.png" alt="tech carry" link="https://cia.gov" />
+        </FlexBox>
+    </Section>
+    <Section>
+        <Heading text="{sponsorTiers[2]} Sponsors" size={1.5} />
+        <FlexBox wrap={true}>
+                <Image url="about-us-images/alon-ragoler.png" alt="tech carry" link="https://cia.gov" />
+                <Image url="about-us-images/alon-ragoler.png" alt="tech carry" link="https://cia.gov" />
+                <Image url="about-us-images/alon-ragoler.png" alt="tech carry" link="https://cia.gov" />
+        </FlexBox>
+    </Section>
     <Heading text="Subscribe to our Newsletter" size={2} textColor="#1B9AAA" />
 </Section>
