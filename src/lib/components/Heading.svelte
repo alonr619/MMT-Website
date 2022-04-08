@@ -14,4 +14,7 @@
         padding: 10px;
         border: 2px solid black;
     }
+    h1{
+        margin: 0.1em;
+    }
 </style>
