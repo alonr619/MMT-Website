@@ -1,5 +1,5 @@
 <script>
-    export let color = "white";
+    export let color = "inherit";
 </script>
 
 <div style="background-color: {color};">
