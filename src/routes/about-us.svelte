@@ -16,7 +16,8 @@
 </svelte:head>
 
 <section>
-	<Heading text="About Us" />
+	<br />
+	<Heading text="About Us" textColor="#177012" />
 	<FlexBox wrap={true}>
 		<Person pic="about-us-images/alon-ragoler.png" name="Alon Ragoler" position="Tech Lead" />
 		<Person pic="about-us-images/alon-ragoler.png" name="Alon Ragoler" position="Tech Lead" />
