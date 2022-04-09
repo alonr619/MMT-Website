@@ -11,8 +11,7 @@
 
 <footer>
 	<h1>CONTACT</h1>
-	<p> EMAIL: <a href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a><br />
-		A math tournament for middle schoolers</p>
+	<p><a href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a><br /></p>
 </footer>
 
 <style>

@@ -21,7 +21,9 @@
 		<Person pic="about-us-images/Daniel_Chirakarn-modified.png" name="Daniel Chirakarn" />
 		<Person pic="about-us-images/Dhruv_Kasarabada-modified.png" name="Dhruv Kasarabada" />
 		<Person pic="about-us-images/Evan_Kim-modified.png" name="Evan Kim" />
+		<Person pic="about-us-images/Grace_Tan-modified.png" name="Grace Tan" />
 		<Person pic="about-us-images/Hongning_Wang-modified.png" name="Hongning Wang" />
+		<Person pic="about-us-images/Joyce_Huang-modified.png" name="Joyce Huang" />
 		<Person pic="about-us-images/Krishna_Iyer-modified.png" name="Krishna Iyer" />
 		<Person pic="about-us-images/Noel Prince_Muthuplakal-modified.png" name="Noel Prince Muthuplakal" />
 		<Person pic="about-us-images/Reese_Long-modified.png" name="Reese Long" />
