@@ -5,9 +5,11 @@
     export let italic = false;
     export let boxed = false;
     export let size = "";
+    export let marginLeft = "";
+    export let align = "center";
 </script>
 
-<h1 style = "color:{textColor}; font-weight:{bold ? "bold" : "normal"}; font-style: {italic ? "italic" : "normal"}; {size!=="" ? "font-size: " + size + "em;" : ""};" class="{boxed ? "boxed" : ""}"> {text} </h1>
+<h1 style = "text-align: {align}; margin-left: {marginLeft}; color:{textColor}; font-weight:{bold ? "bold" : "normal"}; font-style: {italic ? "italic" : "normal"}; {size!=="" ? "font-size: " + size + "em;" : ""};" class="{boxed ? "boxed" : ""}"> {text} </h1>
 
 <style>
     .boxed {

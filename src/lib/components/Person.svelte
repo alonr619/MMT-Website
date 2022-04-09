@@ -57,4 +57,7 @@
         align-items: center;
         justify-content: center;
     }
+    .person-pic{
+        min-width:0;
+    }
 </style>
