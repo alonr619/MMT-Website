@@ -3,7 +3,6 @@
     import { cubicOut } from 'svelte/easing';
     
     export let mainText; // The text you always see and click on
-    export let hiddenText; // self-explanatory
     
     let showContent = "none";
     let imageSrc = "right-arrow.png";
@@ -33,7 +32,7 @@
         </g>
     </svg>
     {mainText}
-    <div style="display: {showContent};" class="hidden-content">{hiddenText}</div>
+    <div style="display: {showContent};" class="hidden-content"><slot></slot></div>
 </div>
 
 <style>
