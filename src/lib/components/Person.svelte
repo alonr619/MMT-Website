@@ -1,7 +1,7 @@
 <script>
     export let pic;
     export let name;
-    export let position;
+    // export let position;
 
     import Text from '$lib/components/Text.svelte';
     import Heading from '$lib/components/Heading.svelte';
@@ -13,8 +13,9 @@
             <img class="person-img" src={pic} alt={name} />
         </div>
         <div class="person-details">
+            <br /><br /><br />
             <Heading text={name} size="1.5" />
-            <Text text={position} />
+            <!-- <Text text={position} /> -->
         </div>
     </div>
     <br class="person-br" />
