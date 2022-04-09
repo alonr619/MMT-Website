@@ -5,10 +5,10 @@
 <script>
 	import Button from '$lib/components/Button.svelte';
 	import Heading from '$lib/components/Heading.svelte';
-	import Text from '$lib/components/Text.svelte';
 	import FlexBox from '$lib/components/FlexBox.svelte';
 	import Image from '$lib/components/Image.svelte';
 	import Section from '$lib/components/Section.svelte';
+        import Link from '$lib/components/Link.svelte';
     let sponsorTiers = [
             {
                     "name": "Stallion",
@@ -80,7 +80,7 @@
 <div style="margin-left:2%; margin-right:2%">
     <Section>
     	<Heading text="Mustang Math Tournament" size={4} textColor="#177012" />
-        <Button text="Register for MMT 2022" backgroundColor="#1B9AAA" textColor="white" borderRadius=2 fontSize=2 />
+            <Link url="https://www.contestdojo.com"><Button text="Register for MMT 2022" backgroundColor="#1B9AAA" textColor="white" borderRadius=2 fontSize=2 /></Link>
     	<Heading text="MMT 2022 on May 28!" size={2} textColor="#177012" />
     </Section>
     <hr style="color: #E58F65"/>
