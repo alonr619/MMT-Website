@@ -74,7 +74,7 @@
 </script>
 
 <svelte:head>
-	<title>Mustang Math Tournament</title>
+	<title>Mustang Math Tournament (MMT)</title>
 </svelte:head>
 
 <div style="margin-left:2%; margin-right:2%">
