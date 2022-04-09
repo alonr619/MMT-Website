@@ -2,6 +2,7 @@
     export let year;
     export let tests; // Should be a list in the form of [["Test 1", "path/to/test1.pdf"], ["Test 2", "path/to/test2.pdf"]], etc.
     export let answers;
+    export let results;
 
     import { tweened } from 'svelte/motion';
     import { cubicOut } from 'svelte/easing';
@@ -41,8 +42,8 @@
         </tr>
         {/each}
         <tr>
-            <td></td>
             <td><a sveltekit:prefetch href={answers}>Answers</a></td>
+            <td><a sveltekit:prefetch href={results}>Results</a></td>
         </tr>
     </table>
 </div>
@@ -52,6 +53,7 @@
         width: 80%;
         margin: 10px;
         font-size: 2em;
+        margin-left: 50px;
     }
     .hidden-content{
         font-size: 1.5em;
@@ -63,6 +65,6 @@
         height: 0.5em;
     }
     table{
-        border-spacing: 0.55em;
+        border-spacing: 1em;
     }
 </style>

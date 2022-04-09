@@ -30,6 +30,12 @@
         margin-left: var(--margin-right);
     }
 </style>
+{:else if alignment === "left"}
+<style>
+    button{
+        margin-left: 2em;
+    }
+</style>
 {/if}
 
 <style>
@@ -37,5 +43,6 @@
         border: none;
         width: var(--width-button);
         margin-bottom: 10px;
+        cursor: grab;
     }
 </style>

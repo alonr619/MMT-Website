@@ -10,7 +10,10 @@
 </main>
 
 <footer>
-	<!--Todo: make footer?-->
+	<h1>CONTACT</h1>
+	<p> EMAIL: <a href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a><br />
+		PHONE: 425-829-5470<br />
+		A math tournament for middle schoolers</p>
 </footer>
 
 <style>
@@ -23,17 +26,29 @@
 		box-sizing: border-box;
 	}
 
-	/* footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+	footer {
+		text-align: center;
 		padding: 40px;
+		background-color: #177012;
+	}
+
+	footer h1{
+		color: white;
+	}
+
+	footer p{
+		color: white;
 	}
 
 	footer a {
-		font-weight: bold;
-	} */
+		color: white;
+		text-decoration: underline;
+		opacity: 0.6;
+	}
+
+	footer a:hover{
+		opacity: 0.8;
+	}
 
 	@media (min-width: 480px) {
 		footer {

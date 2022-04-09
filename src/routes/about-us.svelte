@@ -1,13 +1,6 @@
 <script>
-	import Button from '$lib/components/Button.svelte';
 	import Heading from '$lib/components/Heading.svelte';
-	import Input from '$lib/components/Input.svelte';
-	import Link from '$lib/components/Link.svelte';
-	import Text from '$lib/components/Text.svelte';
 	import FlexBox from '$lib/components/FlexBox.svelte';
-	import FlexItem from '$lib/components/FlexItem.svelte';
-	import Table from '$lib/components/Table.svelte';
-	import Image from '$lib/components/Image.svelte';
 	import Person from '$lib/components/Person.svelte';
 </script>
 
@@ -19,13 +12,23 @@
 	<br />
 	<Heading text="About Us" textColor="#177012" />
 	<FlexBox wrap={true}>
-		<Person pic="about-us-images/alon-ragoler.png" name="Alon Ragoler" position="Tech Lead" />
-		<Person pic="about-us-images/alon-ragoler.png" name="Alon Ragoler" position="Tech Lead" />
-		<Person pic="about-us-images/alon-ragoler.png" name="Alon Ragoler" position="Tech Lead" />
-		<Person pic="about-us-images/alon-ragoler.png" name="Alon Ragoler" position="Tech Lead" />
-		<Person pic="about-us-images/alon-ragoler.png" name="Alon Ragoler" position="Tech Lead" />
-		<Person pic="about-us-images/alon-ragoler.png" name="Alon Ragoler" position="Tech Lead" />
-		<Person pic="about-us-images/alon-ragoler.png" name="Alon Ragoler" position="Tech Lead" />
-		<Person pic="about-us-images/alon-ragoler.png" name="Alon Ragoler" position="Tech Lead" />
+		<Person pic="about-us-images/Alan_Duan-modified.png" name="Alan Duan" />
+		<Person pic="about-us-images/alon-ragoler-modified.png" name="Alon Ragoler" />
+		<Person pic="about-us-images/Ananya_Bezbaruah-modified.png" name="Ananya Bezbaruah" />
+		<Person pic="about-us-images/Annika_Renganathan-modified.png" name="Annika Renganathan" />
+		<Person pic="about-us-images/Arpit_Ranasaria-modified.png" name="Arpit Ranasaria" />
+		<Person pic="about-us-images/Conor_Kennedy-modified.png" name="Conor Kennedy" />
+		<Person pic="about-us-images/Daniel_Chirakarn-modified.png" name="Daniel Chirakarn" />
+		<Person pic="about-us-images/Dhruv_Kasarabada-modified.png" name="Dhruv Kasarabada" />
+		<Person pic="about-us-images/Evan_Kim-modified.png" name="Evan Kim" />
+		<Person pic="about-us-images/Hongning_Wang-modified.png" name="Hongning Wang" />
+		<Person pic="about-us-images/Krishna_Iyer-modified.png" name="Krishna Iyer" />
+		<Person pic="about-us-images/Noel Prince_Muthuplakal-modified.png" name="Noel Prince Muthuplakal" />
+		<Person pic="about-us-images/Reese_Long-modified.png" name="Reese Long" />
+		<Person pic="about-us-images/Rithwick_Pal-modified.png" name="Rithwick Pal" />
+		<Person pic="about-us-images/Sebastian_Kumar-modified.png" name="Sebastian Kumar" />
+		<Person pic="about-us-images/shak_ragoler-modified.png" name="Shak Ragoler" />
+		<Person pic="about-us-images/Shrey_Shah-modified.png" name="Shrey Shah" />
+		<Person pic="about-us-images/Wilson_Liu-modified.png" name="Wilson Liu" />
 	</FlexBox>
 </section>

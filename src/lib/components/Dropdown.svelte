@@ -32,19 +32,21 @@
         </g>
     </svg>
     {mainText}
-    <div style="display: {showContent};" class="hidden-content"><slot></slot></div>
 </div>
+<div style="display: {showContent};" class="hidden-content"><slot></slot></div>
 
 <style>
     .dropdown{
         width: 80%;
         margin: 10px;
         font-size: 2em;
+        margin-left: 50px;
     }
     .hidden-content{
         font-size: 0.6em;
         transition: 0.5s;
         margin-left: 3em;
+        font-size: 1em;
     }
     .dropdown-image{
         width: 0.5em;
