@@ -14,29 +14,96 @@
 	import Image from '$lib/components/Image.svelte';
 	import Box from '$lib/components/Box.svelte';
 	import Section from '$lib/components/Section.svelte';
-	
-	let buttonClickCount = 0;
-    // function for testing Button
-    function clickButton() {
-        buttonClickCount++;
-    }
+    let sponsorTiers = [
+            {
+                    "name": "Stallion",
+                    "sponsors": [
+                            {
+                                    "url": "about-us-images/alon-ragoler.png",
+                                    "alt": "tech carry",
+                                    "link": "https://cia.gov"
+                            },
+                            {
+                                    "url": "about-us-images/alon-ragoler.png",
+                                    "alt": "tech carry",
+                                    "link": "https://cia.gov"
+                            },
+                            {
+                                    "url": "about-us-images/alon-ragoler.png",
+                                    "alt": "tech carry",
+                                    "link": "https://cia.gov"
+                            },
+                    ]
+            },
+            {
+                    "name": "Colt",
+                    "sponsors": [
+                            {
+                                    "url": "about-us-images/alon-ragoler.png",
+                                    "alt": "tech carry",
+                                    "link": "https://cia.gov"
+                            },
+                            {
+                                    "url": "about-us-images/alon-ragoler.png",
+                                    "alt": "tech carry",
+                                    "link": "https://cia.gov"
+                            },
+                            {
+                                    "url": "about-us-images/alon-ragoler.png",
+                                    "alt": "tech carry",
+                                    "link": "https://cia.gov"
+                            },
+                    ]
+            },
+            {
+                    "name": "Foal",
+                    "sponsors": [
+                            {
+                                    "url": "about-us-images/alon-ragoler.png",
+                                    "alt": "tech carry",
+                                    "link": "https://cia.gov"
+                            },
+                            {
+                                    "url": "about-us-images/alon-ragoler.png",
+                                    "alt": "tech carry",
+                                    "link": "https://cia.gov"
+                            },
+                            {
+                                    "url": "about-us-images/alon-ragoler.png",
+                                    "alt": "tech carry",
+                                    "link": "https://cia.gov"
+                            },
+                    ]
+            }
+    ];
 </script>
 
 <svelte:head>
 	<title>Mustang Math Tournament</title>
 </svelte:head>
 
-<Section>
-	<Heading text="Mustang Math Tournament" size={4} textColor="#177012" />
-    <Button text="Register for MMT 2022" backgroundColor="#1B9AAA" textColor="white" borderRadius=2 />
-	<Heading text="MMT 2022 on May 28!" size={2} textColor="#177012" />
-</Section>
-<hr />
+<div style="margin-left:2%; margin-right:2%">
+    <Section>
+    	<Heading text="Mustang Math Tournament" size={4} textColor="#177012" />
+        <Button text="Register for MMT 2022" backgroundColor="#1B9AAA" textColor="white" borderRadius=2 />
+    	<Heading text="MMT 2022 on May 28!" size={2} textColor="#177012" />
+    </Section>
+    <hr style="color: #E58F65"/>
+    
+    <Section>
+        <Heading text="Mission Statement Header" size={2} textColor="#1B9AAA" />
+        <Text text="Mission Statement" />
+        <Heading text="Sponsors" size={2} textColor="#1B9AAA" />
+        {#each sponsorTiers as lvl}
+                <Section>
+                        <Heading text="{lvl.name} Sponsors" size={1.5} />
+                        <FlexBox wrap={true}>
+                                {#each lvl.sponsors as sponsor}
+                                        <Image url={sponsor.url} alt={sponsor.alt} link={sponsor.link} />
+                                {/each}
+                        </FlexBox>
+                </Section>
 
-<Section>
-    <Heading text="Mission Statement Header" size={2} textColor="#1B9AAA" alignment="right" />
-    <Text text="Mission Statement" />
-    <Heading text="Sponsors" size={2} textColor="#1B9AAA" />
-    <!-- sponsor stuff will go here -->
-    <Heading text="Subscribe to our Newsletter" size={2} textColor="#1B9AAA" />
-</Section>
+        {/each}
+    </Section>
+</div>
