@@ -1,3 +1,7 @@
+<script context="module">
+	export const prerender = true;
+</script>
+
 <script>
 	import Heading from '$lib/components/Heading.svelte';
 	import FlexBox from '$lib/components/FlexBox.svelte';
