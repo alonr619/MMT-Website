@@ -12,7 +12,6 @@
 <footer>
 	<h1>CONTACT</h1>
 	<p> EMAIL: <a href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a><br />
-		PHONE: 425-829-5470<br />
 		A math tournament for middle schoolers</p>
 </footer>
 
