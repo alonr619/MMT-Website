@@ -14,7 +14,7 @@
         </div>
         <div class="person-details">
             <br /><br /><br />
-            <Heading text={name} size="1.5" />
+            <Heading text={name} size="1.5" marginLeft="30%" align="left" />
             <!-- <Text text={position} /> -->
         </div>
     </div>
@@ -47,5 +47,8 @@
     .person-img{
         height: 100%;
         margin: 10px;
+    }
+    .person-pic{
+        min-width:0;
     }
 </style>
