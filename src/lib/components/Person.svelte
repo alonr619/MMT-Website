@@ -30,11 +30,11 @@
         margin: 10px;
         box-shadow: 5px 10px 10px rgb(0,0,0,0.1);
         transition: 0.5s;
+        opacity: 0.8;
     }
     .person-box:hover{
         box-shadow: 10px 20px 10px rgb(0,0,0,0.1);
-        margin-bottom:15px;
-        margin-right:15px;
+        opacity: 1;
     }
     .person-br{
         width: 5px;
