@@ -4,21 +4,21 @@
 </script>
 
 <div class="all-container">
-    <Header />
+	<Header />
 
-    <main>
-        <slot />
-    </main>
+	<main>
+		<slot />
+	</main>
 
-    <footer>
-        <h1>CONTACT</h1>
-        <p><a href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a><br /></p>
-    </footer>
+	<footer>
+		<h1>CONTACT</h1>
+		<p><a href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a><br /></p>
+	</footer>
 </div>
 
 <style>
 	main {
-        flex: 1;
+		flex: 1;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
@@ -26,17 +26,17 @@
 		box-sizing: border-box;
 	}
 
-    .all-container {
-        padding-bottom: 160px; /* push footer to bottom, keep equal to footer height below */
-        position: relative;
-        min-height: 100vh;
-        box-sizing: border-box;
-    }
+	.all-container {
+		padding-bottom: 160px; /* push footer to bottom, keep equal to footer height below */
+		position: relative;
+		min-height: 100vh;
+		box-sizing: border-box;
+	}
 
 	footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
 		text-align: center;
 		height: 160px; /* change this and padding-bottom above if it overflows */
 		background-color: #177012;
