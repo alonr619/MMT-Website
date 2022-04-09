@@ -5,7 +5,9 @@
 <svelte:head>
     <title>MMT 2022</title>
 </svelte:head>
-<br /> <br />
-<Heading text="MMT 2022" textColor="#177012" size=3 />
-<Heading text="The Mystery Mare" textColor="#177012" size=2 />
-<Dropdown mainText="Rules" hiddenText="blah" />
+<section>
+    <br /> <br />
+    <Heading text="MMT 2022" textColor="#177012" size=3 />
+    <Heading text="The Mystery Mare" textColor="#177012" size=2 />
+    <Dropdown mainText="Rules" hiddenText="blah" />
+</section>
