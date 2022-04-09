@@ -10,11 +10,10 @@
 <div class="person-box">
     <div class="person-flex">
         <div class="person-pic">
-            <img class="person-img" src={pic} alt={name} />
+            <img class="person-img" src={pic} alt={name} width="160" height="160"/>
         </div>
         <div class="person-details">
-            <br /><br /><br />
-            <Heading text={name} size="1.5" />
+            <Heading text={name} size="1.5"/>
             <!-- <Text text={position} /> -->
         </div>
     </div>
@@ -45,7 +44,17 @@
         height: 10em;
     }
     .person-img{
-        height: 100%;
-        margin: 10px;
+        margin: 3px;
+        max-height: 100%;
+    }
+    .person-pic {
+        min-width: 0;
+    }
+    .person-details {
+        display: flex;
+        flex-basis: 0;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
     }
 </style>
