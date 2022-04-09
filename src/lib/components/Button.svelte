@@ -33,7 +33,7 @@
 {:else if alignment === "left"}
 <style>
     button{
-        margin-left: 2em;
+        margin-left: 7em;
     }
 </style>
 {/if}

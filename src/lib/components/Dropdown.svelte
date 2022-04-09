@@ -38,14 +38,18 @@
 <style>
     .dropdown{
         width: 80%;
-        margin: 10px;
         font-size: 2em;
         margin-left: 50px;
+        margin-left: 5em;
+        margin-right: 5em;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
     }
     .hidden-content{
         font-size: 0.6em;
         transition: 0.5s;
-        margin-left: 3em;
+        margin-left: 10em;
+        margin-right: 10em;
         font-size: 1em;
     }
     .dropdown-image{

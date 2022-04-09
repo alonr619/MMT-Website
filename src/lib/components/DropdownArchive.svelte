@@ -53,12 +53,12 @@
         width: 80%;
         margin: 10px;
         font-size: 2em;
-        margin-left: 50px;
+        margin-left: 5em;
     }
     .hidden-content{
         font-size: 1.5em;
         transition: 0.5s;
-        margin-left: 3em;
+        margin-left: 7em;
     }
     .dropdown-image{
         width: 0.5em;
