@@ -58,6 +58,7 @@
     .hidden-content{
         font-size: 1.5em;
         transition: 0.5s;
+        animation: fadeIn 0.5s;
         margin-left: 7em;
     }
     .dropdown-image{
