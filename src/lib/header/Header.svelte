@@ -14,7 +14,7 @@
 		<ul>
 			<li class:active={$page.url.pathname === '/'} style="text-align: left; width: 100%; font-weight: bold; text-decoration: none;"><a sveltekit:prefetch href="/" style="font-size: 1.25rem;">Mustang Math Tournament</a></li>
 			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
-			<li class:active={$page.url.pathname === '/about-us'}><a sveltekit:prefetch href="/about-us">About Us</a></li>
+			<li class:active={$page.url.pathname === '/our-team'}><a sveltekit:prefetch href="/our-team">Our Team</a></li>
 			<li class:active={$page.url.pathname === '/mmt-2022'}><a sveltekit:prefetch href="/mmt-2022">MMT 2022</a></li>
 			<li class:active={$page.url.pathname === '/archive'}><a sveltekit:prefetch href="/archive">Archive</a></li>
 		</ul>

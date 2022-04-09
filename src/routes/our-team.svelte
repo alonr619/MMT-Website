@@ -5,12 +5,12 @@
 </script>
 
 <svelte:head>
-	<title>About Us</title>
+	<title>Our Team</title>
 </svelte:head>
 
 <section>
 	<br />
-	<Heading text="About Us" textColor="#177012" />
+	<Heading text="Our Team" textColor="#177012" />
 	<FlexBox wrap={true}>
 		<Person pic="about-us-images/Alan_Duan-modified.png" name="Alan Duan" />
 		<Person pic="about-us-images/alon-ragoler-modified.png" name="Alon Ragoler" />
