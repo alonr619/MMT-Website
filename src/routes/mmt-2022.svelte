@@ -16,7 +16,7 @@
 <br /> <br />
 <Heading text="MMT 2022" textColor="#177012" size=3 />
 <Heading text="The Mystery Mare" textColor="#177012" size=2 /> <br />
-<Link url="https://www.contestdojo.com"><Button text="Register for MMT 2022" backgroundColor="#1B9AAA" textColor="white" borderRadius=2 fontSize=2 /></Link>
+<Link url="https://www.contestdojo.com"><Button text="Register for MMT 2022" backgroundColor="#1B9AAA" hoverDarken={true} textColor="white" borderRadius=2 fontSize=2 /></Link>
 <Dropdown mainText="General Rules">
     <ol>
         <li>No cheating - This contest has a zero-tolerance cheating policy. Any evidence of cheating may lead to immediate disqualification, or any other punishment deemed appropriate by competition staff.</li>

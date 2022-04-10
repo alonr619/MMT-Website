@@ -48,6 +48,7 @@
     .hidden-content{
         font-size: 0.6em;
         transition: 0.5s;
+        animation: fadeIn 0.5s;
         margin-left: 10em;
         margin-right: 10em;
         font-size: 1em;
