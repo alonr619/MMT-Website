@@ -44,11 +44,12 @@
         margin-right: 5em;
         margin-top: 0.3em;
         margin-bottom: 0.3em;
+        cursor: grab;
     }
     .hidden-content{
         font-size: 0.6em;
-        transition: 0.5s;
-        animation: fadeIn 0.5s;
+        transition: 1s;
+        animation: fadeIn 1s;
         margin-left: 10em;
         margin-right: 10em;
         font-size: 1em;

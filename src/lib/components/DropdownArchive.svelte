@@ -54,11 +54,12 @@
         margin: 10px;
         font-size: 2em;
         margin-left: 5em;
+        cursor: grab;
     }
     .hidden-content{
         font-size: 1.5em;
-        transition: 0.5s;
-        animation: fadeIn 0.5s;
+        transition: 1s;
+        animation: fadeIn 1s;
         margin-left: 7em;
     }
     .dropdown-image{
