@@ -77,16 +77,20 @@
 	<title>Mustang Math Tournament (MMT)</title>
 </svelte:head>
 
+<Section>
+        <div class="header flex"><div>
+                <h1 class="glow">Mustang Math Tournament</h1>
+                <div class="flex"><div class="headerline"></div></div>
+                <p style="font-weight: 300; margin-top: 30px; font-size: 22px; color: white;">HAPPENING MAY 28TH</p>
+                <a href="https://www.contestdojo.com" target="_blank" class="topbuttons">Register Now</a>
+        </div></div>
+</Section>
+
 <div style="margin-left:2%; margin-right:2%">
     <Section>
-    	<Heading text="Mustang Math Tournament" size={4} textColor="#177012" />
-            <Link url="https://www.contestdojo.com"><Button text="Register for MMT 2022" backgroundColor="#1B9AAA" hoverDarken={true} textColor="white" borderRadius=2 fontSize=2 /></Link>
-    	<Heading text="MMT 2022 on May 28!" size={2} textColor="#177012" />
-    </Section>
-    <hr style="color: #E58F65"/>
-    
-    <Section>
-        <p id="missionStatement">The Mustang Math Tournament (MMT) is an online middle school contest hosted by experienced high school and college students, designed to get participants excited about working together on math problems. MMT is unique in its fun, distinctive formats (like our bingo round) and team-based structure. We started amidst the COVID-19 pandemic, hoping to broaden the reach of mathematics during challenging times, and have stuck with our core values of collaboration, love for mathematics, and fun ever since.</p>
+            <br />
+        <Heading text="Welcome to MMT." size={2} textColor="#1B9AAA" />
+        <p id="missionStatement" style="text-align: center;">The Mustang Math Tournament (MMT) is an <b>online middle school contest</b> hosted by experienced high school and college students, designed to get participants excited about working together on math problems. MMT is unique in its <b>fun, distinctive formats</b> (like our bingo round) and team-based structure. We started amidst the COVID-19 pandemic, hoping to <b>broaden the reach of mathematics</b> during challenging times, and have stuck with our <b> ore values of collaboration, love for mathematics, and fun</b> ever since.</p>
         <Heading text="Sponsors" size={2} textColor="#1B9AAA" />
         <!--{#each sponsorTiers as lvl}
                 <Section>
@@ -100,9 +104,10 @@
 
         {/each} -->
         <FlexBox wrap={true}>
-                <Image url="sponsors/atomicgrader.png" alt="Atomic Grader" width="40%" />
-                <Image url="sponsors/contestdojo.png" alt="Contest Dojo" width="40%" />
+                <Image url="sponsors/atomicgrader.png" alt="Atomic Grader" width="20%" />
+                <Image url="sponsors/contestdojo.png" alt="Contest Dojo" width="20%" />
         </FlexBox>
+        <br />
     </Section>
 </div>
 

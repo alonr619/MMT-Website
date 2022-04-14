@@ -13,10 +13,14 @@
     <title>MMT 2022</title>
 </svelte:head>
 
+<div class="header flex"><div>
+    <h1 class="glow">MMT 2022</h1>
+    <div class="flex"><div class="headerline"></div></div>
+    <p style="font-weight: 300; margin-top: 30px; font-size: 22px; color: white;">THE MYSTERY MARE</p>
+    <a href="https://www.contestdojo.com" target="_blank" class="topbuttons">Register Now</a>
+</div></div>
+
 <br /> <br />
-<Heading text="MMT 2022" textColor="#177012" size=3 />
-<Heading text="The Mystery Mare" textColor="#177012" size=2 /> <br />
-<Link url="https://www.contestdojo.com"><Button text="Register for MMT 2022" backgroundColor="#1B9AAA" hoverDarken={true} textColor="white" borderRadius=2 fontSize=2 /></Link>
 <Dropdown mainText="General Rules">
     <ol>
         <li>No cheating - This contest has a zero-tolerance cheating policy. Any evidence of cheating may lead to immediate disqualification, or any other punishment deemed appropriate by competition staff.</li>
