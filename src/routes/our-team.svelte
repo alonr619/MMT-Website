@@ -12,9 +12,15 @@
 	<title>Our Team</title>
 </svelte:head>
 
+<div class="header flex"><div>
+    <h1 class="glow">Meet the Team</h1>
+    <div class="flex"><div class="headerline"></div></div>
+    <p style="font-weight: 300; margin-top: 30px; font-size: 22px; color: white;">THE ONES MAKING MMT POSSIBLE</p>
+    <a href="https://www.contestdojo.com" target="_blank" class="topbuttons">Register Now</a>
+</div></div>
+
 <section>
 	<br />
-	<Heading text="Our Team" textColor="#177012" />
 	<FlexBox wrap={true}>
 		<Person pic="about-us-images/Alan_Duan-modified.png" name="Alan Duan" />
 		<Person pic="about-us-images/alon-ragoler-modified.png" name="Alon Ragoler" />
