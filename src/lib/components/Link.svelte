@@ -3,6 +3,7 @@
     export let text = url;
     export let textColor = "blue";
     export let visitedColor = "purple";
+    export let target = "_self";
 </script>
 
 <style>
@@ -14,7 +15,7 @@
     }
 </style>
 
-<a href={url} style="--normal-color: {textColor}; --visited-color: {visitedColor}">
+<a href={url} style="--normal-color: {textColor}; --visited-color: {visitedColor}" target={target}>
     <slot>
         {text}
     </slot>

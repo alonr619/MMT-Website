@@ -38,12 +38,12 @@
         {#each tests as test}
         <tr>
             <td><strong>{test[0]}</strong></td>
-            <td><a sveltekit:prefetch href={test[1]}>Problems</a></td>
+            <td><a target="_blank" sveltekit:prefetch href={test[1]}>Problems</a></td>
         </tr>
         {/each}
         <tr>
-            <td><a sveltekit:prefetch href={answers}>Answers</a></td>
-            <td><a sveltekit:prefetch href={results}>Results</a></td>
+            <td><a target="_blank" sveltekit:prefetch href={answers}>Answers</a></td>
+            <td><a target="_blank" sveltekit:prefetch href={results}>Results</a></td>
         </tr>
     </table>
 </div>
