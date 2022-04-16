@@ -4,6 +4,7 @@
     export let link = "";
     export let height = "";
     export let width = "";
+    export let target = "_self";
 </script>
 
 <!-- Warning: spaghetti code -->
@@ -23,19 +24,19 @@
 {:else}
 
     {#if height === "" && width === ""}
-        <a href={link}>
+        <a href={link} target={target}>
         <img src={url} alt={alt} />
         </a>
     {:else if height === "" }
-        <a href={link}>
+        <a href={link} target={target}>
         <img src={url} alt={alt} width={width} />
         </a>
     {:else if width === ""}
-        <a href={link}>
+        <a href={link} target={target}>
         <img src={url} alt={alt} height={height} />
         </a>
     {:else}
-        <a href={link}>
+        <a href={link} target={target}>
         <img src={url} alt={alt} width={width} height={height} />
         </a>
     {/if}
