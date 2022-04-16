@@ -104,8 +104,8 @@
 
         {/each} -->
         <FlexBox wrap={true}>
-                <Image url="sponsors/atomicgrader.png" alt="Atomic Grader" width="20%" />
-                <Image url="sponsors/contestdojo.png" alt="Contest Dojo" width="20%" />
+                <div style="max-width: 40%;"><Image url="sponsors/atomicgrader.png" alt="Atomic Grader" link="https://atomicgrader.com" width="100%" /></div>
+                <div style="max-width: 40%"><Image url="sponsors/contestdojo.png" alt="Contest Dojo" link="https://www.contestdojo.com" width="100%" /></div>
         </FlexBox>
         <br />
     </Section>
