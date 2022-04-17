@@ -4,7 +4,7 @@
     export let textColor = "blue";
     export let visitedColor = "purple";
     export let className = "";
-    export let target = "";
+    export let target = "_self";
 </script>
 
 <style>
