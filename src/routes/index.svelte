@@ -113,7 +113,7 @@
 
 <style>
         #missionStatement{
-                margin-left: 10em;
-                margin-right: 10em;
+                margin-left: 10vw;
+                margin-right: 10vw;
         }
 </style>
