@@ -83,7 +83,7 @@
     <Section>
             <br />
         <Heading text="Welcome to MMT." size={2} textColor="#1B9AAA" />
-        <p id="missionStatement" style="text-align: center;">The Mustang Math Tournament (MMT) is an <b>online middle school contest</b> hosted by experienced high school and college students, designed to get participants excited about working together on math problems. MMT is unique in its <b>fun, distinctive formats</b> (like our bingo round) and team-based structure. We started amidst the COVID-19 pandemic, hoping to <b>broaden the reach of mathematics</b> during challenging times, and have stuck with our <b> core values of collaboration, love for mathematics, and fun</b> ever since.</p>
+        <p id="missionStatement" style="text-align: center;">The Mustang Math Tournament (MMT) is an <b>online middle school contest</b> hosted by experienced high school and college students, designed to get participants excited about working together on math problems. MMT is unique in its <b>fun, distinctive formats</b> (like our bingo round) and team-based structure. We started amidst the COVID-19 pandemic, hoping to <b>broaden the reach of mathematics</b> during challenging times, and have stuck with our <b>values of collaboration, love for mathematics, and fun</b> ever since.</p>
         <Heading text="Sponsors" size={2} textColor="#1B9AAA" />
         <!--{#each sponsorTiers as lvl}
                 <Section>

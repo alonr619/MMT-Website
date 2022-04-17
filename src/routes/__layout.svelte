@@ -11,8 +11,7 @@
 	</main>
 
 	<footer>
-		<h1>CONTACT</h1>
-		<p><a href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a><br /></p>
+		<p><b>Contact at </b><a href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a><br /></p>
 	</footer>
 </div>
 
@@ -38,12 +37,8 @@
 		bottom: 0;
 		width: 100%;
 		text-align: center;
-		height: 160px; /* change this and padding-bottom above if it overflows */
+		min-height: 30px;
 		background-color: #177012;
-	}
-
-	footer h1{
-		color: white;
 	}
 
 	footer p{
@@ -52,11 +47,11 @@
 
 	footer a {
 		color: white;
-		text-decoration: underline;
 		opacity: 0.6;
 	}
 
 	footer a:hover{
+		text-decoration: underline;
 		opacity: 0.8;
 	}
 </style>
