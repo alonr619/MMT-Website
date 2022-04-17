@@ -3,6 +3,7 @@
     import Dropdown from '$lib/components/Dropdown.svelte';
     import Link from '$lib/components/Link.svelte';
     import Button from '$lib/components/Button.svelte';
+    import Header from '$lib/components/PageHeader.svelte';
 </script>
 <style>
 	li {
@@ -13,13 +14,7 @@
     <title>MMT 2022</title>
 </svelte:head>
 
-<div class="header flex"><div>
-    <h1 class="glow">MMT 2022</h1>
-    <div class="flex"><div class="headerline"></div></div>
-    <p style="font-weight: 300; margin-top: 30px; font-size: 22px; color: white;">THE MYSTERY MARE</p>
-    <a href="https://www.contestdojo.com" target="_blank" class="topbuttons">Register Now</a>
-</div></div>
-
+<Header title="MMT 2022" description="THE MYSTERY MARE" />
 <br /> <br />
 <Dropdown mainText="General Rules">
     <ol>
