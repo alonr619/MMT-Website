@@ -53,14 +53,30 @@
         width: 80%;
         margin: 10px;
         font-size: 2em;
-        margin-left: 5em;
+        margin-left: 5vw;
         cursor: grab;
+        background-color: white;
+        border-radius: 25px;
+        padding: 10px;
+        box-shadow: 5px 10px 10px rgb(0,0,0,0.1);
+        opacity: 0.8;
+        transition: 0.5s;
+    }
+    .dropdown:hover{
+        box-shadow: 5px 10px 10px rgb(0,0,0,0.1);
+        opacity: 1;
     }
     .hidden-content{
         font-size: 1.5em;
         transition: 1s;
         animation: fadeIn 1s;
-        margin-left: 7em;
+        margin-left: 7vw;
+        margin-right: 4vw;
+        background-color: white;
+        border-radius: 25px;
+        padding: 10px;
+        box-shadow: 4px 8px 10px rgb(0,0,0,0.1);
+        opacity: 0.8;
     }
     .dropdown-image{
         width: 0.5em;

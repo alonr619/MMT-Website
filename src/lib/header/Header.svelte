@@ -1,7 +1,10 @@
 <script>
 	import { page } from '$app/stores';
 	import logo from './MMTLogo.png';
+	let windowWidth;
 </script>
+
+<svelte:window bind:innerWidth={windowWidth} />
 
 <header>
 	<div class="corner">
@@ -12,7 +15,13 @@
 
 	<nav>
 		<ul>
-			<li class:active={$page.url.pathname === '/'} style="text-align: left; width: 100%; font-weight: bold; text-decoration: none;"><a sveltekit:prefetch href="/" style="font-size: 1.25rem;">Mustang Math Tournament</a></li>
+			<li class:active={$page.url.pathname === '/'} style="text-align: left; width: 100%; font-weight: bold; text-decoration: none;"><a sveltekit:prefetch href="/" style="font-size: 1.25rem;">
+				{#if windowWidth > 790}
+				Mustang Math Tournament
+				{:else}
+				MMT
+				{/if}
+			</a></li>
 			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
 			<li class:active={$page.url.pathname === '/mmt-2022'}><a sveltekit:prefetch href="/mmt-2022">MMT 2022</a></li>
 			<li class:active={$page.url.pathname === '/our-team'}><a sveltekit:prefetch href="/our-team">Our Team</a></li>
