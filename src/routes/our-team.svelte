@@ -30,6 +30,7 @@
 		<Person pic="about-us-images/Conor_Kennedy-modified-min.png" name="Conor Kennedy" />
 		<Person pic="about-us-images/Daniel_Chirakarn-modified-min.png" name="Daniel Chirakarn" />
 		<Person pic="about-us-images/Dhruv_Kasarabada-modified-min.png" name="Dhruv Kasarabada" />
+		<Person pic="about-us-images/Eric_Ge-modified-min.png" name="Eric Ge" />
 		<Person pic="about-us-images/Evan_Kim-modified-min.png" name="Evan Kim" />
 		<Person pic="about-us-images/Grace_Tan-modified-min.png" name="Grace Tan" />
 		<Person pic="about-us-images/Hongning_Wang-modified-min.png" name="Hongning Wang" />
