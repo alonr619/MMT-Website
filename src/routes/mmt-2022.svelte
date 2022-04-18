@@ -3,7 +3,7 @@
     import Dropdown from '$lib/components/Dropdown.svelte';
     import Link from '$lib/components/Link.svelte';
     import Button from '$lib/components/Button.svelte';
-    import PageHeader from '$lib/components/PageHeader.svelte';
+    import PageHeader from '$lib/components/Header.svelte';
 </script>
 <style>
 	li {
