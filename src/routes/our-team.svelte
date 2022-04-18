@@ -6,7 +6,7 @@
 	import Heading from '$lib/components/Heading.svelte';
 	import FlexBox from '$lib/components/FlexBox.svelte';
 	import Person from '$lib/components/Person.svelte';
-	import PageHeader from '$lib/components/PageHeader.svelteelte';
+	import PageHeader from '$lib/components/PageHeader.svelte';
 </script>
 
 <svelte:head>
