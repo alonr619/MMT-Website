@@ -134,7 +134,7 @@ button:focus:not(:focus-visible) {
 	color: #fff;
 	text-align: center;
 	margin: 0;
-	padding: 0;
+	padding: 0px 10px;
 }
 
 .headerline {
