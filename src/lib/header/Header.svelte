@@ -43,10 +43,10 @@
 </header>
 {#if showMobile}
 	<div id="hamburger-links">
-		<a class:active={$page.url.pathname === '/'} sveltekit:prefetch href="/">Home</a> <br />
-		<a class:active={$page.url.pathname === '/mmt-2022'} sveltekit:prefetch href="/mmt-2022">MMT 2022</a> <br />
-		<a class:active={$page.url.pathname === '/our-team'} sveltekit:prefetch href="/our-team">Our Team</a> <br />
-		<a class:active={$page.url.pathname === '/archive'} sveltekit:prefetch href="/archive">Archive</a> <br />
+		<a on:click={toggleMobile} class:active={$page.url.pathname === '/'} sveltekit:prefetch href="/">Home</a> <br />
+		<a on:click={toggleMobile} class:active={$page.url.pathname === '/mmt-2022'} sveltekit:prefetch href="/mmt-2022">MMT 2022</a> <br />
+		<a on:click={toggleMobile} class:active={$page.url.pathname === '/our-team'} sveltekit:prefetch href="/our-team">Our Team</a> <br />
+		<a on:click={toggleMobile} class:active={$page.url.pathname === '/archive'} sveltekit:prefetch href="/archive">Archive</a> <br />
 	</div>
 {/if}
 
