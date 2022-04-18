@@ -2,7 +2,13 @@
 	import { page } from '$app/stores';
 	import logo from './MMTLogo.png';
 	let windowWidth;
+	let showMobile = false;
+	function toggleMobile(){
+		showMobile = showMobile ? false : true;
+	};
 </script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <svelte:window bind:innerWidth={windowWidth} />
 
@@ -22,13 +28,27 @@
 				MMT
 				{/if}
 			</a></li>
+			{#if windowWidth>500}
 			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
 			<li class:active={$page.url.pathname === '/mmt-2022'}><a sveltekit:prefetch href="/mmt-2022">MMT 2022</a></li>
 			<li class:active={$page.url.pathname === '/our-team'}><a sveltekit:prefetch href="/our-team">Our Team</a></li>
 			<li class:active={$page.url.pathname === '/archive'}><a sveltekit:prefetch href="/archive">Archive</a></li>
+			{:else}
+			<div on:click={toggleMobile} id="hamburger-div">
+			<i id="hamburger-icon" class="fa fa-bars"></i>
+			</div>
+			{/if}
 		</ul>
 	</nav>
 </header>
+{#if showMobile}
+	<div id="hamburger-links">
+		<a class:active={$page.url.pathname === '/'} sveltekit:prefetch href="/">Home</a> <br />
+		<a class:active={$page.url.pathname === '/mmt-2022'} sveltekit:prefetch href="/mmt-2022">MMT 2022</a> <br />
+		<a class:active={$page.url.pathname === '/our-team'} sveltekit:prefetch href="/our-team">Our Team</a> <br />
+		<a class:active={$page.url.pathname === '/archive'} sveltekit:prefetch href="/archive">Archive</a> <br />
+	</div>
+{/if}
 
 <style>
 	header {
@@ -82,11 +102,11 @@
 		height: 100%;
 	}
 
-	li.active {
+	.active {
 		text-decoration: underline;
 	}
 
-	nav a {
+	a {
 		display: flex;
 		height: 100%;
 		align-items: center;
@@ -101,5 +121,26 @@
 
 	a:hover {
 		font-weight: bold;
+	}
+
+	#hamburger-icon {
+		margin-left: 40%;
+		margin-right: 40%;
+		margin-top: 40%;
+		margin-bottom: 40%;
+	}
+
+	#hamburger-div {
+		background-color: white;
+		width: 80px;
+		height: 100%;
+	}
+
+	#hamburger-links {
+		background-color: #06D6A0;
+	}
+
+	#hamburger-links > a{
+		justify-content: center;
 	}
 </style>
