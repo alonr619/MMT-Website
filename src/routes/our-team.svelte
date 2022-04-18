@@ -6,14 +6,14 @@
 	import Heading from '$lib/components/Heading.svelte';
 	import FlexBox from '$lib/components/FlexBox.svelte';
 	import Person from '$lib/components/Person.svelte';
-	import Header from '$lib/components/PageHeader.svelte';
+	import PageHeader from '$lib/components/PageHeader.svelte';
 </script>
 
 <svelte:head>
 	<title>Our Team</title>
 </svelte:head>
 
-<Header title="Meet the Team" description="THE ONES MAKING MMT POSSIBLE" />
+<PageHeader title="Meet the Team" description="THE ONES MAKING MMT POSSIBLE" />
 <section>
 	<br />
 	<FlexBox wrap={true}>
