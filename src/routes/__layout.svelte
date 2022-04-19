@@ -26,18 +26,19 @@
 	}
 
 	.all-container {
-		padding-bottom: 160px; /* push footer to bottom, keep equal to footer height below */
 		position: relative;
 		min-height: 100vh;
 		box-sizing: border-box;
 	}
 
 	footer {
-		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		bottom: 0;
 		width: 100%;
 		text-align: center;
-		min-height: 30px;
+		min-height: 50px;
 		background-color: #1c6825;
 	}
 
