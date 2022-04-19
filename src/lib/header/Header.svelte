@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import logo from './MMTLogo.png';
-	let windowWidth;
+	let windowWidth = 0;
 	let showMobile = false;
 	function toggleMobile(){
 		showMobile = showMobile ? false : true;
@@ -28,7 +28,7 @@
 				MMT
 				{/if}
 			</a></li>
-			{#if windowWidth>500}
+			{#if windowWidth>500 || windowWidth===0}
 			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
 			<li class:active={$page.url.pathname === '/mmt-2022'}><a sveltekit:prefetch href="/mmt-2022">MMT 2022</a></li>
 			<li class:active={$page.url.pathname === '/our-team'}><a sveltekit:prefetch href="/our-team">Our Team</a></li>
