@@ -39,7 +39,7 @@
 		width: 100%;
 		text-align: center;
 		min-height: 50px;
-		background-color: #177012;
+		background-color: #1c6825;
 	}
 
 	footer p{
