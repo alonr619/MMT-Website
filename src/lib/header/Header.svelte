@@ -59,7 +59,7 @@
 	.corner {
 		width: 4em;
 		height: 4em;
-		background-color: #06D6A0;
+		background-color: #1c6825;
 	}
 
 	.corner a {
@@ -79,7 +79,7 @@
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: #06D6A0;
+		--background: #1c6825;
 		width: 100%;
 	}
 
@@ -111,7 +111,7 @@
 		height: 100%;
 		align-items: center;
 		padding: 0 1em;
-		color: #177012;
+		color: white;
 		font-size: 1rem;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
