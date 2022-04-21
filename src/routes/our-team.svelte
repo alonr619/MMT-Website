@@ -25,6 +25,7 @@
 		<Person pic="about-us-images/Conor_Kennedy-modified-min.png" name="Conor Kennedy" />
 		<Person pic="about-us-images/Daniel_Chirakarn-modified-min.png" name="Daniel Chirakarn" />
 		<Person pic="about-us-images/Dhruv_Kasarabada-modified-min.png" name="Dhruv Kasarabada" />
+		<Person pic="about-us-images/Eesha_Jain-modified-min.png" name="Eesha Jain" />
 		<Person pic="about-us-images/Eric_Ge-modified-min.png" name="Eric Ge" />
 		<Person pic="about-us-images/Evan_Kim-modified-min.png" name="Evan Kim" />
 		<Person pic="about-us-images/Grace_Tan-modified-min.png" name="Grace Tan" />
@@ -32,11 +33,14 @@
 		<Person pic="about-us-images/Joyce_Huang-modified-min.png" name="Joyce Huang" />
 		<Person pic="about-us-images/Krishna_Iyer-modified-min.png" name="Krishna Iyer" />
 		<Person pic="about-us-images/Noel Prince_Muthuplakal-modified-min.png" name="Noel Prince Muthuplakal" />
+		<Person pic="about-us-images/Onkit_Samanta-modified-min.png" name="Onkit Samanta" />
+		<Person pic="about-us-images/Owen_Zhang-modified-min.png" name="Owen Zhang" />
 		<Person pic="about-us-images/Reese_Long-modified-min.png" name="Reese Long" />
 		<Person pic="about-us-images/Rithwick_Pal-modified-min.png" name="Rithwick Pal" />
 		<Person pic="about-us-images/Sebastian_Kumar-modified-min.png" name="Sebastian Kumar" />
 		<Person pic="about-us-images/shak_ragoler-modified-min.png" name="Shak Ragoler" />
 		<Person pic="about-us-images/Shrey_Shah-modified-min.png" name="Shrey Shah" />
+		<Person pic="about-us-images/Soham_Kolhe-modified-min.png" name="Soham Kolhe" />
 		<Person pic="about-us-images/Wilson_Liu-modified-min.png" name="Wilson Liu" />
 	</FlexBox>
 </section>
