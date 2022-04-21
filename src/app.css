@@ -106,11 +106,6 @@ button:focus:not(:focus-visible) {
 	}
 }
 
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
 
 .flex {
 	display: flex;

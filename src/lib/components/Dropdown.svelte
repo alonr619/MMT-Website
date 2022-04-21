@@ -1,22 +1,23 @@
 <script>
     import { tweened } from 'svelte/motion';
     import { cubicOut } from 'svelte/easing';
+    import { slide } from 'svelte/transition';
     
     export let mainText; // The text you always see and click on
     
-    let showContent = "none";
+    let showContent = false;
     let imageSrc = "right-arrow.png";
     const rotateImage = tweened(-90, {
         duration: 400,
         easing: cubicOut
     });
     function toggleContent(){
-        if (showContent === "none"){
-            showContent = "block";
+        if (!showContent){
+            showContent = true;
             imageSrc = "down-arrow.png";
             rotateImage.set(0);
         } else {
-            showContent = "none";
+            showContent = false;
             imageSrc = "right-arrow.png";
             rotateImage.set(-90);
         }
@@ -33,7 +34,10 @@
     </svg>
     {mainText}
 </div>
-<div style="display: {showContent};" class="hidden-content"><slot></slot></div>
+
+{#if showContent}
+    <div style="display: block;" class="hidden-content" transition:slide={{ duration: 1000 }}><slot></slot></div>
+{/if}
 
 <style>
     .dropdown{
@@ -60,7 +64,6 @@
         width: 80%;
         font-size: 1em;
         transition: 1s;
-        animation: fadeIn 1s;
         margin-left: 5vw;
         margin-right: 5vw;
         background-color: white;
