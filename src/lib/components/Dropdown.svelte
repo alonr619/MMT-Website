@@ -36,7 +36,7 @@
 </div>
 
 {#if showContent}
-    <div style="display: block;" class="hidden-content" transition:slide={{ duration: 1000 }}><slot></slot></div>
+    <div style="display: block;" class="hidden-content" transition:slide={{ duration: 500 }}><slot></slot></div>
 {/if}
 
 <style>
