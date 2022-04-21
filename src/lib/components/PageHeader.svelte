@@ -1,7 +1,6 @@
 <script>
     export let title;
     export let description;
-    export let fadeIn = true;
 
     import Heading from '$lib/components/Heading.svelte';
     import Text from '$lib/components/Text.svelte';
