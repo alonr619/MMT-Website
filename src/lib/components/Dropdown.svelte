@@ -41,7 +41,7 @@
 
 <style>
     .dropdown{
-        width: 80%;
+        width: 88%;
         font-size: 2em;
         margin-left: 5vw;
         margin-right: 5vw;
