@@ -9,6 +9,7 @@
 </script>
 <svelte:head>
     <title>MMT 2022</title>
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/c80101147f7690b2cd88056c7/c1b36ace71c2c92203e5e792b.js");</script>
 </svelte:head>
 
 <PageHeader title="MMT 2022" description="MAY 28, 2022: 9 AM - 5 PM PT" />
