@@ -105,5 +105,6 @@
     .competition-wrapper{
         margin-right: 5vw;
         margin-left: 0vw;
+        width: 100%;
     }
 </style>
