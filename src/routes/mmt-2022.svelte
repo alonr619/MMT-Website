@@ -11,9 +11,10 @@
     <title>MMT 2022</title>
 </svelte:head>
 
-<PageHeader title="MMT 2022" description="MAY 28, 2022" />
+<PageHeader title="MMT 2022" description="MAY 28, 2022 9 AM - 5 PM PT" />
 <br /> <br />
 
+<Heading text="Rounds" size={2} textColor="#1B9AAA" />
 <div class="competition-wrapper">
     <FlexBox align="start">
         <Competition imgSource="mmt-2022/puzzlepiece.png" competition="Mounting Mayhem" description="A team puzzle round where participants are faced with a variety of logical and mathematical puzzles" />
@@ -21,8 +22,9 @@
         <Competition imgSource="mmt-2022/runninghorse.png" competition="Gallop" description="An intense, fast paced round where teams race to be at the top of the live-scored leaderboard" />
         <Competition imgSource="mmt-2022/magnifyingglass.png" competition="Mystery Mare" description="MMT's signature mystery round, where students will be introduced to the format of the round on competition day!" />
     </FlexBox>
-</div>
+</div> <br />
 
+<Heading text="Rules" size={2} textColor="#1B9AAA" />
 <Dropdown mainText="General Rules">
     <ol>
         <li>No cheating - This contest has a zero-tolerance cheating policy. Any evidence of cheating may lead to immediate disqualification, or any other punishment deemed appropriate by competition staff.</li>

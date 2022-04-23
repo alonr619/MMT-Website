@@ -78,7 +78,7 @@
 	<title>Mustang Math Tournament (MMT)</title>
 </svelte:head>
 
-<PageHeader title="Mustang Math Tournament" description="HAPPENING MAY 28TH" />
+<PageHeader title="Mustang Math Tournament" description="MAY 28, 2022 9 AM - 5 PM PT" />
 <div style="margin-left:2%; margin-right:2%">
     <Section>
             <br />
