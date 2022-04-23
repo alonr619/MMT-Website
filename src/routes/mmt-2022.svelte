@@ -11,10 +11,10 @@
     <title>MMT 2022</title>
 </svelte:head>
 
-<PageHeader title="MMT 2022" description="MAY 28, 2022 9 AM - 5 PM PT" />
+<PageHeader title="MMT 2022" description="MAY 28, 2022: 9 AM - 5 PM PT" />
 <br /> <br />
 
-<Heading text="Rounds" size={2} textColor="#1B9AAA" />
+<Heading text="Rounds" size={2.5} textColor="#1B9AAA" />
 <div class="competition-wrapper">
     <FlexBox align="start">
         <Competition imgSource="mmt-2022/puzzlepiece.png" competition="Mounting Mayhem" description="A team puzzle round where participants are faced with a variety of logical and mathematical puzzles" />
@@ -24,7 +24,7 @@
     </FlexBox>
 </div> <br />
 
-<Heading text="Rules" size={2} textColor="#1B9AAA" />
+<Heading text="Rules" size={2.5} textColor="#1B9AAA" />
 <Dropdown mainText="General Rules">
     <ol>
         <li>No cheating - This contest has a zero-tolerance cheating policy. Any evidence of cheating may lead to immediate disqualification, or any other punishment deemed appropriate by competition staff.</li>
