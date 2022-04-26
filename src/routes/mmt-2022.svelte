@@ -6,6 +6,19 @@
     import PageHeader from '$lib/components/PageHeader.svelte';
     import Competition from '$lib/components/Competition.svelte';
     import FlexBox from '$lib/components/FlexBox.svelte';
+    import Table from "$lib/components/Table.svelte";
+    import PanelBox from "$lib/components/PanelBox.svelte";
+
+    let scheduleData = [
+        { "Time": "9:00 - 9:30 AM", "Event": "Opening Ceremony" },
+        { "Time": "9:30 - 10:40 AM", "Event": "Round 1: Mounting Mayhem" },
+        { "Time": "10:40 - 11:50 AM", "Event": "Round 2: Bucking Bingo" },
+        { "Time": "11:50 - 12:50 PM", "Event": "Lunch Break" },
+        { "Time": "12:50 - 2:00 PM", "Event": "Round 3: Gallop" },
+        { "Time": "2:00 - 3:00 PM", "Event": "Round 4: Mystery Mare" },
+        { "Time": "3:00 - 4:00 PM", "Event": "Activities" },
+        { "Time": "4:00 - 5:00 PM", "Event": "Awards Ceremony" }
+    ]
 </script>
 <svelte:head>
     <title>MMT 2022</title>
@@ -23,6 +36,15 @@
         <Competition imgSource="mmt-2022/magnifyingglass.png" competition="Mystery Mare" description="MMT's signature mystery round, where students will be introduced to the format of the round on competition day!" />
     </FlexBox>
 </div> <br />
+
+<Heading text="Schedule" size={2.5} textColor="#1B9AAA" />
+<div class="schedule-wrapper">
+    <FlexBox>
+        <PanelBox>
+            <Table data={scheduleData} width="auto" />
+        </PanelBox>
+    </FlexBox>
+</div>
 
 <Heading text="Rules" size={2.5} textColor="#1B9AAA" />
 <Dropdown mainText="General Rules">
