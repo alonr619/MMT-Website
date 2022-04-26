@@ -10,7 +10,7 @@
     import PanelBox from "$lib/components/PanelBox.svelte";
 
     let scheduleData = [
-        { "Time": "9:00 - 9:30 AM", "Event": "Opening Ceremony" },
+        { "Time (PT)": "9:00 - 9:30 AM", "Event": "Opening Ceremony" },
         { "Time": "9:30 - 10:40 AM", "Event": "Round 1: Mounting Mayhem" },
         { "Time": "10:40 - 11:50 AM", "Event": "Round 2: Bucking Bingo" },
         { "Time": "11:50 - 12:50 PM", "Event": "Lunch Break" },
