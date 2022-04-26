@@ -5,6 +5,8 @@
     export let width = "100%";
     export let headerSize = 2;
     export let textSize = 1.5;
+    export let cellPadding = 0;
+    export let cellPaddingRight = cellPadding;
 </script>
 
 <table style="width: {width}">
@@ -19,7 +21,7 @@
         {#each Object.values(data) as row, i}
         <tr style="background-color: {rowColors[i%rowColors.length]}">
             {#each Object.values(row) as cell}
-            <td>{cell}</td>
+            <td style="padding: {cellPadding}px; padding-right: {cellPaddingRight}px">{cell}</td>
             {/each}
         </tr>
         {/each}
