@@ -5,9 +5,13 @@
     export let width = "100%";
     export let headerSize = 2;
     export let textSize = 1.5;
+    export let cellPadding = 0;
+    export let cellPaddingRight = cellPadding;
+    export let includeHeader = true;
 </script>
 
 <table style="width: {width}">
+    {#if includeHeader}
     <thead style="background-color: {headerColor}; font-size: {headerSize}em;">
         <tr>
             {#each Object.keys(data[0]) as heading}
@@ -15,11 +19,12 @@
             {/each}
         </tr>
     </thead>
+    {/if}
     <tbody style="font-size: {textSize}em;">
         {#each Object.values(data) as row, i}
         <tr style="background-color: {rowColors[i%rowColors.length]}">
             {#each Object.values(row) as cell}
-            <td>{cell}</td>
+            <td style="padding: {cellPadding}px; padding-right: {cellPaddingRight}px">{cell}</td>
             {/each}
         </tr>
         {/each}

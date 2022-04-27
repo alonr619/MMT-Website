@@ -6,6 +6,20 @@
     import PageHeader from '$lib/components/PageHeader.svelte';
     import Competition from '$lib/components/Competition.svelte';
     import FlexBox from '$lib/components/FlexBox.svelte';
+    import Table from "$lib/components/Table.svelte";
+    import PanelBox from "$lib/components/PanelBox.svelte";
+    import Image from '$lib/components/Image.svelte';
+
+    let scheduleData = [
+        { "Time (PT)": "9:00 - 9:30 AM", "Event": "Opening Ceremony" },
+        { "Time": "9:30 - 10:40 AM", "Event": "Round 1: Mounting Mayhem" },
+        { "Time": "10:40 - 11:50 AM", "Event": "Round 2: Bucking Bingo" },
+        { "Time": "11:50 - 12:50 PM", "Event": "Lunch Break" },
+        { "Time": "12:50 - 2:00 PM", "Event": "Round 3: Gallop" },
+        { "Time": "2:00 - 3:00 PM", "Event": "Round 4: Mystery Mare" },
+        { "Time": "3:00 - 4:00 PM", "Event": "Activities" },
+        { "Time": "4:00 - 5:00 PM", "Event": "Awards Ceremony" }
+    ]
 </script>
 <svelte:head>
     <title>MMT 2022</title>
@@ -24,12 +38,21 @@
     </FlexBox>
 </div> <br />
 
+<Heading text="Schedule" size={2.5} textColor="#1B9AAA" />
+<div class="schedule-wrapper">
+    <FlexBox>
+        <PanelBox>
+            <Table data={scheduleData} width="auto" headerColor="#FFFFFF" rowColors={["#CCC", "#EEE"]} cellPadding={5} cellPaddingRight={20}/>
+        </PanelBox>
+    </FlexBox>
+</div>
+
 <Heading text="Rules" size={2.5} textColor="#1B9AAA" />
 <Dropdown mainText="General Rules">
     <ol>
         <li>No cheating - This contest has a zero-tolerance cheating policy. Any evidence of cheating may lead to immediate disqualification, or any other punishment deemed appropriate by competition staff.</li>
         <li>No calculators, rulers, compasses, protractors, or other aids are permitted.</li>
-        <li>You may not use the Internet as a resource at any point during a test. <strong>A parent should be in the room with the student to enforce this.</strong></li>
+        <li>You may not use the Internet as a resource at any point during a test.</li>
             <ol type="a">
                 <li>In order to help enforce this, we may require teams to provide a solution for a problem during the competition - so keep track of your work!</li>
             </ol>
@@ -37,6 +60,7 @@
             <ol type="a">
                 <li>Scores, important information, documents, etc. will only be communicated through this platform on the day of the contest.</li>
                 <li>All teams should be communicating with each other on this platform ONLY.</li>
+                <li><strong>Students under 13 years of age should use a parent-created and monitored Discord account.</strong></li>
             </ol>
         <li>Teams may not collaborate with people other than the 1-4 members of their own registered team. This includes members from other teams, parents, coaches, siblings, and friends.</li>
         <li>Teams will be split into three divisions based on the sum of their grade levels. Empty spots and students 5th grade and below count for 5 “points”. The divisions are as follows:</li>
@@ -49,19 +73,15 @@
 </Dropdown>
 <Dropdown mainText="Answer Formatting Rules">
     <ol>
-        <li>All answers will be either an integer, decimal, or fractional answer, unless stated otherwise in the problem.</li>
-            <ol type="a">
-                <li>Integers should be entered with no leading 0s, no spaces, no commas, and no other characters (e.g. 50 instead of 050).</li>
-                <li>Decimals should be entered with no unnecessary trailing 0s (e.g. 2.5 instead of 2.50). Decimal answers must be exact unless the question asks for rounding (e.g. you can’t answer ⅓ in a decimal format).</li>
-                <li>Fractional answers should be represented as simplified, improper fractions with a “/” in between the numerator and denominator and no spaces or other characters (e.g. 10/7 instead of 10 / 7, 1 3/7 or 20/14).</li>
-            </ol>
-        <li>All answers should be in simplest form. This means:</li>
-            <ol type="a">
-                <li>Express all rational, non-integer answers as reduced common fractions, except in problems dealing with money.</li>
-                <li>For problems dealing with money, give the answer as a decimal rounded to the nearest cent.</li>
-                <li>All fractions and ratios must be reduced to simplest form, all radicals must be simplified, and all denominators rationalized.</li>
-            </ol>
-        <li><strong>Do NOT include units!</strong></li>
+        <li>Carry out any reasonable calculations. For instance, you should evaluate any expressions which will take negligible time to evaluate (such as 1/2+1/3). Unreasonable calculations include large powers (e.g. 7<sup>8</sup>), large factorials, large products, and trigonometric functions which cannot be expressed in terms of radicals.</li>
+        <li>Write rational numbers in lowest terms. Decimals are also acceptable, provided they are exact.</li>
+        <li>Move all square factors outside radicals. For example, write 3√7 instead of √63.</li>
+        <li>Denominators need to be rationalized. For example, write 1/√2 as √2/2 instead.</li>
+        <li>Do not express an answer using a repeated sum or product.</li>
+        <li>Here are some examples of simplified answers, and examples of unsimplified answers with simplified equivalents:
+            <div style="margin-top: 5px"><Image url="mmt-2022/acceptable-answers.png" alt="Acceptable answer examples" /></div>
+            <div style="margin-top: 5px"><Image url="mmt-2022/unacceptable-answers.png" alt="Unacceptable answer examples" /></div>
+        </li>
     </ol>
 </Dropdown>
 <Dropdown mainText="ROUND 1: Mounting Mayhem (Puzzle)">
@@ -83,8 +103,8 @@
 </Dropdown>
 <Dropdown mainText="ROUND 3: Gallop (Guts)">
     <ol>
-        <li>The Gallop Round will consist of 24 questions to be solved in 60 minutes.</li>
-        <li>The questions will be divided into 8 or 9 sets of 3 questions each, and you <strong>must submit the answers to one set</strong> before accessing the problems for the next. This means you must strategize when to submit each set (incomplete or not) to ensure you get access to as many questions as possible.</li>
+        <li>The Gallop Round will consist of 27 questions to be solved in 60 minutes.</li>
+        <li>The questions will be divided into 9 sets of 3 questions each, and you <strong>must submit the answers to one set</strong> before accessing the problems for the next. This means you must strategize when to submit each set (incomplete or not) to ensure you get access to as many questions as possible.</li>
         <li>The problems will get progressively more difficult, and later problems will be worth more points.</li>
         <li>Submissions will be scored immediately and a live score of all participating teams will be available during the competition. Prepare for the adrenaline rush!</li>
     </ol>
