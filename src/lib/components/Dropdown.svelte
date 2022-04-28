@@ -26,9 +26,9 @@
 </script>
 
 <div class="dropdown" on:click={toggleContent}>
-    <PanelBox width="88%" margin="0.3em 5vw" padding="10px 10px 10px 20px" borderRadius="25px">
+    <PanelBox width="88%" margin="0.3em 5vw" padding="10px 10px 10px 20px" borderRadius="15px">
         <svg class="dropdown-image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        width="199.404px" height="199.404px" viewBox="0 0 199.404 199.404" style="enable-background:new 0 0 199.404 199.404;"
+        width="199.404px" height="199.404px" viewBox="0 0 199.404 300.404" style="enable-background:new 0 0 199.404 199.404;"
         xml:space="preserve">
             <g>
                 <polygon points="199.404,63.993 171.12,35.709 99.702,107.127 28.284,35.709 0,63.993 99.702,163.695" transform="rotate({$rotateImage} 99.702 99.702)"/>
