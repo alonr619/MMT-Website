@@ -6,7 +6,7 @@
     export let description;
 </script>
 
-<PanelBox width="15em" height="20em">
+<PanelBox width="15em" height="20em" borderRadius="15px">
     <div class="competition-img">
         <img alt={competition} src={imgSource} />
     </div>
