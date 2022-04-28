@@ -42,5 +42,6 @@
 		<Person pic="about-us-images/Shrey_Shah-modified-min.png" name="Shrey Shah" />
 		<Person pic="about-us-images/Soham_Kolhe-modified-min.png" name="Soham Kolhe" />
 		<Person pic="about-us-images/Wilson_Liu-modified-min.png" name="Wilson Liu" />
+		<Person pic="about-us-images/Yash_Mathur-modified-min.png" name="Yash Mathur" />
 	</FlexBox>
 </section>
