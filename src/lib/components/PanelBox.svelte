@@ -4,7 +4,7 @@
     export let height = "auto";
     export let margin = "10px";
     export let padding = "10px";
-    export let borderRadius = "15px";
+    export let borderRadius = "5px";
 </script>
 
 <div class="panel-box" style="width: {width}; height: {height}; margin: {margin}; padding: {padding}; border-radius: {borderRadius}">
@@ -20,7 +20,7 @@
     }
     
     .panel-box:hover{
-        box-shadow: 10px 20px 10px rgb(0,0,0,0.1);
+        background-color: #d9f4e2;
         opacity: 1;
     }
 </style>

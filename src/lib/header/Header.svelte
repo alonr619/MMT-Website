@@ -28,11 +28,11 @@
 				MMT
 				{/if}
 			</a></li>
-			{#if windowWidth>500 || windowWidth===0}
-			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
-			<li class:active={$page.url.pathname === '/mmt-2022'}><a sveltekit:prefetch href="/mmt-2022">MMT 2022</a></li>
-			<li class:active={$page.url.pathname === '/our-team'}><a sveltekit:prefetch href="/our-team">Our Team</a></li>
-			<li class:active={$page.url.pathname === '/archive'}><a sveltekit:prefetch href="/archive">Archive</a></li>
+			{#if windowWidth>700 || windowWidth===0}
+			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/" class="textnav">Home</a></li>
+			<li class:active={$page.url.pathname === '/mmt-2022'}><a sveltekit:prefetch href="/mmt-2022" class="textnav">MMT 2022</a></li>
+			<li class:active={$page.url.pathname === '/our-team'}><a sveltekit:prefetch href="/our-team" class="textnav">Our Team</a></li>
+			<li class:active={$page.url.pathname === '/archive'}><a sveltekit:prefetch href="/archive" class="textnav">Archive</a></li>
 			{:else}
 			<div on:click={toggleMobile} id="hamburger-div">
 			<i id="hamburger-icon" class="fa fa-bars"></i>
@@ -43,10 +43,10 @@
 </header>
 {#if showMobile}
 	<div id="hamburger-links">
-		<a on:click={toggleMobile} class:active={$page.url.pathname === '/'} sveltekit:prefetch href="/">Home</a> <br />
-		<a on:click={toggleMobile} class:active={$page.url.pathname === '/mmt-2022'} sveltekit:prefetch href="/mmt-2022">MMT 2022</a> <br />
-		<a on:click={toggleMobile} class:active={$page.url.pathname === '/our-team'} sveltekit:prefetch href="/our-team">Our Team</a> <br />
-		<a on:click={toggleMobile} class:active={$page.url.pathname === '/archive'} sveltekit:prefetch href="/archive">Archive</a> <br />
+		<a on:click={toggleMobile} class:active={$page.url.pathname === '/'} sveltekit:prefetch href="/">Home</a>
+		<a on:click={toggleMobile} class:active={$page.url.pathname === '/mmt-2022'} sveltekit:prefetch href="/mmt-2022">MMT 2022</a>
+		<a on:click={toggleMobile} class:active={$page.url.pathname === '/our-team'} sveltekit:prefetch href="/our-team">Our Team</a>
+		<a on:click={toggleMobile} class:active={$page.url.pathname === '/archive'} sveltekit:prefetch href="/archive">Archive</a>
 	</div>
 {/if}
 
@@ -54,18 +54,18 @@
 	header {
 		display: flex;
 		justify-content: space-between;
+		background-color: #1c6825;
 	}
 
 	.corner {
 		width: 4em;
 		height: 4em;
-		background-color: #1c6825;
 	}
 
 	.corner a {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: left;
 		width: 100%;
 		height: 100%;
 	}
@@ -79,7 +79,6 @@
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: #1c6825;
 		width: 100%;
 	}
 
@@ -110,6 +109,7 @@
 		display: flex;
 		height: 100%;
 		align-items: center;
+		justify-content: center;
 		padding: 0 1em;
 		color: white;
 		font-size: 1rem;
@@ -117,6 +117,11 @@
 		letter-spacing: 0.1em;
 		text-decoration: none;
 		transition: color 0.2s linear;
+		width: fit-content;
+	}
+
+	.textnav {
+		min-width: 6em;
 	}
 
 	a:hover {
