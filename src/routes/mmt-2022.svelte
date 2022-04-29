@@ -17,8 +17,8 @@
         { "Time": "11:50 - 12:50 PM", "Event": "Lunch Break" },
         { "Time": "12:50 - 2:00 PM", "Event": "Round 3: Gallop" },
         { "Time": "2:00 - 3:00 PM", "Event": "Round 4: Mystery Mare" },
-        { "Time": "3:00 - 4:00 PM", "Event": "Activities" },
-        { "Time": "4:00 - 5:00 PM", "Event": "Awards Ceremony" }
+        { "Time": "3:00 - 4:00 PM", "Event": "Activities (Optional)" },
+        { "Time": "4:00 - 4:30 PM", "Event": "Awards Ceremony" }
     ]
 </script>
 <svelte:head>
@@ -47,6 +47,12 @@
     </FlexBox>
 </div>
 
+<Heading text="Awards" size={2.5} textColor="#1B9AAA" />
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox>
+        <p style="font-size: 1.5em; text-align: center;">Medals will be given to (at minimum) the members of the top 3 teams of each division, along with certificates of participation to all students and certificates of achievement to high-scoring teams. There will also be prizes for high performers during the optional activities! Other prizes may be available depending on registration volume.</p>
+    </PanelBox>
+</div>
 <Heading text="Rules" size={2.5} textColor="#1B9AAA" />
 <Dropdown mainText="General Rules">
     <ol>
