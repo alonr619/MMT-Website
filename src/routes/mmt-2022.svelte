@@ -25,7 +25,7 @@
     <title>MMT 2022</title>
 </svelte:head>
 
-<PageHeader title="MMT 2022" description="MAY 28, 2022: 9 AM - 5 PM PT" />
+<PageHeader title="MMT 2022" description="MAY 28, 2022: 9 AM-5 PM PT" />
 <br /> <br />
 
 <Heading text="Rounds" size={2.5} textColor="#1B9AAA" />
