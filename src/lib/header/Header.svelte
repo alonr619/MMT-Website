@@ -22,7 +22,7 @@
 	<nav>
 		<ul>
 			<li class:active={$page.url.pathname === '/'} style="text-align: left; width: 100%; font-weight: bold; text-decoration: none;"><a sveltekit:prefetch href="/" style="font-size: 1.25rem;">
-				{#if windowWidth > 790}
+				{#if windowWidth > 1000}
 				Mustang Math Tournament
 				{:else}
 				MMT
@@ -41,7 +41,7 @@
 		</ul>
 	</nav>
 </header>
-{#if showMobile}
+{#if showMobile && windowWidth < 700}
 	<div id="hamburger-links">
 		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === '/'} sveltekit:prefetch href="/">Home</a></div>
 		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === '/mmt-2022'} sveltekit:prefetch href="/mmt-2022">MMT 2022</a></div>
