@@ -136,13 +136,15 @@
 	}
 
 	#hamburger-div {
-		background-color: white;
 		width: 80px;
 		height: 100%;
+		display: flex;
+		align-items: center;
+		color: white;
 	}
 
 	#hamburger-links {
-		background-color: #06D6A0;
+		background-color: #65c083;
 		padding: 10px;
 	}
 
@@ -153,7 +155,7 @@
 	}
 
 	.exterior .active {
-		background-color: #65c083;
+		background-color: #1c6825;
 		text-decoration: none;
 	}
 
