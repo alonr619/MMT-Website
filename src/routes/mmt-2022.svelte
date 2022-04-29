@@ -12,25 +12,15 @@
 
     let scheduleData = [
         { "Time (PT)": "9:00 - 9:30 AM", "Event": "Opening Ceremony" },
-        { "Time": "9:30 - 10:40 AM", "Event": "Round 1: Mounting Mayhem" },
-        { "Time": "10:40 - 11:50 AM", "Event": "Round 2: Bucking Bingo" },
-        { "Time": "11:50 - 12:50 PM", "Event": "Lunch Break" },
-        { "Time": "12:50 - 2:00 PM", "Event": "Round 3: Gallop" },
-        { "Time": "2:00 - 3:00 PM", "Event": "Round 4: Mystery Mare" },
+        { "Time": "9:30 - 10:55 AM", "Event": "Round 1: Mounting Mayhem" },
+        { "Time": "10:55 - 12:05 AM", "Event": "Round 2: Bucking Bingo" },
+        { "Time": "12:05 - 1:00 PM", "Event": "Lunch Break" },
+        { "Time": "1:00 - 2:10 PM", "Event": "Round 3: Gallop" },
+        { "Time": "2:10 - 3:00 PM", "Event": "Round 4: Mystery Mare" },
         { "Time": "3:00 - 4:00 PM", "Event": "Activities (Optional)" },
         { "Time": "4:00 - 4:30 PM", "Event": "Awards Ceremony" }
     ]
 
-    let topicsData = [
-        { "Time (PT)": "9:00 - 9:30 AM", "Event": "Opening Ceremony" },
-        { "Time": "9:30 - 10:40 AM", "Event": "Round 1: Mounting Mayhem" },
-        { "Time": "10:40 - 11:50 AM", "Event": "Round 2: Bucking Bingo" },
-        { "Time": "11:50 - 12:50 PM", "Event": "Lunch Break" },
-        { "Time": "12:50 - 2:00 PM", "Event": "Round 3: Gallop" },
-        { "Time": "2:00 - 3:00 PM", "Event": "Round 4: Mystery Mare" },
-        { "Time": "3:00 - 4:00 PM", "Event": "Activities (Optional)" },
-        { "Time": "4:00 - 4:30 PM", "Event": "Awards Ceremony" }
-    ]
 </script>
 <svelte:head>
     <title>MMT 2022</title>
