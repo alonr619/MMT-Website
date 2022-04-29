@@ -91,7 +91,7 @@
 		justify-content: flex-end;
 		align-items: center;
 		list-style: none;
-		background: var(--background);
+		background: #1c6825;
 		background-size: contain;
 		width: 100%;
 	}
