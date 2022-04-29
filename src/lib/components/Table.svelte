@@ -4,7 +4,7 @@
     export let rowColors = ['#B2913D', '#E8D90E'];
     export let width = "100%";
     export let headerSize = 2;
-    export let textSize = 1.5;
+    export let textSize = 2.0;
     export let cellPadding = 0;
     export let cellPaddingRight = cellPadding;
     export let includeHeader = true;

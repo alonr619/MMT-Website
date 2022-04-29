@@ -20,6 +20,17 @@
         { "Time": "3:00 - 4:00 PM", "Event": "Activities (Optional)" },
         { "Time": "4:00 - 4:30 PM", "Event": "Awards Ceremony" }
     ]
+
+    let topicsData = [
+        { "Time (PT)": "9:00 - 9:30 AM", "Event": "Opening Ceremony" },
+        { "Time": "9:30 - 10:40 AM", "Event": "Round 1: Mounting Mayhem" },
+        { "Time": "10:40 - 11:50 AM", "Event": "Round 2: Bucking Bingo" },
+        { "Time": "11:50 - 12:50 PM", "Event": "Lunch Break" },
+        { "Time": "12:50 - 2:00 PM", "Event": "Round 3: Gallop" },
+        { "Time": "2:00 - 3:00 PM", "Event": "Round 4: Mystery Mare" },
+        { "Time": "3:00 - 4:00 PM", "Event": "Activities (Optional)" },
+        { "Time": "4:00 - 4:30 PM", "Event": "Awards Ceremony" }
+    ]
 </script>
 <svelte:head>
     <title>MMT 2022</title>
@@ -42,7 +53,7 @@
 <div class="schedule-wrapper">
     <FlexBox>
         <PanelBox>
-            <Table data={scheduleData} width="auto" headerColor="#FFFFFF" rowColors={["#65c083", "#1B9AAA"]} cellPadding={5} cellPaddingRight={20}/>
+            <Table data={scheduleData} width="auto" headerColor="#1B9AAA" rowColors={["#A4D6AF", "#ADCDD6"]} cellPadding={5} cellPaddingRight={20}/>
         </PanelBox>
     </FlexBox>
 </div>
@@ -89,6 +100,192 @@
             <div style="margin-top: 5px"><Image url="mmt-2022/unacceptable-answers.png" alt="Unacceptable answer examples" /></div>
         </li>
     </ol>
+</Dropdown>
+<Dropdown mainText="Potential Topics Covered">
+    <div class = "row">
+        <div class = "column">
+            <b>Algebra</b>
+            <ul>
+                <li>
+                    <p>Systems of equations</p>
+                </li>
+                <li>
+                    <p>Quadratics</p>
+                </li>
+                <li>
+                    <p>Vieta&rsquo;s</p>
+                </li>
+                <li>
+                    <p>Binomial Theorem</p>
+                </li>
+                <li>
+                    <p>Radicals/Exponents</p>
+                </li>
+                <li>
+                    <p>Simon&rsquo;s Favorite Factoring Trick</p>
+                </li>
+                <li>
+                    <p>Ratios</p>
+                </li>
+                <li>
+                    <p>(Infinite) Geometric Series</p>
+                </li>
+                <li>
+                    <p>Arithmetic Series</p>
+                </li>
+                <li>
+                    <p>Sum/Difference of Powers</p>
+                </li>
+                <li>
+                    <p>Rate/Time</p>
+                </li>
+                <li>
+                    <p>Floor/Ceiling</p>
+                </li>
+                <li>
+                    <p>Absolute Value</p>
+                </li>
+                <li>
+                    <p>Substitution (Nested Roots/Repeated Fractions)</p>
+                </li>
+                <li>
+                    <p>Mean, Median, Mode, Range</p>
+                </li>
+                <li>
+                    <p>Telescoping</p>
+                </li>
+            </ul>
+        </div>
+        <div class = "column">
+            <b>Combinatorics</b>
+            <ul>
+                <li>
+                    <p>Sticks and Stones</p>
+                </li>
+                <li>
+                    <p>Permutation/Combination</p>
+                </li>
+                <li>
+                    <p>Properties of Inclusion Exclusion for three or less sets</p>
+                </li>
+                <li>
+                    <p>Basic Geometric Probability</p>
+                </li>
+                <li>
+                    <p>Conditional Probability</p>
+                </li>
+                <li>
+                    <p>Expected Values</p>
+                </li>
+                <li>
+                    <p>Complementary Counting</p>
+                </li>
+                <li>
+                    <p>Recursion</p>
+                </li>
+                <li>
+                    <p>Bijections</p>
+                </li>
+                <li>
+                    <p>Casework</p>
+                </li>
+                <li>
+                    <p>Pigeonhole Principle</p>
+                </li>
+                <li>
+                    <p>Double-counting</p>
+                </li>
+                <li>
+                    <p>Basic Invariants</p>
+                </li>
+            </ul>
+        </div>
+        <div class = "column">
+            <b>Geometry</b>
+            <ul>
+                <li>
+                    <p>Area Formulas</p>
+                </li>
+                <li>
+                    <p>Volume Formulas</p>
+                </li>
+                <li>
+                    <p>Shoelace Formula</p>
+                </li>
+                <li>
+                    <p>Pythagorean Theorem</p>
+                </li>
+                <li>
+                    <p>Distance Formula</p>
+                </li>
+                <li>
+                    <p>Similar Triangles</p>
+                </li>
+                <li>
+                    <p>Angle Chasing</p>
+                </li>
+                <li>
+                    <p>Power of a Point</p>
+                </li>
+                <li>
+                    <p>Basic Mass Points</p>
+                </li>
+                <li>
+                    <p>Heron&rsquo;s Formula</p>
+                </li>
+                <li>
+                    <p>Pick&rsquo;s Theorem</p>
+                </li>
+                <li>
+                    <p>Surface Area for Pyramids, Prisms, and Cones.</p>
+                </li>
+                <li>
+                    <p>Arcs and Sectors</p>
+                </li>
+                <li>
+                    <p>Angle Bisector Theorem</p>
+                </li>
+                <li>
+                    <p>Internal/External Angles</p>
+                </li>
+            </ul>
+        </div>
+        <div class = "column">
+            <b>Number Theory</b>
+            <ul>
+                <li>
+                    <p>Fermat&rsquo;s Little Theorem&nbsp;</p>
+                </li>
+                <li>
+                    <p>Euclidean Algorithm</p>
+                </li>
+                <li>
+                    <p>Chinese Remainder Theorem</p>
+                </li>
+                <li>
+                    <p>Divisibility</p>
+                </li>
+                <li>
+                    <p>Chicken McNugget Theorem</p>
+                </li>
+                <li>
+                    <p>GCD and LCM</p>
+                </li>
+                <li>
+                    <p>Number of Factors</p>
+                </li>
+                <li>
+                    <p>Sum of Factors</p>
+                </li>
+                <li>
+                    <p>Basic Modular Arithmetic</p>
+                </li>
+                <li>
+                    <p>Fundamental Theorem of Arithmetic</p>
+                </li>
+            </ul>
+        </div>
+    </div>
 </Dropdown>
 <Dropdown mainText="ROUND 1: Mounting Mayhem (Puzzle)">
     <ol>
