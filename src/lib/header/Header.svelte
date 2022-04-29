@@ -43,10 +43,10 @@
 </header>
 {#if showMobile}
 	<div id="hamburger-links">
-		<a on:click={toggleMobile} class:active={$page.url.pathname === '/'} sveltekit:prefetch href="/">Home</a>
-		<a on:click={toggleMobile} class:active={$page.url.pathname === '/mmt-2022'} sveltekit:prefetch href="/mmt-2022">MMT 2022</a>
-		<a on:click={toggleMobile} class:active={$page.url.pathname === '/our-team'} sveltekit:prefetch href="/our-team">Our Team</a>
-		<a on:click={toggleMobile} class:active={$page.url.pathname === '/archive'} sveltekit:prefetch href="/archive">Archive</a>
+		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === '/'} sveltekit:prefetch href="/">Home</a></div>
+		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === '/mmt-2022'} sveltekit:prefetch href="/mmt-2022">MMT 2022</a></div>
+		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === '/our-team'} sveltekit:prefetch href="/our-team">Our Team</a></div>
+		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === '/archive'} sveltekit:prefetch href="/archive">Archive</a></div>
 	</div>
 {/if}
 
@@ -143,9 +143,22 @@
 
 	#hamburger-links {
 		background-color: #06D6A0;
+		padding: 10px;
 	}
 
-	#hamburger-links > a{
+	.exterior {
+		display: flex;
 		justify-content: center;
+		align-items: center;
+	}
+
+	.exterior .active {
+		background-color: #65c083;
+		text-decoration: none;
+	}
+
+	#hamburger-links a {
+		padding: 10px;
+		text-align: center;
 	}
 </style>
