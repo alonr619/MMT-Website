@@ -42,7 +42,7 @@
 <div class="schedule-wrapper">
     <FlexBox>
         <PanelBox>
-            <Table data={scheduleData} width="auto" headerColor="#FFFFFF" rowColors={["#CCC", "#EEE"]} cellPadding={5} cellPaddingRight={20}/>
+            <Table data={scheduleData} width="auto" headerColor="#FFFFFF" rowColors={["#65c083", "#5b8064"]} cellPadding={5} cellPaddingRight={20}/>
         </PanelBox>
     </FlexBox>
 </div>
