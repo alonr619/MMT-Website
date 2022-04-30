@@ -21,6 +21,13 @@
         { "Time": "4:00 - 4:30 PM", "Event": "Awards Ceremony" }
     ]
 
+    let topicsCovered = [
+        { "Algebra": "<ul><li>Systems of equations</li> <li>Quadratics</li> <li>Vieta’s</li> <li>Binomial Theorem</li> <li>Radicals/Exponents</li> <li>Simon’s Favorite Factoring Trick</li> <li>Ratios</li> <li>(Infinite) Geometric Series</li> <li>Arithmetic Series</li> <li>Sum/Difference of Powers</li> <li>Rate/Time</li> <li>Floor/Ceiling</li> <li>Absolute Value</li> <li>Substitution (Nested Roots/Repeated Fractions)</li> <li>Mean, Median, Mode, Range</li> <li>Telescoping</li></ul>",
+        "Combinatorics": "<ul><li>Sticks and Stones</li> <li>Permutation/Combination</li> <li>Properties of Inclusion Exclusion for three or less sets</li> <li>Basic Geometric Probability</li> <li>Conditional Probability</li> <li>Expected Values</li> <li>Complementary Counting</li> <li>Recursion</li> <li>Bijections</li> <li>Casework</li> <li>Pigeonhole Principle</li> <li>Double-counting</li> <li>Basic Invariants</li></ul>",
+        "Geometry": "<ul><li>Area Formulas</li> <li>Volume Formulas</li> <li>Shoelace Formula</li> <li>Pythagorean Theorem</li> <li>Distance Formula</li> <li>Similar Triangles</li> <li>Angle Chasing</li> <li>Power of a Point</li> <li>Basic Mass Points</li> <li>Heron’s Formula</li> <li>Pick’s Theorem</li> <li>Surface Area for Pyramids, Prisms, and Cones</li> <li>Arcs and Sectors</li> <li>Angle Bisector Theorem</li> <li>Internal/External Angles</li></ul>",
+        "Number Theory": "<ul><li>Fermat’s Little Theorem</li> <li>Euclidean Algorithm</li> <li>Chinese Remainder Theorem</li> <li>Divisibility</li> <li>Chicken McNugget Theorem</li> <li>GCD and LCM</li> <li>Number of Factors</li> <li>Sum of Factors</li> <li>Basic Modular Arithmetic</li> <li>Fundamental Theorem of Arithmetic</li></ul>" }
+    ]
+
 </script>
 <svelte:head>
     <title>MMT 2022</title>
@@ -46,14 +53,15 @@
             <Table data={scheduleData} width="auto" headerColor="#1B9AAA" rowColors={["#A4D6AF", "#ADCDD6"]} cellPadding={5} cellPaddingRight={20}/>
         </PanelBox>
     </FlexBox>
-</div>
+</div> <br />
 
 <Heading text="Awards" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;">Medals will be given to (at minimum) the members of the top 3 teams of each division, along with certificates of participation to all students and certificates of achievement to high-scoring teams. There will also be prizes for high performers during the optional activities! Other prizes may be available depending on registration volume.</p>
     </PanelBox>
-</div>
+</div> <br />
+
 <Heading text="Rules" size={2.5} textColor="#1B9AAA" />
 <Dropdown mainText="General Rules">
     <ol>
@@ -92,190 +100,8 @@
     </ol>
 </Dropdown>
 <Dropdown mainText="Potential Topics Covered">
-    <div class = "row">
-        <div class = "column">
-            <b>Algebra</b>
-            <ul>
-                <li>
-                    <p>Systems of equations</p>
-                </li>
-                <li>
-                    <p>Quadratics</p>
-                </li>
-                <li>
-                    <p>Vieta&rsquo;s</p>
-                </li>
-                <li>
-                    <p>Binomial Theorem</p>
-                </li>
-                <li>
-                    <p>Radicals/Exponents</p>
-                </li>
-                <li>
-                    <p>Simon&rsquo;s Favorite Factoring Trick</p>
-                </li>
-                <li>
-                    <p>Ratios</p>
-                </li>
-                <li>
-                    <p>(Infinite) Geometric Series</p>
-                </li>
-                <li>
-                    <p>Arithmetic Series</p>
-                </li>
-                <li>
-                    <p>Sum/Difference of Powers</p>
-                </li>
-                <li>
-                    <p>Rate/Time</p>
-                </li>
-                <li>
-                    <p>Floor/Ceiling</p>
-                </li>
-                <li>
-                    <p>Absolute Value</p>
-                </li>
-                <li>
-                    <p>Substitution (Nested Roots/Repeated Fractions)</p>
-                </li>
-                <li>
-                    <p>Mean, Median, Mode, Range</p>
-                </li>
-                <li>
-                    <p>Telescoping</p>
-                </li>
-            </ul>
-        </div>
-        <div class = "column">
-            <b>Combinatorics</b>
-            <ul>
-                <li>
-                    <p>Sticks and Stones</p>
-                </li>
-                <li>
-                    <p>Permutation/Combination</p>
-                </li>
-                <li>
-                    <p>Properties of Inclusion Exclusion for three or less sets</p>
-                </li>
-                <li>
-                    <p>Basic Geometric Probability</p>
-                </li>
-                <li>
-                    <p>Conditional Probability</p>
-                </li>
-                <li>
-                    <p>Expected Values</p>
-                </li>
-                <li>
-                    <p>Complementary Counting</p>
-                </li>
-                <li>
-                    <p>Recursion</p>
-                </li>
-                <li>
-                    <p>Bijections</p>
-                </li>
-                <li>
-                    <p>Casework</p>
-                </li>
-                <li>
-                    <p>Pigeonhole Principle</p>
-                </li>
-                <li>
-                    <p>Double-counting</p>
-                </li>
-                <li>
-                    <p>Basic Invariants</p>
-                </li>
-            </ul>
-        </div>
-        <div class = "column">
-            <b>Geometry</b>
-            <ul>
-                <li>
-                    <p>Area Formulas</p>
-                </li>
-                <li>
-                    <p>Volume Formulas</p>
-                </li>
-                <li>
-                    <p>Shoelace Formula</p>
-                </li>
-                <li>
-                    <p>Pythagorean Theorem</p>
-                </li>
-                <li>
-                    <p>Distance Formula</p>
-                </li>
-                <li>
-                    <p>Similar Triangles</p>
-                </li>
-                <li>
-                    <p>Angle Chasing</p>
-                </li>
-                <li>
-                    <p>Power of a Point</p>
-                </li>
-                <li>
-                    <p>Basic Mass Points</p>
-                </li>
-                <li>
-                    <p>Heron&rsquo;s Formula</p>
-                </li>
-                <li>
-                    <p>Pick&rsquo;s Theorem</p>
-                </li>
-                <li>
-                    <p>Surface Area for Pyramids, Prisms, and Cones.</p>
-                </li>
-                <li>
-                    <p>Arcs and Sectors</p>
-                </li>
-                <li>
-                    <p>Angle Bisector Theorem</p>
-                </li>
-                <li>
-                    <p>Internal/External Angles</p>
-                </li>
-            </ul>
-        </div>
-        <div class = "column">
-            <b>Number Theory</b>
-            <ul>
-                <li>
-                    <p>Fermat&rsquo;s Little Theorem&nbsp;</p>
-                </li>
-                <li>
-                    <p>Euclidean Algorithm</p>
-                </li>
-                <li>
-                    <p>Chinese Remainder Theorem</p>
-                </li>
-                <li>
-                    <p>Divisibility</p>
-                </li>
-                <li>
-                    <p>Chicken McNugget Theorem</p>
-                </li>
-                <li>
-                    <p>GCD and LCM</p>
-                </li>
-                <li>
-                    <p>Number of Factors</p>
-                </li>
-                <li>
-                    <p>Sum of Factors</p>
-                </li>
-                <li>
-                    <p>Basic Modular Arithmetic</p>
-                </li>
-                <li>
-                    <p>Fundamental Theorem of Arithmetic</p>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <Table data={topicsCovered} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top;" tableStyle="table-layout: fixed; padding: 10px;" />
+    <p id="disclaimer">Disclaimer: While most problems should fall within the scope of these topics, there may be a few that are not.</p>
 </Dropdown>
 <Dropdown mainText="ROUND 1: Mounting Mayhem (Puzzle)">
     <ol>
@@ -308,8 +134,7 @@
         <li>Hints about the nature of the round will be revealed as the competition date nears.</li>
         <li>We promise it will be as fun and engaging as the other rounds. :)</li>
     </ol>
-</Dropdown>
-<br /> <br /> <br />
+</Dropdown> <br />
 
 <style>
     li {
@@ -319,5 +144,8 @@
         margin-right: 5vw;
         margin-left: 0vw;
         width: 100%;
+    }
+    #disclaimer{
+        margin-left: 1em;
     }
 </style>

@@ -8,9 +8,11 @@
     export let cellPadding = 0;
     export let cellPaddingRight = cellPadding;
     export let includeHeader = true;
+    export let cellStyle = "";
+    export let tableStyle = "";
 </script>
 
-<table style="width: {width}">
+<table style="width: {width}; {tableStyle}">
     {#if includeHeader}
     <thead style="background-color: {headerColor}; font-size: {headerSize}em;">
         <tr>
@@ -24,9 +26,15 @@
         {#each Object.values(data) as row, i}
         <tr style="background-color: {rowColors[i%rowColors.length]}">
             {#each Object.values(row) as cell}
-            <td style="padding: {cellPadding}px; padding-right: {cellPaddingRight}px">{cell}</td>
+            <td style="padding: {cellPadding}px; padding-right: {cellPaddingRight}px; {cellStyle}">{@html cell}</td>
             {/each}
         </tr>
         {/each}
     </tbody>
 </table>
+
+<style>
+    th{
+        padding: 5px;
+    }
+</style>
