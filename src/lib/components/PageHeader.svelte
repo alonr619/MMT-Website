@@ -16,10 +16,9 @@
     })
 
     let y;
-    let width;
 </script>
 
-<svelte:window bind:scrollY={y} bind:outerWidth={width}/>
+<svelte:window bind:scrollY={y}/>
 
 <div class="header flex">   
     {#if visible}
@@ -41,6 +40,7 @@
 	text-align: center;
     background: #708E97;
     position: relative;
+    overflow: hidden;
 }
 
 .svg {
