@@ -121,7 +121,7 @@
 	}
 
 	.textnav {
-		min-width: 6em;
+		min-width: 6.1em;
 	}
 
 	a:hover {
