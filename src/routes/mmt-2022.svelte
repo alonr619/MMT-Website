@@ -90,14 +90,11 @@
         </li>
     </ol>
 </Dropdown>
-<<<<<<< Updated upstream
-=======
 <Dropdown mainText="Potential Topics Covered">
     <Table data={topicsCovered} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top;" tableStyle="table-layout: fixed; padding: 10px;" />
     <p id="disclaimer">Disclaimer: While most problems should fall within the scope of these topics, there may be a few that are not.</p>
     <p id="mobile warning">Note: if you are on mobile, this may not load correctly. This will be fixed soon.</p>
 </Dropdown>
->>>>>>> Stashed changes
 <Dropdown mainText="ROUND 1: Mounting Mayhem (Puzzle)">
     <ol>
         <li>The Mounting Mayhem Round will consist of some mathematical-based puzzle questions. Students will have 60 minutes to solve as many of them as possible.</li>
