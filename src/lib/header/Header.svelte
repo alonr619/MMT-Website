@@ -1,6 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import logo from './MMTLogo.png';
+    import { slide } from "svelte/transition";
 	let windowWidth = 0;
 	let showMobile = false;
 	function toggleMobile(){
@@ -42,7 +43,7 @@
 	</nav>
 </header>
 {#if showMobile && windowWidth < 700}
-	<div id="hamburger-links">
+	<div id="hamburger-links" transition:slide|local={{ duration: 300 }}>
 		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === '/'} sveltekit:prefetch href="/">Home</a></div>
 		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === '/mmt-2022'} sveltekit:prefetch href="/mmt-2022">MMT 2022</a></div>
 		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === '/our-team'} sveltekit:prefetch href="/our-team">Our Team</a></div>
