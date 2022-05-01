@@ -146,7 +146,7 @@
         background-color: #FFF;
         width: 100%;
         position: absolute;
-        bottom: 0;
+        bottom: -2px;
         left: 0;
     }
 
