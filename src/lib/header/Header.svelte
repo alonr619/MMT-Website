@@ -1,8 +1,7 @@
 <script>
-	import { navigating, page } from '$app/stores';
+	import { page } from '$app/stores';
 	import logo from './MMTLogo.png';
     import { slide, crossfade } from "svelte/transition";
-    import { quintOut } from "svelte/easing";
 	let windowWidth = 0;
 	let showMobile = false;
 	function toggleMobile(){
