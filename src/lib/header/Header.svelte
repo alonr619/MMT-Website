@@ -16,7 +16,7 @@
         {path: "/", text: "Home"},
         {path: "/mmt-2022", text: "MMT 2022"},
         {path: "/our-team", text: "Our Team"},
-        {path: "/archive", text: "Archive"}
+        {path: "/archive", text: "Past Exams"}
     ]
 </script>
 
@@ -148,7 +148,7 @@
     }
 
 	.textnav {
-		min-width: 6.1em;
+		min-width: 7.5em;
 	}
 
 	a:hover {
