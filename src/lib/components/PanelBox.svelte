@@ -20,7 +20,7 @@
     }
     
     .panel-box:hover{
-        background-color: #d9f4e2;
+        background-color: #ecf7f0;
         opacity: 1;
     }
 </style>
