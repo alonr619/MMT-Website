@@ -16,8 +16,11 @@
         {path: "/", text: "Home"},
         {path: "/mmt-2022", text: "MMT 2022"},
         {path: "/our-team", text: "Our Team"},
-        {path: "/archive", text: "Archive"}
+        {path: "/past-exams", text: "Past Exams"}
     ]
+
+    const HAMBURGER_BREAKPOINT = 770; // change if adding more pages
+    const MMT_BREAKPOINT = HAMBURGER_BREAKPOINT+310;
 </script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,13 +37,13 @@
 	<nav>
 		<ul>
 			<li class:active={$page.url.pathname === '/'} style="text-align: left; width: 100%; font-weight: bold; text-decoration: none;"><a sveltekit:prefetch href="/" style="font-size: 1.25rem;">
-				{#if windowWidth > 1000}
+				{#if windowWidth > MMT_BREAKPOINT}
 				Mustang Math Tournament
 				{:else}
 				MMT
 				{/if}
 			</a></li>
-			{#if windowWidth>700 || windowWidth===0}
+			{#if windowWidth > HAMBURGER_BREAKPOINT || windowWidth===0}
                 {#each navPages as navPage (navPage.path)}
                 <li>
                     <a sveltekit:prefetch href="{navPage.path}" class="textnav">
@@ -60,7 +63,7 @@
 		</ul>
 	</nav>
 </header>
-{#if showMobile && windowWidth < 700}
+{#if showMobile && windowWidth < HAMBURGER_BREAKPOINT}
 	<div id="hamburger-links" transition:slide|local={{ duration: 300 }}>
         {#each navPages as navPage (navPage.path)}
 		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === navPage.path} sveltekit:prefetch href="{navPage.path}">{navPage.text}</a></div>
@@ -143,12 +146,12 @@
         background-color: #FFF;
         width: 100%;
         position: absolute;
-        bottom: 0;
+        bottom: -2px;
         left: 0;
     }
 
 	.textnav {
-		min-width: 6.1em;
+		min-width: 7.5em;
 	}
 
 	a:hover {
