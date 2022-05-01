@@ -63,11 +63,10 @@
 </header>
 {#if showMobile && windowWidth < 700}
 	<div id="hamburger-links" transition:slide|local={{ duration: 300 }}>
-		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === '/'} sveltekit:prefetch href="/">Home</a></div>
-		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === '/mmt-2022'} sveltekit:prefetch href="/mmt-2022">MMT 2022</a></div>
-		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === '/our-team'} sveltekit:prefetch href="/our-team">Our Team</a></div>
-		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === '/archive'} sveltekit:prefetch href="/archive">Archive</a></div>
-	</div>
+        {#each navPages as navPage (navPage.path)}
+		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === navPage.path} sveltekit:prefetch href="{navPage.path}">{navPage.text}</a></div>
+		{/each}
+    </div>
 {/if}
 
 <style>
