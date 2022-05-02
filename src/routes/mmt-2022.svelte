@@ -170,20 +170,20 @@
 </Dropdown>
 <Dropdown mainText="FAQ">
     <p>
-        Q: I'm a parent or a student, not a coach - how can I register? <br />
-        A: MMT doesn't require you to be a coach! A parent can act as a coach (and register as a coach on ContestDojo) to create an organization and team(s) for their participating students. <strong>Students should not create coach accounts.</strong>
+        <strong>Q:</strong> I'm a parent or a student, not a coach - how can I register? <br />
+        <strong>A:</strong> MMT doesn't require you to be a coach! A parent can act as a coach (and register as a coach on ContestDojo) to create an organization and team(s) for their participating students. <strong>Students should not create coach accounts.</strong>
     </p>
     <p>
-        Q: I have students that are interested in participating, but they are not a full team of 4 and would like to be paired up with other incomplete teams! How can we do this? <br />
-        A: Use our <a href="https://tinyurl.com/MMTT2022TeammateFinder" target="_blank">Teammate Finder Spreadsheet</a>! There, you can input your parent/coach contact information and find others to join your team!
+        <strong>Q:</strong> I have students that are interested in participating, but they are not a full team of 4 and would like to be paired up with other incomplete teams! How can we do this? <br />
+        <strong>A:</strong> Use our <a href="https://tinyurl.com/MMTT2022TeammateFinder" target="_blank">Teammate Finder Spreadsheet</a>! There, you can input your parent/coach contact information and find others to join your team!
     </p>
     <p>
-        Q: Do we have to participate separately from our own homes? Or can our entire team meet up and take the test together? <br />
-        A: Absolutely, your team can meet up and take the test together! We still require that your team is present on Discord with the video on and all members visible so that you can receive information in a timely manner!
+        <strong>Q:</strong> Do we have to participate separately from our own homes? Or can our entire team meet up and take the test together? <br />
+        <strong>A:</strong> Absolutely, your team can meet up and take the test together! We still require that your team is present on Discord with the video on and all members visible so that you can receive information in a timely manner!
     </p>
     <p>
-        Q: Where can I find practice material for the tests? How can we prepare? <br />
-        A: You can take a look at our <a sveltekit:prefetch href="/archive">past tests</a>, and we also highly recommend looking at <a sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
+        <strong>Q:</strong> Where can I find practice material for the tests? How can we prepare? <br />
+        <strong>A:</strong> You can take a look at our <a sveltekit:prefetch href="/archive">past tests</a>, and we also highly recommend looking at <a sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
     </p>
 </Dropdown>
 <br />
