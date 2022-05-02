@@ -6,20 +6,19 @@
     
     export let mainText; // The text you always see and click on
     
-    let showContent = false;
+    export let showContent = false;
     let imageSrc = "right-arrow.png";
-    const rotateImage = tweened(-90, {
+    let start = showContent ? 0 : -90;
+    const rotateImage = tweened(start, {
         duration: 400,
         easing: cubicOut
     });
     function toggleContent(){
         if (!showContent){
             showContent = true;
-            imageSrc = "down-arrow.png";
             rotateImage.set(0);
         } else {
             showContent = false;
-            imageSrc = "right-arrow.png";
             rotateImage.set(-90);
         }
     }

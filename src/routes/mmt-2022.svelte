@@ -58,7 +58,7 @@
 
 <PageHeader title="MMT 2022" description="MAY 28, 2022: 9 AM - 5 PM PT" />
 <br /> <br />
-<Dropdown mainText="Registration Instructions and Information">
+<Dropdown mainText="Registration Instructions and Information" showContent={true}>
     <ol start=0>
     <li>If you have a partial team (1-3 members) and are interested in getting to a full one, consider using our <a target="_blank" sveltekit:prefetch href="https://tinyurl.com/MMT2022TeammateFinder">Teammate Finder Spreadsheet</a>. You can input your contact information and also contact other parents/coaches to try to find teammates for your students!</li>
     <li>Our registration is managed by <a target="_blank" sveltekit:prefetch href="https://contestdojo.com">ContestDojo</a> - if you are a coach for a math team, or just a parent registering your child's team, you should create a Coaches account on ContestDojo. Note - it may ask you to affirm that you are an 'official representative' for your organization - you can just click that checkbox to move on, we don't require you to be an official representative at MMT.</li>
