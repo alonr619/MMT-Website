@@ -38,7 +38,7 @@
 .header {
 	height: 85vh;
 	text-align: center;
-    background: #E86FB3;
+    background: #708E97;
     position: relative;
     overflow: hidden;
 }
