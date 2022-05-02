@@ -67,7 +67,7 @@
     <li>Students should also try taking the 'ContestDojo Practice Round' in their portals! This is helpful in making sure that they understand how our test portal works and are all set for competition day!</li>
     <li>You should be all set to go for the tournament! As always, email us at <a target="_blank" href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a> if you have any confusion or issues!</li>
     </ol>
-</Dropdown>
+</Dropdown> <br />
 
 <Heading text="Rounds" size={2.5} textColor="#1B9AAA" />
 <div class="competition-wrapper">
