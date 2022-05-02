@@ -58,6 +58,16 @@
 
 <PageHeader title="MMT 2022" description="MAY 28, 2022: 9 AM - 5 PM PT" />
 <br /> <br />
+<Dropdown mainText="Registration Instructions and Information">
+    <ol start=0>
+    <li>If you have a partial team (1-3 members) and are interested in getting to a full one, consider using our <a target="_blank" sveltekit:prefetch href="https://tinyurl.com/MMT2022TeammateFinder">Teammate Finder Spreadsheet</a>. You can input your contact information and also contact other parents/coaches to try to find teammates for your students!</li>
+    <li>Our registration is managed by <a target="_blank" sveltekit:prefetch href="https://contestdojo.com">ContestDojo</a> - if you are a coach for a math team, or just a parent registering your child's team, you should create a Coaches account on ContestDojo. Note - it may ask you to affirm that you are an 'official representative' for your organization - you can just click that checkbox to move on, we don't require you to be an official representative at MMT.</li>
+    <li>Once you create your coaches account, you can click the little 'register' button for MMT 2022. Once you do that, you can add your students to your portal, buy the 'seats' for your students through Stripe, and create and organize your organization's teams! Registration cost is $10 per participant. If you have need for a partial or full fee waiver, please email us at <a target="_blank" href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a> detailing your request.</li>
+    <li>Once added to the coaches portal, students should receive an email from ContestDojo detailing how to login to their account. Students should look for this email and login so that they may request their waiver within their portal. The waiver is super basic and simple - we just want to affirm that your child is eligible to participate and does so in the proper manner.</li>
+    <li>Students should also try taking the 'ContestDojo Practice Round' in their portals! This is helpful in making sure that they understand how our test portal works and are all set for competition day!</li>
+    <li>You should be all set to go for the tournament! As always, email us at <a target="_blank" href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a> if you have any confusion or issues!</li>
+    </ol>
+</Dropdown>
 
 <Heading text="Rounds" size={2.5} textColor="#1B9AAA" />
 <div class="competition-wrapper">
@@ -175,7 +185,7 @@
     </p>
     <p>
         <strong>Q:</strong> I have students that are interested in participating, but they are not a full team of 4 and would like to be paired up with other incomplete teams! How can we do this? <br />
-        <strong>A:</strong> Use our <a href="https://tinyurl.com/MMTT2022TeammateFinder" target="_blank">Teammate Finder Spreadsheet</a>! There, you can input your parent/coach contact information and find others to join your team!
+        <strong>A:</strong> Use our <a href="https://tinyurl.com/MMT2022TeammateFinder" target="_blank">Teammate Finder Spreadsheet</a>! There, you can input your parent/coach contact information and find others to join your team!
     </p>
     <p>
         <strong>Q:</strong> Do we have to participate separately from our own homes? Or can our entire team meet up and take the test together? <br />
@@ -183,7 +193,7 @@
     </p>
     <p>
         <strong>Q:</strong> Where can I find practice material for the tests? How can we prepare? <br />
-        <strong>A:</strong> You can take a look at our <a sveltekit:prefetch href="/archive">past tests</a>, and we also highly recommend looking at <a sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
+        <strong>A:</strong> You can take a look at our <a target="_blank" sveltekit:prefetch href="/past-exams">past tests</a>, and we also highly recommend looking at <a target="_blank" sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a target="_blank" sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a target="_blank" sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
     </p>
 </Dropdown>
 <br />
