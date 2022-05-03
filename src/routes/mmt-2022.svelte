@@ -179,24 +179,22 @@
     </ol>
 </Dropdown>
 <Dropdown mainText="FAQ">
-    <div class="faq-div">
-        <p>
-            <strong>Q:</strong> I'm a parent or a student, not a coach - how can I register? <br />
-            <strong>A:</strong> MMT doesn't require you to be a coach! A parent can act as a coach (and register as a coach on ContestDojo) to create an organization and team(s) for their participating students. <strong>Students should not create coach accounts.</strong>
-        </p>
-        <p>
-            <strong>Q:</strong> I have students that are interested in participating, but they are not a full team of 4 and would like to be paired up with other incomplete teams! How can we do this? <br />
-            <strong>A:</strong> Use our <a href="https://tinyurl.com/MMT2022TeammateFinder" target="_blank">Teammate Finder Spreadsheet</a>! There, you can input your parent/coach contact information and find others to join your team!
-        </p>
-        <p>
-            <strong>Q:</strong> Do we have to participate separately from our own homes? Or can our entire team meet up and take the test together? <br />
-            <strong>A:</strong> Absolutely, your team can meet up and take the test together! We still require that your team is present on Discord with the video on and all members visible so that you can receive information in a timely manner!
-        </p>
-        <p>
-            <strong>Q:</strong> Where can I find practice material for the tests? How can we prepare? <br />
-            <strong>A:</strong> You can take a look at our <a target="_blank" sveltekit:prefetch href="/past-exams">past tests</a>, and we also highly recommend looking at <a target="_blank" sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a target="_blank" sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a target="_blank" sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
-        </p>
-    </div>
+    <p>
+        <strong>Q:</strong> I'm a parent or a student, not a coach - how can I register? <br />
+        <strong>A:</strong> MMT doesn't require you to be a coach! A parent can act as a coach (and register as a coach on ContestDojo) to create an organization and team(s) for their participating students. <strong>Students should not create coach accounts.</strong>
+    </p>
+    <p>
+        <strong>Q:</strong> I have students that are interested in participating, but they are not a full team of 4 and would like to be paired up with other incomplete teams! How can we do this? <br />
+        <strong>A:</strong> Use our <a href="https://tinyurl.com/MMT2022TeammateFinder" target="_blank">Teammate Finder Spreadsheet</a>! There, you can input your parent/coach contact information and find others to join your team!
+    </p>
+    <p>
+        <strong>Q:</strong> Do we have to participate separately from our own homes? Or can our entire team meet up and take the test together? <br />
+        <strong>A:</strong> Absolutely, your team can meet up and take the test together! We still require that your team is present on Discord with the video on and all members visible so that you can receive information in a timely manner!
+    </p>
+    <p>
+        <strong>Q:</strong> Where can I find practice material for the tests? How can we prepare? <br />
+        <strong>A:</strong> You can take a look at our <a target="_blank" sveltekit:prefetch href="/past-exams">past tests</a>, and we also highly recommend looking at <a target="_blank" sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a target="_blank" sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a target="_blank" sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
+    </p>
 </Dropdown>
 <br />
 
@@ -211,9 +209,5 @@
     }
     #disclaimer{
         margin-left: 1em;
-    }
-
-    .faq-div {
-        padding-left: 22px;
     }
 </style>
