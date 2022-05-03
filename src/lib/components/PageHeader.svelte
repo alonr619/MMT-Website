@@ -39,7 +39,7 @@
 	height: 85vh;
 	text-align: center;
     background-color: #708E97;
-    background-image: url("splash.png");
+    background-image: url("/splash.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
