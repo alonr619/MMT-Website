@@ -38,7 +38,11 @@
 .header {
 	height: 85vh;
 	text-align: center;
-    background: #708E97;
+    background-color: #708E97;
+    background-image: url("/splash.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
 }

@@ -40,8 +40,8 @@
 
 {#if showContent}
     <div style="display: block;" class="hidden-content" transition:slide|local={{ duration: 500 }}>
-        <PanelBox width="85%" margin="0 5vw" borderRadius="25px">
-                <slot></slot>
+        <PanelBox width="88%" margin="0 5vw" borderRadius="25px">
+            <slot></slot>
         </PanelBox>
     </div>
 {/if}
