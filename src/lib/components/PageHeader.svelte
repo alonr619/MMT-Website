@@ -39,12 +39,18 @@
 	height: 85vh;
 	text-align: center;
     background-color: #708E97;
-    background-image: url("/splash.png");
+    background-image: url("/splash.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
+}
+
+@media (max-width: 700px) {
+    .header {
+        background-image: url("/splash-mobile.svg");
+    }
 }
 
 .svg {
