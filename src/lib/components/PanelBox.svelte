@@ -5,9 +5,10 @@
     export let margin = "10px";
     export let padding = "10px";
     export let borderRadius = "5px";
+    export let style = "";
 </script>
 
-<div class="panel-box" style="width: {width}; height: {height}; margin: {margin}; padding: {padding}; border-radius: {borderRadius}">
+<div class="panel-box" style="width: {width}; height: {height}; margin: {margin}; padding: {padding}; border-radius: {borderRadius}; {style}">
     <slot></slot>
 </div>
 
