@@ -16,10 +16,11 @@
         {path: "/", text: "Home"},
         {path: "/mmt-2022", text: "MMT 2022"},
         {path: "/our-team", text: "Our Team"},
-        {path: "/past-exams", text: "Past Exams"}
+        {path: "/past-exams", text: "Past Exams"},
+		{path: "/partners-sponsors", text: "Sponsors"}
     ]
 
-    const HAMBURGER_BREAKPOINT = 770; // change if adding more pages
+    const HAMBURGER_BREAKPOINT = 940; // change if adding more pages
     const MMT_BREAKPOINT = HAMBURGER_BREAKPOINT+310;
 </script>
 
