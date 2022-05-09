@@ -11,6 +11,7 @@
             {
                     "name": "Stallion Sponsors",
                     "singular": "Stallion Sponsor",
+                    "headerColor": "#5ba89a",
                     "sponsors": [
                             {
                                     "url": "sponsors/stallion/Wolfram.png",
@@ -22,16 +23,19 @@
             {
                     "name": "Colt Sponsors",
                     "singular": "Colt Sponsor",
+                    "headerColor": "#4d9464",
                     "sponsors": []
             },
             {
                     "name": "Foal Sponsors",
                     "singular": "Foal Sponsor",
+                    "headerColor": "#ad8c9e",
                     "sponsors": []
             },
             {
                     "name": "Partners",
                     "singular": "Partner",
+                    "headerColor": "#1B9AAA",
                     "sponsors": [
                             {
                                 "url": "sponsors/partners/Atomic Grader.png",
@@ -74,7 +78,7 @@
     <Heading text="Sponsors and Partners" size={4} textColor="#1B9AAA" />
     <FlexBox>
         <PanelBox width="60%" style="min-width: 360px;">
-            <p style="font-size: 1.2em;">Thank you to our sponsors and partners for supporting the Mustang Math Tournament and our vision of providing a fun, collaborative team competition to motivated and bright middle school students!<br><br>
+            <p style="font-size: 1.2em; margin: 5px">Thank you to our sponsors and partners for supporting the Mustang Math Tournament and our vision of providing a fun, collaborative team competition to motivated and bright middle school students!<br><br>
             Interested in sponsoring or partnering? Take a look at our <Link url="https://docs.google.com/presentation/d/1h2_5qUYBZybu6CEsQBB2FKEuYc0BitbsnBrLiRUCgJA/edit?usp=sharing" text="sponsorship information" />! You can contact us at <Link url="mailto:mustangmathtournament@gmail.com" text="mustangmathtournament@gmail.com" />.</p>
         </PanelBox>
     </FlexBox>
@@ -83,7 +87,7 @@
 {#each sponsorTiers as lvl}
     <Section>
         <br /> <br />
-        <Heading text="{lvl.name}" size={3} textColor="#1B9AAA" />
+        <Heading text="{lvl.name}" size={3} textColor={lvl.headerColor} />
             <FlexBox wrap={true} align="stretch">
                 {#if lvl.sponsors.length > 0}
                     {#each lvl.sponsors as sponsor}
