@@ -71,13 +71,13 @@
 {#each sponsorTiers as lvl}
     <Section>
         <br /> <br />
-        <Heading text="{lvl.name}" size={3} />
-            <FlexBox wrap={true}>
+        <Heading text="{lvl.name}" size={3} textColor="#1B9AAA" />
+            <FlexBox wrap={true} align="stretch">
                 {#if lvl.sponsors.length > 0}
                     {#each lvl.sponsors as sponsor}
-                        <div class="img-wrap">
+                        <PanelBox borderRadius="20px" width="30%" style="max-width: 300px; align-items: center; display: flex;">
                             <Image target="_blank" url={sponsor.url} alt={sponsor.alt} link={sponsor.link} />
-                        </div>
+                        </PanelBox>
                     {/each}
                 {:else}
                     <p>Become our first {lvl.singular}!</p>
@@ -85,12 +85,3 @@
             </FlexBox>
     </Section>
 {/each}
-
-<style>
-    .img-wrap{
-        width: 30%;
-        margin: 10px;
-        display: flex;
-        justify-content: center;
-    }
-</style>
