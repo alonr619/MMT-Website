@@ -8,70 +8,9 @@
 	import FlexBox from '$lib/components/FlexBox.svelte';
 	import Image from '$lib/components/Image.svelte';
 	import Section from '$lib/components/Section.svelte';
-        import PageHeader from '$lib/components/PageHeader.svelte';
-        import Link from '$lib/components/Link.svelte';
-    let sponsorTiers = [
-            {
-                    "name": "Stallion",
-                    "sponsors": [
-                            {
-                                    "url": "about-us-images/alon-ragoler.png",
-                                    "alt": "tech carry",
-                                    "link": "https://cia.gov"
-                            },
-                            {
-                                    "url": "about-us-images/alon-ragoler.png",
-                                    "alt": "tech carry",
-                                    "link": "https://cia.gov"
-                            },
-                            {
-                                    "url": "about-us-images/alon-ragoler.png",
-                                    "alt": "tech carry",
-                                    "link": "https://cia.gov"
-                            },
-                    ]
-            },
-            {
-                    "name": "Colt",
-                    "sponsors": [
-                            {
-                                    "url": "about-us-images/alon-ragoler.png",
-                                    "alt": "tech carry",
-                                    "link": "https://cia.gov"
-                            },
-                            {
-                                    "url": "about-us-images/alon-ragoler.png",
-                                    "alt": "tech carry",
-                                    "link": "https://cia.gov"
-                            },
-                            {
-                                    "url": "about-us-images/alon-ragoler.png",
-                                    "alt": "tech carry",
-                                    "link": "https://cia.gov"
-                            },
-                    ]
-            },
-            {
-                    "name": "Foal",
-                    "sponsors": [
-                            {
-                                    "url": "about-us-images/alon-ragoler.png",
-                                    "alt": "tech carry",
-                                    "link": "https://cia.gov"
-                            },
-                            {
-                                    "url": "about-us-images/alon-ragoler.png",
-                                    "alt": "tech carry",
-                                    "link": "https://cia.gov"
-                            },
-                            {
-                                    "url": "about-us-images/alon-ragoler.png",
-                                    "alt": "tech carry",
-                                    "link": "https://cia.gov"
-                            },
-                    ]
-            }
-    ];
+    import PageHeader from '$lib/components/PageHeader.svelte';
+    import Link from '$lib/components/Link.svelte';
+    import sponsorTiers from '$lib/sponsorTiers';
 </script>
 
 <svelte:head>
@@ -97,8 +36,11 @@
 
         {/each} -->
         <FlexBox wrap={true}>
-                <div style="max-width: 20em;"><Image url="sponsors/atomicgrader.png" alt="Atomic Grader" link="https://atomicgrader.com" width="100%" target="_blank" /></div>
-                <div style="max-width: 20em;"><Image url="sponsors/contestdojo.png" alt="Contest Dojo" link="https://www.contestdojo.com" width="100%" target="_blank" /></div>
+            {#each sponsorTiers as lvl}
+                {#each lvl.sponsors as sponsor}
+                    <div style="max-width: 15em; margin: 5px;"><Image url={sponsor.url} alt={sponsor.alt} link={sponsor.link} width="100%" target="_blank" /></div>
+                {/each}
+            {/each}
         </FlexBox>
         <br />
     </Section>
