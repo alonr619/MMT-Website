@@ -31,6 +31,8 @@
 		<Person pic="about-us-images/Grace_Tan-modified-min.png" name="Grace Tan" />
 		<Person pic="about-us-images/Hongning_Wang-modified-min.png" name="Hongning Wang" />
 		<Person pic="about-us-images/Joyce_Huang-modified-min.png" name="Joyce Huang" />
+		<Person pic="about-us-images/Justin_Yokota-modified-min.png" name="Justin Yokota" />
+		<Person pic="about-us-images/Kaitlyn_Du-modified-min.png" name="Kaitlyn Du" />
 		<Person pic="about-us-images/Krishna_Iyer-modified-min.png" name="Krishna Iyer" />
 		<Person pic="about-us-images/Noel Prince_Muthuplakal-modified-min.png" name="Noel Prince Muthuplakal" />
 		<Person pic="about-us-images/Onkit_Samanta-modified-min.png" name="Onkit Samanta" />
@@ -43,5 +45,6 @@
 		<Person pic="about-us-images/Soham_Kolhe-modified-min.png" name="Soham Kolhe" />
 		<Person pic="about-us-images/Wilson_Liu-modified-min.png" name="Wilson Liu" />
 		<Person pic="about-us-images/Yash_Mathur-modified-min.png" name="Yash Mathur" />
+		<Person pic="about-us-images/Yuuki_Sawanoi-modified-min.png" name="Yuuki Sawanoi" />
 	</FlexBox>
 </section>

@@ -67,6 +67,8 @@
     <li>Students should also try taking the 'ContestDojo Practice Round' in their portals! This is helpful in making sure that they understand how our test portal works and are all set for competition day!</li>
     <li>You should be all set to go for the tournament! As always, email us at <a target="_blank" href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a> if you have any confusion or issues!</li>
     </ol>
+    <strong class="registration-other">Registration closes May 21.</strong> <br />
+    <p class="registration-other">International Students in a non-ideal timezone should participate in the international version of our tournament being run by SIMCC on June 11, 2022. If you're interested in participating, you should email <a href="mailto:rupendrad@simcc.org" target="_blank">rupendrad@simcc.org</a></p>
 </Dropdown> <br />
 
 <Heading text="Rounds" size={2.5} textColor="#1B9AAA" />
@@ -91,7 +93,7 @@
 <Heading text="Awards" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Medals will be given to (at minimum) the members of the top 3 teams of each division, along with certificates of participation to all students and certificates of achievement to high-scoring teams. There will also be prizes for high performers during the optional activities! Other prizes may be available depending on registration volume.</p>
+        <p style="font-size: 1.5em; text-align: center;">Medals will be given to (at minimum) the members of the top 3 teams of each division, along with certificates of participation to all students and certificates of achievement to high-scoring teams. <a sveltekit:prefetch href="https://www.wolfram.com/notebooks/" target="_blank" >Wolfram Notebooks</a> and AoPS gift certificates are also available as prizes. There will also be prizes for high performers during the optional activities! Other prizes may be available depending on registration volume.</p>
     </PanelBox>
 </div> <br />
 
@@ -209,5 +211,8 @@
     }
     #disclaimer{
         margin-left: 1em;
+    }
+    .registration-other{
+        margin-left: 1.5em;
     }
 </style>
