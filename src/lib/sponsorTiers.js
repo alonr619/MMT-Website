@@ -19,7 +19,11 @@ const sponsorTiers = [
         "name": "Foal Sponsors",
         "singular": "Foal Sponsor",
         "headerColor": "#ad8c9e",
-        "sponsors": []
+        "sponsors": [{
+            "url": "sponsors/foal/AoPS.png",
+            "alt": "Art of Problem Solving",
+            "link": "https://aops.com"
+        }]
     },
     {
         "name": "Partners",
