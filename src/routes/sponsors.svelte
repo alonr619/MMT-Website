@@ -33,7 +33,7 @@
             <FlexBox wrap={true} align="stretch">
                 {#if lvl.sponsors.length > 0}
                     {#each lvl.sponsors as sponsor}
-                        <PanelBox borderRadius="20px" width="40%" style="max-width: 300px;">
+                        <PanelBox borderRadius="20px" width="40%" style="max-width: 300px; min-height: 250px; min-width: 250px;">
                             <a target="_blank" href={sponsor.link} style="height: 100%; display: flex; align-items: center;">
                                 <img src={sponsor.url} alt={sponsor.alt} style="max-width: 100%;">
                             </a>
