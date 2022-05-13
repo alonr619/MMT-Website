@@ -38,7 +38,8 @@
 .header {
 	height: 85vh;
 	text-align: center;
-    background: linear-gradient(to bottom right,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("/splash.png");
+    background-color: aqua;
+    background: linear-gradient(to bottom right,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("/splash.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
