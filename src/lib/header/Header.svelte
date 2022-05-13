@@ -1,12 +1,11 @@
 <script>
 	import { page } from '$app/stores';
 	import logo from './MMTLogo.png';
-    import { slide, crossfade } from "svelte/transition";
+    import { crossfade } from "svelte/transition";
 	import { onMount } from 'svelte';
 
-	let showMobile = false;
-	let open = 'none';
 	let windowWidth;
+	let open;
 	
 	const debounce = (func, delay) => {
 		let timer;
@@ -21,7 +20,8 @@
 	
 	const setWindowWidth = () => {
 		windowWidth = `${window.innerWidth}px`;
-		if (window.innerWidth >= 768) {open = 'flex';};
+		if (window.innerWidth >= 800) {open = 'flex';}
+		else {open = "none";}
 	};
 
 	function onClickToggle() {
@@ -33,15 +33,13 @@
 	
 	onMount(() => {		
 		window.addEventListener('resize', debouncedSetWindowWidth);
+		if (window.innerWidth >= 800) {open = 'flex';}
+		else {open = "none";}
 		
 		return () => {
 			window.removeEventListener('resize', debouncedSetWindowWidth);
 		}
 	});
-
-	function toggleMobile(){
-		showMobile = showMobile ? false : true;
-	};
 
     const [send, receive] = crossfade({
         duration: 400
@@ -54,9 +52,6 @@
 		{path: "/sponsors", text: "Sponsors"},
         {path: "/past-exams", text: "Past Exams"},
     ]
-
-    const HAMBURGER_BREAKPOINT = 940; // change if adding more pages
-    const MMT_BREAKPOINT = HAMBURGER_BREAKPOINT+310;
 </script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -66,18 +61,25 @@
 		<li class="logo"><a href="/"><img src={logo} alt="mmtlogo" width="50px" height="50px" /></a></li>
 
 		{#each navPages as navPage (navPage.path)}
-			<li class="tab">
-				<a sveltekit:prefetch href="{navPage.path}" class="textnav">
-					<span>{navPage.text}
-						{#if $page.url.pathname === navPage.path}
-						<div class="textunderline" in:receive|local out:send|local></div>
-						{/if}
-					</span>
-				</a>
-			</li>
+			{#if $page.url.pathname === navPage.path}
+				<li class="tab active" style="display: {open};" >
+					<a sveltekit:prefetch href="{navPage.path}" class="textnav">
+						<span>{navPage.text}
+							<div class="textunderline" in:receive|local out:send|local></div>
+						</span>
+					</a>
+				</li>
+			{:else}
+				<li class="tab" style="display: {open};" >
+					<a sveltekit:prefetch href="{navPage.path}" class="textnav">
+						<span>{navPage.text}
+						</span>
+					</a>
+				</li>
+			{/if}
 		{/each}
 
-		<li onClick={onClickToggle} class="toggle" style={{padding: 5, paddingBottom: 10, marginRight: 10}}><span class="bars"><i id="hamburger-icon" class="fa fa-bars" style="color:white;width:46px;height:46px;"></i></span></li>
+		<li on:click={onClickToggle} class="toggle"><i id="hamburger-icon" class="fa fa-bars" style="color:white;width:100%;height:100%;"></i></li>
 	</ul>
 </header>
 
@@ -88,6 +90,12 @@
 		padding: 0;
 		border: 1px solid transparent;
 		display: block;
+	}
+
+	.toggle {
+		padding: 5px;
+		padding-bottom: 10px;
+		margin-right: 10px;
 	}
 
 	ul, li {
@@ -113,7 +121,6 @@
 		float: right;
 		padding: 6px 20px;
 		margin: 5px;
-		display: flex;
 	}
 
 	.tab a {
@@ -144,20 +151,27 @@
 		color: lightgreen;
 	}
 
-	#hamburger-icon {
-		margin-left: 40%;
-		margin-right: 40%;
-		margin-top: 40%;
-		margin-bottom: 40%;
-	}
-
 	@media screen and (max-width: 800px) {
 		.toggle {
 			display: flex;
 		}
 
 		.tab {
-			display: none;
+			background-color: #65c083;
+		}
+
+		.tab, .tab a{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+
+		.active {
+			background-color: #5b8064;
+		}
+
+		.textunderline {
+			background-color: transparent;
 		}
 	}
 </style>

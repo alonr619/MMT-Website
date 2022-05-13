@@ -49,7 +49,11 @@
 
 @media (max-width: 700px) {
     .header {
-        background-image: url("/splash-mobile.svg");
+        background: linear-gradient(to bottom right,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("/splash-mobile.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
     }
 }
 
