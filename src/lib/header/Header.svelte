@@ -55,7 +55,6 @@
 
     const navPages = [
         {path: "/", text: "Home"},
-        {path: "/mmt-2022", text: "MMT 2022"},
         {path: "/our-team", text: "Our Team"},
 		{path: "/sponsors", text: "Sponsors"},
         {path: "/past-exams", text: "Past Exams"},
