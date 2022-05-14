@@ -21,9 +21,7 @@
 	
 	const setWindowWidth = () => {
 		windowWidth = `${window.innerWidth}px`;
-		if (window.innerWidth > change) {
-			openUpdate();
-		}
+		openUpdate();
 	};
 
 	function onClickToggle() {
