@@ -40,6 +40,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 @media (max-width: 700px) {
