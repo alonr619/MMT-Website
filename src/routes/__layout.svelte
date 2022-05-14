@@ -18,10 +18,6 @@
 	<main>
 		<slot />
 	</main>
-
-	<footer>
-		<p><b>Contact at </b><a href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a><br /></p>
-	</footer>
 </div>
 
 <style>
@@ -38,30 +34,5 @@
 		position: relative;
 		min-height: 100vh;
 		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		bottom: 0;
-		width: 100%;
-		text-align: center;
-		min-height: 50px;
-		background-color: #1c6825;
-	}
-
-	footer p{
-		color: white;
-	}
-
-	footer a {
-		color: white;
-		opacity: 0.6;
-	}
-
-	footer a:hover{
-		text-decoration: underline;
-		opacity: 0.8;
 	}
 </style>

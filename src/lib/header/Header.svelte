@@ -119,6 +119,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
+		height: 65px;
 	}
 
 	.tab {

@@ -18,9 +18,9 @@
 
 <svelte:window bind:scrollY={y}/>
 
-<div class="outside">
-    <div style="position: absolute; top: 0;width: 100%;z-index: 100;"><Header /></div>
-    <div class="header flex" style="height: 100vh;">
+<div class="outside" style="height: 100vh;">
+    <Header />
+    <div class="header flex">
         {#if visible}
             <div in:fly="{{ y: -20, duration: 700 }}" class="minidiv">
                 <Heading className="glow" text="Mustang Math Tournament" textColor="white" />
@@ -35,23 +35,26 @@
 </div>
 
 <style>
-.header {
-	text-align: center;
+.outside {
     background-image: url("/splash.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
 }
 
 @media (max-width: 700px) {
-    .header {
+    .outside {
         background-image: url("/splash-mobile.svg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        position: relative;
     }
+}
+
+.header {
+	text-align: center;
+    position: relative;
+    height: calc(100% - 70px);
 }
 
 .svg {
