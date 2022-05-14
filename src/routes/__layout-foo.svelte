@@ -5,14 +5,6 @@
 
 <div class="all-container">
 	<head>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-BBE6Q56W5M"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-BBE6Q56W5M');
-		</script>
 	</head>
 
 	<main>
