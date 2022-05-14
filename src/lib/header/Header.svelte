@@ -20,7 +20,7 @@
         {path: "/past-exams", text: "Past Exams"},
     ]
 
-    const HAMBURGER_BREAKPOINT = 940; // change if adding more pages
+    const HAMBURGER_BREAKPOINT = 1200; // change if adding more pages
     const MMT_BREAKPOINT = HAMBURGER_BREAKPOINT+310;
 </script>
 
