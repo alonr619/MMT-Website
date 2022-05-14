@@ -12,6 +12,10 @@
     export let tableStyle = "";
     export let headerStyle = "";
     export let tableRowStyle = "";
+    
+    if (window.innerWidth < 800) {
+        textSize = 1.6;
+    }
 </script>
 
 <table style="width: {width}; {tableStyle}">

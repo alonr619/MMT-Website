@@ -14,7 +14,7 @@
             <img class="person-img" src={pic} alt={name} width="160" height="160"/>
         </div>
         <div class="person-details">
-            <Heading text={name} size="1.5"/>
+            <p style="color: black; font-size: 1.2em;font-weight:300;">{name}</p>
             <!-- <Text text={position} /> -->
         </div>
     </div>
@@ -43,6 +43,8 @@
         flex-grow: 1;
         align-items: center;
         justify-content: center;
+        padding-left: 5px;
+        text-align: center;
     }
     .person-pic{
         min-width:0;

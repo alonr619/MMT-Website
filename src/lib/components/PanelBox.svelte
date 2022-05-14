@@ -1,13 +1,15 @@
 <!-- Component for that shadow box with glow on hover thing -->
 <script>
-    export let width = "auto";
-    export let height = "auto";
+    export let width = "unset";
+    export let height = "unset";
     export let margin = "10px";
     export let padding = "10px";
     export let borderRadius = "5px";
+    export let style = "";
+    export let boxSizing = "border-box";
 </script>
 
-<div class="panel-box" style="width: {width}; height: {height}; margin: {margin}; padding: {padding}; border-radius: {borderRadius}">
+<div class="panel-box" style="width: {width}; height: {height}; margin: {margin}; padding: {padding}; border-radius: {borderRadius}; box-sizing: {boxSizing}; {style}">
     <slot></slot>
 </div>
 
@@ -17,7 +19,6 @@
         box-shadow: 5px 10px 10px rgb(0,0,0,0.1);
         opacity: 0.8;
         transition: 0.5s;
-        box-sizing: border-box;
     }
     
     .panel-box:hover{

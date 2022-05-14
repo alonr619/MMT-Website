@@ -10,7 +10,7 @@
 
     // need to do this to make the animation play on page load
     let visible = false;
-
+ 
     onMount(() => {
         visible = true;
     })
@@ -38,12 +38,22 @@
 .header {
 	height: 85vh;
 	text-align: center;
-    background: linear-gradient(to bottom right,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("/splash.png");
+    background-image: url("/splash.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
+}
+
+@media (max-width: 700px) {
+    .header {
+        background-image: url("/splash-mobile.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
 }
 
 .svg {
