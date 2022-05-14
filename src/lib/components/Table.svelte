@@ -12,11 +12,15 @@
     export let tableStyle = "";
     export let headerStyle = "";
     export let tableRowStyle = "";
+
+    let windowWidth;
     
-    if (window.innerWidth < 800) {
+    if (windowWidth < 800) {
         textSize = 1.6;
     }
 </script>
+
+<svelte:window bind:innerWidth={windowWidth} />
 
 <table style="width: {width}; {tableStyle}">
     {#if includeHeader}
