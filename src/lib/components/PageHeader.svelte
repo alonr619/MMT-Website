@@ -25,7 +25,7 @@
         <div in:fly="{{ y: -20, duration: 700 }}" class="minidiv">
             <Heading className="glow" text={title} textColor="white" />
             <div class="flex"><div class="headerline"></div></div>
-            <p style="font-weight: 300; margin-top: 30px; font-size: 22px; color: white;">{description}</p>
+            <p class="descript" style="font-weight: 300; font-size: 22px; color: white;">{description}</p>
             <Link url="https://www.contestdojo.com" target="_blank" className="topbuttons" text="Register on ContestDojo!" textColor="white" visitedColor="white" />
         </div>
         
@@ -73,4 +73,5 @@
 	width: 60%;
 	min-width: 300px;
 }
+
 </style>
