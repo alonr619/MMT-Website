@@ -197,10 +197,6 @@
 </Dropdown>
 <br />
 
-<footer>
-    <p><b>Contact at </b><a href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a><br /></p>
-</footer>
-
 <style>
     li {
 		margin-bottom:0.5em

@@ -48,7 +48,3 @@
 		<Person pic="about-us-images/Yuuki_Sawanoi-modified-min.png" name="Yuuki Sawanoi" />
 	</FlexBox>
 </section>
-
-<footer>
-	<p><b>Contact at </b><a href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a><br /></p>
-</footer>
