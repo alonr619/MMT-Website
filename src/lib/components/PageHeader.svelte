@@ -1,8 +1,10 @@
 <script>
     export let title;
     export let description;
+    export let height = 85;
 
     import Heading from '$lib/components/Heading.svelte';
+    import Header from '$lib/header/Header.svelte';
     import Text from '$lib/components/Text.svelte';
     import Link from '$lib/components/Link.svelte';
     import { fly } from "svelte/transition";
@@ -19,8 +21,8 @@
 </script>
 
 <svelte:window bind:scrollY={y}/>
-
-<div class="header flex">   
+<Header />
+<div class="header flex" style="height: {height}vh;">   
     {#if visible}
         <div in:fly="{{ y: -20, duration: 700 }}" class="minidiv">
             <Heading className="glow" text={title} textColor="white" />
@@ -36,7 +38,6 @@
 
 <style>
 .header {
-	height: 85vh;
 	text-align: center;
     background-image: url("/splash.svg");
     background-size: cover;

@@ -9,6 +9,7 @@
     "preview": "svelte-kit preview"
   },
   "devDependencies": {
+    "@beyonk/svelte-google-analytics": "^2.6.0",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
     "svelte": "^3.46.0"
