@@ -20,8 +20,8 @@
         {path: "/past-exams", text: "Past Exams"},
     ]
 
-    const HAMBURGER_BREAKPOINT = 1200; // change if adding more pages
-    const MMT_BREAKPOINT = HAMBURGER_BREAKPOINT+310;
+    const HAMBURGER_BREAKPOINT = 900; // change if adding more pages
+    const MMT_BREAKPOINT = HAMBURGER_BREAKPOINT+350;
 </script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
