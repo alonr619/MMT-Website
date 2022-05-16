@@ -20,8 +20,8 @@
         {path: "/past-exams", text: "Past Exams"},
     ]
 
-    const HAMBURGER_BREAKPOINT = 940; // change if adding more pages
-    const MMT_BREAKPOINT = HAMBURGER_BREAKPOINT+310;
+    const HAMBURGER_BREAKPOINT = 900; // change if adding more pages
+    const MMT_BREAKPOINT = HAMBURGER_BREAKPOINT+350;
 </script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -50,7 +50,7 @@
                     <a sveltekit:prefetch href="{navPage.path}" class="textnav">
                         <span>{navPage.text}
                             {#if $page.url.pathname === navPage.path}
-                            <div class="textunderline" in:receive|local out:send|local></div>
+                            <div class="textunderline" in:receive out:send></div>
                             {/if}
                         </span>
                     </a>
@@ -108,7 +108,6 @@
 		position: relative;
 		padding: 0;
 		margin: 0;
-		height: 4em;
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
@@ -152,11 +151,11 @@
     }
 
 	.textnav {
-		min-width: 7.5em;
+		width: max-content;
 	}
 
 	a:hover {
-		font-weight: bold;
+		color: lightgreen;
 	}
 
 	#hamburger-icon {

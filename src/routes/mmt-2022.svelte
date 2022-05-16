@@ -9,9 +9,7 @@
     import Table from "$lib/components/Table.svelte";
     import PanelBox from "$lib/components/PanelBox.svelte";
     import Image from '$lib/components/Image.svelte';
-
     let windowWidth;
-
     let scheduleData = [
         { "Time (PT)": "9:00 - 9:30 AM", "Event": "Opening Ceremony" },
         { "Time": "9:30 - 10:55 AM", "Event": "Round 1: Mounting Mayhem" },
@@ -22,7 +20,6 @@
         { "Time": "3:00 - 4:00 PM", "Event": "Activities (Optional)" },
         { "Time": "4:00 - 4:30 PM", "Event": "Awards Ceremony" }
     ]
-
     let topicsCovered = [
         { "Algebra": "<ul><li>Systems of equations</li> <li>Quadratics</li> <li>Vieta’s</li> <li>Binomial Theorem</li> <li>Radicals/Exponents</li> <li>Simon’s Favorite Factoring Trick</li> <li>Ratios</li> <li>(Infinite) Geometric Series</li> <li>Arithmetic Series</li> <li>Sum/Difference of Powers</li> <li>Rate/Time</li> <li>Floor/Ceiling</li> <li>Absolute Value</li> <li>Substitution (Nested Roots/Repeated Fractions)</li> <li>Mean, Median, Mode, Range</li> <li>Telescoping</li></ul>",
         "Combinatorics": "<ul><li>Sticks and Stones</li> <li>Permutation/Combination</li> <li>Properties of Inclusion Exclusion for three or less sets</li> <li>Basic Geometric Probability</li> <li>Conditional Probability</li> <li>Expected Values</li> <li>Complementary Counting</li> <li>Recursion</li> <li>Bijections</li> <li>Casework</li> <li>Pigeonhole Principle</li> <li>Double-counting</li> <li>Basic Invariants</li></ul>",

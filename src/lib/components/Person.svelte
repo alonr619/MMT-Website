@@ -11,24 +11,20 @@
 <PanelBox width="21em">
     <div class="person-flex">
         <div class="person-pic">
-            <img class="person-img" src={pic} alt={name} width="160" height="160"/>
+            <img class="person-img" src={pic} alt={name} width="130" height="130"/>
         </div>
         <div class="person-details">
-            <Heading text={name} size="1.5"/>
+            <p style="color: black; font-size: 1.2em;font-weight:400;">{name}</p>
             <!-- <Text text={position} /> -->
         </div>
     </div>
-    <br class="person-br" />
 </PanelBox>
 
 <style>
-    .person-br{
-        width: 5px;
-    }
     .person-flex{
         display: flex;
         width: 20em;
-        height: 10em;
+        height: fit-content;
     }
     .person-img{
         margin: 3px;
@@ -43,6 +39,8 @@
         flex-grow: 1;
         align-items: center;
         justify-content: center;
+        padding-left: 5px;
+        text-align: center;
     }
     .person-pic{
         min-width:0;
