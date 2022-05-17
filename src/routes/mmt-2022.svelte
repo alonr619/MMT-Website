@@ -60,8 +60,7 @@
     <li>If you have a partial team (1-3 members) and are interested in getting to a full one, consider using our <a target="_blank" sveltekit:prefetch href="https://tinyurl.com/MMT2022TeammateFinder">Teammate Finder Spreadsheet</a>. You can input your contact information and also contact other parents/coaches to try to find teammates for your students!</li>
     <li>Our registration is managed by <a target="_blank" sveltekit:prefetch href="https://contestdojo.com">ContestDojo</a> - if you are a coach for a math team, or just a parent registering your child's team, you should create a Coaches account on ContestDojo. Note - it may ask you to affirm that you are an 'official representative' for your organization - you can just click that checkbox to move on, we don't require you to be an official representative at MMT.</li>
     <li>Once you create your coaches account, you can click the little 'register' button for MMT 2022. Once you do that, you can add your students to your portal, buy the 'seats' for your students through Stripe, and create and organize your organization's teams! Registration cost is $10 per participant. If you have need for a partial or full fee waiver, please email us at <a target="_blank" href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a> detailing your request.</li>
-    <li>Once added to the coaches portal, students should receive an email from ContestDojo detailing how to login to their account. Students should look for this email and login so that they may request their waiver within their portal. The waiver is super basic and simple - we just want to affirm that your child is eligible to participate and does so in the proper manner.</li>
-    <li>Students should also try taking the 'ContestDojo Practice Round' in their portals! This is helpful in making sure that they understand how our test portal works and are all set for competition day!</li>
+    <li>Once added to the coaches portal, students should receive an email from ContestDojo detailing how to login to their account. Students should look for this email and login so that they may try taking the 'ContestDojo Practice Round' in their portals with their team! This is helpful in making sure that they understand how our test portal works and are all set for competition day!</li>
     <li>You should be all set to go for the tournament! As always, email us at <a target="_blank" href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a> if you have any confusion or issues!</li>
     </ol>
     <strong class="registration-other">Registration closes May 21.</strong> <br />
@@ -90,7 +89,7 @@
 <Heading text="Awards" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Medals will be given to (at minimum) the members of the top 3 teams of each division, along with certificates of participation to all students and certificates of achievement to high-scoring teams. <a sveltekit:prefetch href="https://www.wolfram.com/notebooks/" target="_blank" >Wolfram Notebooks</a> and AoPS gift certificates are also available as prizes. There will also be prizes for high performers during the optional activities! Other prizes may be available depending on registration volume.</p>
+        <p style="font-size: 1.5em; text-align: center;">Medals will be given to (at minimum) the members of the top 3 teams of each division, along with certificates of participation to all students and certificates of achievement to high-scoring teams. A wide variety of other prizes are available for top scoring teams, winners of activities, and a raffle, including but not limited to <a target="_blank" href="https://www.wolfram.com/notebooks/">Wolfram Notebooks</a>, AoPS Gift Certificates, <a target="_blank" href="https://live.poshenloh.com/summer">Daily Challenge Summer Class Vouchers</a>, and <a target="_blank" href="https://www.bbmc-math.com/">BBMC Math Summer Class Vouchers</a>.</p>
     </PanelBox>
 </div> <br />
 
@@ -147,10 +146,11 @@
 </Dropdown>
 <Dropdown mainText="ROUND 1: Mounting Mayhem (Puzzle)">
     <ol>
-        <li>The Mounting Mayhem Round will consist of some mathematical-based puzzle questions. Students will have 60 minutes to solve as many of them as possible.</li>
-        <li>Puzzles can range from logic to number theory to geometry and more. They often require out-of-the-box thinking although all topics can readily be understood and grasped by middle schoolers.</li>
+        <li>The Mounting Mayhem Round will consist of a series of logic puzzles centered around a certain theme.</li>
+        <li>Students will have 60 minutes to work together with their teams and solve as many of them as possible.</li>
         <li>Harder puzzles will be worth more points, but these puzzles will be longer and/or require more creativity — you must decide what problems to focus your time on to optimize your team score.</li>
     </ol>
+    <div id="mountingDisclaimer"><strong>The Mounting Mayhem round is aided by the ability to see a full spectrum of colors. If one of your team members has a form of color blindness, please email us ASAP so we can make accessibility accomodations</strong></div>
 </Dropdown>
 <Dropdown mainText="ROUND 2: Bucking Bingo">
     <ol>
@@ -173,8 +173,8 @@
 <Dropdown mainText="ROUND 4: Mystery Mare">
     <ol>
         <li>The Mystery Mare round is exactly that — a mystery!</li>
-        <li>Hints about the nature of the round will be revealed as the competition date nears.</li>
-        <li>We promise it will be as fun and engaging as the other rounds. :)</li>
+        <li>The exact format of the round will be revealed on competition day, but we might drop some hints in communication to students!</li>
+        <li>We promise it will be as fun and engaging as the other rounds.</li>
     </ol>
 </Dropdown>
 <Dropdown mainText="FAQ">
@@ -210,6 +210,9 @@
         margin-left: 1em;
     }
     .registration-other{
+        margin-left: 1.5em;
+    }
+    #mountingDisclaimer{
         margin-left: 1.5em;
     }
 </style>

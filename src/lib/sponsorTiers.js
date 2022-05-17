@@ -7,13 +7,23 @@ const sponsorTiers = [
             "url": "sponsors/stallion/Wolfram.png",
             "alt": "Wolfram Alpha",
             "link": "https://www.wolfram.com/"
-        }]
+        },
+        {
+            "url": "sponsors/stallion/Daily Challenge.png",
+            "alt": "Daily Challenge with Po Shen Loh",
+            "link": "https://live.poshenloh.com/"
+        },
+    ]
     },
     {
         "name": "Colt Sponsors",
         "singular": "Colt Sponsor",
         "headerColor": "#4d9464",
-        "sponsors": []
+        "sponsors": [{
+            "url": "sponsors/colt/BBMC Math.png",
+            "alt": "BBMC Math",
+            "link": "https://bbmc-math.com/"
+        },]
     },
     {
         "name": "Foal Sponsors",
