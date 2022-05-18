@@ -77,9 +77,7 @@
 		display: flex;
 		justify-content: space-between;
 		background-color: #1c6825;
-        position: absolute;
         width: 100%;
-        z-index: 1;
 	}
 
 	.corner {
