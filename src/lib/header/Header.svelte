@@ -50,7 +50,7 @@
                     <a sveltekit:prefetch href="{navPage.path}" class="textnav">
                         <span>{navPage.text}
                             {#if $page.url.pathname === navPage.path}
-                            <div class="textunderline" in:receive out:send></div>
+                            <div class="textunderline" in:receive|local out:send|local></div>
                             {/if}
                         </span>
                     </a>
@@ -77,6 +77,9 @@
 		display: flex;
 		justify-content: space-between;
 		background-color: #1c6825;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
 	}
 
 	.corner {

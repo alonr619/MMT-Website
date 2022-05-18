@@ -19,7 +19,6 @@
 <svelte:window bind:scrollY={y}/>
 
 <div class="outside" style="height: 100vh;">
-    <Header />
     <div class="header flex">
         {#if visible}
             <div in:fly="{{ y: -20, duration: 700 }}" class="minidiv">

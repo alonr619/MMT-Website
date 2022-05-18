@@ -1,19 +1,21 @@
 <script>
 	import Header from '$lib/header/Header.svelte';
 	import '../app.css';
+    import { page } from "$app/stores";
 </script>
 
 <div class="all-container">
-	<head>
-	</head>
+    <Header />
 
 	<main>
 		<slot />
 	</main>
 
+    {#if $page.url.pathname !== "/"}
 	<footer>
 		<p><b>Contact at </b><a href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a><br /></p>
 	</footer>
+    {/if}
 </div>
 
 <style>
