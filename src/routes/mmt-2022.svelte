@@ -89,7 +89,7 @@
 <Heading text="Awards" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Medals will be given to (at minimum) the members of the top 3 teams of each division, along with certificates of participation to all students and certificates of achievement to high-scoring teams. A wide variety of other prizes are available for top scoring teams, winners of activities, and a raffle, including but not limited to <a target="_blank" href="https://www.wolfram.com/notebooks/">Wolfram Notebooks</a>, AoPS Gift Certificates, <a target="_blank" href="https://live.poshenloh.com/summer">Daily Challenge Summer Class Vouchers</a>, and <a target="_blank" href="https://www.bbmc-math.com/">BBMC Math Summer Class Vouchers</a>.</p>
+        <p style="font-size: 1.5em; text-align: center;">Medals will be given to (at minimum) the members of the top 5 teams of each division, along with certificates of participation to all students and certificates of achievement to high-scoring teams. A wide variety of other prizes are available for top scoring teams, winners of activities, and a raffle, including but not limited to <a target="_blank" href="https://www.wolfram.com/notebooks/">Wolfram Notebooks</a>, AoPS Gift Certificates, <a target="_blank" href="https://live.poshenloh.com/summer">Daily Challenge Summer Class Vouchers</a>, and <a target="_blank" href="https://www.bbmc-math.com/">BBMC Math Summer Class Vouchers</a>.</p>
     </PanelBox>
 </div> <br />
 
