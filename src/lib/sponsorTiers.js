@@ -23,7 +23,12 @@ const sponsorTiers = [
             "url": "sponsors/colt/BBMC Math.png",
             "alt": "BBMC Math",
             "link": "https://bbmc-math.com/"
-        },]
+        },
+        {
+            "url": "sponsors/colt/Texas Instruments.png",
+            "alt": "Texas Instruments",
+            "link": "https://www.ti.com/"
+        }]
     },
     {
         "name": "Foal Sponsors",
