@@ -24,6 +24,7 @@
 		<Person pic="about-us-images/Alan_Duan-modified-min.png" name="Alan Duan" />
 		<Person pic="about-us-images/alon-ragoler-modified-min.png" name="Alon Ragoler" />
 		<Person pic="about-us-images/Ananya_Bezbaruah-modified-min.png" name="Ananya Bezbaruah" />
+		<Person pic="about-us-images/Andrew_Liu.jpg" name="Andrew Liu" />
 		<Person pic="about-us-images/Annika_Renganathan-modified-min.png" name="Annika Renganathan" />
 		<Person pic="about-us-images/Arpit_Ranasaria-modified-min.png" name="Arpit Ranasaria" />
 		<Person pic="about-us-images/Carson_Mitchell-modified-min.png" name="Carson Mitchell" />
