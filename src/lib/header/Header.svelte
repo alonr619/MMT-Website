@@ -76,7 +76,7 @@
 	header {
 		display: flex;
 		justify-content: space-between;
-		background-color: #1c6825;
+		background-color: #12223f;
         width: 100%;
 	}
 
