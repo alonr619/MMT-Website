@@ -164,8 +164,8 @@
 </Dropdown>
 <Dropdown mainText="ROUND 3: Gallop (Guts)">
     <ol>
-        <li>The Gallop Round will consist of 27 questions to be solved in 60 minutes.</li>
-        <li>The questions will be divided into 9 sets of 3 questions each, and you <strong>must submit the answers to one set</strong> before accessing the problems for the next. This means you must strategize when to submit each set (incomplete or not) to ensure you get access to as many questions as possible.</li>
+        <li>The Gallop Round will consist of 24 questions to be solved in 60 minutes.</li>
+        <li>The questions will be divided into 8 sets of 3 questions each, and you <strong>must submit the answers to one set</strong> before accessing the problems for the next. This means you must strategize when to submit each set (incomplete or not) to ensure you get access to as many questions as possible.</li>
         <li>The problems will get progressively more difficult, and later problems will be worth more points.</li>
         <li>Submissions will be scored immediately and a live score of all participating teams will be available during the competition. Prepare for the adrenaline rush!</li>
     </ol>
