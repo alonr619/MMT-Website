@@ -28,6 +28,10 @@
 
 <svelte:window bind:scrollY={y} bind:innerWidth={windowWidth}/>
 
+<svelte:head>
+	<title>Mustang Math Tournament</title>
+</svelte:head>
+
 <div class="outside" style="height: 100vh;">
     <div class="header flex">
         {#if visible}
