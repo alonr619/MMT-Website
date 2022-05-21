@@ -38,6 +38,11 @@ const sponsorTiers = [
             "url": "sponsors/foal/AoPS.png",
             "alt": "Art of Problem Solving",
             "link": "https://aops.com"
+        },
+        {
+            "url": "sponsors/foal/AlphaStar.png",
+            "alt": "Alphastar Academy",
+            "link": "https://alphastar.academy/"
         }]
     },
     {
