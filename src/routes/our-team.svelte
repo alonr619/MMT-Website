@@ -7,6 +7,7 @@
 	import FlexBox from '$lib/components/FlexBox.svelte';
 	import Person from '$lib/components/Person.svelte';
 	import PageHeader from '$lib/components/PageHeader.svelte';
+	import Alumni from '$lib/components/Alumni.svelte';
 
 	let windowWidth;
 </script>
@@ -30,7 +31,7 @@
 		<Person pic="about-us-images/Carson_Mitchell-modified-min.png" name="Carson Mitchell" />
 		<Person pic="about-us-images/Conor_Kennedy-modified-min.png" name="Conor Kennedy" />
 		<Person pic="about-us-images/Daniel_Chirakarn-modified-min.png" name="Daniel Chirakarn" />
-		<Person pic="about-us-images/David_Altizio-modified-min.png" name="David Altizio" />
+		<Person pic="about-us-images/Mustang-modified-min.png" name="David Altizio" />
 		<Person pic="about-us-images/Dhruv_Kasarabada-modified-min.png" name="Dhruv Kasarabada" />
 		<Person pic="about-us-images/Eesha_Jain-modified-min.png" name="Eesha Jain" />
 		<Person pic="about-us-images/Eric_Ge-modified-min.png" name="Eric Ge" />
@@ -116,6 +117,14 @@
 		</ul></div>
 		{/if}
 	</div>
+
+	<h1>Alumni</h1>
+	<FlexBox wrap={true}>
+		<Alumni pic="about-us-images/Gloria_Lee-modified-min.png" name="Gloria Lee" college="GeorgiaTech" />
+		<Alumni pic="about-us-images/Mustang-modified-min.png" name="Arnav Narula" college="Yale" />
+		<Alumni pic="about-us-images/Mustang-modified-min.png" name="Krish Jain" college="Carnegie Mellon University" />
+	</FlexBox>
+
 </section>
 
 <style>
