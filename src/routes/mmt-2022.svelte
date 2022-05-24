@@ -156,7 +156,7 @@
         <li>The “Bingo” Round will consist of 24 questions to be solved in 60 minutes.</li>
         <li>The questions will vary in difficulty, but not necessarily in increasing order — rather the difficult problems will be randomly distributed.</li>
         <li>The image below shows the format of the Bingo board:</li>
-        <img src="bingo-board.png" alt="Bingo Board" height="300em">
+        <img src="bingo_board.png" alt="Bingo Board" height="300em">
         <li>In this round, each correctly solved question is worth points, but each completed and correct Bingo (each of the problems in a given row, column, or long diagonal are solved and correct) is worth bonus points!</li>
         <li>You are not expected to solve all the questions in this round within the allotted time. Instead, we encourage you to strategize how you might use your time to maximize your points!</li>
     </ol>
