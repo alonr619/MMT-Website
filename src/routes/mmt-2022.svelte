@@ -150,7 +150,6 @@
         <li>Students will have 15 minutes to read the instructions and then 60 minutes to work together with their teams and solve as many of the puzzles as possible.</li>
         <li>Harder puzzles will be worth more points, but these puzzles will be longer and/or require more creativity — you must decide what problems to focus your time on to optimize your team score.</li>
     </ol>
-    <div id="mountingDisclaimer"><strong>The Mounting Mayhem round is aided by the ability to see a full spectrum of colors. If one of your team members has a form of color blindness, please email us ASAP so we can make accessibility accomodations</strong></div>
 </Dropdown>
 <Dropdown mainText="ROUND 2: Bucking Bingo">
     <ol>
@@ -210,9 +209,6 @@
         margin-left: 1em;
     }
     .registration-other{
-        margin-left: 1.5em;
-    }
-    #mountingDisclaimer{
         margin-left: 1.5em;
     }
 </style>
