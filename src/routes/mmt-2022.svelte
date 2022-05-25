@@ -67,6 +67,13 @@
     <p class="registration-other">International Students in a non-ideal timezone should participate in the international version of our tournament being run by SIMCC on June 11, 2022. If you're interested in participating, you should email <a href="mailto:rupendrad@simcc.org" target="_blank">rupendrad@simcc.org</a></p>
 </Dropdown> <br />
 
+<Heading text="MMT 2022 Unregistered Guide" size={2.5} textColor="#1B9AAA" />
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox>
+        <p style="font-size: 1.5em; text-align: center;">A lot of the information on this page is reiterated in our <a href = "https://docs.google.com/document/d/1mJQouqkewOWl8ZJuB3v_C9s-iJ3KBsK3QzrJkQliW_A/edit?usp=sharing">MMT 2022 Unregistered Guide</a>. On completion of registration, you will receive a link by email to a complete version of the guide with relevant links and additional information!</p>
+    </PanelBox>
+</div> <br />
+
 <Heading text="Rounds" size={2.5} textColor="#1B9AAA" />
 <div class="competition-wrapper">
     <FlexBox align="start">
