@@ -116,12 +116,7 @@
                 <li><strong>Students under 13 years of age should use a parent-created and monitored Discord account.</strong></li>
             </ol>
         <li>Teams may not collaborate with people other than the 1-4 members of their own registered team. This includes members from other teams, parents, coaches, siblings, and friends.</li>
-        <li>Teams will be split into three divisions based on the sum of their grade levels. Empty spots and students 5th grade and below count for 5 “points”. The divisions are as follows:</li>
-            <ol type="a">
-                <li>Division Foal (i): 20-25</li>
-                <li>Division Colt (ii): 26-28</li>
-                <li>Division Stallion (iii): 29-32</li>
-            </ol>
+        <li>Teams will be split into three divisions based on the sum of their grade levels. Empty spots and students 5th grade and below count for 5 “points”. The exact sum splits will be determined to even out the divisions as much as possible.</li>
     </ol>
 </Dropdown>
 <Dropdown mainText="Answer Formatting Rules">
