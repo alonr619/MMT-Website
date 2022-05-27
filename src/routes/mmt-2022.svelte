@@ -64,7 +64,7 @@
     <li>You should be all set to go for the tournament! As always, email us at <a target="_blank" href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a> if you have any confusion or issues!</li>
     </ol>
     <strong class="registration-other">Registration closes May 27.</strong> <br />
-    <p class="registration-other">International Students in a non-ideal timezone should participate in the international version of our tournament being run by SIMCC on June 11, 2022. If you're interested in participating, you should email <a href="mailto:rupendrad@simcc.org" target="_blank">rupendrad@simcc.org</a></p>
+    <p class="registration-other">International Students in a non-ideal timezone should participate in the international version of our tournament being run by SIMCC on August 27, 2022. If you're interested in participating, you should email <a href="mailto:rupendrad@simcc.org" target="_blank">rupendrad@simcc.org</a></p>
 </Dropdown> <br />
 
 <Heading text="MMT 2022 Unregistered Guide" size={2.5} textColor="#1B9AAA" />
