@@ -11,14 +11,14 @@
     import Image from '$lib/components/Image.svelte';
     let windowWidth;
     let scheduleData = [
-        { "Time (PT)": "9:00 - 9:30 AM", "Event": "Opening Ceremony" },
-        { "Time": "9:30 - 10:55 AM", "Event": "Round 1: Mounting Mayhem" },
-        { "Time": "10:55 - 12:05 AM", "Event": "Round 2: Bucking Bingo" },
-        { "Time": "12:05 - 1:00 PM", "Event": "Lunch Break" },
-        { "Time": "1:00 - 2:10 PM", "Event": "Round 3: Gallop" },
-        { "Time": "2:10 - 3:00 PM", "Event": "Round 4: Mystery Mare" },
-        { "Time": "3:00 - 4:00 PM", "Event": "Activities (Optional)" },
-        { "Time": "4:00 - 4:30 PM", "Event": "Awards Ceremony" }
+        { "Time (PT)": "9:00 AM - 9:30 AM", "Event": "Opening Ceremony" },
+        { "Time": "9:30 AM - 10:55 AM", "Event": "Round 1: Mounting Mayhem" },
+        { "Time": "10:55 AM - 12:05 PM", "Event": "Round 2: Bucking Bingo" },
+        { "Time": "12:05 PM - 1:00 PM", "Event": "Lunch Break" },
+        { "Time": "1:00 PM - 2:10 PM", "Event": "Round 3: Gallop" },
+        { "Time": "2:10 PM - 3:00 PM", "Event": "Round 4: Mystery Mare" },
+        { "Time": "3:00 PM - 4:00 PM", "Event": "Activities (Optional)" },
+        { "Time": "4:00 PM - 4:30 PM", "Event": "Awards Ceremony" }
     ]
     let topicsCovered = [
         { "Algebra": "<ul><li>Systems of equations</li> <li>Quadratics</li> <li>Vieta’s</li> <li>Binomial Theorem</li> <li>Radicals/Exponents</li> <li>Simon’s Favorite Factoring Trick</li> <li>Ratios</li> <li>(Infinite) Geometric Series</li> <li>Arithmetic Series</li> <li>Sum/Difference of Powers</li> <li>Rate/Time</li> <li>Floor/Ceiling</li> <li>Absolute Value</li> <li>Substitution (Nested Roots/Repeated Fractions)</li> <li>Mean, Median, Mode, Range</li> <li>Telescoping</li></ul>",
