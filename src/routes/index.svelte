@@ -43,9 +43,9 @@
 				{/if}
                 <div class="flex"><div class="headerline"></div></div>
                 <p class="descript" style="font-weight: 300; font-size: 22px; color: white;">The Mustang Math Tournament [MMT] is an online middle school contest designed around values of collaboration, love for mathematics, and fun</p>
-                <a sveltekit:prefetch href="/mmt-2022" class="headerButton">
+                <a sveltekit:prefetch href="/join" class="headerButton">
                     <div class="headerButton" on:mouseenter={toggleBackground} on:mouseleave={toggleBackground}>
-                        <p class="headerButton">Learn more about MMT 2022</p>
+                        <p class="headerButton">Join the Mustang Math Team</p>
                         <img height="25px" class="headerButton" src={background} alt="Right-facing arrow icon" />
                     </div>
                 </a>
