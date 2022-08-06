@@ -5,7 +5,8 @@
     import PanelBox from '$lib/components/PanelBox.svelte';
     
     export let mainText; // The text you always see and click on
-    
+    export let id="";
+
     export let showContent = false;
     let imageSrc = "right-arrow.png";
     let start = showContent ? 0 : -90;
@@ -24,7 +25,7 @@
     }
 </script>
 
-<div class="dropdown" on:click={toggleContent}>
+<div class="dropdown" on:click={toggleContent} {id}>
     <PanelBox width="88%" margin="0.3em 5vw" padding="10px 10px 10px 20px" borderRadius="15px">
         <svg class="dropdown-image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="199.404px" height="199.404px" viewBox="0 0 199.404 300.404" style="enable-background:new 0 0 199.404 199.404;"

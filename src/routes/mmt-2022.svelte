@@ -53,9 +53,9 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="MMT 2022" description="MAY 28, 2022: 9 AM - 5 PM PT" button_url="https://contestdojo.com/" button_text="Register on ContestDojo!"/>
+<PageHeader title="MMT 2022" description="MAY 28, 2022: 9 AM - 5 PM PT" button_url="https://contestdojo.com/" button_text="Register on ContestDojo!" button_id="registerOnContestDojo" />
 <br /> <br />
-<Dropdown mainText="Registration Instructions and Information" showContent={true}>
+<Dropdown mainText="Registration Instructions and Information" showContent={true} id="showDropdown">
     <ol start=0>
     <li>If you have a partial team (1-3 members) and are interested in getting to a full one, consider using our <a target="_blank" sveltekit:prefetch href="https://tinyurl.com/MMT2022TeammateFinder">Teammate Finder Spreadsheet</a>. You can input your contact information and also contact other parents/coaches to try to find teammates for your students!</li>
     <li>Our registration is managed by <a target="_blank" sveltekit:prefetch href="https://contestdojo.com">ContestDojo</a> - if you are a coach for a math team, or just a parent registering your child's team, you should create a Coaches account on ContestDojo. Note - it may ask you to affirm that you are an 'official representative' for your organization - you can just click that checkbox to move on, we don't require you to be an official representative at MMT.</li>
@@ -101,7 +101,7 @@
 </div> <br />
 
 <Heading text="Rules" size={2.5} textColor="#1B9AAA" />
-<Dropdown mainText="General Rules">
+<Dropdown mainText="General Rules" id="showDropdown">
     <ol>
         <li>No cheating - This contest has a zero-tolerance cheating policy. Any evidence of cheating may lead to immediate disqualification, or any other punishment deemed appropriate by competition staff.</li>
         <li>No calculators, rulers, compasses, protractors, or other aids are permitted.</li>
@@ -119,7 +119,7 @@
         <li>Teams will be split into three divisions based on the sum of their grade levels. Empty spots and students 5th grade and below count for 5 “points”. The exact sum splits will be determined to even out the divisions as much as possible.</li>
     </ol>
 </Dropdown>
-<Dropdown mainText="Answer Formatting Rules">
+<Dropdown mainText="Answer Formatting Rules" id="showDropdown">
     <ol>
         <li>Carry out any reasonable calculations. For instance, you should evaluate any expressions which will take negligible time to evaluate (such as 1/2+1/3). Unreasonable calculations include large powers (e.g. 7<sup>8</sup>), large factorials, large products, and trigonometric functions which cannot be expressed in terms of radicals.</li>
         <li>Write rational numbers in lowest terms. Decimals are also acceptable, provided they are exact.</li>
@@ -132,7 +132,7 @@
         </li>
     </ol>
 </Dropdown>
-<Dropdown mainText="Potential Topics Covered">
+<Dropdown mainText="Potential Topics Covered" id="showDropdown">
     <p id="disclaimer">Disclaimer: While most problems should fall within the scope of these topics, there may be a few that are not.</p>
     {#if windowWidth > 1000}
     <Table data={topicsCovered} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/1200}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/1500}em;" />
@@ -146,14 +146,14 @@
     <Table data={topicsNT} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
     {/if}
 </Dropdown>
-<Dropdown mainText="ROUND 1: Mounting Mayhem (Puzzle)">
+<Dropdown mainText="ROUND 1: Mounting Mayhem (Puzzle)" id="showDropdown">
     <ol>
         <li>The Mounting Mayhem Round will consist of a series of logic puzzles centered around a certain theme.</li>
         <li>Students will have 15 minutes to read the instructions and then 60 minutes to work together with their teams and solve as many of the puzzles as possible.</li>
         <li>Harder puzzles will be worth more points, but these puzzles will be longer and/or require more creativity — you must decide what problems to focus your time on to optimize your team score.</li>
     </ol>
 </Dropdown>
-<Dropdown mainText="ROUND 2: Bucking Bingo">
+<Dropdown mainText="ROUND 2: Bucking Bingo" id="showDropdown">
     <ol>
         <li>The “Bingo” Round will consist of 24 questions to be solved in 60 minutes.</li>
         <li>The questions will vary in difficulty, but not necessarily in increasing order — rather the difficult problems will be randomly distributed.</li>
@@ -163,7 +163,7 @@
         <li>You are not expected to solve all the questions in this round within the allotted time. Instead, we encourage you to strategize how you might use your time to maximize your points!</li>
     </ol>
 </Dropdown>
-<Dropdown mainText="ROUND 3: Gallop (Guts)">
+<Dropdown mainText="ROUND 3: Gallop (Guts)" id="showDropdown">
     <ol>
         <li>The Gallop Round will consist of 27 questions to be solved in 60 minutes.</li>
         <li>The questions will be divided into 9 sets of 3 questions each, and you <strong>must submit the answers to one set</strong> before accessing the problems for the next. This means you must strategize when to submit each set (incomplete or not) to ensure you get access to as many questions as possible.</li>
@@ -171,14 +171,14 @@
         <li>Submissions will be scored immediately and a live score of all participating teams will be available during the competition. Prepare for the adrenaline rush!</li>
     </ol>
 </Dropdown>
-<Dropdown mainText="ROUND 4: Mystery Mare">
+<Dropdown mainText="ROUND 4: Mystery Mare" id="showDropdown">
     <ol>
         <li>The Mystery Mare round is exactly that — a mystery!</li>
         <li>The exact format of the round will be revealed on competition day, but we might drop some hints in communication to students!</li>
         <li>We promise it will be as fun and engaging as the other rounds.</li>
     </ol>
 </Dropdown>
-<Dropdown mainText="FAQ">
+<Dropdown mainText="FAQ" id="showDropdown">
     <p>
         <strong>Q:</strong> I'm a parent or a student, not a coach - how can I register? <br />
         <strong>A:</strong> MMT doesn't require you to be a coach! A parent can act as a coach (and register as a coach on ContestDojo) to create an organization and team(s) for their participating students. <strong>Students should not create coach accounts.</strong>

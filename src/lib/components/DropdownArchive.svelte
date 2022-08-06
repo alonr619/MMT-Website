@@ -3,6 +3,7 @@
     export let tests; // Should be a list in the form of [["Test 1", "path/to/test1.pdf"], ["Test 2", "path/to/test2.pdf"]], etc.
     export let answers;
     export let results;
+    export let id = "";
 
     import { tweened } from 'svelte/motion';
     import { cubicOut } from 'svelte/easing';
@@ -24,7 +25,7 @@
     }
 </script>
 
-<Dropdown mainText="{year}">
+<Dropdown mainText="{year}" {id}>
     <table>
         {#each tests as test}
         <tr>
