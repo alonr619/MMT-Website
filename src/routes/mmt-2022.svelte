@@ -53,7 +53,7 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="MMT 2022" description="MAY 28, 2022: 9 AM - 5 PM PT" button_url="https://contestdojo.com/" button_text="Register on ContestDojo!" button_id="registerOnContestDogo" />
+<PageHeader title="MMT 2022" description="MAY 28, 2022: 9 AM - 5 PM PT" button_url="https://contestdojo.com/" button_text="Register on ContestDojo!" button_id="registerOnContestDojo" />
 <br /> <br />
 <Dropdown mainText="Registration Instructions and Information" showContent={true} id="showDropdown">
     <ol start=0>
