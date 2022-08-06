@@ -13,7 +13,7 @@
 	<title>Partners and Sponsors</title>
 </svelte:head>
 
-<PageHeader title="Partners & Sponsors" description="THE ORGANIZATIONS MAKING MMT POSSIBLE" button_url="https://contestdojo.com/" button_text="Register on ContestDojo!"/>
+<PageHeader title="Partners & Sponsors" description="THE ORGANIZATIONS MAKING MMT POSSIBLE" button_url="https://contestdojo.com/" button_text="Register on ContestDojo!" button_id="registerOnContestDogo"/>
 
 <Section>
     <br /> <br />

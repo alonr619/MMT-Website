@@ -17,7 +17,7 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="Join the Mustang Math Team" description="Become a part of the herd!" button_url="https://tinyurl.com/JoinMMT2023" button_text="Join our Team!" />
+<PageHeader title="Join the Mustang Math Team" description="Become a part of the herd!" button_url="https://tinyurl.com/JoinMMT2023" button_text="Join our Team!"  id="joinTheMustangMathTeam" />
 <br /> <br />
 
 <Heading text="What is MMT?" size={2.5} textColor="#1B9AAA" />
@@ -36,32 +36,32 @@
 </div> <br />
 
 <Heading text="Our Subteams" size={2.5} textColor="#1B9AAA" />
-<Dropdown mainText="Problem Writing">
+<Dropdown mainText="Problem Writing" id="showDropdown">
     <p>
         The <b style="color: #1B9AAA;">Problem Writing</b> team is primarily responsible for the <b style="color: #1B9AAA;">creation of problems</b> used by Mustang Math, and the <b style="color: #1B9AAA;">formation of tests</b> used for our annual tournament(s). Besides the tournament, you could write problems for our online practice platform and other Mustang Math projects! We welcome problem writers with a variety of experience.
     </p>
 </Dropdown>
-<Dropdown mainText="Tech">
+<Dropdown mainText="Tech" id="showDropdown">
     <p>
         The <b style="color: #1B9AAA;">Tech</b> team is in charge of ensuring that all the various <b style="color: #1B9AAA;">technological-related needs</b> of Mustang Math as an organization are being met and maintained, as well as <b style="color: #1B9AAA;">implementing new projects</b> wherever necessary. Currently, the Tech team is working on tasks such as building a Mustang Math YouTube, creating an online training platform, and other exciting projects!
     </p>
 </Dropdown>
-<Dropdown mainText="Design">
+<Dropdown mainText="Design" id="showDropdown">
     <p>
         The <b style="color: #1B9AAA;">Design</b> team ensures that Mustang Math maintains a <b style="color: #1B9AAA;">consistent image</b> and <b style="color: #1B9AAA;">aesthetic</b> throughout the year. Specific jobs that may arise include: Maintaining and rebranding the tournament as necessary, working with other teams to ensure that materials are on brand, and taking on other projects as necessary.
     </p>
 </Dropdown>
-<Dropdown mainText="Tournament Development">
+<Dropdown mainText="Tournament Development" id="showDropdown">
     <p>
         The <b style="color: #1B9AAA;">Tournament Development</b> team is responsible for <b style="color: #1B9AAA;">organization-level</b> communication and all communications relating to the tournament. In general, this will consist of <b style="color: #1B9AAA;">marketing</b> and <b style="color: #1B9AAA;">advertising</b>, working with <b style="color: #1B9AAA;">sponsors</b>, <b style="color: #1B9AAA;">communicating</b> with registrants of Mustang Math Tournament, and making sure that all partners are kept up-to-date with necessary information. Additionally, the Tournament Development team plans and manages all day-of operations for Mustang Math Tournament’s in-person competition(s).
     </p>
 </Dropdown>
-<Dropdown mainText="Curriculum Development">
+<Dropdown mainText="Curriculum Development" id="showDropdown">
     <p>
         The <b style="color: #1B9AAA;">Curriculum Development</b> team is in charge of <b style="color: #1B9AAA;">developing content</b> for all Mustang Math classes as well as for YouTube videos if needed. This may consist of planning lecture material, finding example problems, and <b style="color: #1B9AAA;">teaching students</b>. This is a new team this year, meaning that there is a large potential for innovation, adaptation, and new ideas.
     </p>
 </Dropdown>
-<Dropdown mainText="Community Engagement">
+<Dropdown mainText="Community Engagement" id="showDropdown">
     <p>
         The <b style="color: #1B9AAA;">Community Engagement</b> team is in charge of building and engaging the Mustang Math student community. Some of the jobs include managing <b style="color: #1B9AAA;">social media</b> and <b style="color: #1B9AAA;">online presence</b>, such as FaceBook, LinkedIn, Instagram, and AoPS. Other responsibilities can include <b style="color: #1B9AAA;">planning events</b>, activities, maintaining the discord server, and managing the youtube channel.
     </p>
