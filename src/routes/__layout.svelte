@@ -74,7 +74,6 @@
 		align-items: center;
 		justify-content: center;
 		font-size: 1.5rem;
-		padding-top: 10px;
 		padding-bottom: 20px;
 	}
 </style>
