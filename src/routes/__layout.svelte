@@ -1,5 +1,6 @@
 <script>
 	import Header from '$lib/header/Header.svelte';
+	import SocialsLink from '$lib/components/SocialsLink.svelte';
 	import '../app.css';
     import { page } from "$app/stores";
 </script>
@@ -14,6 +15,13 @@
     {#if $page.url.pathname !== "/"}
 	<footer>
 		<p><b>Contact at </b><a href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a><br /></p>
+		<div class="socials">
+			<SocialsLink url="https://discord.gg/bYDDWxan5d" icon="discord" />
+			<SocialsLink url="https://www.facebook.com/MustangMath" icon="facebook" />
+			<SocialsLink url="https://www.instagram.com/mustangmath/" icon="instagram" />
+			<SocialsLink url="https://www.linkedin.com/company/mustangmathtournament/" icon="linkedin" />
+			<SocialsLink url="https://artofproblemsolving.com/wiki/index.php/Mustang_Math_Tournament" icon="AoPS" text />
+		</div>
 	</footer>
     {/if}
 </div>
@@ -36,6 +44,7 @@
 
 	footer {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		bottom: 0;
@@ -57,5 +66,14 @@
 	footer a:hover{
 		text-decoration: underline;
 		opacity: 0.8;
+	}
+
+	.socials {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		padding-bottom: 20px;
 	}
 </style>
