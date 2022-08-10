@@ -14,8 +14,8 @@
 
     const navPages = [
         {path: "/", text: "Home"},
-        {path: "/our-team", text: "Our Team"},
 		{path: "/competitions", text: "Competitions"},
+		{path: "/our-team", text: "Our Team"},
 		{path: "/join", text: "Join Us"},
 		{path: "/sponsors", text: "Sponsors"},
         {path: "/past-exams", text: "Past Exams"},
@@ -40,9 +40,9 @@
 		<ul>
 			<li class:active={$page.url.pathname === '/'} style="text-align: left; width: 100%; font-weight: bold; text-decoration: none;"><a sveltekit:prefetch href="/" style="font-size: 1.25rem;">
 				{#if windowWidth > MMT_BREAKPOINT}
-				Mustang Math Tournament
+				Mustang Math
 				{:else}
-				MMT
+				MM
 				{/if}
 			</a></li>
 			{#if windowWidth > HAMBURGER_BREAKPOINT || windowWidth===0}

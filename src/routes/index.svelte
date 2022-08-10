@@ -37,12 +37,12 @@
         {#if visible}
             <div in:fly="{{ y: -20, duration: 700 }}" class="minidiv">
                 {#if windowWidth > 600}
-				<Heading className="glow" text="Mustang Math Tournament" textColor="white" />
+				<Heading className="glow" text="Mustang Math" textColor="white" />
 				{:else}
-				<Heading className="glow" text="MMT" textColor="white" />   
+				<Heading className="glow" text="MM" textColor="white" />   
 				{/if}
                 <div class="flex"><div class="headerline"></div></div>
-                <p class="descript" style="font-weight: 300; font-size: 22px; color: white;">The Mustang Math Tournament [MMT] is an online middle school contest designed around values of collaboration, love for mathematics, and fun</p>
+                <p class="descript" style="font-weight: 300; font-size: 22px; color: white;">Mustang Math [MM] is an online middle school contest designed around values of collaboration, love for mathematics, and fun</p>
                 <a sveltekit:prefetch href="/join" class="headerButton">
                     <div class="headerButton" on:mouseenter={toggleBackground} on:mouseleave={toggleBackground}>
                         <p class="headerButton" id="joinTheMustangMathTeam">Join the Mustang Math Team</p>
