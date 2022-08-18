@@ -58,7 +58,7 @@
 
 <style>
 .outside {
-    background-image: url("/splash.svg");
+    background-image: url("../lib/components/PageHeader-background.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
