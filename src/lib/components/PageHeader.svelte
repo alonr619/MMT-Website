@@ -41,7 +41,7 @@
 <style>
 .header {
 	text-align: center;
-    background-image: url("PageHeader-background.svg");
+    background-image: url("/splash.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
