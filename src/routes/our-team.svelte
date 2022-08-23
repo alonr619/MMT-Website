@@ -8,7 +8,7 @@
 	import Person from '$lib/components/Person.svelte';
 	import PageHeader from '$lib/components/PageHeader.svelte';
 	import Alumni from '$lib/components/Alumni.svelte';
-
+	import Members from '$lib/Members.json'
 	let windowWidth;
 </script>
 
@@ -54,6 +54,9 @@
 		<Person pic="about-us-images/Wilson_Liu-modified-min.png" name="Wilson Liu" />
 		<Person pic="about-us-images/Yash_Mathur-modified-min.png" name="Yash Mathur" />
 		<Person pic="about-us-images/Yuuki_Sawanoi-modified-min.png" name="Yuuki Sawanoi" />
+		{#each Members as Member}
+			<Person pic={Member.image.replace("/open?id=", "/uc?id=")+"&export=download"} name={Member.fullName} />
+		{/each}
 	</FlexBox>
 	<h1>Other Contributors</h1>
 	<div style="display: flex; justify-content: center; align-items: center;">
