@@ -51,7 +51,7 @@
 
 @media (max-width: 700px) {
     .header {
-        background-image: url("/splash-mobile.svg");
+        background-image: url("/splash-background.svg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
