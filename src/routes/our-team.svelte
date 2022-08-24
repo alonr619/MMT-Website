@@ -23,7 +23,7 @@
 	<br />
 	<FlexBox wrap={true}>
 		{#each Members as Member}
-			<Person pic={Member.image.replace("/file/d/", "/uc?id=").replace("/open?id=", "/uc?id=").replace("/view?usp=sharing", "")+"&export=download"} name={Member.fullName} />
+			<Person pic={Member.image.replace("/file/d/", "/uc?id=").replace("/open?id=", "/uc?id=").replace("/view?usp=sharing", "")+"&export=download"} name={Member.fullName} grade={Member.grade}/>
 		{/each}
 	</FlexBox>
 	<h1>Other Contributors</h1>
