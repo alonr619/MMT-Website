@@ -11,7 +11,7 @@
 <PanelBox width="21em">
     <div class="person-flex">
         <div class="person-pic">
-            <img class="person-img" src={pic} alt={name} width="130" height="130"/>
+            <img class="person-img" src={pic} alt={name} width="130" height="130" style="object-fit: cover; border-radius: 9999px;"/>
         </div>
         <div class="person-details">
             <p style="color: black; font-size: 1.2em;font-weight:400;">{name}</p>
