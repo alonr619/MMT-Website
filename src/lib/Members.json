@@ -96,6 +96,12 @@
         "image": "https://drive.google.com/open?id=1RDT8JNnsd_02Ih9qBS_XwEpZeW85KDVW"
     },
     {
+        "fullName": "Daniel Chirakarn",
+        "preferredPronouns": "he/him/his",
+        "grade": 10,
+        "image": "https://drive.google.com/open?id=1E8m-8bq2BIrgIAKr-ElloBv-V35jC-gj"
+    },
+    {
         "fullName": "Daniel Z Lu",
         "preferredPronouns": "he/him/his",
         "grade": 10,
@@ -124,6 +130,12 @@
         "image": "https://drive.google.com/open?id=1mPTDLW3LKbGvafMKxIszspCjUvepQjXp"
     },
     {
+        "fullName": "Grace Tan",
+        "preferredPronouns": "she/her/hers",
+        "grade": 11,
+        "image": "https://drive.google.com/open?id=15e2qPYT1nou0buUIol8bmtg-l50QpgcV"
+    },
+    {
         "fullName": "Grace Zhao",
         "preferredPronouns": "she/her/hers",
         "grade": 10,
@@ -136,6 +148,12 @@
         "grade": 11,
         "teamsroles": "Design, Tournament Development",
         "image": "https://drive.google.com/open?id=1s-7hgmLujcbxizfGcalB1K2TxIWfsoIE"
+    },
+    {
+        "fullName": "Harshil Nukala",
+        "preferredPronouns": "he/him/his",
+        "grade": 9,
+        "image": "https://drive.google.com/open?id=1EPN_afQjUbeIzt7bG7vVaRX575s0r5Sq"
     },
     {
         "fullName": "Joyce Huang",
@@ -177,6 +195,12 @@
         "preferredPronouns": "he/him/his",
         "grade": 10,
         "image": "https://drive.google.com/open?id=1ljXb1Ioji8V2yTvFd2ugkFFWzinf-Mz6"
+    },
+    {
+        "fullName": "Nihal Josyula",
+        "preferredPronouns": "he/him/his",
+        "grade": 10,
+        "image": "https://drive.google.com/open?id=1cmar281-I_KPwvzXGwcyT6O8zWGPI07T"
     },
     {
         "fullName": "Noel Prince Muthuplakal",
@@ -233,6 +257,20 @@
         "image": "https://drive.google.com/open?id=1rNb6Tm_a3ClmbAS0yuU3zL8GXOTHA0NZ"
     },
     {
+        "fullName": "Sebastian Kumar",
+        "preferredPronouns": "he/him/his",
+        "grade": 12,
+        "image": "https://drive.google.com/open?id=1L8p0BJaeO_wWk6YViEIMtNoNPks7Y8ST"
+    },
+    {
+        "fullName": "Serena Xu",
+        "preferredPronouns": "she/her/hers",
+        "grade": 12,
+        "teamsroles": "Curriculum Development, Problem Writing",
+        "image": "https://drive.google.com/open?id=1Qygfp1d-EbziR3U2igQgb_G57LbHCjRn",
+        "optionalProvideALinkToAPersonalSiteYoudLikeYourWebsitePictureToLinkToEgInstagramLinkedinPersonalWebpageEtc": "https://rabbbbbbbbbti.github.io/"
+    },
+    {
         "fullName": "Shak Ragoler",
         "grade": 12,
         "image": "https://drive.google.com/open?id=1VYq8jUSA2b6Ft8pZi00jUyVqE_kUzBMv"
@@ -268,11 +306,9 @@
         "image": "https://drive.google.com/open?id=1o-oVK_UuZopRJuDsuwKwgqcJtNB0ujro"
     },
     {
-        "fullName": "Serena Xu",
-        "preferredPronouns": "she/her/hers",
+        "fullName": "Yuuki Sawanoi",
+        "preferredPronouns": "he/him/his",
         "grade": 12,
-        "teamsroles": "Curriculum Development, Problem Writing",
-        "image": "https://drive.google.com/open?id=1Qygfp1d-EbziR3U2igQgb_G57LbHCjRn",
-        "optionalProvideALinkToAPersonalSiteYoudLikeYourWebsitePictureToLinkToEgInstagramLinkedinPersonalWebpageEtc": "https://rabbbbbbbbbti.github.io/"
+        "image": "https://drive.google.com/open?id=1Ub2MCp8LV8NJhEIe-9szADpadIghBadf"
     }
 ]
