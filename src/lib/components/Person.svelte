@@ -1,6 +1,7 @@
 <script>
     export let pic;
     export let name;
+    export let grade;
     // export let position;
 
     import Text from '$lib/components/Text.svelte';
@@ -15,7 +16,6 @@
         </div>
         <div class="person-details">
             <p style="color: black; font-size: 1.2em;font-weight:400;">{name}</p>
-            <!-- <Text text={position} /> -->
         </div>
     </div>
 </PanelBox>

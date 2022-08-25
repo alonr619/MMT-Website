@@ -23,7 +23,7 @@
 	<br />
 	<FlexBox wrap={true}>
 		{#each Members as Member}
-			<Person pic={Member.image.replace("/file/d/", "/uc?id=").replace("/open?id=", "/uc?id=").replace("/view?usp=sharing", "")+"&export=download"} name={Member.fullName} />
+			<Person pic={Member.image} name={Member.fullName} grade={Member.grade}/>
 		{/each}
 	</FlexBox>
 	<h1>Other Contributors</h1>
@@ -91,9 +91,9 @@
 
 	<h1>Alumni</h1>
 	<FlexBox wrap={true}>
-		<Alumni pic="about-us-images/Gloria_Lee-modified-min.png" name="Gloria Lee" college="GeorgiaTech" />
-		<Alumni pic="about-us-images/Mustang-modified-min.png" name="Arnav Narula" college="Yale" />
-		<Alumni pic="about-us-images/Mustang-modified-min.png" name="Krish Jain" college="Carnegie Mellon University" />
+		<Alumni pic="archive/about-us-images-old/Gloria_Lee-modified-min.png" name="Gloria Lee" college="GeorgiaTech" />
+		<Alumni pic="archive/about-us-images-old/Mustang-modified-min.png" name="Arnav Narula" college="Yale" />
+		<Alumni pic="archive/about-us-images-old/Mustang-modified-min.png" name="Krish Jain" college="Carnegie Mellon University" />
 	</FlexBox>
 
 </section>
