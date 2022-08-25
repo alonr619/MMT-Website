@@ -91,9 +91,9 @@
 
 	<h1>Alumni</h1>
 	<FlexBox wrap={true}>
-		<Alumni pic="about-us-images/Gloria_Lee-modified-min.png" name="Gloria Lee" college="GeorgiaTech" />
-		<Alumni pic="about-us-images/Mustang-modified-min.png" name="Arnav Narula" college="Yale" />
-		<Alumni pic="about-us-images/Mustang-modified-min.png" name="Krish Jain" college="Carnegie Mellon University" />
+		<Alumni pic="about-us-images-old/Gloria_Lee-modified-min.png" name="Gloria Lee" college="GeorgiaTech" />
+		<Alumni pic="about-us-images-old/Mustang-modified-min.png" name="Arnav Narula" college="Yale" />
+		<Alumni pic="about-us-images-old/Mustang-modified-min.png" name="Krish Jain" college="Carnegie Mellon University" />
 	</FlexBox>
 
 </section>
