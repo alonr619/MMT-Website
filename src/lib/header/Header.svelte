@@ -16,9 +16,8 @@
         {path: "/", text: "Home"},
 		{path: "/competitions", text: "Competitions"},
 		{path: "/our-team", text: "Our Team"},
-		{path: "/join", text: "Join Us"},
 		{path: "/sponsors", text: "Sponsors"},
-        {path: "/past-exams", text: "Past Exams"},
+		{path: "/resources", text: "Resources"}
     ]
 
     const HAMBURGER_BREAKPOINT = 900; // change if adding more pages
