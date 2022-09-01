@@ -67,20 +67,3 @@
     </p>
 </Dropdown>
 <br />
-
-<style>
-    li {
-		margin-bottom:0.5em
-	}
-    .competition-wrapper{
-        margin-right: 5vw;
-        margin-left: 0vw;
-        width: 100%;
-    }
-    #disclaimer{
-        margin-left: 1em;
-    }
-    .registration-other{
-        margin-left: 1.5em;
-    }
-</style>
