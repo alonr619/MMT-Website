@@ -22,7 +22,7 @@
 	<title>Classes</title>
 </svelte:head>
 
-<PageHeader title="Classes" description="High quality, student-focused classes of varying level" button_url="https://contestdojo.com/" button_text="Indicate your interest for classes!" button_id="registerOnContestDojo"/>
+<PageHeader title="Classes" description="High quality, student-focused classes of varying level" button_url="https://tinyurl.com/MMClassInterestForm" button_text="Indicate your interest for classes!" button_id="registerOnContestDojo"/>
 <br /> <br />
 <Heading text="Mustang Math Classes" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
@@ -74,44 +74,4 @@
     .headerButton:hover {
         text-decoration: none;
     }
-
-    .effect {
-		text-align: center;
-		display: inline-block;
-		position: relative;
-		text-decoration: none;
-		text-transform: capitalize;
-		width: 30%;
-		overflow: hidden;
-	}
-
-	/* effect-1 styles */
-
-	.effect.effect-1 {
-		transition: all 0.2s linear 0s;
-	}
-
-	.effect.effect-1:before {
-		content: '\f178';
-		font-family: FontAwesome;
-		position: absolute;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		right: 0;
-		top: 0;
-		opacity: 0;
-		height: 100%;
-		width: 40px;
-		transition: all 0.2s linear 0s;
-	}
-
-	.effect.effect-1:hover {
-		text-indent: -20px;
-	}
-
-	.effect.effect-1:hover:before {
-		opacity: 1;
-		text-indent: 0px;
-	}
 </style>
