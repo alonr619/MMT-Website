@@ -5,6 +5,7 @@
     import Link from '$lib/components/Link.svelte';
     import { fly } from "svelte/transition";
     import { onMount } from "svelte";
+import Newsletter from '$lib/components/Newsletter.svelte';
 
     // need to do this to make the animation play on page load
     let visible = false;
@@ -55,6 +56,10 @@
         {/if}
     </div>
 </div>
+
+<br />
+<Newsletter />
+<br />
 
 <style>
 .outside {
