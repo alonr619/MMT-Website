@@ -10,10 +10,14 @@
     import PageHeader from '$lib/components/PageHeader.svelte';
 
     let scheduleData = [
-        { "Week": "1", "Date": "October 15, 2022", "Topics Covered": "Topic A, Topic B, Topic C" },
-        { "Week": "2", "Date": "October 22, 2022", "Topics Covered": "Topic A, Topic B, Topic C" },
-        { "Week": "3", "Date": "October 29, 2022", "Topics Covered": "Topic A, Topic B, Topic C" },
-        { "Week": "4", "Date": "November 6, 2022", "Topics Covered": "Topic A, Topic B, Topic C" },
+        { "Week": "1", "Dates": "October 17-23, 2022", "Topics Covered": "Introduction & Basic Review" },
+        { "Week": "2", "Dates": "October 24-30, 2022", "Topics Covered": "Systems of Equations" },
+        { "Week": "3", "Dates": "October 31-November 6, 2022", "Topics Covered": "Inequalities" },
+        { "Week": "4", "Dates": "November 7-13, 2022", "Topics Covered": "Sequences & Series" },
+        { "Week": "5", "Dates": "November 14-20, 2022", "Topics Covered": "Functions & Their Graphs" },
+        { "Week": "6", "Dates": "November 21-27, 2022", "Topics Covered": "Polynomials" },
+        { "Week": "7", "Dates": "November 28-December 4, 2022", "Topics Covered": "Contest Tricks" },
+        { "Week": "8", "Dates": "December 5-11, 2022", "Topics Covered": "Special Topics" },
     ]
 
 </script>
@@ -24,12 +28,11 @@
 
 <PageHeader title="Classes" description="High quality, student-focused classes of varying level" button_url="https://tinyurl.com/MMClassInterestForm" button_text="Indicate your interest for classes!" button_id="registerOnContestDojo"/>
 <br /> <br />
-<Heading text="Mustang Math Classes" size={2.5} textColor="#1B9AAA" />
+<Heading text="Summary" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a odio ex. Curabitur fermentum, velit vel sagittis iaculis, eros ligula lobortis turpis, quis porta nulla nisl dignissim orci. In sagittis enim at est aliquam volutpat. Aenean vel molestie est. Ut tempor faucibus quam nec ullamcorper. Proin at velit ornare, ultricies enim at, sagittis nisi. Suspendisse lacinia placerat leo. Suspendisse luctus sem risus, ut ultrices mauris eleifend ac. Fusce aliquet vulputate lacus, vitae semper neque condimentum nec. Etiam aliquet imperdiet eros eu rutrum. Nullam eleifend, ipsum a interdum sagittis, ex lorem vestibulum lectus, at commodo orci augue ut magna. Ut lorem odio, mattis ac lacus at, congue sagittis nulla. Vivamus dignissim tellus vitae turpis venenatis maximus.</p>
-
-        <p style="font-size: 1.5em; text-align: center;">Vivamus sit amet ex facilisis, rhoncus eros eget, vulputate mi. Fusce orci nulla, pellentesque ut auctor fermentum, facilisis vitae quam. Nam luctus enim sit amet metus condimentum ultrices. Nulla ac quam ornare, lacinia quam in, pharetra urna. Suspendisse cursus felis nec est volutpat tincidunt. Etiam varius, libero a volutpat malesuada, quam mauris consectetur velit, et semper leo ipsum in dolor. Vestibulum at odio magna. Cras auctor mi ut tortor sollicitudin eleifend. Phasellus rutrum velit ut rutrum sagittis. Curabitur rutrum est mauris, in imperdiet justo interdum.</p>
+        <p style="font-size: 1.5em; text-align: center;">Mustang Math classes bring together students from around the world with one thing in common: an outstanding passion for math. Our highly qualified instructors prepare students for competitions in a fun and engaging way. Beyond instruction, we want to build a community of students and teachers sharing their love of math.</p>
+        <p style="font-size: 1.5em; text-align: center;">These classes will be run year-round and will be split into 4 main topics: Algebra, Combinatorics, Number Theory, and Geometry, each run for 8 weeks. Instructive sessions will run for 90 minutes every week over Zoom. Additionally, teachers will hold office hours each week, during which students can seek assistance with the content or ask any lingering questions. Each class will have 10-15 students and, depending on the interest we receive, there may be multiple classes run for each level. The total cost for 8 weeks of classes will be $80 with financial aid available.</p>
     </PanelBox>
 </div> <br />
 <br />
@@ -37,12 +40,31 @@
 <Heading text="Topic-Based Courses" size={2.5} textColor="#1B9AAA" />
 <div class="competition-wrapper">
     <FlexBox align="start">
-        <Competition imgSource="classes/fx.png" competition="Algebra" description="The second best subject. Key topics include: " />
-        <Competition imgSource="classes/dice.png" competition="Combinatorics" description="The best subject. Key topics include: " />
-        <Competition imgSource="classes/compass.png" competition="Geometry" description="The most hotly debated subject. Key topics include: " />
-        <Competition imgSource="classes/numbers.png" competition="Number Theory" description="The most ignored subject. Key topics include: " />
+        <Competition imgSource="classes/fx.png" competition="Algebra" description="Invariably fun. Key topics include Polynomials, Sequences, and Inequalities." />
+        <Competition imgSource="classes/dice.png" competition="Combinatorics" description="You can always count on it. Key topics include Counting Techniques, Distinguishability, and Probability " />
+        <Competition imgSource="classes/compass.png" competition="Geometry" description="Just plane interesting. Key topics include Similar Triangles, Circles, and 3D Geometry" />
+        <Competition imgSource="classes/numbers.png" competition="Number Theory" description="Prime learning material. Key topics include Primes, Bases, Modular Arithmetic" />
     </FlexBox>
 </div> <br />
+
+
+<Heading text="One-on-One Tutoring" size={2.5} textColor="#1B9AAA" />
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox>
+        <p style="font-size: 1.5em; text-align: center;">Do you prefer a smaller learning environment with more personalized instruction? Mustang Math will also be offering one-on-one tutoring! One-on-one sessions will be more flexible with instruction tailored specifically towards the student’s needs. Pricing is flexible depending on level of instruction required, and will be generally more than our group classes. If you are interested in one-on-one tutoring, email us at <a target="_blank" href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a>.</p>
+    </PanelBox>
+</div> <br />
+<br />
+
+
+<Heading text="Algebra Class Details" size={2.5} textColor="#1B9AAA" />
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox>
+        <p style="font-size: 1.5em; text-align: center;">Our first class will be on Algebra and will start on the week of October 17th, 2022. There are currently 2 levels of classes planned, Beginner Algebra (AMC 8 level) and Intermediate Algebra (AMC 10/12 level).  See below for the weekly breakdown of topics!</p>
+    
+    </PanelBox>
+</div> <br />
+<br />
 
 <Heading text="Algebra Classes Schedule" size={2.5} textColor="#1B9AAA" />
 <div class="schedule-wrapper">
