@@ -15,6 +15,7 @@
     const navPages = [
         {path: "/", text: "Home"},
 		{path: "/competitions", text: "Competitions"},
+		{path: "/classes", text: "Classes"},
 		{path: "/our-team", text: "Our Team"},
 		{path: "/sponsors", text: "Sponsors"},
 		{path: "/resources", text: "Resources"}
