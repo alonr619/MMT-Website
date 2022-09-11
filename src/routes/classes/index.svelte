@@ -10,14 +10,14 @@
     import PageHeader from '$lib/components/PageHeader.svelte';
 
     let scheduleData = [
-        { "Week": "1", "Dates": "October 17-23, 2022", "Topics Covered": "Introduction & Basic Review" },
-        { "Week": "2", "Dates": "October 24-30, 2022", "Topics Covered": "Systems of Equations" },
+        { "Week": "1", "Dates": "October 17-October 23, 2022", "Topics Covered": "Introduction & Basic Review" },
+        { "Week": "2", "Dates": "October 24-October 30, 2022", "Topics Covered": "Systems of Equations" },
         { "Week": "3", "Dates": "October 31-November 6, 2022", "Topics Covered": "Inequalities" },
-        { "Week": "4", "Dates": "November 7-13, 2022", "Topics Covered": "Sequences & Series" },
-        { "Week": "5", "Dates": "November 14-20, 2022", "Topics Covered": "Functions & Their Graphs" },
-        { "Week": "6", "Dates": "November 21-27, 2022", "Topics Covered": "Polynomials" },
+        { "Week": "4", "Dates": "November 7-November 13, 2022", "Topics Covered": "Sequences & Series" },
+        { "Week": "5", "Dates": "November 14-November 20, 2022", "Topics Covered": "Functions & Their Graphs" },
+        { "Week": "6", "Dates": "November 21-November 27, 2022", "Topics Covered": "Polynomials" },
         { "Week": "7", "Dates": "November 28-December 4, 2022", "Topics Covered": "Contest Tricks" },
-        { "Week": "8", "Dates": "December 5-11, 2022", "Topics Covered": "Special Topics" },
+        { "Week": "8", "Dates": "December 5-December 11, 2022", "Topics Covered": "Special Topics" },
     ]
 
 </script>
@@ -31,8 +31,8 @@
 <Heading text="Summary" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Mustang Math classes bring together students from around the world with one thing in common: an outstanding passion for math. Our highly qualified instructors prepare students for competitions in a fun and engaging way. Beyond instruction, we want to build a community of students and teachers sharing their love of math.</p>
-        <p style="font-size: 1.5em; text-align: center;">These classes will be run year-round and will be split into 4 main topics: Algebra, Combinatorics, Number Theory, and Geometry, each run for 8 weeks. Instructive sessions will run for 90 minutes every week over Zoom. Additionally, teachers will hold office hours each week, during which students can seek assistance with the content or ask any lingering questions. Each class will have 10-15 students and, depending on the interest we receive, there may be multiple classes run for each level. The total cost for 8 weeks of classes will be $80 with financial aid available.</p>
+        <p style="font-size: 1.5em; text-align: center;"><b>Mustang Math classes</b> bring together students from around the world with one thing in common: an outstanding passion for math. Our highly qualified instructors prepare students for competitions in a fun and engaging way. Beyond instruction, we want to build a <b>community</b> of students and teachers sharing their love of math.</p>
+        <p style="font-size: 1.5em; text-align: center;">These classes will be run year-round and will be split into 4 main topics: Algebra, Combinatorics, Number Theory, and Geometry, each run for <b>8 weeks</b>. Instructive sessions will run for <b>90 minutes</b> every week over Zoom. Additionally, teachers will hold <b>office hours</b> each week, during which students can seek assistance with the content or ask any lingering questions. Each class will have <b>10-15 students</b> and, depending on the interest we receive, there may be multiple classes run for each level. The total cost for 8 weeks of classes will be <b>$80</b> with financial aid available.</p>
     </PanelBox>
 </div> <br />
 <br />
@@ -48,19 +48,10 @@
 </div> <br />
 
 
-<Heading text="One-on-One Tutoring" size={2.5} textColor="#1B9AAA" />
-<div style="margin-left: 10vw; margin-right: 10vw;">
-    <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Do you prefer a smaller learning environment with more personalized instruction? Mustang Math will also be offering one-on-one tutoring! One-on-one sessions will be more flexible with instruction tailored specifically towards the student’s needs. Pricing is flexible depending on level of instruction required, and will be generally more than our group classes. If you are interested in one-on-one tutoring, email us at <a target="_blank" href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a>.</p>
-    </PanelBox>
-</div> <br />
-<br />
-
-
 <Heading text="Algebra Class Details" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Our first class will be on Algebra and will start on the week of October 17th, 2022. There are currently 2 levels of classes planned, Beginner Algebra (AMC 8 level) and Intermediate Algebra (AMC 10/12 level).  See below for the weekly breakdown of topics!</p>
+        <p style="font-size: 1.5em; text-align: center;">Our first class will be on Algebra and will start on the week of October 17th, 2022. There are currently 2 levels of classes planned, Beginner Algebra (AMC 8 level) and Intermediate Algebra (AMC 10/12 level).  See below for the weekly breakdown of topics! If you’re interested in participating in these classes, make sure to fill out the <b><a href = https://tinyurl.com/MMClassInterestForm>interest form</a></b>.</p>
     
     </PanelBox>
 </div> <br />
@@ -73,6 +64,14 @@
             <Table data={scheduleData} width="auto" headerColor="#1B9AAA" rowColors={["#A4D6AF", "#ADCDD6"]} cellPadding={5} cellPaddingRight={20}/>
         </PanelBox>
     </FlexBox>
+</div> <br />
+<br />
+
+<Heading text="One-on-One Tutoring" size={2.5} textColor="#1B9AAA" />
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox>
+        <p style="font-size: 1.5em; text-align: center;">Do you prefer a smaller learning environment with more personalized instruction? Mustang Math will also be offering one-on-one tutoring! One-on-one sessions will be more flexible with instruction tailored specifically towards the student’s needs. Pricing is flexible depending on level of instruction required, and will be generally more than our group classes. Do note that instructor availability may be limited. If you are interested in one-on-one tutoring, email us at <a target="_blank" href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a>.</p>
+    </PanelBox>
 </div> <br />
 <br />
 
