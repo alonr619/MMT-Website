@@ -11,7 +11,7 @@
 	<title>Study Resources</title>
 </svelte:head>
 
-<PageHeader title="Resources" description="Study for upcoming tournaments or classes with these resources!" button_url="https://contestdojo.com/" button_text="Register on ContestDojo!" button_id="registerOnContestDojo"/>
+<PageHeader title="Resources" description="Study for upcoming tournaments or classes with these resources!" button_url="https://mm-training-portal.vercel.app/" button_text="Check out our training portal" button_id="trainingPortal"/>
 
 <section>
     <Heading text="Mini Lectures" size={2.5} textColor="#1B9AAA" />
