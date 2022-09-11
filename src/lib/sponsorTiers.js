@@ -1,5 +1,11 @@
 const sponsorTiers = [
     {
+        "name": "Unicorn Sponsors",
+        "singular": "Unicorn Sponsor",
+        "headerColor": "#3b1d32",
+        "sponsors": []
+    },
+    {
         "name": "Stallion Sponsors",
         "singular": "Stallion Sponsor",
         "headerColor": "#5ba89a",
