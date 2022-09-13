@@ -21,7 +21,8 @@
     <FlexBox>
         <PanelBox width="60%" style="min-width: 360px;">
             <p style="font-size: 1.2em; margin: 5px">Thank you to our sponsors and partners for supporting the Mustang Math Tournament and our vision of providing a fun, collaborative team competition to motivated and bright middle school students!<br><br>
-            Interested in sponsoring or partnering? Take a look at our <Link target="_blank" url="https://docs.google.com/presentation/d/1h2_5qUYBZybu6CEsQBB2FKEuYc0BitbsnBrLiRUCgJA/edit?usp=sharing" text="sponsorship information" />! You can contact us at <Link target="_blank" url="mailto:mustangmathtournament@gmail.com" text="mustangmathtournament@gmail.com" />.</p>
+            Interested in sponsoring or partnering? Reach out to us at <Link target="_blank" url="mailto:mustangmathtournament@gmail.com" text="mustangmathtournament@gmail.com" />.
+            All sponsorships are used to help fund our competitions, classes, and other activities and improving the quality of such events.</p>
         </PanelBox>
     </FlexBox>
 </Section>

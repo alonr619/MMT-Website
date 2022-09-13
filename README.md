@@ -1,27 +1,20 @@
 # Instructions for Setting up Local Environment
-1. Clone repo. I recommend to use GitHub Desktop for this, since it's easier, but you can also do it with terminal
-2. Open in VSCode (any text editor works, but I recommend this), and install the Svelte plugin for code coloring
-3. Open up a terminal in VSCode, and enter `npm install` and `npm run dev -- --open`
-4. Start coding! :)
+1. Clone repo. You can use either terminal or GitHub Desktop.
+2. If you use VSCode, you can install the Svelte plugin.
+3. Install `npm`, if you haven't already.
+4. Run the command `npm install`.
+5. Run the local server using the command `npm run dev -- --open`.
+6. Start coding! :)
+
+# Repository
+The `static` folder contains static content, like the about us images and past tests.
+
+The `src` folder contains `lib` and `routes`. `routes` is where the src code for each of pages are, and `lib` contains the `components` and some other `.js` files, among other things. What's important is the `components` folder which has all the different components that the website uses.
+
+# Contributing
+To contribute, choose an issue from the Taskade to work on and create a new branch. Once you're happy with your changes, create a pull request from your branch to `staging`. I'll look over your commits and ask for changes if necessary. After that, the `staging` branch will be reviewed by other teams. If everything is alright, it'll be merged to `main` and deployed to prod.
 
 # Links
-https://svelte.dev - You can find all the tutorials and examples for Svelte here  
-https://kit.svelte.dev - Will be relevant once we start making the actual website. I recommend to read the pages section, as we won't be having a backend  
-https://docs.google.com/document/d/1Gt61MZgAF_WwUiybIuf0nMSMYmLgYby1-loBxoR5eVI/edit#heading=h.c9v07snpdcl8 - internal documentation, update after every component is made  
-https://linguinecode.com/post/how-to-pass-children-elements-in-svelte - children with Svelte components
-
-# Process for Making Components
-1. Take one of the open issues
-2. Make a branch if you don't have one already. If you do have a branch, delete and make a new one with the same name to refresh changes
-3. Code the component locally  
-    a. Required attributes do not need to have a default value  
-    b. Optional attributes *still need to be in your component*. They simply need to have a default value  
-    c. All components will go into `/src/lib/components`. This has the added advantage that, when we import the component, we can simply refer to it as `$lib/components/[component name].svelte`, so we don't need to worry about relative paths  
-    d. Name your component file name with a capital starting letter, so we can differentiate between user-made components and default HTML tags.  
-4. Test it out in `/src/routes/index.svelte`
-5. Push your commits to your branch, then make a pull request  
-    a. If there are any errors, my automatic comment below will tell you
-6. I will merge it to main if it is good
-
-# Debugging
-One problem I noticed was that it would say there's an error with the opening `<script>` tag in multiple Svelte files, then when you hover over the tag, it would say that there's a problem with the `svelte.config.js` file. For some reason, making a small change in `svelte.config.js`, then deleting the change, then saving the file seems to take away these errors. I believe it's a "problem" caused by the fact that `node_modules` is not automatically imported when you clone this project, rather it is only imported after you run `npm install`.
+- [Svelte Tutorial](https://svelte.dev/tutorial/basics)
+- [SvelteKit](https://kit.svelte.dev)
+- [Children with Svelte Components](https://linguinecode.com/post/how-to-pass-children-elements-in-svelte)
