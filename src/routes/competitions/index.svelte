@@ -8,14 +8,14 @@
 
     const competitions = [
         {
-            title: "MMT 2023",
-            location: "mmt-2023"
+            title: "Mustang Mini Math Tournament (3MT)",
+            location: "3mt-2022"
         },
         {
-            title: "Individual",
-            location: "individual"
-        }
-    ]
+            title: "Mustang Math Tournament 2023 (MMT)",
+            location: "mmt-2023"
+        },
+    ];
     // A value of false represents that the ith button is unfilled
     let buttonStates = Array(competitions.length).fill(false);
 
