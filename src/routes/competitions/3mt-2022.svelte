@@ -104,8 +104,8 @@
         <li>Denominators need to be rationalized. For example, write 1/√2 as √2/2 instead.</li>
         <li>Do not express an answer using a repeated sum or product.</li>
         <li>Here are some examples of simplified answers, and examples of unsimplified answers with simplified equivalents:
-            <div style="margin-top: 5px"><Image url="mmt-2022/acceptable-answers.png" alt="Acceptable answer examples" /></div>
-            <div style="margin-top: 5px"><Image url="mmt-2022/unacceptable-answers.png" alt="Unacceptable answer examples" /></div>
+            <div style="margin-top: 5px"><Image url="../mmt-2022/acceptable-answers.png" alt="Acceptable answer examples" /></div>
+            <div style="margin-top: 5px"><Image url="../mmt-2022/unacceptable-answers.png" alt="Unacceptable answer examples" /></div>
         </li>
     </ol>
 </Dropdown>
