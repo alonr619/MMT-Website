@@ -8,8 +8,9 @@
 	--primary-color: #b9c6d2;
 	--secondary-color: #d0dde9;
 	--tertiary-color: #edf0f8;
+	--bold-color: #1b9aaa;
 	--accent-color: #ff3e00;
-	--heading-color: rgba(0, 0, 0, 0.7);
+	--paragraph-color: rgba(3, 2, 2, 0.7);
 	--text-color: #444444;
 	--background-without-opacity: rgba(255, 255, 255, 0.7);
 	--column-width: 42rem;
@@ -64,7 +65,7 @@ h1,
 h2,
 p {
 	font-weight: 400;
-	color: var(--heading-color);
+	color: var(--paragraph-color);
 }
 
 p {
@@ -73,6 +74,11 @@ p {
 
 a {
 	color: var(--accent-color);
+	text-decoration: none;
+}
+
+b {
+	color: var(--bold-color);
 	text-decoration: none;
 }
 
