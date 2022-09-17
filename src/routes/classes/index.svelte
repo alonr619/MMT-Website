@@ -8,6 +8,9 @@
     import Link from '$lib/components/Link.svelte';
     import Button from '$lib/components/Button.svelte';
     import PageHeader from '$lib/components/PageHeader.svelte';
+    import { onMount } from 'svelte';
+
+    let windowWidth = 0;
 
     let scheduleData = [
         { "Week": "1", "Dates": "October 17-October 23, 2022", "Topics Covered": "Introduction & Basic Review" },
@@ -20,7 +23,18 @@
         { "Week": "8", "Dates": "December 5-December 11, 2022", "Topics Covered": "Special Topics" },
     ]
 
+    onMount(() => {
+        if (windowWidth && windowWidth < 700) {
+            for (var i = 0; i < scheduleData.length; i++) {
+                var string = scheduleData[i]["Dates"];
+                var stringBetter = string.replaceAll("October", "Oct.").replaceAll("November", "Nov.").replaceAll("December", "Dec.");
+                scheduleData[i]["Dates"] = stringBetter;
+            }
+        }
+    })
 </script>
+
+<svelte:window bind:innerWidth={windowWidth} />
 
 <svelte:head>
 	<title>Classes</title>
@@ -70,7 +84,7 @@
 <Heading text="One-on-One Tutoring" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Do you prefer a smaller learning environment with more personalized instruction? Mustang Math will also be offering one-on-one tutoring! One-on-one sessions will be more flexible with instruction tailored specifically towards the student’s needs. Pricing is flexible depending on level of instruction required, and will be generally more than our group classes. Do note that instructor availability may be limited. If you are interested in one-on-one tutoring, email us at <a target="_blank" href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a>.</p>
+        <p style="font-size: 1.5em; text-align: center;">Do you prefer a smaller learning environment with more personalized instruction? Mustang Math will also be offering one-on-one tutoring! One-on-one sessions will be more flexible with instruction tailored specifically towards the student's needs. Pricing is flexible depending on level of instruction required, and will be generally more than our group classes. Do note that instructor availability may be limited. If you are interested in one-on-one tutoring, email us at <a target="_blank" href="mailto:mustangmathtournament@gmail.com" style="word-break: break-all;">mustangmathtournament@gmail.com</a>.</p>
     </PanelBox>
 </div> <br />
 <br />
