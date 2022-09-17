@@ -18,25 +18,23 @@
 }
 
 ::-moz-selection {
-    background-color: #abddbc;
-    color: black;
+	background-color: #abddbc;
+	color: black;
 }
 
 ::selection {
-    background-color: #abddbc;
-    color: black;
+	background-color: #abddbc;
+	color: black;
 }
 
 body {
 	min-height: 100vh;
 	margin: 0;
 	background-color: var(--primary-color);
-	background: linear-gradient(
-		180deg,
-		var(--primary-color) 0%,
-		var(--secondary-color) 10.45%,
-		var(--tertiary-color) 41.35%
-	);
+	background: linear-gradient(180deg,
+			var(--primary-color) 0%,
+			var(--secondary-color) 10.45%,
+			var(--tertiary-color) 41.35%);
 }
 
 body::before {
@@ -47,11 +45,9 @@ body::before {
 	top: 0;
 	left: 10vw;
 	z-index: -1;
-	background: radial-gradient(
-		50% 50% at 50% 50%,
-		var(--pure-white) 0%,
-		rgba(255, 255, 255, 0) 100%
-	);
+	background: radial-gradient(50% 50% at 50% 50%,
+			var(--pure-white) 0%,
+			rgba(255, 255, 255, 0) 100%);
 	opacity: 0.05;
 }
 
@@ -144,9 +140,16 @@ button:focus:not(:focus-visible) {
 	padding: 10px 100px;
 	margin: 5px;
 	color: white;
+	width: max-content;
+	max-width: 60%;
 }
 
 @media screen and (max-width: 900px) {
-	.glow { font-size: 50px; }
-	.topbuttons { padding: 10px 50px; }
+	.glow {
+		font-size: 50px;
+	}
+
+	.topbuttons {
+		padding: 10px 50px;
+	}
 }
