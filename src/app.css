@@ -30,6 +30,7 @@
 body {
 	min-height: 100vh;
 	margin: 0;
+	overflow-x: hidden;
 	background-color: var(--primary-color);
 	background: linear-gradient(180deg,
 			var(--primary-color) 0%,
