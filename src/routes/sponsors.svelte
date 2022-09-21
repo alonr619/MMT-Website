@@ -13,7 +13,9 @@
 	<title>Partners and Sponsors</title>
 </svelte:head>
 
-<PageHeader title="Partners & Sponsors" description="THE ORGANIZATIONS MAKING MMT POSSIBLE" button_url="https://contestdojo.com/" button_text="Register on ContestDojo!" button_id="registerOnContestDojo"/>
+<PageHeader title="Partners & Sponsors" description="The Organizations Making MM Possible" button_url="
+https://tinyurl.com/MMSponsors2023" button_text="Sponsor Mustang Math!" button_id="sponsorMM"/>
+
 
 <Section>
     <br /> <br />
@@ -21,7 +23,7 @@
     <FlexBox>
         <PanelBox width="60%" style="min-width: 360px;">
             <p style="font-size: 1.2em; margin: 5px">Thank you to our sponsors and partners for supporting the Mustang Math Tournament and our vision of providing a fun, collaborative team competition to motivated and bright middle school students!<br><br>
-            Interested in sponsoring or partnering? Reach out to us at <Link target="_blank" url="mailto:mustangmathtournament@gmail.com" text="mustangmathtournament@gmail.com" />.
+            Interested in sponsoring or partnering? Check out our <b><a href = https://tinyurl.com/MMSponsors2023>sponsorship packet</a></b> and reach out to us at <Link target="_blank" url="mailto:mustangmathtournament@gmail.com" text="mustangmathtournament@gmail.com" />.
             All sponsorships are used to help fund our competitions, classes, and other activities and improving the quality of such events.</p>
         </PanelBox>
     </FlexBox>
