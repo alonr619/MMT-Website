@@ -16,6 +16,7 @@
 <PageHeader title="Partners & Sponsors" description="The Organizations Making MM Possible" button_url="
 https://tinyurl.com/MMSponsors2023" button_text="Sponsor Mustang Math!" button_id="sponsorMM"/>
 
+
 <Section>
     <br /> <br />
     <Heading text="Sponsors and Partners" size={4} textColor="#1B9AAA" />
