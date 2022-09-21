@@ -18,6 +18,7 @@
         padding: 10px;
 		color: white;
 		opacity: 0.6;
+        display: block;
     }
 
     .social-link:hover {

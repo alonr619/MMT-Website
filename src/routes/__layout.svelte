@@ -14,6 +14,14 @@
 	<main>
 		<slot />
 		<Newsletter show={show} />
+        <aside>
+    			<SocialsLink url="mailto:mustangmathtournament@gmail.com" type="solid" icon="envelope" />
+    			<SocialsLink url="https://discord.gg/bYDDWxan5d" type="brands" icon="discord" />
+    			<SocialsLink url="https://www.facebook.com/MustangMath" type="brands" icon="facebook" />
+    			<SocialsLink url="https://www.instagram.com/mustangmath/" type="brands" icon="instagram" />
+    			<SocialsLink url="https://www.linkedin.com/company/mustangmathtournament/" type="brands" icon="linkedin"/>
+    			<SocialsLink url="https://artofproblemsolving.com/wiki/index.php/Mustang_Math_Tournament" type="text" icon="AoPS" text />
+        </aside>
 	</main>
 
     {#if $page.url.pathname !== "/"}
@@ -100,4 +108,18 @@
 		padding-top: 10px;
 		padding-bottom: 8px;
 	}
+
+    aside {
+        position: fixed;
+        z-index: 2;
+        top: 30%;
+        right: 0;
+        overflow-x: hidden;
+        text-align: center;
+        border-style: solid none solid solid;
+        border-width: 7px;
+        border-color: #1c6825;
+        border-radius: 5px 0 0 5px;
+        background-color: #119975;
+    }
 </style>
