@@ -1,5 +1,6 @@
 <script>
     export let url;
+    export let type;
     export let icon;
     export let text = false;
 </script>
@@ -8,7 +9,7 @@
     {#if text}
         {icon}
     {:else}
-        <i class="fa-brands fa-{icon}"></i>
+        <i class="fa-{type} fa-{icon}"></i>
     {/if}
 </a>
 

@@ -1,72 +1,114 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from './MMTLogo.png';
-    import { slide, crossfade } from "svelte/transition";
+	import { fly, slide, crossfade } from "svelte/transition";
+
 	let windowWidth = 0;
+	let open = false;
+	let courseExpanded = false;
+
 	let showMobile = false;
 	function toggleMobile(){
 		showMobile = showMobile ? false : true;
 	};
 
-    const [send, receive] = crossfade({
+	const [send, receive] = crossfade({
         duration: 400
     });
 
-    const navPages = [
-        {path: "/", text: "Home"},
+	function clickHandler() {
+		courseExpanded = !courseExpanded;
+	}
+
+	const MOBILE = 800;
+	const TITLE_BREAKPOINT = MOBILE + 350;
+
+	const navPages = [
+		{path: "/", text: "Home"},
 		{path: "/competitions", text: "Competitions"},
 		{path: "/classes", text: "Classes"},
 		{path: "/our-team", text: "Our Team"},
 		{path: "/sponsors", text: "Sponsors"},
         {path: "/past-exams", text: "Past Exams"},
     ]
-
-    const HAMBURGER_BREAKPOINT = 900; // change if adding more pages
-    const MMT_BREAKPOINT = HAMBURGER_BREAKPOINT+350;
 </script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+<svelte:head>
+	<!-- Import base css -->
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/svelte-hamburgers@3/dist/css/base.css"
+	/>
+
+	<!-- Import spin css (spin is default type) -->
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/svelte-hamburgers@3/dist/css/types/spin.css"
+	/>
+</svelte:head>
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<header>
-	<div class="corner">
-		<a href="/">
-			<img src={logo} alt="SvelteKit" />
+<div class="navbar" style="position: relative;">
+	<div
+		class:active={$page.url.pathname === '/'}
+		style="text-align: left; position: absolute; top: 0; left: 0;padding: 0;font-weight: bold; text-decoration: none;"
+	>
+		<a style="text-decoration: none;" sveltekit:prefetch href="/">
+			<img src="/favicon.png" alt="mustang math logo" />
+			<h1 style="font-size: 24px;">
+				{#if windowWidth > TITLE_BREAKPOINT}
+					Mustang Math
+				{:else}
+					MM
+				{/if}
+			</h1>
 		</a>
 	</div>
-
-	<nav>
-		<ul>
-			<li class:active={$page.url.pathname === '/'} style="text-align: left; width: 100%; font-weight: bold; text-decoration: none;"><a sveltekit:prefetch href="/" style="font-size: 1.25rem;">
-				{#if windowWidth > MMT_BREAKPOINT}
-				Mustang Math
+	<div></div>
+	<div style="float: right; height: 100%; margin-right: 5px;">
+		{#if windowWidth > MOBILE}
+			
+			{#each navPages as navPage (navPage.path)}
+				{#if navPage.text == "Competitions"}
+					<div class="dropdown">
+						<button class="dropbtn" class:active={$page.url.pathname === '/courses'}>
+							<a href="/competitions" style="padding: 0; margin: 0;">
+								<span>
+									Competitions <i class="fa fa-caret-down" style="margin-left: 2px;" />
+									{#if $page.url.pathname.includes("/competitions")}
+									<div class="textunderline" in:receive|local out:send|local></div>
+									{/if}
+								</span>
+							</a>
+						</button>
+						<div class="dropdown-content">
+							<a href={`/competitions/3mt-2022`} style="text-decoration: {$page.url.pathname == '/competitions/3mt-2022' ? 'underline' : 'none'}">3MT</a>
+							<a href={`/competitions/mmt-2023`} style="text-decoration: {$page.url.pathname == '/competitions/mmt-2023' ? 'underline' : 'none'}">MMT 2023</a>
+						</div>
+					</div>
 				{:else}
-				MM
+					<a sveltekit:prefetch href="{navPage.path}" class:active={$page.url.pathname === navPage.path}>
+						<span>
+							{navPage.text}
+							{#if $page.url.pathname === navPage.path}
+							<div class="textunderline" in:receive|local out:send|local></div>
+							{/if}
+						</span>
+					</a>
 				{/if}
-			</a></li>
-			{#if windowWidth > HAMBURGER_BREAKPOINT || windowWidth===0}
-                {#each navPages as navPage (navPage.path)}
-                <li>
-                    <a sveltekit:prefetch href="{navPage.path}" class="textnav">
-                        <span>{navPage.text}
-                            {#if $page.url.pathname === navPage.path}
-                            <div class="textunderline" in:receive|local out:send|local></div>
-                            {/if}
-                        </span>
-                    </a>
-                </li>
-                {/each}
-			{:else}
+			{/each}
+		{:else}
 			<div on:click={toggleMobile} id="hamburger-div">
-			<i id="hamburger-icon" class="fa fa-bars"></i>
+				<i id="hamburger-icon" class="fa fa-bars"></i>
 			</div>
-			{/if}
-		</ul>
-	</nav>
-</header>
-{#if showMobile && windowWidth < HAMBURGER_BREAKPOINT}
+		{/if}
+	</div>
+</div>
+
+{#if showMobile && windowWidth < MOBILE}
 	<div id="hamburger-links" transition:slide|local={{ duration: 300 }}>
+		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname.includes("/competitions")} sveltekit:prefetch href="/competitions">Competitions</a></div>
+		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname.includes("/classes")} sveltekit:prefetch href="/classes">Classes</a></div>
         {#each navPages as navPage (navPage.path)}
 		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === navPage.path} sveltekit:prefetch href="{navPage.path}">{navPage.text}</a></div>
 		{/each}
@@ -74,90 +116,111 @@
 {/if}
 
 <style>
-	header {
+	.navbar {
 		display: flex;
 		justify-content: space-between;
 		background-color: #1c6825;
-        width: 100%;
-	}
-
-	.corner {
-		width: 4em;
-		height: 4em;
-	}
-
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: left;
 		width: 100%;
-		height: 100%;
+		z-index: 100;
+		padding: 10px;
 	}
 
-	.corner img {
-		width: 3em;
-		height: 3em;
-		object-fit: contain;
+	img {
+		width: 2.5em;
+		height: 2.5em;
+		top:  0;
 	}
 
-	nav {
-		display: flex;
-		justify-content: center;
-		width: 100%;
-	}
-
-	ul {
-		position: relative;
-		padding: 0;
-		margin: 0;
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		list-style: none;
-		background: #1c6825;
-		background-size: contain;
-		width: 100%;
-	}
-
-	li {
-		position: relative;
-		height: 100%;
-	}
-
-	a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-		justify-content: center;
-		padding: 0 1em;
+	.navbar a {
+		float: left;
+		font-size: 16px;
 		color: white;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		height: 100%;
 		font-size: 1rem;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
-		text-decoration: none;
 		transition: color 0.2s linear;
-		width: fit-content;
 	}
 
-    .textnav>span {
-        position: relative;
-    }
+	h1 {
+		margin: 0;
+		padding: 0;
+		color: white;
+		font: Ubuntu;
+		font-weight: bold;
+		font-size: 1.25em;
+	}
 
-    .textunderline {
+	.dropdown {
+		float: left;
+		overflow: hidden;
+		height: 100%;
+	}
+
+	.dropdown .dropbtn {
+		font-size: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		border: none;
+		outline: none;
+		padding: 14px 16px;
+		color: white;
+		height: 100% !important;
+		background-color: inherit;
+		font-family: inherit;
+		margin: 0;
+	}
+
+	.textunderline {
         height: 2px;
         background-color: #FFF;
         width: 100%;
-        position: absolute;
-        bottom: -2px;
-        left: 0;
     }
 
-	.textnav {
-		width: max-content;
+	.active {
+		color: white !important;
 	}
 
-	a:hover {
+	a:hover,
+	button:hover {
 		color: lightgreen;
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #1c6825;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
+
+	.dropdown-content a {
+		float: none;
+		color: white;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+
+	.dropdown-content a:hover {
+		color: lightgreen;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	@media only screen and (max-width: 800px) {
+		.navbar {
+			height: 50px;
+		}
 	}
 
 	#hamburger-icon {
@@ -178,6 +241,14 @@
 	#hamburger-links {
 		background-color: #65c083;
 		padding: 10px;
+	}
+
+	#hamburger-links a {
+		color: white;
+		font-size: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		text-decoration: none;
 	}
 
 	.exterior {
