@@ -8,14 +8,14 @@
 
     const competitions = [
         {
-            title: "MMT 2023",
-            location: "mmt-2023"
+            title: "Mustang Mini Math Tournament (3MT)",
+            location: "3mt-2022"
         },
         {
-            title: "Individual",
-            location: "individual"
-        }
-    ]
+            title: "Mustang Math Tournament 2023 (MMT)",
+            location: "mmt-2023"
+        },
+    ];
     // A value of false represents that the ith button is unfilled
     let buttonStates = Array(competitions.length).fill(false);
 
@@ -62,44 +62,4 @@
     .headerButton:hover {
         text-decoration: none;
     }
-
-    .effect {
-		text-align: center;
-		display: inline-block;
-		position: relative;
-		text-decoration: none;
-		text-transform: capitalize;
-		width: 30%;
-		overflow: hidden;
-	}
-
-	/* effect-1 styles */
-
-	.effect.effect-1 {
-		transition: all 0.2s linear 0s;
-	}
-
-	.effect.effect-1:before {
-		content: '\f178';
-		font-family: FontAwesome;
-		position: absolute;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		right: 0;
-		top: 0;
-		opacity: 0;
-		height: 100%;
-		width: 40px;
-		transition: all 0.2s linear 0s;
-	}
-
-	.effect.effect-1:hover {
-		text-indent: -20px;
-	}
-
-	.effect.effect-1:hover:before {
-		opacity: 1;
-		text-indent: 0px;
-	}
 </style>

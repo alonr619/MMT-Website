@@ -43,4 +43,10 @@
     th{
         padding: 5px;
     }
+
+    @media only screen and (max-width: 800px) {
+        td, th {
+            font-size: 22px !important;
+        }
+    }
 </style>

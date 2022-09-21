@@ -43,9 +43,9 @@
 				{/if}
                 <div class="flex"><div class="headerline"></div></div>
                 <p class="descript" style="font-weight: 300; font-size: 22px; color: white;">Mustang Math [MM] is an online middle school contest designed around values of collaboration, love for mathematics, and fun</p>
-                <a sveltekit:prefetch href="/join" class="headerButton">
+                <a sveltekit:prefetch href="/classes" class="headerButton">
                     <div class="headerButton" on:mouseenter={toggleBackground} on:mouseleave={toggleBackground}>
-                        <p class="headerButton" id="joinTheMustangMathTeam">Join the Mustang Math Team</p>
+                        <p class="headerButton" id="signupformmclasses">Sign up for Mustang Math Classes!</p>
                         <img height="25px" class="headerButton" src={background} alt="Right-facing arrow icon" />
                     </div>
                 </a>
