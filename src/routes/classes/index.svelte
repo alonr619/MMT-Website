@@ -97,8 +97,10 @@
 <Heading text="Pricing" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Algebra will be <b>$80</b>. However, you can also register for all 4 topics throughout the year at a discounted total price of <b>$280</b>! Financial aid is available upon request.</p>
-        <p style="font-size: 1.5em; text-align: center;">We charge for our classes for a multitude of reasons. First, while we are a fully volunteer-run nonprofit organization, we need money to continue improving upon and providing better classes, competitions, events, and materials! All money earned from MM Classes will go back into these projects for you, the students. Second, we work very hard to provide high quality classes, and we want students to take them seriously - ascribing a price value to the class naturally leads to more committed students.</p>
+        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Algebra will be <b>$80</b>. However, you can also register for all 4 topics throughout the year at a discounted total price of <b>$280</b>! Teaching the same students throughout the year allow us to build a personal connection with them and better understand their learning style, so we recommend you sign your students up for all 4 topics. </p>
+        <p style="font-size: 1.5em; text-align: center;">We charge for our classes for a multitude of reasons. First, while we are a fully volunteer-run nonprofit organization, we need money to continue <b>improving upon and providing better classes, competitions, events, and materials</b>! All money earned from MM Classes will go back into these projects for you, the students. Second, we work very hard to provide high quality classes, and we want students to take them seriously - ascribing a price value to the class naturally leads to more <b>committed students</b>.</p>
+        <p style="font-size: 1.5em; text-align: center;">If the cost of these classes poses a significant burden to you, please reach out to us! <b>Financial aid is available upon request</b>.</p>
+        
     </PanelBox>
 </div> 
 <br />
@@ -124,7 +126,7 @@
 </div> <br />
 <br />
 
-<Heading text="Topics Covered" size={2.5} textColor="#1B9AAA" />
+<Heading text="Algebra Classes Schedule" size={2.5} textColor="#1B9AAA" />
 <div class="schedule-wrapper">
     <FlexBox>
         <PanelBox>
