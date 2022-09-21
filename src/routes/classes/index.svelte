@@ -108,7 +108,7 @@
 </div>
 -->
 
-<PageHeader title="Classes" description="High Quality Online Math Contest Prep Classes" button_url="https://tinyurl.com/BeginnerAlgebraRegistration" button_text="Register for Beginner Algebra Classes!" id="registerBeginner"/>
+<PageHeader title="Classes" description="High Quality Online Math Contest Prep Classes" button_url="https://tinyurl.com/BeginnerAlgebraRegistration" button_text="Register for Beginner Algebra Classes!" id="registerBeginner" button2_url="https://tinyurl.com/IntermediateAlgebraReg" button2_text="Intermediate Class Registration!"/>
 
 <br><br>
 
@@ -136,7 +136,6 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;">Our first class will be on Algebra and will start on the week of <b>October 17th, 2022</b> and run through till <b>December 18, 2022</b>. There are currently 2 levels of classes planned, <b>Beginner Algebra (AMC 8 level)</b> and <b>Intermediate Algebra (AMC 10/12 level)</b>.  See below for the weekly schedule and breakdown of topics! If you’re interested in participating in these classes, make sure to fill out the <b><a href = https://tinyurl.com/BeginnerAlgebraRegistration>beginner class registration form</a></b> or the <b><a href = https://tinyurl.com/IntermediateAlgebraReg>intermediate class registration form</a></b>.</p>
-    
     </PanelBox>
 </div> <br />
 <br />
@@ -159,6 +158,9 @@
     <FlexBox>
         <PanelBox>
             <Table data={scheduleData} width="auto" headerColor="#1B9AAA" rowColors={["#A4D6AF", "#ADCDD6"]} cellPadding={5} cellPaddingRight={20}/>
+            {#if windowWidth < 700}
+                <p>OH = Office Hours</p>
+            {/if}
         </PanelBox>
     </FlexBox>
 </div> <br />
