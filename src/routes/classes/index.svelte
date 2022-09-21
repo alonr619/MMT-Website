@@ -79,6 +79,7 @@
 	<title>Classes</title>
 </svelte:head>
 
+<!--
 <div class="outside" style="height: 100vh;">
     <div class="header flex">
         {#if visible}
@@ -86,14 +87,14 @@
 				<Heading className="glow" text="Classes" textColor="white" />
                 <div class="flex"><div class="headerline"></div></div>
                 <p class="descript" style="font-weight: 300; font-size: 22px; color: white;">Mustang Math [MM] is an online middle school contest designed around values of collaboration, love for mathematics, and fun</p>
-                <a sveltekit:prefetch href="https://tinyurl.com/BeginnerAlgebraRegistration" class="headerButton">
+                <a sveltekit:prefetch href="https://tinyurl.com/BeginnerAlgebraRegistration" class="headerButton" target="_blank">
                     <div class="headerButton" on:mouseenter={toggleBackground} on:mouseleave={toggleBackground}>
                         <p class="headerButton" id="signupformmclasses">Register for Beginner Classes!</p>
                         <img height="25px" class="headerButton" src={background} alt="Right-facing arrow icon" />
                     </div>
                 </a>
                 <br>
-                <a sveltekit:prefetch href="https://tinyurl.com/IntermediateAlgRegistration" class="headerButton">
+                <a sveltekit:prefetch href="https://tinyurl.com/IntermediateAlgRegistration" class="headerButton" target="_blank">
                     <div class="headerButton" on:mouseenter={toggleBackground2} on:mouseleave={toggleBackground2}>
                         <p class="headerButton" id="signupformmclasses">Register for Intermediate Classes!</p>
                         <img height="25px" class="headerButton" src={background2} alt="Right-facing arrow icon" />
@@ -105,6 +106,9 @@
         {/if}
     </div>
 </div>
+-->
+
+<PageHeader title="Classes" description="High Quality Online Math Contest Prep Classes" button_url="https://tinyurl.com/BeginnerAlgebraRegistration" button_text="Register for Beginner Algebra Classes!" id="registerBeginner"/>
 
 <br><br>
 
