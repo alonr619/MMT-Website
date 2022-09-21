@@ -107,9 +107,7 @@
 
 {#if showMobile && windowWidth < MOBILE}
 	<div id="hamburger-links" transition:slide|local={{ duration: 300 }}>
-		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname.includes("/competitions")} sveltekit:prefetch href="/competitions">Competitions</a></div>
-		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname.includes("/classes")} sveltekit:prefetch href="/classes">Classes</a></div>
-        {#each navPages as navPage (navPage.path)}
+		{#each navPages as navPage (navPage.path)}
 		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === navPage.path} sveltekit:prefetch href="{navPage.path}">{navPage.text}</a></div>
 		{/each}
     </div>
