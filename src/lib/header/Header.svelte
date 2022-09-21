@@ -1,16 +1,25 @@
 <script>
 	import { page } from '$app/stores';
-	import { fly } from 'svelte/transition';
+	import { fly, slide, crossfade } from "svelte/transition";
 
 	let windowWidth = 0;
 	let open = false;
 	let courseExpanded = false;
 
+	let showMobile = false;
+	function toggleMobile(){
+		showMobile = showMobile ? false : true;
+	};
+
+	const [send, receive] = crossfade({
+        duration: 400
+    });
+
 	function clickHandler() {
 		courseExpanded = !courseExpanded;
 	}
 
-	const MOBILE = 700;
+	const MOBILE = 800;
 	const TITLE_BREAKPOINT = MOBILE + 350;
 
 	const navPages = [
@@ -57,9 +66,14 @@
 		{#if windowWidth > MOBILE}
 			<div class="dropdown">
 				<button class="dropbtn" class:active={$page.url.pathname === '/courses'}>
-					<a href="/competitions" style="padding: 0; margin: 0;"
-						>Competitions <i class="fa fa-caret-down" style="margin-left: 2px;" /></a
-					>
+					<a href="/competitions" style="padding: 0; margin: 0;">
+						<span>
+							Competitions <i class="fa fa-caret-down" style="margin-left: 2px;" />
+                            {#if $page.url.pathname === "/competitions"}
+                            <div class="textunderline" in:receive|local out:send|local></div>
+                            {/if}
+						</span>
+					</a>
 				</button>
 				<div class="dropdown-content">
 					<a href={`/competitions/3mt-2022`} sveltekit:reload>3MT</a>
@@ -68,59 +82,46 @@
 			</div>
 			<div class="dropdown">
 				<button class="dropbtn" class:active={$page.url.pathname === '/courses'}>
-					<a href="/classes" style="padding: 0; margin: 0;"
-						>Classes <i class="fa fa-caret-down" style="margin-left: 2px;" /></a
-					>
+					<a href="/classes" style="padding: 0; margin: 0;">
+						<span>
+							Classes <i class="fa fa-caret-down" style="margin-left: 2px;" />
+                            {#if $page.url.pathname === "/classes"}
+                            <div class="textunderline" in:receive|local out:send|local></div>
+                            {/if}
+						</span>
+					</a>
 				</button>
 				<div class="dropdown-content">
 					<a href={`/classes`} sveltekit:reload>temp</a>
 				</div>
 			</div>
 			{#each navPages as navPage (navPage.path)}
-				<a sveltekit:prefetch href="{navPage.path}" class:active={$page.url.pathname === navPage.path}>{navPage.text}</a>
+				<a sveltekit:prefetch href="{navPage.path}" class:active={$page.url.pathname === navPage.path}>
+					<span>
+						{navPage.text}
+						{#if $page.url.pathname === navPage.path}
+						<div class="textunderline" in:receive|local out:send|local></div>
+						{/if}
+					</span>
+				</a>
 			{/each}
 		{:else}
-			<div class="mobileView" style="height: 100%;">
-				<div style="height: 100%;" class="flex">
-					<button on:click={() => {open = !open;}}><i class="fa-solid fa-bars"></i></button>
-				</div>
-				{#if open}
-					<div class="nav">
-						<a
-							sveltekit:prefetch
-							href="/competitions"
-							class="textnav"
-							class:active={$page.url.pathname === '/competitions'}
-							transition:fly={{ y: -15, delay: 50 * 1 }}
-						>
-							<span>Competitions</span>
-						</a>
-						<a
-							sveltekit:prefetch
-							href="/classes"
-							class="textnav"
-							class:active={$page.url.pathname === '/classes'}
-							transition:fly={{ y: -15, delay: 50 * 2 }}
-						>
-							<span>Classes</span>
-						</a>
-						{#each navPages as navPage (navPage.path)}
-						<a
-							sveltekit:prefetch
-							href={navPage.path}
-							class="textnav"
-							class:active={$page.url.pathname === navPage.path}
-							transition:fly={{ y: -15, delay: 50 * 3 }}
-						>
-							<span>{navPage.text}</span>
-						</a>
-						{/each}
-					</div>
-				{/if}
+			<div on:click={toggleMobile} id="hamburger-div">
+				<i id="hamburger-icon" class="fa fa-bars"></i>
 			</div>
 		{/if}
 	</div>
 </div>
+
+{#if showMobile && windowWidth < MOBILE}
+	<div id="hamburger-links" transition:slide|local={{ duration: 300 }}>
+		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === "/competitions"} sveltekit:prefetch href="/competitions">Competitions</a></div>
+		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === "/classes"} sveltekit:prefetch href="/classes">Classes</a></div>
+        {#each navPages as navPage (navPage.path)}
+		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === navPage.path} sveltekit:prefetch href="{navPage.path}">{navPage.text}</a></div>
+		{/each}
+    </div>
+{/if}
 
 <style>
 	.navbar {
@@ -184,13 +185,19 @@
 		margin: 0;
 	}
 
+	.textunderline {
+        height: 2px;
+        background-color: #FFF;
+        width: 100%;
+    }
+
 	.active {
 		color: white !important;
 	}
 
 	a:hover,
 	button:hover {
-		text-decoration: underline;
+		color: lightgreen;
 	}
 	.dropdown-content {
 		display: none;
@@ -218,21 +225,68 @@
 		display: block;
 	}
 
+	@media only screen and (max-width: 800px) {
+		.navbar {
+			height: 50px;
+		}
+	}
+
 	.mobileView .nav {
 		font-size: 1.5em;
 		letter-spacing: 0.15em;
-		top: 70px;
 		width: 100%;
-		right: 0;
-		position: fixed;
 		padding: 10px;
-		background-color: black;
+		z-index: 10000 !important;
 	}
 
 	.mobileView a {
 		padding: 10px;
 		width: 100%;
 		color: white;
+		text-align: center;
+	}
+
+	#hamburger-icon {
+		margin-left: 40%;
+		margin-right: 40%;
+		margin-top: 40%;
+		margin-bottom: 40%;
+	}
+
+	#hamburger-div {
+		width: 80px;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		color: white;
+	}
+
+	#hamburger-links {
+		background-color: #65c083;
+		padding: 10px;
+	}
+
+	#hamburger-links a {
+		color: white;
+		font-size: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		text-decoration: none;
+	}
+
+	.exterior {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.exterior .active {
+		background-color: #5b8064;
+		text-decoration: none;
+	}
+
+	#hamburger-links a {
+		padding: 10px;
 		text-align: center;
 	}
 </style>
