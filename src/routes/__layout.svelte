@@ -19,12 +19,14 @@
     {#if $page.url.pathname !== "/"}
 	<footer>
 		<div class="socials">
-			<!--<button class="sign-up" on:click={() => {show = !show;}}>Sign Up for our Newsletter</button>-->
+			<button class="sign-up" on:click={() => {show = !show;}}>Sign Up for our Newsletter</button>
+			<div class="divider"></div>
 			<SocialsLink url="mailto:mustangmathtournament@gmail.com" type="solid" icon="envelope" />
 			<SocialsLink url="https://discord.gg/bYDDWxan5d" type="brands" icon="discord" />
 			<SocialsLink url="https://www.facebook.com/MustangMath" type="brands" icon="facebook" />
 			<SocialsLink url="https://www.instagram.com/mustangmath/" type="brands" icon="instagram" />
 			<SocialsLink url="https://www.linkedin.com/company/mustangmathtournament/" type="brands" icon="linkedin"/>
+			<SocialsLink url="https://www.youtube.com/channel/UCCCk-s3dHatOKfwiC5yJBAA" type="brands" icon="youtube"/>
 			<SocialsLink url="https://artofproblemsolving.com/wiki/index.php/Mustang_Math_Tournament" type="text" icon="AoPS" text />
 		</div>
 	</footer>
@@ -32,19 +34,11 @@
 </div>
 
 <style>
-	.sign-up {
-		margin-bottom: 5px;
-		border: 2px solid lightgreen;
-		border-radius: 10px;
-		background-color: transparent;
-		outline: none;
-		padding: 10px 20px;
-		cursor: pointer;
-		color: rgb(255, 255, 255, 0.6);
-	}
-
-	.sign-up:hover {
-		background-color: rgb(68, 162, 77);
+	.divider {
+		width: 2px;
+		background-color: white;
+		height: 50px;
+		margin-left: 10px;
 	}
 
 	main {
