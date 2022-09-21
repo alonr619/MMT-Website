@@ -36,7 +36,7 @@
             <p class="descript" style="font-weight: 300; font-size: 22px; color: white;">{description}</p>
             <div class="flex">
                 <div class="topbuttons">
-                    <Link url={button_url} target="_blank" className="registrationButton" text={button_text} textColor="white" visitedColor="white" id={button_id} button_id="registerOnContestDogo" />
+                    <Link url={button_url} target="_blank" className="registrationButton" text={button_text} textColor="white" visitedColor="white" id={button_id} button_id={button_text} />
                     {#if button2}
                     <Link url={button2_url} target="_blank" className="registrationButton" text={button2_text} textColor="white" visitedColor="white" id={button2_id} button_id={button2_text} />
                     {/if}
