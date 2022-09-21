@@ -19,7 +19,7 @@
     {#if $page.url.pathname !== "/"}
 	<footer>
 		<div class="socials">
-			<button class="sign-up" on:click={() => {show = !show;}}>Sign Up for our Newsletter</button>
+			<!--<button class="sign-up" on:click={() => {show = !show;}}>Sign Up for our Newsletter</button>-->
 			<SocialsLink url="mailto:mustangmathtournament@gmail.com" type="solid" icon="envelope" />
 			<SocialsLink url="https://discord.gg/bYDDWxan5d" type="brands" icon="discord" />
 			<SocialsLink url="https://www.facebook.com/MustangMath" type="brands" icon="facebook" />
