@@ -32,7 +32,14 @@
 				{path: "/competitions/mmt-2023", text: "MMT 2023"},
 			]
 		},
-		{path: "/classes", text: "Classes", hasSubPages: false},
+		{
+			path: "/classes", 
+			text: "Classes", 
+			hasSubPages: true,
+			subPages: [
+				{path: "/classes/instructors", text: "Instructors"},
+			]
+		},
 		{path: "/our-team", text: "Our Team", hasSubPages: false},
 		{path: "/sponsors", text: "Sponsors", hasSubPages: false},
         {path: "/past-exams", text: "Past Exams", hasSubPages: false},

@@ -47,6 +47,12 @@
     "image": "about-us-images/Amogh-Janganure.jpg"
   },
   {
+    "fullName": "Ananya Bezbaruah",
+    "preferredPronouns": "she/her/hers",
+    "grade": 10,
+    "image": "about-us-images/Ananya-Bezbaruah.jpg"
+  },
+  {
     "fullName": "Andrew Liu",
     "preferredPronouns": "he/him/his",
     "grade": "13+",
@@ -195,6 +201,12 @@
     "preferredPronouns": "he/him/his",
     "grade": 10,
     "image": "about-us-images/Michael-Li.jpg"
+  },
+  {
+    "fullName": "Michael Liu",
+    "preferredPronouns": "he/him/his",
+    "grade": 11,
+    "image": "about-us-images/Michael-Liu.jpg"
   },
   {
     "fullName": "Nihal Josyula",

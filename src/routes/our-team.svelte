@@ -3,7 +3,6 @@
 </script>
 
 <script>
-	import Heading from '$lib/components/Heading.svelte';
 	import FlexBox from '$lib/components/FlexBox.svelte';
 	import Person from '$lib/components/Person.svelte';
 	import PageHeader from '$lib/components/PageHeader.svelte';
@@ -20,10 +19,9 @@
 
 <PageHeader title="Meet the Team" description="The Ones Making MMT Possible" button_url="https://contestdojo.com/" button_text="Register on ContestDojo!" id="registerOnContestDojo"/>
 <section>
-	<br />
 	<FlexBox wrap={true}>
 		{#each Members as Member}
-			<Person pic={Member.image} name={Member.fullName} grade={Member.grade}/>
+			<Person width="21em" pic={Member.image} name={Member.fullName} grade={Member.grade}/>
 		{/each}
 	</FlexBox>
 	<h1>Other Contributors</h1>
