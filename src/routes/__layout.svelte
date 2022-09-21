@@ -66,6 +66,8 @@
 		bottom: 0;
 		width: 100%;
 		text-align: center;
+		position: sticky;
+		z-index: 1;
 		min-height: 50px;
 		background-color: #1c6825;
 	}

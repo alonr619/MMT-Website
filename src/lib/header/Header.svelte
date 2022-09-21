@@ -69,15 +69,15 @@
 					<a href="/competitions" style="padding: 0; margin: 0;">
 						<span>
 							Competitions <i class="fa fa-caret-down" style="margin-left: 2px;" />
-                            {#if $page.url.pathname === "/competitions"}
+                            {#if $page.url.pathname.includes("/competitions")}
                             <div class="textunderline" in:receive|local out:send|local></div>
                             {/if}
 						</span>
 					</a>
 				</button>
 				<div class="dropdown-content">
-					<a href={`/competitions/3mt-2022`} sveltekit:reload>3MT</a>
-					<a href={`/competitions/mmt-2023`} sveltekit:reload>MMT 2023</a>
+					<a href={`/competitions/3mt-2022`} style="text-decoration: {$page.url.pathname == '/competitions/3mt-2022' ? 'underline' : 'none'}">3MT</a>
+					<a href={`/competitions/mmt-2023`} style="text-decoration: {$page.url.pathname == '/competitions/mmt-2023' ? 'underline' : 'none'}">MMT 2023</a>
 				</div>
 			</div>
 			<div class="dropdown">
@@ -85,14 +85,14 @@
 					<a href="/classes" style="padding: 0; margin: 0;">
 						<span>
 							Classes <i class="fa fa-caret-down" style="margin-left: 2px;" />
-                            {#if $page.url.pathname === "/classes"}
+                            {#if $page.url.pathname.includes("/classes")}
                             <div class="textunderline" in:receive|local out:send|local></div>
                             {/if}
 						</span>
 					</a>
 				</button>
 				<div class="dropdown-content">
-					<a href={`/classes`} sveltekit:reload>temp</a>
+					<a href={`/classes`}>temp</a>
 				</div>
 			</div>
 			{#each navPages as navPage (navPage.path)}
@@ -115,8 +115,8 @@
 
 {#if showMobile && windowWidth < MOBILE}
 	<div id="hamburger-links" transition:slide|local={{ duration: 300 }}>
-		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === "/competitions"} sveltekit:prefetch href="/competitions">Competitions</a></div>
-		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === "/classes"} sveltekit:prefetch href="/classes">Classes</a></div>
+		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname.includes("/competitions")} sveltekit:prefetch href="/competitions">Competitions</a></div>
+		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname.includes("/classes")} sveltekit:prefetch href="/classes">Classes</a></div>
         {#each navPages as navPage (navPage.path)}
 		<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === navPage.path} sveltekit:prefetch href="{navPage.path}">{navPage.text}</a></div>
 		{/each}
@@ -218,7 +218,7 @@
 	}
 
 	.dropdown-content a:hover {
-		background-color: #1c6825;
+		color: lightgreen;
 	}
 
 	.dropdown:hover .dropdown-content {

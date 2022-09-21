@@ -5,6 +5,10 @@
     export let button_text;
     export let button_id="";
     export let height = 85;
+    export let button2 = false;
+    export let button2_url;
+    export let button2_text;
+    export let button2_id;
 
     import Heading from '$lib/components/Heading.svelte';
     import Header from '$lib/header/Header.svelte';
@@ -33,6 +37,9 @@
             <div class="flex">
                 <div class="topbuttons">
                     <Link url={button_url} target="_blank" className="registrationButton" text={button_text} textColor="white" visitedColor="white" id={button_id} button_id="registerOnContestDogo" />
+                    {#if button2}
+                    <Link url={button2_url} target="_blank" className="registrationButton" text={button2_text} textColor="white" visitedColor="white" id={button2_id} button_id={button2_text} />
+                    {/if}
                 </div>
             </div>
         </div>
@@ -51,6 +58,7 @@
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
+    z-index: 2;
 }
 
 @media (max-width: 700px) {
