@@ -94,6 +94,16 @@
     </FlexBox>
 </div> <br />
 
+<Heading text="Algebra Class Details" size={2.5} textColor="#1B9AAA" />
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox>
+        <p style="font-size: 1.5em; text-align: center;">Our first class will be on Algebra and will start on the week of <b>October 17th, 2022</b> and run through till <b>December 18, 2022</b>. There are currently 2 levels of classes planned, <b>Beginner Algebra (AMC 8 level)</b> and <b>Intermediate Algebra (AMC 10/12 level)</b>.  See below for the weekly schedule and breakdown of topics! If you’re interested in participating in these classes, make sure to fill out the <b><a href = https://tinyurl.com/BeginnerAlgebraRegistration>beginner class registration form</a></b> or the <b><a href = https://tinyurl.com/IntermediateAlgebraReg>intermediate class registration form</a></b>.</p>
+    
+    </PanelBox>
+</div> <br />
+<br />
+
+
 <Heading text="Pricing" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
@@ -104,16 +114,6 @@
     </PanelBox>
 </div> 
 <br />
-<br />
-
-
-<Heading text="Algebra Class Details" size={2.5} textColor="#1B9AAA" />
-<div style="margin-left: 10vw; margin-right: 10vw;">
-    <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Our first class will be on Algebra and will start on the week of October 17th, 2022. There are currently 2 levels of classes planned, Beginner Algebra (AMC 8 level) and Intermediate Algebra (AMC 10/12 level).  See below for the weekly schedule and breakdown of topics! If you’re interested in participating in these classes, make sure to fill out the <b><a href = https://tinyurl.com/BeginnerAlgebraRegistration>beginner class registration form</a></b> or the <b><a href = https://tinyurl.com/IntermediateAlgebraReg>intermediate class registration form</a></b>.</p>
-    
-    </PanelBox>
-</div> <br />
 <br />
 
 <Heading text="Algebra Weekly Schedule" size={2.5} textColor="#1B9AAA" />
