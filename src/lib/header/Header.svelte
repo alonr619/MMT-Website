@@ -23,6 +23,9 @@
 	const TITLE_BREAKPOINT = MOBILE + 350;
 
 	const navPages = [
+		{path: "/", text: "Home"},
+		{path: "/competitions", text: "Competitions"},
+		{path: "/classes", text: "Classes"},
 		{path: "/our-team", text: "Our Team"},
 		{path: "/sponsors", text: "Sponsors"},
         {path: "/past-exams", text: "Past Exams"},
@@ -64,46 +67,35 @@
 	<div></div>
 	<div style="float: right; height: 100%; margin-right: 5px;">
 		{#if windowWidth > MOBILE}
-			<div class="dropdown">
-				<button class="dropbtn" class:active={$page.url.pathname === '/courses'}>
-					<a href="/competitions" style="padding: 0; margin: 0;">
-						<span>
-							Competitions <i class="fa fa-caret-down" style="margin-left: 2px;" />
-                            {#if $page.url.pathname.includes("/competitions")}
-                            <div class="textunderline" in:receive|local out:send|local></div>
-                            {/if}
-						</span>
-					</a>
-				</button>
-				<div class="dropdown-content">
-					<a href={`/competitions/3mt-2022`} style="text-decoration: {$page.url.pathname == '/competitions/3mt-2022' ? 'underline' : 'none'}">3MT</a>
-					<a href={`/competitions/mmt-2023`} style="text-decoration: {$page.url.pathname == '/competitions/mmt-2023' ? 'underline' : 'none'}">MMT 2023</a>
-				</div>
-			</div>
-			<div class="dropdown">
-				<button class="dropbtn" class:active={$page.url.pathname === '/courses'}>
-					<a href="/classes" style="padding: 0; margin: 0;">
-						<span>
-							Classes <i class="fa fa-caret-down" style="margin-left: 2px;" />
-                            {#if $page.url.pathname.includes("/classes")}
-                            <div class="textunderline" in:receive|local out:send|local></div>
-                            {/if}
-						</span>
-					</a>
-				</button>
-				<div class="dropdown-content">
-					<a href={`/classes`}>temp</a>
-				</div>
-			</div>
+			
 			{#each navPages as navPage (navPage.path)}
-				<a sveltekit:prefetch href="{navPage.path}" class:active={$page.url.pathname === navPage.path}>
-					<span>
-						{navPage.text}
-						{#if $page.url.pathname === navPage.path}
-						<div class="textunderline" in:receive|local out:send|local></div>
-						{/if}
-					</span>
-				</a>
+				{#if navPage.text == "Competitions"}
+					<div class="dropdown">
+						<button class="dropbtn" class:active={$page.url.pathname === '/courses'}>
+							<a href="/competitions" style="padding: 0; margin: 0;">
+								<span>
+									Competitions <i class="fa fa-caret-down" style="margin-left: 2px;" />
+									{#if $page.url.pathname.includes("/competitions")}
+									<div class="textunderline" in:receive|local out:send|local></div>
+									{/if}
+								</span>
+							</a>
+						</button>
+						<div class="dropdown-content">
+							<a href={`/competitions/3mt-2022`} style="text-decoration: {$page.url.pathname == '/competitions/3mt-2022' ? 'underline' : 'none'}">3MT</a>
+							<a href={`/competitions/mmt-2023`} style="text-decoration: {$page.url.pathname == '/competitions/mmt-2023' ? 'underline' : 'none'}">MMT 2023</a>
+						</div>
+					</div>
+				{:else}
+					<a sveltekit:prefetch href="{navPage.path}" class:active={$page.url.pathname === navPage.path}>
+						<span>
+							{navPage.text}
+							{#if $page.url.pathname === navPage.path}
+							<div class="textunderline" in:receive|local out:send|local></div>
+							{/if}
+						</span>
+					</a>
+				{/if}
 			{/each}
 		{:else}
 			<div on:click={toggleMobile} id="hamburger-div">

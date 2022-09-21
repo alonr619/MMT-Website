@@ -2,18 +2,15 @@
     import Heading from '$lib/components/Heading.svelte';
     import FlexBox from '$lib/components/FlexBox.svelte';
     import Table from "$lib/components/Table.svelte";
-    import Dropdown from '$lib/components/Dropdown.svelte';
     import PanelBox from '$lib/components/PanelBox.svelte';
     import Competition from '$lib/components/Competition.svelte';
-    import Link from '$lib/components/Link.svelte';
-    import Button from '$lib/components/Button.svelte';
     import PageHeader from '$lib/components/PageHeader.svelte';
-    import { fly } from "svelte/transition";
     import { onMount } from "svelte";
 
     let visible = false;
     let windowWidth;
     let background = "right-arrow.png";
+    let background2 = "right-arrow.png";
 
     onMount(() => {
         visible = true;
@@ -27,12 +24,22 @@
         }
     }
 
+    function toggleBackground2() {
+        if (background2 == "right-arrow.png") {
+            background2 = "right-arrow-shaded.png";
+        } else {
+            background2 = "right-arrow.png";
+        }
+    }
+
     let y;
 
     let scheduleData = [
         { "Class": "Intermediate", "Day of Week": "Sunday", "Time (PT)": "5:00-6:30 PM", "Instructors": "Anna & Harshil"},
         { "Class": "Beginner 1", "Day of Week": "Monday", "Time (PT)": "5:00-6:30 PM", "Instructors": "Ananya & Kiran" },
         { "Class": "Beginner 2", "Day of Week": "Wednesday", "Time (PT)": "7:00-8:30 PM", "Instructors": "Aarushi & Michael" },
+        { "Class": "Office Hours 1", "Day of Week": "Sunday", "Time (PT)": "6:30-7:30 PM", "Instructors": "Variable" },
+        { "Class": "Office Hours 2", "Day of Week": "Tuesday", "Time (PT)": "7:00-8:00 PM", "Instructors": "Variable" },
     ]
     
     let topicsData = [
@@ -41,28 +48,38 @@
         { "Week": "3", "Dates": "October 31-November 6, 2022", "Topics Covered": "Inequalities" },
         { "Week": "4", "Dates": "November 7-November 13, 2022", "Topics Covered": "Sequences & Series" },
         { "Week": "5", "Dates": "November 14-November 20, 2022", "Topics Covered": "Functions & Their Graphs" },
-        { "Week": "6", "Dates": "November 21-November 27, 2022", "Topics Covered": "Polynomials" },
-        { "Week": "7", "Dates": "November 28-December 4, 2022", "Topics Covered": "Contest Tricks" },
-        { "Week": "8", "Dates": "December 5-December 11, 2022", "Topics Covered": "Special Topics" },
+        { "Week": "Break", "Dates": "November 21-November 27, 2022", "Topics Covered": "None!" },
+        { "Week": "6", "Dates": "November 28-December 4, 2022", "Topics Covered": "Polynomials" },
+        { "Week": "7", "Dates": "December 5-December 11, 2022", "Topics Covered": "Contest Tricks" },
+        { "Week": "8", "Dates": "December 12-December 18, 2022", "Topics Covered": "Special Topics" },
     ]
 
     onMount(() => {
         if (windowWidth && windowWidth < 700) {
-            for (var i = 0; i < scheduleData.length; i++) {
-                var string = scheduleData[i]["Dates"];
+            for (var i = 0; i < topicsData.length; i++) {
+                var string = topicsData[i]["Dates"];
                 var stringBetter = string.replaceAll("October", "Oct.").replaceAll("November", "Nov.").replaceAll("December", "Dec.");
-                scheduleData[i]["Dates"] = stringBetter;
+                topicsData[i]["Dates"] = stringBetter;
+            }
+            for (var i = 0; i < scheduleData.length; i++) {
+                let string = scheduleData[i]["Day of Week"];
+                let stringBetter = string.replaceAll("Sunday", "Sun.").replaceAll("Monday", "Mon.").replaceAll("Tuesday", "Tue.").replaceAll("Wednesday", "Wed.").replaceAll("Thursday", "Thu.").replaceAll("Friday", "Fri.").replaceAll("Saturday", "Sat.");
+                scheduleData[i]["Day of Week"] = stringBetter;
+                string = scheduleData[i]["Class"];
+                stringBetter = string.replaceAll("Intermediate", "Int").replaceAll("Beginner", "Beg").replaceAll("Office Hours", "OH");
+                scheduleData[i]["Class"] = stringBetter;
             }
         }
+
     })
 </script>
-
 <svelte:window bind:scrollY={y} bind:innerWidth={windowWidth}/>
 
 <svelte:head>
 	<title>Classes</title>
 </svelte:head>
 
+<!--
 <div class="outside" style="height: 100vh;">
     <div class="header flex">
         {#if visible}
@@ -70,16 +87,17 @@
 				<Heading className="glow" text="Classes" textColor="white" />
                 <div class="flex"><div class="headerline"></div></div>
                 <p class="descript" style="font-weight: 300; font-size: 22px; color: white;">Mustang Math [MM] is an online middle school contest designed around values of collaboration, love for mathematics, and fun</p>
-                <a sveltekit:prefetch href="https://tinyurl.com/BeginnerAlgebraRegistration" class="headerButton">
+                <a sveltekit:prefetch href="https://tinyurl.com/BeginnerAlgebraRegistration" class="headerButton" target="_blank">
                     <div class="headerButton" on:mouseenter={toggleBackground} on:mouseleave={toggleBackground}>
                         <p class="headerButton" id="signupformmclasses">Register for Beginner Classes!</p>
                         <img height="25px" class="headerButton" src={background} alt="Right-facing arrow icon" />
                     </div>
                 </a>
-                <a sveltekit:prefetch href="https://tinyurl.com/IntermediateAlgRegistration" class="headerButton">
-                    <div class="headerButton" on:mouseenter={toggleBackground} on:mouseleave={toggleBackground}>
+                <br>
+                <a sveltekit:prefetch href="https://tinyurl.com/IntermediateAlgRegistration" class="headerButton" target="_blank">
+                    <div class="headerButton" on:mouseenter={toggleBackground2} on:mouseleave={toggleBackground2}>
                         <p class="headerButton" id="signupformmclasses">Register for Intermediate Classes!</p>
-                        <img height="25px" class="headerButton" src={background} alt="Right-facing arrow icon" />
+                        <img height="25px" class="headerButton" src={background2} alt="Right-facing arrow icon" />
                     </div>
                 </a>
             </div>
@@ -88,8 +106,21 @@
         {/if}
     </div>
 </div>
+-->
+
+<PageHeader title="Classes" description="High Quality Online Math Contest Prep Classes" button_url="https://tinyurl.com/BeginnerAlgebraRegistration" button_text="Register for Beginner Algebra Classes!" id="registerBeginner"/>
 
 <br><br>
+
+<Heading text="Summary" size={2.5} textColor="#1B9AAA" />
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox>
+        <p style="font-size: 1.5em; text-align: center;"><b>Mustang Math classes</b> bring together students from around the world with one thing in common: an outstanding passion for math. Our highly qualified instructors prepare students for competitions in a fun and engaging way. Beyond instruction, we want to build a <b>community</b> of students and teachers sharing their love of math.</p>
+        <p style="font-size: 1.5em; text-align: center;">These classes will be run year-round and will be split into 4 main topics: Algebra, Combinatorics, Number Theory, and Geometry, each run for <b>8 weeks</b>. Instructive sessions will run for <b>90 minutes</b> every week over Zoom. Additionally, teachers will hold <b>office hours</b> each week, during which students can seek assistance with the content or ask any lingering questions. Each class will have <b>10-15 students</b> and, depending on the interest we receive, there may be multiple classes run for each level. The total cost for 8 weeks of classes will be <b>$80</b> with financial aid available.</p>
+    </PanelBox>
+</div> 
+<br />
+<br />
 
 <Heading text="Topic-Based Courses" size={2.5} textColor="#1B9AAA" />
 <div class="competition-wrapper">
@@ -101,14 +132,26 @@
     </FlexBox>
 </div> <br />
 
-
 <Heading text="Algebra Class Details" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Our first class will be on Algebra and will start on the week of October 17th, 2022. There are currently 2 levels of classes planned, Beginner Algebra (AMC 8 level) and Intermediate Algebra (AMC 10/12 level).  See below for the weekly schedule and breakdown of topics! If you’re interested in participating in these classes, make sure to fill out the <b><a href = https://tinyurl.com/MMClassInterestForm>interest form</a></b>.</p>
+        <p style="font-size: 1.5em; text-align: center;">Our first class will be on Algebra and will start on the week of <b>October 17th, 2022</b> and run through till <b>December 18, 2022</b>. There are currently 2 levels of classes planned, <b>Beginner Algebra (AMC 8 level)</b> and <b>Intermediate Algebra (AMC 10/12 level)</b>.  See below for the weekly schedule and breakdown of topics! If you’re interested in participating in these classes, make sure to fill out the <b><a href = https://tinyurl.com/BeginnerAlgebraRegistration>beginner class registration form</a></b> or the <b><a href = https://tinyurl.com/IntermediateAlgebraReg>intermediate class registration form</a></b>.</p>
     
     </PanelBox>
 </div> <br />
+<br />
+
+
+<Heading text="Pricing" size={2.5} textColor="#1B9AAA" />
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox>
+        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Algebra will be <b>$80</b>. However, you can also register for all 4 topics throughout the year at a discounted total price of <b>$280</b>! Teaching the same students throughout the year allow us to build a personal connection with them and better understand their learning style, so we recommend you sign your students up for all 4 topics. </p>
+        <p style="font-size: 1.5em; text-align: center;">We charge for our classes for a multitude of reasons. First, while we are a fully volunteer-run nonprofit organization, we need money to continue <b>improving upon and providing better classes, competitions, events, and materials</b>! All money earned from MM Classes will go back into these projects for you, the students. Second, we work very hard to provide high quality classes, and we want students to take them seriously - ascribing a price value to the class naturally leads to more <b>committed students</b>.</p>
+        <p style="font-size: 1.5em; text-align: center;">If the cost of these classes poses a significant burden to you, please reach out to us! <b>Financial aid is available upon request</b>.</p>
+        
+    </PanelBox>
+</div> 
+<br />
 <br />
 
 <Heading text="Algebra Weekly Schedule" size={2.5} textColor="#1B9AAA" />
@@ -121,7 +164,7 @@
 </div> <br />
 <br />
 
-<Heading text="Topics Covered" size={2.5} textColor="#1B9AAA" />
+<Heading text="Algebra Classes Schedule" size={2.5} textColor="#1B9AAA" />
 <div class="schedule-wrapper">
     <FlexBox>
         <PanelBox>
