@@ -43,6 +43,10 @@
 		color: rgb(255, 255, 255, 0.6);
 	}
 
+	.sign-up:hover {
+		background-color: rgb(68, 162, 77);
+	}
+
 	main {
 		flex: 1;
 		display: flex;
