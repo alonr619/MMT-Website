@@ -1,7 +1,6 @@
 <script>
     export let pic;
     export let name;
-    export let grade;
     export let description;
     export let width = "98%";
     export let left = false;
@@ -12,7 +11,7 @@
 </script>
 
 <PanelBox width={width}>
-    <div class="person-flex" style={left ? "display: grid;height: fit-content;grid-template-columns: 35% 65%;" : "display: grid;height: fit-content;grid-template-columns: 65% 35%;"}>
+    <div class="person-flex" style={left ? "display: grid;grid-template-columns: 35% 65%;" : "display: grid;grid-template-columns: 65% 35%;"}>
         {#if left}
         <div class="person-pic flex">
             <div>
