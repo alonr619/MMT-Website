@@ -3,6 +3,9 @@
 	import SocialsLink from '$lib/components/SocialsLink.svelte';
 	import '../app.css';
     import { page } from "$app/stores";
+  import Newsletter from '$lib/components/Newsletter.svelte';
+
+	let show = false;
 </script>
 
 <div class="all-container">
@@ -10,11 +13,13 @@
 
 	<main>
 		<slot />
+		<Newsletter show={show} />
 	</main>
 
     {#if $page.url.pathname !== "/"}
 	<footer>
 		<p><b>Contact at </b><a href="mailto:mustangmathtournament@gmail.com">mustangmathtournament@gmail.com</a><br /></p>
+		<button class="sign-up" on:click={() => {show = !show;}}>Sign Up for Newsletter ></button>
 		<div class="socials">
 			<SocialsLink url="https://discord.gg/bYDDWxan5d" icon="discord" />
 			<SocialsLink url="https://www.facebook.com/MustangMath" icon="facebook" />
@@ -27,6 +32,17 @@
 </div>
 
 <style>
+	.sign-up {
+		margin-bottom: 5px;
+		border: 2px solid lightgreen;
+		border-radius: 10px;
+		background-color: transparent;
+		outline: none;
+		padding: 10px 20px;
+		cursor: pointer;
+		color: rgb(255, 255, 255, 0.6);
+	}
+
 	main {
 		flex: 1;
 		display: flex;

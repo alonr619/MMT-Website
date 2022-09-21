@@ -35,11 +35,5 @@
 </svelte:head>
 
 <section>
-    <PageHeader title={windowWidth > 600 ? "Mustang Math" : "MM"} description="Mustang Math [MM] is an online middle school contest designed around values of collaboration, love for mathematics, and fun!" button_text="Sign up for classes" button_id="signUpForClasses"/>
-</section>
-
-<section style="padding: 10px;display: flex; justify-content:center; align-items:center;">
-    <div>
-        <Newsletter />
-    </div>
+    <PageHeader title={windowWidth > 600 ? "Mustang Math" : "MM"} description="Mustang Math [MM] is an online middle school contest designed around values of collaboration, love for mathematics, and fun!" button_text="Sign up for classes" button_id="signUpForClasses" button_url="/classes" height={88.2}/>
 </section>

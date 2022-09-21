@@ -45,10 +45,10 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<div class="navbar">
+<div class="navbar" style="position: relative;">
 	<div
 		class:active={$page.url.pathname === '/'}
-		style="text-align: left; position: fixed; top: 0; left: 0;padding: 0;font-weight: bold; text-decoration: none;"
+		style="text-align: left; position: absolute; top: 0; left: 0;padding: 0;font-weight: bold; text-decoration: none;"
 	>
 		<a style="text-decoration: none;" sveltekit:prefetch href="/">
 			<img src="/favicon.png" alt="mustang math logo" />
@@ -229,21 +229,6 @@
 		.navbar {
 			height: 50px;
 		}
-	}
-
-	.mobileView .nav {
-		font-size: 1.5em;
-		letter-spacing: 0.15em;
-		width: 100%;
-		padding: 10px;
-		z-index: 10000 !important;
-	}
-
-	.mobileView a {
-		padding: 10px;
-		width: 100%;
-		color: white;
-		text-align: center;
 	}
 
 	#hamburger-icon {
