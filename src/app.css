@@ -154,3 +154,19 @@ button:focus:not(:focus-visible) {
 		padding: 10px 50px;
 	}
 }
+
+.sign-up {
+	margin-bottom: 5px;
+	border: 2px solid lightgreen;
+	border-radius: 10px;
+	background-color: transparent;
+	outline: none;
+	padding: 10px 20px;
+	font-size: 15px;
+	cursor: pointer;
+	color: rgb(255, 255, 255, 0.6);
+}
+
+.sign-up:hover {
+	background-color: rgb(68, 162, 77);
+}
