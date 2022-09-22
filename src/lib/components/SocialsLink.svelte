@@ -20,6 +20,12 @@
 		opacity: 0.6;
     }
 
+    @media screen and (max-width: 900px) {
+        .social-link {
+            padding: 4px;
+        }
+    }
+
     .social-link:hover {
         text-decoration: underline;
         opacity: 0.8;

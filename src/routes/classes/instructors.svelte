@@ -17,7 +17,7 @@
 <br><br>
 
 <FlexBox wrap={true}>
-    <InfoPerson width={windowWidth < 700 ? "90%" : "50%"} pic="/about-us-images/Anna-Li.jpg" name="Anna Li" description="Anna Li is a senior at Interlake High School and has competed in competitive math since elementary school. She is a lead of Tournament Development at Mustang Math. Anna has had extensive experience developing and teaching curriculum for previous Mustang Math classes as well as occasionally lecturing for her Tyee Competition Math Club. She is also the Head Coach of Tyee Science Club. Outside of math, Anna enjoys science, debate, music, and reading." left/>
+    <InfoPerson width={windowWidth < 850 ? "90%" : "50%"} windowWidth={windowWidth} pic="/about-us-images/Anna-Li.jpg" name="Anna Li" description="Anna Li is a senior at Interlake High School and has competed in competitive math since elementary school. She is a lead of Tournament Development at Mustang Math. Anna has had extensive experience developing and teaching curriculum for previous Mustang Math classes as well as occasionally lecturing for her Tyee Competition Math Club. She is also the Head Coach of Tyee Science Club. Outside of math, Anna enjoys science, debate, music, and reading." left/>
 
     <InfoPerson width={windowWidth < 700 ? "90%" : "50%"} pic="/about-us-images/Harshil-Nukala.jpg" name="Harshil Nukala" description="Harshil is a rising freshman in California. He has started his competitive math journey since third grade and has participated in MathCounts, AMC 8, the AMC Series, ARML, and USAMTS.  For Mustang Math, he is on the Curriculum Development and Problem Writing Team. Outside of math, he enjoys physics, computer science, chemistry, and biking."/>
 

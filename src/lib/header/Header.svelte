@@ -27,6 +27,7 @@
 		{	path: "/competitions", 
 			text: "Competitions", 
 			hasSubPages: true,
+			index: 0,
 			subPages: [
 				{path: "/competitions/3mt-2022", text: "3MT"},
 				{path: "/competitions/mmt-2023", text: "MMT 2023"},
@@ -36,6 +37,7 @@
 			path: "/classes", 
 			text: "Classes", 
 			hasSubPages: true,
+			index: 1,
 			subPages: [
 				{path: "/classes/instructors", text: "Instructors"},
 			]
@@ -44,6 +46,7 @@
 		{path: "/sponsors", text: "Sponsors", hasSubPages: false},
         {path: "/past-exams", text: "Past Exams", hasSubPages: false},
     ]
+	const show = [0, 0];
 </script>
 
 <svelte:head>
@@ -123,12 +126,24 @@
 	<div id="hamburger-links" transition:slide|local={{ duration: 300 }}>
         {#each navPages as navPage (navPage.path)}
 			{#if navPage.hasSubPages}
-				<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === navPage.path} sveltekit:prefetch href="{navPage.path}">{navPage.text}  <i class="fa fa-caret-down" style="margin-left: 2px;" /></a></div>
-				{#each navPage.subPages as subPage}
-					<div class="exterior" style="background-color: green;margin-bottom: 5px;"><a on:click={toggleMobile} class:active={$page.url.pathname === subPage.path} sveltekit:prefetch href="{subPage.path}">{subPage.text}</a></div>
-				{/each}
+				<div class:active={$page.url.pathname === navPage.path}>
+					<div class="exterior" style="display: flex;align-items:center;justify-content:left;"><a on:click={toggleMobile} sveltekit:prefetch href="{navPage.path}">{navPage.text}</a><div style="color: white;width:50px;" on:click={() => {show[navPage.index] = show[navPage.index] == 1 ? 0 : 1}}>
+						{#if show[navPage.index] == 1}
+						<i class="fa fa-caret-up" style="margin-left: 2px;" />
+						{:else}
+						<i class="fa fa-caret-down" style="margin-left: 2px;" />
+						{/if}
+					</div></div>
+				</div>
+				{#if show[navPage.index] == 1}
+					<div transition:slide|local={{ duration: 300 }}>
+						{#each navPage.subPages as subPage}
+							<div class="exterior" style="padding-left: 30px;"><a on:click={toggleMobile} class:active={$page.url.pathname === subPage.path} sveltekit:prefetch href="{subPage.path}">{subPage.text}</a></div>
+						{/each}
+					</div>
+				{/if}
 			{:else}
-			<div class="exterior"><a on:click={toggleMobile} class:active={$page.url.pathname === navPage.path} sveltekit:prefetch href="{navPage.path}">{navPage.text}</a></div>
+			<div class="exterior" class:active={$page.url.pathname === navPage.path}><a on:click={toggleMobile} sveltekit:prefetch href="{navPage.path}">{navPage.text}</a></div>
 			{/if}
 		{/each}
     </div>
@@ -272,17 +287,17 @@
 
 	.exterior {
 		display: flex;
-		justify-content: center;
+		justify-content: left;
 		align-items: center;
 	}
 
-	.exterior .active {
+	#hamburger-links .active {
 		background-color: #5b8064;
 		text-decoration: none;
 	}
 
 	#hamburger-links a {
 		padding: 10px;
-		text-align: center;
+		text-align: left;
 	}
 </style>
