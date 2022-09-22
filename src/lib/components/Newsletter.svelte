@@ -13,27 +13,27 @@
             <div id="mc_embed_signup_scroll">
             <div>
                 <h2 style="margin: 0; padding:0;"><strong>Join Mustang Math Newsletter</strong></h2>
-                <p style="margin: 0; padding:0;">text for arpit to modify</p>
+                <p style="margin: 0; padding:0;">Our Monthly Newsletter will include a lot of information about our various classes, competitions, and events, as well as interesting math tidbits and information about other cool opportunities! We use location information to help tell you about local math opportunities, and we highly recommend you join!</p>
                 <br />
             </div>
     <div class="mc-field-group">
-        <label for="mce-FNAME">First Name</label>
+        <label for="mce-FNAME">First Name <span class="asterisk">*</span></label>
         <input type="text" value="" name="FNAME" class="" id="mce-FNAME" required>
         <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
     </div>
     <div class="mc-field-group">
-        <label for="mce-LNAME">Last Name </label>
+        <label for="mce-LNAME">Last Name <span class="asterisk">*</span></label>
         <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
         <span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>
     </div>
     <div class="mc-field-group">
-        <label for="mce-EMAIL">Email Address
+        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
     </label>
         <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
         <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
     </div>
     <div class="mc-field-group">
-        <label for="mce-GRADE">Student Grade (2022-23) </label>
+        <label for="mce-GRADE">Student Grade (2022-23) <span class="asterisk">*</span></label>
         <select name="GRADE" class="" id="mce-GRADE" required>
             <option value=""></option>
             <option value="4-">4-</option>

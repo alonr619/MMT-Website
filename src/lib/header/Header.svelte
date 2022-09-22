@@ -127,13 +127,21 @@
         {#each navPages as navPage (navPage.path)}
 			{#if navPage.hasSubPages}
 				<div class:active={$page.url.pathname === navPage.path}>
-					<div class="exterior" style="display: flex;align-items:center;justify-content:left;"><a on:click={toggleMobile} sveltekit:prefetch href="{navPage.path}">{navPage.text}</a><div style="color: white;width:50px;" on:click={() => {show[navPage.index] = show[navPage.index] == 1 ? 0 : 1}}><i class="fa fa-caret-down" style="margin-left: 2px;" /></div></div>
+					<div class="exterior" style="display: flex;align-items:center;justify-content:left;"><a on:click={toggleMobile} sveltekit:prefetch href="{navPage.path}">{navPage.text}</a><div style="color: white;width:50px;" on:click={() => {show[navPage.index] = show[navPage.index] == 1 ? 0 : 1}}>
+						{#if show[navPage.index] == 1}
+						<i class="fa fa-caret-up" style="margin-left: 2px;" />
+						{:else}
+						<i class="fa fa-caret-down" style="margin-left: 2px;" />
+						{/if}
+					</div></div>
 				</div>
-				<div style="{show[navPage.index] == 0 ? "display: none;" : "display: block;"}">
-					{#each navPage.subPages as subPage}
-						<div class="exterior" style="padding-left: 30px;"><a on:click={toggleMobile} class:active={$page.url.pathname === subPage.path} sveltekit:prefetch href="{subPage.path}">{subPage.text}</a></div>
-					{/each}
-				</div>
+				{#if show[navPage.index] == 1}
+					<div transition:slide|local={{ duration: 300 }}>
+						{#each navPage.subPages as subPage}
+							<div class="exterior" style="padding-left: 30px;"><a on:click={toggleMobile} class:active={$page.url.pathname === subPage.path} sveltekit:prefetch href="{subPage.path}">{subPage.text}</a></div>
+						{/each}
+					</div>
+				{/if}
 			{:else}
 			<div class="exterior" class:active={$page.url.pathname === navPage.path}><a on:click={toggleMobile} sveltekit:prefetch href="{navPage.path}">{navPage.text}</a></div>
 			{/if}
