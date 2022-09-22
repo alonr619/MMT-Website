@@ -61,7 +61,6 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		top: 5px;
 		bottom: 0;
 		width: 100%;
 		text-align: center;
@@ -69,20 +68,6 @@
 		z-index: 1;
 		min-height: 50px;
 		background-color: #1c6825;
-	}
-
-	footer p{
-		color: white;
-	}
-
-	footer a {
-		color: white;
-		opacity: 0.6;
-	}
-
-	footer a:hover{
-		text-decoration: underline;
-		opacity: 0.8;
 	}
 
 	.socials {
