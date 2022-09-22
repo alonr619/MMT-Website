@@ -28,7 +28,7 @@
 <svelte:window bind:scrollY={y} bind:innerWidth={windowWidth}/>
 
 <svelte:head>
-	<title>Mustang Math Tournament</title>
+	<title>Mustang Math</title>
 </svelte:head>
 
 <Newsletter show={show} />
