@@ -12,7 +12,9 @@
         <form action="https://mustangmath.us14.list-manage.com/subscribe/post?u=c80101147f7690b2cd88056c7&amp;id=10f0771adf&amp;f_id=007a87e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
             <div>
-                <h2><strong>Join Mustang Math Newsletter</strong></h2>
+                <h2 style="margin: 0; padding:0;"><strong>Join Mustang Math Newsletter</strong></h2>
+                <p style="margin: 0; padding:0;">text for arpit to modify</p>
+                <br />
             </div>
     <div class="mc-field-group">
         <label for="mce-FNAME">First Name</label>

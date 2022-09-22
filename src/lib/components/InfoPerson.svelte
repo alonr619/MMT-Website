@@ -4,6 +4,7 @@
     export let description;
     export let width = "98%";
     export let left = false;
+    export let windowWidth;
 
     import Text from '$lib/components/Text.svelte';
     import Heading from '$lib/components/Heading.svelte';
@@ -11,7 +12,7 @@
 </script>
 
 <PanelBox width={width}>
-    <div class="person-flex" style={left ? "display: grid;grid-template-columns: 35% 65%;" : "display: grid;grid-template-columns: 65% 35%;"}>
+    <div class="person-flex" style={windowWidth < 650 ? "display: grid;grid-template-columns: 100%;" : left ? "display: grid;grid-template-columns: 35% 65%;" : "display: grid;grid-template-columns: 65% 35%;"}>
         {#if left}
         <div class="person-pic flex">
             <div>
