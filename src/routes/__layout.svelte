@@ -41,6 +41,12 @@
 		margin-left: 10px;
 	}
 
+	@media screen and (max-width: 900px) {
+		.divider {
+			margin-right: 5px;
+		}
+	}
+
 	main {
 		flex: 1;
 		display: flex;
