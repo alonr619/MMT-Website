@@ -63,7 +63,7 @@
         <PanelBox>
             <p style="font-size: 1.5em; text-align: center;">Check out our first solution video!<br></p>
             <p align="center">
-            <iframe align = "center" title="MMT 2022 Solutions Video" width="800" height="450" style="text-align: center"
+            <iframe align = "center" title="MMT 2022 Solutions Video" width="100%" height="450" style="text-align: center"
                 src="https://www.youtube.com/embed/pl17fwL8dE0?start=1">
             </iframe>
             </p>
@@ -115,6 +115,7 @@
     }
     iframe {
         display: block;
+        max-width: 800px;
     }
     table{
         text-align: left;
