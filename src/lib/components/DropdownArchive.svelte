@@ -29,14 +29,16 @@
     <table>
         {#each tests as test}
         <tr>
-            <td><strong>{test[0]}</strong></td>
-            <td><a target="_blank" sveltekit:prefetch href={test[1]}>Problems</a></td>
+            {#each test as item}
+            {#if item.length == 1}
+                <td><strong>{item[0]}</strong></td>
+            {:else}
+                <td><a target="_blank" sveltekit:prefetch href={item[1]}>{item[0]}</a></td>
+            {/if}
+            
+            {/each}
         </tr>
         {/each}
-        <tr>
-            <td><a target="_blank" sveltekit:prefetch href={answers}>Answers</a></td>
-            <td><a target="_blank" sveltekit:prefetch href={results}>Results</a></td>
-        </tr>
     </table>
 </Dropdown>
 
