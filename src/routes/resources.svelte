@@ -49,7 +49,7 @@
                     {/each}
                 </tr>
                 <tr>
-                    <th>{windowWidth < 700 ? "Comput." : "Combinatorics"}</th>
+                    <th>{windowWidth < 700 ? "Combo" : "Combinatorics"}</th>
                     {#each handoutData[1] as handout}
                         <td><a target="_blank" sveltekit:prefetch href={handout[1]}>{handout[0]}</a></td>
                     {/each}
