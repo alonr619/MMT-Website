@@ -1,0 +1,123 @@
+<script>
+    import Heading from '$lib/components/Heading.svelte';
+    import DropdownArchive from '$lib/components/DropdownArchive.svelte';
+    import Text from '$lib/components/Text.svelte';
+    import Link from '$lib/components/Link.svelte';
+    import Button from '$lib/components/Button.svelte';
+    import PanelBox from '$lib/components/PanelBox.svelte';
+    import PageHeader from '$lib/components/PageHeader.svelte';
+
+    let handoutData = [
+        [["Quadratics", "archive/handouts/Algebra/Quadratics.pdf"]],
+        [],
+        [],
+        [["Factors", "archive/handouts/Number Theory/Factors.pdf"], ["LCM & GCD", "archive/handouts/Number Theory/LCM&GCD.pdf"]]
+
+    ]
+</script>
+
+<svelte:head>
+	<title>Study Resources</title>
+</svelte:head>
+
+<PageHeader title="Resources" description="Study for upcoming tournaments or classes with these resources!" button_url="/classes" button_text="Learn more with our classes!" button_id="trainingPortal"/>
+
+<section>
+    <Heading text="Topic-Based Handouts" size={2.5} textColor="#1B9AAA" />
+    <div style="margin-left: 10vw; margin-right: 10vw;">
+        <PanelBox>
+            <table>
+                <tr>
+                    <th>Algebra</th>
+                    {#each handoutData[0] as handout}
+                        <td><a target="_blank" sveltekit:prefetch href={handout[1]}>{handout[0]}</a></td>
+                    {/each}
+                </tr>
+                <tr>
+                    <th>Combinatorics</th>
+                    {#each handoutData[1] as handout}
+                        <td><a target="_blank" sveltekit:prefetch href={handout[1]}>{handout[0]}</a></td>
+                    {/each}
+                </tr>
+                <tr>
+                    <th>Geometry</th>
+                    {#each handoutData[2] as handout}
+                        <td><a target="_blank" sveltekit:prefetch href={handout[1]}>{handout[0]}</a></td>
+                    {/each}
+                </tr>
+                <tr>
+                    <th>Number Theory</th>
+                    {#each handoutData[3] as handout}
+                        <td><a target="_blank" sveltekit:prefetch href={handout[1]}>{handout[0]}</a></td>
+                    {/each}
+                </tr>
+            </table>
+        </PanelBox>
+    </div> 
+    
+</section>
+
+<section>
+    <Heading text="Youtube Videos" size={2.5} textColor="#1B9AAA" />
+    <div style="margin-left: 10vw; margin-right: 10vw;">
+        <PanelBox>
+            <p style="font-size: 1.5em; text-align: center;">Check out our first solution video!<br></p>
+            <p align="center">
+            <iframe align = "center" title="MMT 2022 Solutions Video" width="800" height="450" style="text-align: center"
+                src="https://www.youtube.com/embed/pl17fwL8dE0?start=1">
+            </iframe>
+            </p>
+        </PanelBox>
+    </div> 
+</section>
+
+<section>
+    <Heading text="Past Exams" size={2.5} textColor="#1B9AAA" />
+    <DropdownArchive id="showDropdown" year="2022" tests={[
+        [["Mounting Mayhem"], ["Rules","archive/2022/MountingMayhemRules.pdf"], ["Puzzles", "https://tinyurl.com/MMT2022MountingMayhemPuzzles"], ["Solutions", "https://tinyurl.com/MM2022MountingMayhemAnswers"]], 
+        [["Bucking Bingo"], ["Problems","archive/2022/BuckingBingoProblems.pdf"], ["Answers", "archive/2022/BuckingBingoAnswers.pdf"], ["Solutions", "archive/2022/BuckingBingoSolutions.pdf"]], 
+        [["Gallop"], ["Problems","archive/2022/GallopProblems.pdf"], ["Answers", "archive/2022/GallopAnswers.pdf"], ["Solutions", "archive/2022/GallopSolutions.pdf"]], 
+        [["Pressure Round 1 (Mystery Mare)"], ["Problems","archive/2022/Pressure1Problems.pdf"], ["Answers", "archive/2022/Pressure1Answers.pdf"], ["Solutions", "archive/2022/Pressure1Solutions.pdf"]], 
+        [["Pressure Round 2 (Mystery Mare)"], ["Problems","archive/2022/Pressure2Problems.pdf"], ["Answers", "archive/2022/Pressure2Answers.pdf"], ["Solutions", "archive/2022/Pressure2Solutions.pdf"]], 
+        ]}/>
+    <DropdownArchive id="showDropdown" year="2021" tests={[
+        [["Mounting Mayhem"], ["Problems","archive/2021/MountingMayhem.pdf"]], 
+        [["Bucking Bingo"], ["Problems","archive/2021/BuckingBingo.pdf"]], 
+        [["Relay Rodeo (Mystery Mare)"], ["Problems","archive/2021/Relay Rodeo.pdf"]], 
+        [["Gallop Round 1"], ["Problems", "archive/2021/Gallop Set 1.pdf"]], 
+        [["Gallop Round 2"], ["Problems", "archive/2021/Gallop Set 2.pdf"]], 
+        [["Gallop Round 3"], ["Problems", "archive/2021/Gallop Set 3.pdf"]], 
+        [["Gallop Round 4"], ["Problems", "archive/2021/Gallop Set 4.pdf"]], 
+        [["Gallop Round 5"], ["Problems", "archive/2021/Gallop Set 5.pdf"]], 
+        [["Gallop Round 6"], ["Problems", "archive/2021/Gallop Set 6.pdf"]], 
+        [["Gallop Round 7"], ["Problems", "archive/2021/Gallop Set 7.pdf"]], 
+        [["Gallop Round 8"], ["Problems", "archive/2021/Gallop Set 8.pdf"]], 
+        [["Answers", "archive/2021/Answers.pdf"], ["Results", "archive/2021/Results.pdf"]]
+        ]}/>
+    <DropdownArchive id="showDropdown" year="2020" tests={[
+        [["Mounting Mayhem"], ["Problems","archive/2020/MountingMayhem.pdf"]], 
+        [["Unbridled Approximation"], ["Problems","archive/2020/unbridledApproximation.pdf"]], 
+        [["Gallop Round 1"], ["Problems", "archive/2020/Gallop Set 1.pdf"]], 
+        [["Gallop Round 2"], ["Problems", "archive/2020/Gallop Set 2.pdf"]], 
+        [["Gallop Round 3"], ["Problems", "archive/2020/Gallop Set 3.pdf"]], 
+        [["Gallop Round 4"], ["Problems", "archive/2020/Gallop Set 4.pdf"]], 
+        [["Gallop Round 5"], ["Problems", "archive/2020/Gallop Set 5.pdf"]], 
+        [["Gallop Round 6"], ["Problems", "archive/2020/Gallop Set 6.pdf"]], 
+        [["Gallop Round 7"], ["Problems", "archive/2020/Gallop Set 7.pdf"]], 
+        [["Gallop Round 8"], ["Problems", "archive/2020/Gallop Set 8.pdf"]], 
+        [["Answers", "archive/2020/Answers.pdf"], ["Results", "archive/2020/Results.pdf"]]
+        ]}/>
+</section>
+
+<style>
+    section {
+        padding: 10px;
+    }
+    iframe {
+        display: block;
+    }
+    table{
+        text-align: left;
+        border-spacing: 1em;
+    }
+</style>
