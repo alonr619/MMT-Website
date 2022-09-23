@@ -74,7 +74,7 @@
 <section>
     <Heading text="Past Exams" size={2.5} textColor="#1B9AAA" />
     <DropdownArchive id="showDropdown" year="2022" tests={[
-        [["Mounting Mayhem"], ["Rules","archive/2022/MountingMayhemRules.pdf"], ["Puzzles", "tinyurl.com/MMT2022MountingMayhemPuzzles"], ["Solutions", "https://tinyurl.com/MM2022MountingMayhemAnswers"]], 
+        [["Mounting Mayhem"], ["Rules","archive/2022/MountingMayhemRules.pdf"], ["Puzzles", "https://tinyurl.com/MMT2022MountingMayhemPuzzles"], ["Solutions", "https://tinyurl.com/MM2022MountingMayhemAnswers"]], 
         [["Bucking Bingo"], ["Problems","archive/2022/BuckingBingoProblems.pdf"], ["Answers", "archive/2022/BuckingBingoAnswers.pdf"], ["Solutions", "archive/2022/BuckingBingoSolutions.pdf"]], 
         [["Gallop"], ["Problems","archive/2022/GallopProblems.pdf"], ["Answers", "archive/2022/GallopAnswers.pdf"], ["Solutions", "archive/2022/GallopSolutions.pdf"]], 
         [["Pressure Round 1 (Mystery Mare)"], ["Problems","archive/2022/Pressure1Problems.pdf"], ["Answers", "archive/2022/Pressure1Answers.pdf"], ["Solutions", "archive/2022/Pressure1Solutions.pdf"]], 
