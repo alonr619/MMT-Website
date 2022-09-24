@@ -77,6 +77,11 @@ const sponsorTiers = [
                 "link": "https://lhsmath.org/LMT/Home"
             },
             {
+                "url": "sponsors/partners/BIMCT.png",
+                "alt": "BIMCT",
+                "link": "https://bimct.org/"
+            },
+            {
                 "url": "sponsors/partners/SIMCC.png",
                 "alt": "SIMCC",
                 "link": "https://simcc.org/"
