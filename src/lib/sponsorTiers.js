@@ -82,6 +82,11 @@ const sponsorTiers = [
                 "link": "https://bimct.org/"
             },
             {
+                "url": "sponsors/partners/Math4all.png",
+                "alt": "MATH4ALL",
+                "link": "https://www.math4all.org/"
+            },
+            {
                 "url": "sponsors/partners/SIMCC.png",
                 "alt": "SIMCC",
                 "link": "https://simcc.org/"
