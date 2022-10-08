@@ -50,7 +50,7 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="Mustang Mini Math Tournament (3MT)" description="November 19, 2022: 9AM - 11:30AM PT" button_url="https://contestdojo.com/" button_text="Registration on ContestDojo!" button_id="registerOnContestDojo" />
+<PageHeader title="Mustang Mini Math Tournament (3MT)" description="November 19, 2022: 9:00 AM - 11:30 AM PT" button_url="https://contestdojo.com/" button_text="Registration on ContestDojo!" button_id="registerOnContestDojo" />
 
 <br /><br />
 
