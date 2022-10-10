@@ -1,4 +1,4 @@
-# Instructions for Setting up Local Environment
+# Instructions for Setting up Local Environment 
 1. Clone repo. You can use either terminal or GitHub Desktop.
 2. If you use VSCode, you can install the Svelte plugin.
 3. Install `npm`, if you haven't already.
