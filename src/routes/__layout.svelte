@@ -21,7 +21,7 @@
 		<div class="socials">
 			<button class="sign-up" on:click={() => {show = !show;}}><i class="fa-regular fa-newspaper"></i> Signup</button>
 			<div class="divider"></div>
-			<SocialsLink url="mailto:mustangmathtournament@gmail.com" type="solid" icon="envelope" />
+			<SocialsLink url="mailto:contact@mustangmath.com" type="solid" icon="envelope" />
 			<SocialsLink url="https://discord.gg/bYDDWxan5d" type="brands" icon="discord" />
 			<SocialsLink url="https://www.facebook.com/MustangMath" type="brands" icon="facebook" />
 			<SocialsLink url="https://www.instagram.com/mustangmath/" type="brands" icon="instagram" />
