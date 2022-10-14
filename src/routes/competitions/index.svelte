@@ -35,7 +35,7 @@
         <div on:mouseenter={() => toggleArrow(i)} on:mouseleave={() => toggleArrow(i)}>
             <a class="headerButton" href="/competitions/{competition.location}">
                 <p class="headerButton" id={competition.location}>{competition.title}</p>
-                <img height="25px" class="headerButton" src={buttonStates[i] ? "right-arrow-shaded.png" : "right-arrow.png"} alt="Right-facing arrow icon" />
+                <img height="40px" class="headerButton" src={buttonStates[i] ? "right-arrow-shaded.png" : "right-arrow.png"} alt="Right-facing arrow icon" />
             </a>
         </div>
     </PanelBox>
@@ -53,7 +53,6 @@
 
     p.headerButton {
         align-self: center;
-        font-size: 1em;
         margin: 5px;
         margin-right: 20px;
         font-weight: 700;
