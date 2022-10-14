@@ -3,7 +3,9 @@
 	import SocialsLink from '$lib/components/SocialsLink.svelte';
 	import '../app.css';
     import { page } from "$app/stores";
-  import Newsletter from '$lib/components/Newsletter.svelte';
+	import Newsletter from '$lib/components/Newsletter.svelte';
+	import "carbon-components-svelte/css/white.css";
+	import "carbon-components-svelte/css/all.css";
 
 	let show = false;
 </script>

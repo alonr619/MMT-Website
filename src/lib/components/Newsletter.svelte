@@ -1,6 +1,57 @@
 <script>
+    import { InlineNotification } from "carbon-components-svelte";
+
     export let show = false;
+    let firstName = "";
+    let lastName = "";
+    let email = "";
+    let state = "";
+    let country = "";
+    let grade = "";
+    let school = "";
+
+    let success = false;
+
+    async function setAction() {
+        if (firstName == "" || lastName == "" || email == "" || grade == "" || !email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
+            alert("Please fill out all required fields");
+            return;
+        } else {
+            let formData = new FormData();
+            formData.append('FNAME', firstName);
+            formData.append('LNAME', lastName);
+            formData.append('EMAIL', email);
+            formData.append('GRADE', grade);
+            formData.append('COUNTRY', country);
+            formData.append('STATE', state);
+            formData.append('SCHOOL', school);
+
+            await fetch("https://mustangmath.us14.list-manage.com/subscribe/post?u=c80101147f7690b2cd88056c7&amp;id=10f0771adf&amp;f_id=007a87e0f0",
+                {
+                    body: formData,
+                    method: "post",
+                    mode: 'no-cors'
+                }
+            );
+            show = !show;
+            success = true;
+            setInterval(() => {
+                success = false;
+            }, 5000);
+        }
+    }
 </script>
+
+{#if success}
+    <div style="position: absolute; top: 10px; left: 10px;z-index: 20000;">
+        <InlineNotification
+            lowContrast
+            kind="success"
+            title="Success:"
+            subtitle="Successfully added to the newsletter!"
+        />
+    </div>
+{/if}
 
 {#if show}
 <div class="surround">
@@ -9,7 +60,7 @@
     <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
     <div id="mc_embed_signup">
         <div style="position: absolute; top: 10px; right: 10px;"><i class="fa-solid fa-x" style="color: gray;cursor:pointer;" on:click={() => {show = !show;}}></i></div>
-        <form action="https://mustangmath.us14.list-manage.com/subscribe/post?u=c80101147f7690b2cd88056c7&amp;id=10f0771adf&amp;f_id=007a87e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
             <div>
                 <h2 style="margin: 0; padding:0;"><strong>Join Mustang Math Newsletter</strong></h2>
@@ -18,23 +69,23 @@
             </div>
     <div class="mc-field-group">
         <label for="mce-FNAME">First Name <span class="asterisk">*</span></label>
-        <input type="text" value="" name="FNAME" class="" id="mce-FNAME" required>
+        <input type="text" bind:value={firstName} name="FNAME" class="" id="mce-FNAME" required>
         <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
     </div>
     <div class="mc-field-group">
         <label for="mce-LNAME">Last Name <span class="asterisk">*</span></label>
-        <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+        <input type="text" bind:value={lastName} name="LNAME" class="" id="mce-LNAME">
         <span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>
     </div>
     <div class="mc-field-group">
         <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
     </label>
-        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+        <input type="email" bind:value={email} name="EMAIL" class="required email" id="mce-EMAIL" required>
         <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
     </div>
     <div class="mc-field-group">
         <label for="mce-GRADE">Student Grade (2022-23) <span class="asterisk">*</span></label>
-        <select name="GRADE" class="" id="mce-GRADE" required>
+        <select name="GRADE" bind:value={grade} class="" id="mce-GRADE" required>
             <option value=""></option>
             <option value="4-">4-</option>
             <option value="5">5</option>
@@ -47,7 +98,7 @@
     </div>
     <div class="mc-field-group">
         <label for="mce-COUNTRY">Country </label>
-        <select name="COUNTRY" class="" id="mce-COUNTRY">
+        <select name="COUNTRY" class="" bind:value={country} id="mce-COUNTRY">
             <option value=""></option>
             <option value="United States of America">United States of America</option>
             <option value="Singapore">Singapore</option>
@@ -252,7 +303,7 @@
     </div>
     <div class="mc-field-group">
         <label for="mce-STATE">US State </label>
-        <select name="STATE" class="" id="mce-STATE">
+        <select name="STATE" class="" bind:value={state} id="mce-STATE">
             <option value=""></option>
             <option value="Alabama">Alabama</option>
             <option value="Alaska">Alaska</option>
@@ -313,7 +364,7 @@
     </div>
     <div class="mc-field-group">
         <label for="mce-SCHOOL">Student School </label>
-        <input type="text" value="" name="SCHOOL" class="" id="mce-SCHOOL">
+        <input type="text" bind:value={school} name="SCHOOL" class="" id="mce-SCHOOL">
         <span id="mce-SCHOOL-HELPERTEXT" class="helper_text"></span>
     </div>
     <div>
@@ -324,7 +375,7 @@
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c80101147f7690b2cd88056c7_10f0771adf" tabindex="-1" value=""></div>
         <div class="optionalParent">
             <div class="clear foot">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"/>
+                <input on:click={setAction} value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"/>
             </div>
         </div>
     </div>
