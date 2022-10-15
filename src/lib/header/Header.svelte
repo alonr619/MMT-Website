@@ -31,6 +31,7 @@
 			subPages: [
 				{path: "/competitions/3mt-2022", text: "3MT"},
 				{path: "/competitions/mmt-2023", text: "MMT 2023"},
+				{path: "/competitions/past", text: "Past"},
 			]
 		},
 		{

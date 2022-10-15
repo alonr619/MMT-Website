@@ -115,8 +115,9 @@
 <Heading text="Summary" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><b>Mustang Math classes</b> bring together students from around the world with one thing in common: an outstanding passion for math. Our highly qualified instructors prepare students for competitions in a fun and engaging way. Beyond instruction, we want to build a <b>community</b> of students and teachers sharing their love of math.</p>
-        <p style="font-size: 1.5em; text-align: center;">These classes will be run year-round and will be split into 4 main topics: Algebra, Combinatorics, Number Theory, and Geometry, each run for <b>8 weeks</b>. Instructive sessions will run for <b>90 minutes</b> every week over Zoom. Additionally, teachers will hold <b>office hours</b> each week, during which students can seek assistance with the content or ask any lingering questions. Each class will have <b>10-15 students</b> and, depending on the interest we receive, there may be multiple classes run for each level. The total cost for 8 weeks of classes will be <b>$80</b> with financial aid available.</p>
+        <p style="font-size: 1.5em; text-align: center;"><strong>Mustang Math classes</strong> bring together students from around the world with one thing in common: an outstanding passion for math. Our highly qualified instructors prepare students for competitions in a fun and engaging way. Beyond instruction, we want to build a <strong>community</strong> of students and teachers sharing their love of math.</p>
+        <br />
+        <p style="font-size: 1.5em; text-align: center;">These classes will be run year-round and will be split into 4 main topics: Algebra, Combinatorics, Number Theory, and Geometry, each run for <strong>8 weeks</strong>. Instructive sessions will run for <strong>90 minutes</strong> every week over Zoom. Additionally, teachers will hold <strong>office hours</strong> each week, during which students can seek assistance with the content or ask any lingering questions. Each class will have <strong>10-15 students</strong> and, depending on the interest we receive, there may be multiple classes run for each level. The total cost for 8 weeks of classes will be <strong>$80</strong> with financial aid available.</p>
     </PanelBox>
 </div> 
 <br />
@@ -135,7 +136,7 @@
 <Heading text="Algebra Class Details" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Our first class will be on Algebra and will start on the week of <b>October 17th, 2022</b> and run through till <b>December 18, 2022</b>. There are currently 2 levels of classes planned, <b>Beginner Algebra (AMC 8 level)</b> and <b>Intermediate Algebra (AMC 10/12 level)</b>.  See below for the weekly schedule and breakdown of topics! If you’re interested in participating in these classes, make sure to fill out the <b><a href = https://tinyurl.com/BeginnerAlgebraRegistration>beginner class registration form</a></b> or the <b><a href = https://tinyurl.com/IntermediateAlgebraReg>intermediate class registration form</a></b>.</p>
+        <p style="font-size: 1.5em; text-align: center;">Our first class will be on Algebra and will start on the week of <strong>October 17th, 2022</strong> and run through till <strong>December 18, 2022</strong>. There are currently 2 levels of classes planned, <strong>Beginner Algebra (AMC 8 level)</strong> and <strong>Intermediate Algebra (AMC 10/12 level)</strong>.  See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <strong><a href = https://tinyurl.com/BeginnerAlgebraRegistration>beginner class registration form</a></strong> or the <strong><a href = https://tinyurl.com/IntermediateAlgebraReg>intermediate class registration form</a></strong>.</p>
     </PanelBox>
 </div> <br />
 <br />
@@ -144,9 +145,9 @@
 <Heading text="Pricing" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Algebra will be <b>$80</b>. However, you can also register for all 4 topics throughout the year at a discounted total price of <b>$280</b>! Teaching the same students throughout the year allow us to build a personal connection with them and better understand their learning style, so we recommend you sign your students up for all 4 topics. </p>
-        <p style="font-size: 1.5em; text-align: center;">We charge for our classes for a multitude of reasons. First, while we are a fully volunteer-run nonprofit organization, we need money to continue <b>improving upon and providing better classes, competitions, events, and materials</b>! All money earned from MM Classes will go back into these projects for you, the students. Second, we work very hard to provide high quality classes, and we want students to take them seriously - ascribing a price value to the class naturally leads to more <b>committed students</b>.</p>
-        <p style="font-size: 1.5em; text-align: center;">If the cost of these classes poses a significant burden to you, please reach out to us! <b>Financial aid is available upon request</b>.</p>
+        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Algebra will be <strong>$80</strong>. However, you can also register for all 4 topics throughout the year at a discounted total price of <strong>$280</strong>! Teaching the same students throughout the year allow us to build a personal connection with them and better understand their learning style, so we recommend you sign your students up for all 4 topics. </p>
+        <p style="font-size: 1.5em; text-align: center;">We charge for our classes for a multitude of reasons. First, while we are a fully volunteer-run nonprofit organization, we need money to continue <strong>improving upon and providing better classes, competitions, events, and materials</strong>! All money earned from MM Classes will go back into these projects for you, the students. Second, we work very hard to provide high quality classes, and we want students to take them seriously - ascribing a price value to the class naturally leads to more <strong>committed students</strong>.</p>
+        <p style="font-size: 1.5em; text-align: center;">If the cost of these classes poses a significant burden to you, please reach out to us! <strong>Financial aid is available upon request</strong>.</p>
         
     </PanelBox>
 </div> 
@@ -185,73 +186,7 @@
 <br />
 
 <style>
-    .outside {
-        background-image: url("/splash.svg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        overflow: hidden;
+    strong {
+        color: #1B9AAA;
     }
-    
-    @media (max-width: 700px) {
-        .outside {
-            background-image: url("/splash-mobile.svg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    }
-    
-    .header {
-        text-align: center;
-        position: relative;
-        height: calc(100% - 70px);
-    }
-    
-    .svg {
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        text-align: center;
-    }
-    
-    .minidiv {
-        z-index: 9;
-        margin: 20px;
-        max-width: 80%;
-    }
-    
-    .headerline {
-        border-bottom: 1px solid white;
-        height: 20px;
-        width: 60%;
-        min-width: 300px;
-    }
-    
-    div.headerButton {
-        display: flex;
-        background-color: #65c083;
-        border-radius: 50px;
-        padding: 10px;
-        color: white;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        width: 300px;
-    }
-    
-    p.headerButton {
-        color: white;
-        align-self: center;
-        font-size: 1em;
-        margin: 5px;
-        margin-right: 20px;
-    }
-    
-    a.headerButton:hover {
-        text-decoration: none;
-    }
-    
-    </style>
+</style>

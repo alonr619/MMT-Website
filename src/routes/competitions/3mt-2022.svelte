@@ -75,9 +75,9 @@
     <PanelBox>
         <p>The divisions in 3MT are as follows:</p>
         <ul style="opacity: 0.8;">
-            <li>Grades 6 and below: Foal Division</li>
-            <li>Grades 7: Colt Division</li>
-            <li>Grades 8: Stallion Division</li>
+            <li><strong>Grades 6 and below: Foal Division</strong></li>
+            <li><strong>Grades 7: Colt Division</strong></li>
+            <li><strong>Grades 8: Stallion Division</strong></li>
         </ul> 
         <p>Students may choose to compete in a higher division than they were originally assigned. Student <u><strong>may not</strong></u> compete in a lower division than they were originally assigned.</p>
     </PanelBox>
@@ -123,3 +123,11 @@
     <Table data={topicsNT} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
     {/if}
 </Dropdown>
+
+<style>
+    li {
+        font-size: 15px;
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+</style>
