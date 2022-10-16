@@ -57,7 +57,8 @@
 <Dropdown mainText="Registration Instructions and Information" showContent={true} id="showDropdown">
     <strong>COST:</strong> $5 per participant <br /> <br />
     <strong>REGISTRATION DEADLINE:</strong> November 12, 2022 <br /> <br />
-    Registration instructions and links are coming soon! <br />
+    <strong>LOCATION:</strong> Zoom and Discord<br /> <br />
+    <a href="https://docs.google.com/document/d/1gdpWZWvTugWZQNTl2L20TkcyfRXfii_Bu62LwlqEQ7E/edit?usp=sharing" target="_blank"><strong>REGISTRATION INSTRUCTIONS</strong></a>
 </Dropdown> <br />
 
 <Heading text="Schedule" size={2.5} textColor="#1B9AAA" />
