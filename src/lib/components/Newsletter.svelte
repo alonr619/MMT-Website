@@ -1,6 +1,4 @@
 <script>
-    import { InlineNotification } from "carbon-components-svelte";
-
     export let show = false;
     let firstName = "";
     let lastName = "";
@@ -9,8 +7,6 @@
     let country = "";
     let grade = "";
     let school = "";
-
-    let success = false;
 
     async function setAction() {
         if (firstName == "" || lastName == "" || email == "" || grade == "" || !email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
@@ -34,24 +30,10 @@
                 }
             );
             show = !show;
-            success = true;
-            setInterval(() => {
-                success = false;
-            }, 5000);
+            alert("Subscribed!");
         }
     }
 </script>
-
-{#if success}
-    <div style="position: absolute; top: 10px; left: 10px;z-index: 20000;">
-        <InlineNotification
-            lowContrast
-            kind="success"
-            title="Success:"
-            subtitle="Successfully added to the newsletter!"
-        />
-    </div>
-{/if}
 
 {#if show}
 <div class="surround">
