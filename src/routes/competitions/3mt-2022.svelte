@@ -82,6 +82,7 @@
             <li><strong>Grades 8: Stallion Division</strong></li>
         </ul> 
         <p>Students may choose to compete in a higher division than they were originally assigned. Student <u><strong>may not</strong></u> compete in a lower division than they were originally assigned.</p>
+        <p>High school students are welcome to participate, but they will participate in a separate High School division and will not receive rankings or awards.</p>
     </PanelBox>
 </div> <br />
 
