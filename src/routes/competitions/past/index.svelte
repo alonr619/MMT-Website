@@ -8,16 +8,8 @@
 
     const competitions = [
         {
-            title: "Mustang Mini Math Tournament (3MT)",
-            location: "3mt-2022"
-        },
-        {
-            title: "Mustang Math Tournament 2023 (MMT)",
-            location: "mmt-2023"
-        },
-        {
-            title: "Past Competitions",
-            location: "past"
+            title: "Mustang Math Tournament 2022 (MMT)",
+            location: "mmt-2022"
         },
     ];
     // A value of false represents that the ith button is unfilled
@@ -32,14 +24,14 @@
 	<title>Competitions</title>
 </svelte:head>
 
-<PageHeader title="Competitions" description="Check Out Our Upcoming Competitions" button_url="https://contestdojo.com/" button_text="Register on ContestDojo!" button_id="registerOnContestDojo"/>
+<PageHeader title="Past Competitions" description="Check Out Our Upcoming Competitions" button_url="https://contestdojo.com/" button_text="Register on ContestDojo!" button_id="registerOnContestDojo"/>
 <section style="padding: 30px;">
     {#each competitions as competition, i}
     <PanelBox>
         <div on:mouseenter={() => toggleArrow(i)} on:mouseleave={() => toggleArrow(i)}>
-            <a class="headerButton" href="/competitions/{competition.location}">
+            <a class="headerButton" href="/competitions/past/{competition.location}">
                 <p class="headerButton" id={competition.location}>{competition.title}</p>
-                <img height="40px" class="headerButton" src={buttonStates[i] ? "right-arrow-shaded.png" : "right-arrow.png"} alt="Right-facing arrow icon" />
+                <img height="40px" class="headerButton" src={buttonStates[i] ? "/right-arrow-shaded.png" : "/right-arrow.png"} alt="Right-facing arrow icon" />
             </a>
         </div>
     </PanelBox>
