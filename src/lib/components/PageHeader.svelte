@@ -28,6 +28,7 @@
 
 <svelte:window bind:scrollY={y}/>
 <div class="header flex" style="height: {height}vh;">   
+
     {#if visible}
         <div in:fly="{{ y: -20, duration: 700 }}" class="minidiv">
             <Heading className="glow" text={title} textColor="white" />
