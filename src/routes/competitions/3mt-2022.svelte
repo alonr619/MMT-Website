@@ -56,10 +56,12 @@
 <br /><br />
 
 <Dropdown mainText="Registration Instructions and Information" showContent={true} id="showDropdown">
-    <strong>COST:</strong> $5 per participant <br /> <br />
-    <strong>REGISTRATION DEADLINE:</strong> November 12, 2022 <br /> <br />
-    <strong>LOCATION:</strong> Zoom and Discord<br /> <br />
-    <a href="https://docs.google.com/document/d/1gdpWZWvTugWZQNTl2L20TkcyfRXfii_Bu62LwlqEQ7E/edit?usp=sharing" target="_blank"><strong>REGISTRATION INSTRUCTIONS</strong></a>
+    <div style="padding: 10px;">
+        <strong>COST:</strong> $5 per participant <br /> <br />
+        <strong>REGISTRATION DEADLINE:</strong> November 12, 2022 <br /> <br />
+        <strong>LOCATION:</strong> Zoom and Discord<br /> <br />
+        <a href="https://docs.google.com/document/d/1gdpWZWvTugWZQNTl2L20TkcyfRXfii_Bu62LwlqEQ7E/edit?usp=sharing" target="_blank"><strong>REGISTRATION INSTRUCTIONS</strong></a>
+    </div>
 </Dropdown> <br />
 
 <Heading text="Schedule" size={2.5} textColor="#1B9AAA" />
@@ -70,6 +72,14 @@
             <p style="margin-top: 2px; margin-bottom: 0px;">*Schedule subject to change. Note that there is built-in buffer time to explain instructions and assist with technical difficulties.*</p>
         </PanelBox>
     </FlexBox>
+</div> <br />
+
+<Heading text="Awards" size={2.5} textColor="#1B9AAA" />
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox>
+        <p style="font-size: 1.5em; text-align: center;"><b>$50</b>, <b>$20</b>, and <b>$10</b> gift cards will be given to the 1st, 2nd, and 3rd place finishers within each division, along with certificates of participation to all students and certificates of achievement to high-scoring students.</p>
+        <p style="font-size: 1.5em; text-align: center;">A wide variety of other prizes are available for top scoring individuals, winners of activities, and a raffle, including AoPS Gift Certificates, vouchers for <a target = "_blank" href = "https://mustangmath.com/classes">Mustang Math Classes</a>, <a target="_blank" href="https://www.wolfram.com/notebooks/">Wolfram Notebooks</a> and more!</p>
+    </PanelBox>
 </div> <br />
 
 <Heading text="Divisions" size={2.5} textColor="#1B9AAA" />
@@ -129,7 +139,6 @@
 
 <style>
     li {
-        font-size: 15px;
         list-style-type: disc;
         margin-left: 20px;
     }
