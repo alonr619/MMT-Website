@@ -85,7 +85,7 @@
 <Heading text="Participant Elgibility" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw; font-size: 1.5em;">
     <PanelBox>
-        <p>3MT is a tournament meant for <b>middle school students and below</b> from the <b>the United States and Canada</b>. Students not from the US or Canada should participate in the international version of the contest happening next January-February. High school students are welcome to participate, but won't receive rankings or awards.  </p><br>
+        <p>3MT is a tournament meant for <b>middle school students and below</b> from the <b>the United States and Canada</b>. Students not from the US or Canada should participate in the international version of the contest happening next January-February.</p>
         <p>The divisions in 3MT are as follows:</p>
         <ul style="opacity: 0.8;">
             <li><strong>Grades 6 and below: Foal Division</strong></li>
