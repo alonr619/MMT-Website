@@ -60,7 +60,7 @@
         <strong>COST:</strong> $5 per participant <br /> <br />
         <strong>REGISTRATION DEADLINE:</strong> November 12, 2022 <br /> <br />
         <strong>LOCATION:</strong> Zoom and Discord<br /> <br />
-        <a href="https://docs.google.com/document/d/1gdpWZWvTugWZQNTl2L20TkcyfRXfii_Bu62LwlqEQ7E/edit?usp=sharing" target="_blank"><strong>REGISTRATION INSTRUCTIONS</strong></a>
+        <a href="https://docs.google.com/document/d/1gdpWZWvTugWZQNTl2L20TkcyfRXfii_Bu62LwlqEQ7E/edit?usp=sharing" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
     </div>
 </Dropdown> <br />
 
@@ -77,14 +77,15 @@
 <Heading text="Awards" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><b>$50</b>, <b>$20</b>, and <b>$10</b> gift cards will be given to the 1st, 2nd, and 3rd place finishers within each division, along with certificates of participation to all students and certificates of achievement to high-scoring students.</p>
+        <p style="font-size: 1.5em; text-align: center;"><b>$50</b>, <b>$30</b>, and <b>$20</b> gift cards will be given to the 1st, 2nd, and 3rd place finishers within each division (not HS), along with certificates of participation to all students and certificates of achievement to high-scoring students.</p>
         <p style="font-size: 1.5em; text-align: center;">A wide variety of other prizes are available for top scoring individuals, winners of activities, and a raffle, including AoPS Gift Certificates, vouchers for <a target = "_blank" href = "https://mustangmath.com/classes">Mustang Math Classes</a>, <a target="_blank" href="https://www.wolfram.com/notebooks/">Wolfram Notebooks</a> and more!</p>
     </PanelBox>
 </div> <br />
 
-<Heading text="Divisions" size={2.5} textColor="#1B9AAA" />
+<Heading text="Participant Elgibility" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw; font-size: 1.5em;">
     <PanelBox>
+        <p>3MT is a tournament meant for <b>middle school students and below</b> from the <b>the United States and Canada</b>. Students not from the US or Canada should participate in the international version of the contest happening next January-February.</p>
         <p>The divisions in 3MT are as follows:</p>
         <ul style="opacity: 0.8;">
             <li><strong>Grades 6 and below: Foal Division</strong></li>
@@ -135,6 +136,20 @@
     <Table data={topicsGeo} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
     <Table data={topicsNT} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
     {/if}
+</Dropdown>
+<Dropdown mainText="FAQ" id="showDropdown">
+    <p>
+        <strong>Q:</strong> I'm a parent or a student, not a coach - how can I register? <br />
+        <strong>A:</strong> MMT doesn't require you to be a coach! A parent can act as a coach (and register as a coach on ContestDojo) to create an organization and team(s) for their participating students. <strong>Students should not create coach accounts.</strong>
+    </p>
+    <p>
+        <strong>Q:</strong> Why aren't there awards for high schoolers? <br />
+        <strong>A:</strong> Our mission and tests are geared towards middle school mathematics, and thus our awards are as well. We welcome high school students to participate for the experience only.
+    </p>
+    <p>
+        <strong>Q:</strong> Where can I find practice material for the tests? How can we prepare? <br />
+        <strong>A:</strong> You can take a look at our <a target="_blank" sveltekit:prefetch href="/past-exams">past tests</a>, and we also highly recommend looking at <a target="_blank" sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a target="_blank" sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a target="_blank" sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
+    </p>
 </Dropdown>
 
 <style>
