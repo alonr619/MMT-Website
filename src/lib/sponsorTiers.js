@@ -37,6 +37,11 @@ const sponsorTiers = [
         alt: "Texas Instruments",
         link: "https://www.ti.com/",
       },
+      {
+        url: "sponsors/colt/AwesomeMath.png",
+        alt: "AwesomeMath",
+        link: "https://www.awesomemath.org",
+      },
     ],
   },
   {
