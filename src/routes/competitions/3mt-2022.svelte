@@ -77,7 +77,7 @@
 <Heading text="Awards" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><b>$50</b>, <b>$30</b>, and <b>$20</b> gift cards will be given to the 1st, 2nd, and 3rd place finishers within each division (not HS), along with certificates of participation to all students and certificates of achievement to high-scoring students.</p>
+        <p style="font-size: 1.5em; text-align: center;"><b>$50</b>, <b>$25</b>, and <b>$25</b> gift cards will be given to the 1st, 2nd, and 3rd place finishers within each division (not HS), along with certificates of participation to all students and certificates of achievement to high-scoring students.</p>
         <p style="font-size: 1.5em; text-align: center;">A wide variety of other prizes are available for top scoring individuals, winners of activities, and a raffle, including AoPS Gift Certificates, vouchers for <a target = "_blank" href = "https://mustangmath.com/classes">Mustang Math Classes</a>, <a target="_blank" href="https://www.wolfram.com/notebooks/">Wolfram Notebooks</a> and more!</p>
     </PanelBox>
 </div> <br />
