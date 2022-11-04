@@ -1,5 +1,5 @@
 <script>
-    import Heading from '$lib/components/Heading.svelte';
+    import Heading from '$lib/components/Heading.svelte'; 
     import Newsletter from '$lib/components/Newsletter.svelte';
     import { fly } from "svelte/transition";
     import { onMount } from "svelte";
