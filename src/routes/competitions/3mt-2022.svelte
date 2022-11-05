@@ -59,7 +59,7 @@
     <div style="padding: 10px;">
         <strong>COST:</strong> $5 per participant <br /> <br />
         <strong>REGISTRATION DEADLINE:</strong> November 12, 2022 <br /> <br />
-        <strong>LOCATION:</strong> Zoom and Discord<br /> <br />
+        <strong>LOCATION:</strong> Discord and ContestDojo<br /> <br />
         <a href="https://docs.google.com/document/d/1gdpWZWvTugWZQNTl2L20TkcyfRXfii_Bu62LwlqEQ7E/edit?usp=sharing" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
     </div>
 </Dropdown> <br />
@@ -77,8 +77,8 @@
 <Heading text="Awards" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><b>$50</b>, <b>$25</b>, and <b>$25</b> gift cards will be given to the 1st, 2nd, and 3rd place finishers within each division (not HS), along with certificates of participation to all students and certificates of achievement to high-scoring students.</p>
-        <p style="font-size: 1.5em; text-align: center;">A wide variety of other prizes are available for top scoring individuals, winners of activities, and a raffle, including AoPS Gift Certificates, vouchers for <a target = "_blank" href = "https://mustangmath.com/classes">Mustang Math Classes</a>, <a target="_blank" href="https://www.wolfram.com/notebooks/">Wolfram Notebooks</a> and more!</p>
+        <p style="font-size: 1.5em; text-align: center;"><b>$50</b>, <b>$25</b>, and <b>$25</b> gift cards will be given to the 1st, 2nd, and 3rd place finishers within each division (not HS). 1st and 2nd place finishers will additionally receive a math book from AwesomeMath. All students will receive certificates of participation and high-scoring students will receive certificates of achievement.</p>
+        <p style="font-size: 1.5em; text-align: center;">A wide variety of other prizes are available for top scoring individuals, winners of activities, and a raffle, including AoPS Gift Certificates, vouchers for <a target = "_blank" href = "https://mustangmath.com/classes">Mustang Math Classes</a>, <a target="_blank" href="https://www.wolfram.com/notebooks/">Wolfram Notebooks</a>, AwesomeMath books and more!</p>
     </PanelBox>
 </div> <br />
 
@@ -100,6 +100,7 @@
 <Heading text="Rules" size={2.5} textColor="#1B9AAA" />
 <Dropdown mainText="General Rules" id="showDropdown">
     <ol>
+        <li>All contestants will be required to have their cameras and mics ON during the test. 
         <li>No cheating - This contest has a zero-tolerance cheating policy. Any evidence of cheating may lead to immediate disqualification, or any other punishment deemed appropriate by competition staff.</li>
         <li>No calculators, rulers, compasses, protractors, or other aids are permitted.</li>
         <li>You may not use the Internet as a resource at any point during a test.</li>
@@ -145,6 +146,10 @@
     <p>
         <strong>Q:</strong> Why aren't there awards for high schoolers? <br />
         <strong>A:</strong> Our mission and tests are geared towards middle school mathematics, and thus our awards are as well. We welcome high school students to participate for the experience only.
+    </p>
+    <p>
+        <strong>Q:</strong> You have three divisions, what are the differences? <br />
+        <strong>A:</strong> Our Foal Division is for students in 6th grade and below and will have easier problems as compared to our Colt Division (7th grade) and Stallion Division (8th grade). Students may compete in divisions higher than their grade level but are not allowed to compete in lower divisions.
     </p>
     <p>
         <strong>Q:</strong> Where can I find practice material for the tests? How can we prepare? <br />
