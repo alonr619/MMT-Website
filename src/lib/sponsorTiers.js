@@ -28,11 +28,6 @@ const sponsorTiers = [
     headerColor: "#4d9464",
     sponsors: [
       {
-        url: "sponsors/colt/BBMC Math.png",
-        alt: "BBMC Math",
-        link: "https://bbmc-math.com/",
-      },
-      {
         url: "sponsors/colt/Texas Instruments.png",
         alt: "Texas Instruments",
         link: "https://www.ti.com/",
@@ -49,6 +44,11 @@ const sponsorTiers = [
     singular: "Foal Sponsor",
     headerColor: "#ad8c9e",
     sponsors: [
+      {
+        url: "sponsors/colt/BBMC Math.png",
+        alt: "BBMC Math",
+        link: "https://bbmc-math.com/",
+      },
       {
         url: "sponsors/foal/AoPS.png",
         alt: "Art of Problem Solving",
