@@ -28,9 +28,9 @@ const sponsorTiers = [
     headerColor: "#4d9464",
     sponsors: [
       {
-        url: "sponsors/colt/Texas Instruments.png",
-        alt: "Texas Instruments",
-        link: "https://www.ti.com/",
+        url: "sponsors/colt/BBMC Math.png",
+        alt: "BBMC Math",
+        link: "https://bbmc-math.com/",
       },
       {
         url: "sponsors/colt/AwesomeMath.png",
@@ -58,6 +58,11 @@ const sponsorTiers = [
         url: "sponsors/foal/AlphaStar.png",
         alt: "Alphastar Academy",
         link: "https://alphastar.academy/",
+      },
+      {
+        url: "sponsors/foal/Texas Instruments.png",
+        alt: "Texas Instruments",
+        link: "https://www.ti.com/",
       },
     ],
   },
