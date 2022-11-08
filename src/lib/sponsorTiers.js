@@ -55,7 +55,7 @@ const sponsorTiers = [
         link: "https://alphastar.academy/",
       },
       {
-        url: "sponsors/colt/Texas Instruments.png",
+        url: "sponsors/foal/Texas Instruments.png",
         alt: "Texas Instruments",
         link: "https://www.ti.com/",
       },
