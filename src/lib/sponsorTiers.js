@@ -33,11 +33,6 @@ const sponsorTiers = [
         link: "https://bbmc-math.com/",
       },
       {
-        url: "sponsors/colt/Texas Instruments.png",
-        alt: "Texas Instruments",
-        link: "https://www.ti.com/",
-      },
-      {
         url: "sponsors/colt/AwesomeMath.png",
         alt: "AwesomeMath",
         link: "https://www.awesomemath.org",
@@ -58,6 +53,11 @@ const sponsorTiers = [
         url: "sponsors/foal/AlphaStar.png",
         alt: "Alphastar Academy",
         link: "https://alphastar.academy/",
+      },
+      {
+        url: "sponsors/colt/Texas Instruments.png",
+        alt: "Texas Instruments",
+        link: "https://www.ti.com/",
       },
     ],
   },
