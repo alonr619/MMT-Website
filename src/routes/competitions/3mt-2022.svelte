@@ -11,7 +11,7 @@
     import Image from '$lib/components/Image.svelte';
     let windowWidth;
     const scheduleData = [
-        { "Day": "11/11-11/18", "Start Time (PT)": "All Day", "Event": "Problem of the Day" },
+        { "Day": "11/12-11/18", "Start Time (PT)": "All Day", "Event": "Problem of the Day" },
         [ "11/19", "9:00 AM-9:30 AM", "Opening Ceremony" ],
         [ "11/19", "9:30 AM-10:40 AM", "3MT Round (1 hour)" ],
         [ "11/19", "10:40 AM-11:30 AM", "Activities" ],
@@ -59,8 +59,8 @@
     <div style="padding: 10px;">
         <strong>COST:</strong> $5 per participant <br /> <br />
         <strong>REGISTRATION DEADLINE:</strong> November 12, 2022 <br /> <br />
-        <strong>LOCATION:</strong> Zoom and Discord<br /> <br />
-        <a href="https://docs.google.com/document/d/1gdpWZWvTugWZQNTl2L20TkcyfRXfii_Bu62LwlqEQ7E/edit?usp=sharing" target="_blank"><strong>REGISTRATION INSTRUCTIONS</strong></a>
+        <strong>LOCATION:</strong> Discord and ContestDojo<br /> <br />
+        <a href="https://docs.google.com/document/d/1gdpWZWvTugWZQNTl2L20TkcyfRXfii_Bu62LwlqEQ7E/edit?usp=sharing" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
     </div>
 </Dropdown> <br />
 
@@ -77,14 +77,15 @@
 <Heading text="Awards" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><b>$50</b>, <b>$20</b>, and <b>$10</b> gift cards will be given to the 1st, 2nd, and 3rd place finishers within each division, along with certificates of participation to all students and certificates of achievement to high-scoring students.</p>
-        <p style="font-size: 1.5em; text-align: center;">A wide variety of other prizes are available for top scoring individuals, winners of activities, and a raffle, including AoPS Gift Certificates, vouchers for <a target = "_blank" href = "https://mustangmath.com/classes">Mustang Math Classes</a>, <a target="_blank" href="https://www.wolfram.com/notebooks/">Wolfram Notebooks</a> and more!</p>
+        <p style="font-size: 1.5em; text-align: center;"><b>$50</b>, <b>$25</b>, and <b>$25</b> gift cards will be given to the 1st, 2nd, and 3rd place finishers within each division (not HS). 1st and 2nd place finishers will additionally receive a math book from AwesomeMath. All students will receive certificates of participation and high-scoring students will receive certificates of achievement.</p>
+        <p style="font-size: 1.5em; text-align: center;">A wide variety of other prizes are available for top scoring individuals, winners of activities, and a raffle, including AoPS Gift Certificates, vouchers for <a target = "_blank" href = "https://mustangmath.com/classes">Mustang Math Classes</a>, <a target="_blank" href="https://www.wolfram.com/notebooks/">Wolfram Notebooks</a>, AwesomeMath books and more!</p>
     </PanelBox>
 </div> <br />
 
-<Heading text="Divisions" size={2.5} textColor="#1B9AAA" />
+<Heading text="Participant Elgibility" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw; font-size: 1.5em;">
     <PanelBox>
+        <p>3MT is a tournament meant for <b>middle school students and below</b> from the <b>the United States and Canada</b>. Students not from the US or Canada should participate in the international version of the contest happening next January-February.</p>
         <p>The divisions in 3MT are as follows:</p>
         <ul style="opacity: 0.8;">
             <li><strong>Grades 6 and below: Foal Division</strong></li>
@@ -96,9 +97,29 @@
     </PanelBox>
 </div> <br />
 
+<Heading text="Activities" size={2.5} textColor="#1B9AAA" />
+<div style="margin-left: 10vw; margin-right: 10vw; font-size: 1.5em;">
+    <PanelBox>
+        <p>
+            <strong>Desmos Art:</strong> Get your creative (math) juices flowing with a Desmos art session! Draw something ingenious on the desmos.com graphing calculator, and see where your imagination takes you.<br />
+        </p>
+        <p>
+            <strong>Very Legit Round:</strong> This is a completely normal, typical, 100% standard, math tournament round. There is nothing suspicious about the problems at all...
+        </p>
+    </PanelBox>
+</div> <br />
+
+<Heading text="Problem of the Day" size={2.5} textColor="#1B9AAA" />
+<div style="margin-left: 10vw; margin-right: 10vw; font-size: 1.5em;">
+    <PanelBox>
+        <p>POTD is a small mini-contest that will be held in the week leading up to 3MT. We will post a problem every day, starting on 11/12, and participants will have the chance to answer these problems through ContestDojo. Points are earned for each correct answer, and the person with the most points at the end will be the winner!</p>
+    </PanelBox>
+</div> <br />
+
 <Heading text="Rules" size={2.5} textColor="#1B9AAA" />
 <Dropdown mainText="General Rules" id="showDropdown">
     <ol>
+        <li>All contestants will be required to have their cameras and mics ON during the test. 
         <li>No cheating - This contest has a zero-tolerance cheating policy. Any evidence of cheating may lead to immediate disqualification, or any other punishment deemed appropriate by competition staff.</li>
         <li>No calculators, rulers, compasses, protractors, or other aids are permitted.</li>
         <li>You may not use the Internet as a resource at any point during a test.</li>
@@ -135,6 +156,37 @@
     <Table data={topicsGeo} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
     <Table data={topicsNT} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
     {/if}
+</Dropdown>
+<Dropdown mainText="Problem of the Day" id="showDropdown">
+    <ol>
+        <li>The Daily POTD will be made available on ContestDojo at around 3 PM PT daily from 11/12 to 11/18 (7 total). POTDs may be solved and answers updated in ContestDojo for up to 24 hours from the release of the daily problem.</li>
+        <li>Solutions to the previous day's POTD will be posted the day after in #potd [link to channel]</li>
+        <li>Anyone who has registered for 3MT is eligible to participate in this contest. You must be fully set up on ContestDojo and Discord to properly participate.</li>
+        <li>Answers to the POTD will be submitted via ContestDojo. Log into your student portal in order to do so (See detailed info below)</li>
+        <li>Do NOT discuss the current POTD with anyone, including but not limited to the Mustang Math Tournament server, with your teammates, and any other forms of social media or in-person communication. POTD is an individual event. Violators of this rule will be disqualified from the POTD competition.</li>
+        <li>No tools besides a writing utensil and pencil are permitted for POTD's unless otherwise specified! This includes, but is not limited to, calculators, rulers, compasses, protractors, and the internet.</li>
+        <li>Each problem will be worth 10 points. Some problems will split these points across multiple parts that build upon each other.</li>
+        <li>The winner of POTD will win an AwesomeMath Book. Additionally, all students that submit at least one POTD correctly will be entered into a raffle for a Wolfram|Alpha Notebook Edition.</li>
+        <li>Any ties will be broken by total time taken for the problems</li>
+    </ol>
+</Dropdown>
+<Dropdown mainText="FAQ" id="showDropdown">
+    <p>
+        <strong>Q:</strong> I'm a parent or a student, not a coach - how can I register? <br />
+        <strong>A:</strong> MMT doesn't require you to be a coach! A parent can act as a coach (and register as a coach on ContestDojo) to create an organization and team(s) for their participating students. <strong>Students should not create coach accounts.</strong>
+    </p>
+    <p>
+        <strong>Q:</strong> Why aren't there awards for high schoolers? <br />
+        <strong>A:</strong> Our mission and tests are geared towards middle school mathematics, and thus our awards are as well. We welcome high school students to participate for the experience only.
+    </p>
+    <p>
+        <strong>Q:</strong> You have three divisions, what are the differences? <br />
+        <strong>A:</strong> Our Foal Division is for students in 6th grade and below and will have easier problems as compared to our Colt Division (7th grade) and Stallion Division (8th grade). Students may compete in divisions higher than their grade level but are not allowed to compete in lower divisions.
+    </p>
+    <p>
+        <strong>Q:</strong> Where can I find practice material for the tests? How can we prepare? <br />
+        <strong>A:</strong> You can take a look at our <a target="_blank" sveltekit:prefetch href="/past-exams">past tests</a>, and we also highly recommend looking at <a target="_blank" sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a target="_blank" sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a target="_blank" sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
+    </p>
 </Dropdown>
 
 <style>

@@ -33,9 +33,9 @@ const sponsorTiers = [
         link: "https://bbmc-math.com/",
       },
       {
-        url: "sponsors/colt/Texas Instruments.png",
-        alt: "Texas Instruments",
-        link: "https://www.ti.com/",
+        url: "sponsors/colt/AwesomeMath.png",
+        alt: "AwesomeMath",
+        link: "https://www.awesomemath.org",
       },
     ],
   },
@@ -45,6 +45,11 @@ const sponsorTiers = [
     headerColor: "#ad8c9e",
     sponsors: [
       {
+        url: "sponsors/colt/BBMC Math.png",
+        alt: "BBMC Math",
+        link: "https://bbmc-math.com/",
+      },
+      {
         url: "sponsors/foal/AoPS.png",
         alt: "Art of Problem Solving",
         link: "https://aops.com",
@@ -53,6 +58,11 @@ const sponsorTiers = [
         url: "sponsors/foal/AlphaStar.png",
         alt: "Alphastar Academy",
         link: "https://alphastar.academy/",
+      },
+      {
+        url: "sponsors/foal/Texas Instruments.png",
+        alt: "Texas Instruments",
+        link: "https://www.ti.com/",
       },
     ],
   },
