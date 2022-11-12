@@ -1,11 +1,5 @@
 const sponsorTiers = [
   {
-    name: "Unicorn Sponsors",
-    singular: "Unicorn Sponsor",
-    headerColor: "#3b1d32",
-    sponsors: [],
-  },
-  {
     name: "Stallion Sponsors",
     singular: "Stallion Sponsor",
     headerColor: "#5ba89a",
@@ -15,11 +9,6 @@ const sponsorTiers = [
         alt: "Wolfram Alpha",
         link: "https://www.wolfram.com/",
       },
-      {
-        url: "sponsors/stallion/Daily Challenge.png",
-        alt: "Daily Challenge with Po Shen Loh",
-        link: "https://live.poshenloh.com/",
-      },
     ],
   },
   {
@@ -28,14 +17,14 @@ const sponsorTiers = [
     headerColor: "#4d9464",
     sponsors: [
       {
-        url: "sponsors/colt/BBMC Math.png",
-        alt: "BBMC Math",
-        link: "https://bbmc-math.com/",
-      },
-      {
         url: "sponsors/colt/AwesomeMath.png",
         alt: "AwesomeMath",
         link: "https://www.awesomemath.org",
+      },
+      {
+        url: "sponsors/colt/Brilliant.png",
+        alt: "Brilliant",
+        link: "https://www.brilliant.org",
       },
     ],
   },
@@ -45,7 +34,7 @@ const sponsorTiers = [
     headerColor: "#ad8c9e",
     sponsors: [
       {
-        url: "sponsors/colt/BBMC Math.png",
+        url: "sponsors/foal/BBMC Math.png",
         alt: "BBMC Math",
         link: "https://bbmc-math.com/",
       },

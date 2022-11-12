@@ -78,7 +78,7 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;"><b>$50</b>, <b>$25</b>, and <b>$25</b> gift cards will be given to the 1st, 2nd, and 3rd place finishers within each division (not HS). 1st and 2nd place finishers will additionally receive a math book from AwesomeMath. All students will receive certificates of participation and high-scoring students will receive certificates of achievement.</p>
-        <p style="font-size: 1.5em; text-align: center;">A wide variety of other prizes are available for top scoring individuals, winners of activities, and a raffle, including AoPS Gift Certificates, vouchers for <a target = "_blank" href = "https://mustangmath.com/classes">Mustang Math Classes</a>, <a target="_blank" href="https://www.wolfram.com/notebooks/">Wolfram Notebooks</a>, AwesomeMath books and more!</p>
+        <p style="font-size: 1.5em; text-align: center;">A wide variety of other prizes are available for top scoring individuals, winners of activities, and a raffle, including AoPS Gift Certificates, Brilliant Premium subscriptions, vouchers for <a target = "_blank" href = "https://mustangmath.com/classes">Mustang Math Classes</a>, <a target="_blank" href="https://www.wolfram.com/notebooks/">Wolfram Notebooks</a>, AwesomeMath books and more!</p>
     </PanelBox>
 </div> <br />
 
