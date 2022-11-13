@@ -58,7 +58,7 @@
 <Dropdown mainText="Registration Instructions and Information" showContent={true} id="showDropdown">
     <div style="padding: 10px;">
         <strong>COST:</strong> $5 per participant <br /> <br />
-        <strong>REGISTRATION DEADLINE:</strong> November 12, 2022 <br /> <br />
+        <strong>REGISTRATION DEADLINE:</strong> November 17, 2022 <br /> <br />
         <strong>LOCATION:</strong> Discord and ContestDojo<br /> <br />
         <a href="https://docs.google.com/document/d/1gdpWZWvTugWZQNTl2L20TkcyfRXfii_Bu62LwlqEQ7E/edit?usp=sharing" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
     </div>
