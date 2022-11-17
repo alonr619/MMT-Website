@@ -15,7 +15,7 @@
         [ "11/19", "9:00 AM-9:30 AM", "Opening Ceremony" ],
         [ "11/19", "9:30 AM-10:40 AM", "3MT Round (1 hour)" ],
         [ "11/19", "10:40 AM-11:30 AM", "Activities" ],
-        [ "11/19", "11:30 AM-12:00 AM", "Awards Ceremony" ]
+        [ "11/19", "11:30 AM-12:00 PM", "Awards Ceremony" ]
     ];
 
     const topicsCovered = [
