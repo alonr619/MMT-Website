@@ -130,6 +130,15 @@
         <li>Individuals will be split into three divisions based on their grade level. As mentioned above, students may upcompete.</li>
     </ol>
 </Dropdown>
+<Dropdown mainText="Scoring & Tiebreakers" id="showDropdown">
+    <p>Your score on the 3MT Round is simply the number of questions you get right - each question is worth 1 point.</p>
+    <p>If two or more students get the same number of questions right, ties will be broken as follows:</p>
+    <ol>
+        <li>1. Difficulty of problems solved. This will be determined by whichever student has the lowest <b>tiebreaker index</b>. <br>
+        The <b>tiebreaker index</b> for a student is calculated by multiplying the total number of correct solves per problem for each problem the student got correct.</li><br>
+        <li>2. Completion time. Should two students have the same tiebreaker index, ties will be broken by completion time. In particular, whichever student enters their final correct answer earliest will win this tiebreaker.</li>
+    </ol>
+</Dropdown>
 <Dropdown mainText="Answer Formatting Rules" id="showDropdown">
     <ol>
         <li>Carry out any reasonable calculations. For instance, you should evaluate any expressions which will take negligible time to evaluate (such as 1/2+1/3). You don't have to carry out unreasonable calculations, including large powers (e.g. 7<sup>8</sup>), large factorials, large products, and trigonometric functions which cannot be expressed in terms of radicals.</li>
