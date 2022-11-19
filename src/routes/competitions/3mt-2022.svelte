@@ -15,7 +15,7 @@
         [ "11/19", "9:00 AM-9:30 AM", "Opening Ceremony" ],
         [ "11/19", "9:30 AM-10:40 AM", "3MT Round (1 hour)" ],
         [ "11/19", "10:40 AM-11:30 AM", "Activities" ],
-        [ "11/19", "11:30 AM-12:00 AM", "Awards Ceremony" ]
+        [ "11/19", "11:30 AM-12:00 PM", "Awards Ceremony" ]
     ];
 
     const topicsCovered = [
@@ -58,7 +58,7 @@
 <Dropdown mainText="Registration Instructions and Information" showContent={true} id="showDropdown">
     <div style="padding: 10px;">
         <strong>COST:</strong> $5 per participant <br /> <br />
-        <strong>REGISTRATION DEADLINE:</strong> November 12, 2022 <br /> <br />
+        <strong>REGISTRATION DEADLINE:</strong> November 17, 2022 <br /> <br />
         <strong>LOCATION:</strong> Discord and ContestDojo<br /> <br />
         <a href="https://docs.google.com/document/d/1gdpWZWvTugWZQNTl2L20TkcyfRXfii_Bu62LwlqEQ7E/edit?usp=sharing" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
     </div>
@@ -78,7 +78,7 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;"><b>$50</b>, <b>$25</b>, and <b>$25</b> gift cards will be given to the 1st, 2nd, and 3rd place finishers within each division (not HS). 1st and 2nd place finishers will additionally receive a math book from AwesomeMath. All students will receive certificates of participation and high-scoring students will receive certificates of achievement.</p>
-        <p style="font-size: 1.5em; text-align: center;">A wide variety of other prizes are available for top scoring individuals, winners of activities, and a raffle, including AoPS Gift Certificates, vouchers for <a target = "_blank" href = "https://mustangmath.com/classes">Mustang Math Classes</a>, <a target="_blank" href="https://www.wolfram.com/notebooks/">Wolfram Notebooks</a>, AwesomeMath books and more!</p>
+        <p style="font-size: 1.5em; text-align: center;">A wide variety of other prizes are available for top scoring individuals, winners of activities, and a raffle, including AoPS Gift Certificates, Brilliant Premium subscriptions, vouchers for <a target = "_blank" href = "https://mustangmath.com/classes">Mustang Math Classes</a>, <a target="_blank" href="https://www.wolfram.com/notebooks/">Wolfram Notebooks</a>, AwesomeMath books and more!</p>
     </PanelBox>
 </div> <br />
 
