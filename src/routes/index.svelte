@@ -43,9 +43,9 @@
 				{/if}
                 <div class="flex"><div class="headerline"></div></div>
                 <p class="descript" style="font-weight: 300; font-size: 22px; color: white;">Mustang Math [MM] is a 501(c)(3) nonprofit organization of committed high school and college volunteers who are dedicated to promoting a spirit of collaboration among middle school students around the world and piquing their curiosity in mathematics.</p>
-                <a sveltekit:prefetch href="/competitions/3mt-2022" class="headerButton">
+                <a sveltekit:prefetch href="/competitions/mmt-2023" class="headerButton">
                     <div class="headerButton" on:mouseenter={toggleBackground} on:mouseleave={toggleBackground}>
-                        <p class="headerButton" id="signupformmclasses">Register for 3MT!</p>
+                        <p class="headerButton" id="signupformmclasses">Register for MMT 2023!</p>
                         <img height="25px" class="headerButton" src={background} alt="Right-facing arrow icon" />
                     </div>
                 </a>
