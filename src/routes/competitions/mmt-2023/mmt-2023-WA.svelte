@@ -87,61 +87,28 @@
     </PanelBox>
 </div> <br />
 
-<Heading text="Participant Elgibility" size={2.5} textColor="#1B9AAA" />
-<div style="margin-left: 10vw; margin-right: 10vw; font-size: 1.5em;">
-    <PanelBox>
-        <p>3MT is a tournament meant for <b>middle school students and below</b> from the <b>the United States and Canada</b>. Students not from the US or Canada should participate in the international version of the contest happening next January-February.</p>
-        <p>The divisions in 3MT are as follows:</p>
-        <ul style="opacity: 0.8;">
-            <li><strong>Grades 6 and below: Foal Division</strong></li>
-            <li><strong>Grades 7: Colt Division</strong></li>
-            <li><strong>Grades 8: Stallion Division</strong></li>
-        </ul> 
-        <p>Students may choose to compete in a higher division than they were originally assigned. Student <u><strong>may not</strong></u> compete in a lower division than they were originally assigned.</p>
-        <p>High school students are welcome to participate, but they will participate in a separate High School division and will not receive rankings or awards.</p>
-    </PanelBox>
-</div> <br />
-
-<Heading text="Activities" size={2.5} textColor="#1B9AAA" />
-<div style="margin-left: 10vw; margin-right: 10vw; font-size: 1.5em;">
-    <PanelBox>
-        <p>
-            <strong>Desmos Art:</strong> Get your creative (math) juices flowing with a Desmos art session! Draw something ingenious on the desmos.com graphing calculator, and see where your imagination takes you.<br />
-        </p>
-        <p>
-            <strong>Very Legit Round:</strong> This is a completely normal, typical, 100% standard, math tournament round. There is nothing suspicious about the problems at all...
-        </p>
-    </PanelBox>
-</div> <br />
-
-<Heading text="Problem of the Day" size={2.5} textColor="#1B9AAA" />
-<div style="margin-left: 10vw; margin-right: 10vw; font-size: 1.5em;">
-    <PanelBox>
-        <p>POTD is a small mini-contest that will be held in the week leading up to 3MT. We will post a problem every day, starting on 11/12, and participants will have the chance to answer these problems through ContestDojo. Points are earned for each correct answer, and the person with the most points at the end will be the winner!</p>
-    </PanelBox>
-</div> <br />
-
 <Heading text="Rules" size={2.5} textColor="#1B9AAA" />
 <Dropdown mainText="General Rules" id="showDropdown">
     <ol>
-        <li>All contestants will be required to have their cameras and mics ON during the test. 
         <li>No cheating - This contest has a zero-tolerance cheating policy. Any evidence of cheating may lead to immediate disqualification, or any other punishment deemed appropriate by competition staff.</li>
         <li>No calculators, rulers, compasses, protractors, or other aids are permitted.</li>
         <li>You may not use the Internet as a resource at any point during a test.</li>
             <ol type="a">
                 <li>In order to help enforce this, we may require individuals to provide a solution for a problem during the competition - so keep track of your work!</li>
             </ol>
-        <li>Individuals may not collaborate with anyone. This includes other participants, parents, coaches, siblings, and friends.</li>
-        <li>Individuals will be split into three divisions based on their grade level. As mentioned above, students may upcompete.</li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="Scoring & Tiebreakers" id="showDropdown">
-    <p>Your score on the 3MT Round is simply the number of questions you get right - each question is worth 1 point.</p>
-    <p>If two or more students get the same number of questions right, ties will be broken as follows:</p>
-    <ol>
-        <li>1. Difficulty of problems solved. This will be determined by whichever student has the lowest <b>tiebreaker index</b>. <br>
-        The <b>tiebreaker index</b> for a student is calculated by multiplying the total number of correct solves per problem for each problem the student got correct.</li><br>
-        <li>2. Completion time. Should two students have the same tiebreaker index, ties will be broken by completion time. In particular, whichever student enters their final correct answer earliest will win this tiebreaker.</li>
+        <li>All communication will take place through the Discord platform.
+            <ol type="a">
+                Scores, important information, documents, etc. will only be communicated through this platform on the day of the contest.
+            </ol>
+            <ol type="a">
+            All teams should be communicating with each other on this platform ONLY.
+
+            </ol>
+            <ol type="a">
+                <strong>Students under 13 years of age should use a parent-created and monitored Discord account.</strong>
+            </ol>
+        </li>
+        <li>The team divisions are determined by the highest grade level amongst the team members. Teams with 1 or more 8th graders will be in the <strong>Stallion</strong> division, teams with 7th graders and below will be in the <strong>Colt</strong> division, and teams with 6th graders and below will be in the <strong>Foal</strong> division. Teams may <em>choose</em> to compete in a higher division, if they&rsquo;d like.</li>
     </ol>
 </Dropdown>
 <Dropdown mainText="Answer Formatting Rules" id="showDropdown">
@@ -171,17 +138,34 @@
     <Table data={topicsNT} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
     {/if}
 </Dropdown>
-<Dropdown mainText="Problem of the Day" id="showDropdown">
+<Dropdown mainText="ROUND 1: Mounting Mayhem (Puzzle)" id="showDropdown">
     <ol>
-        <li>The Daily POTD will be made available on ContestDojo at around 3 PM PT daily from 11/12 to 11/18 (7 total). POTDs may be solved and answers updated in ContestDojo for up to 24 hours from the release of the daily problem.</li>
-        <li>Solutions to the previous day's POTD will be posted the day after in #potd [link to channel]</li>
-        <li>Anyone who has registered for 3MT is eligible to participate in this contest. You must be fully set up on ContestDojo and Discord to properly participate.</li>
-        <li>Answers to the POTD will be submitted via ContestDojo. Log into your student portal in order to do so (See detailed info below)</li>
-        <li>Do NOT discuss the current POTD with anyone, including but not limited to the Mustang Math Tournament server, with your teammates, and any other forms of social media or in-person communication. POTD is an individual event. Violators of this rule will be disqualified from the POTD competition.</li>
-        <li>No tools besides a writing utensil and pencil are permitted for POTD's unless otherwise specified! This includes, but is not limited to, calculators, rulers, compasses, protractors, and the internet.</li>
-        <li>Each problem will be worth 10 points. Some problems will split these points across multiple parts that build upon each other.</li>
-        <li>The winner of POTD will win an AwesomeMath Book. Additionally, all students that submit at least one POTD correctly will be entered into a raffle for a Wolfram|Alpha Notebook Edition.</li>
-        <li>Any ties will be broken by total time taken for the problems</li>
+        <li>The Mounting Mayhem Round will consist of some mathematical-based puzzle questions. Students will have 60 minutes to solve as many of them as possible.</li>
+        <li>Puzzles can range from logic to number theory to geometry and more. They often require out-of-the-box thinking although all topics can readily be understood and grasped by middle schoolers.</li>
+        <li>Harder puzzles will be worth more points, but these puzzles will be longer and/or require more creativity — you must decide what problems to focus your time on to optimize your team score.</li>
+    </ol>
+</Dropdown>
+<Dropdown mainText="ROUND 2: Bucking Bingo" id="showDropdown">
+    <ol>
+        <li>The “Bingo” Round will consist of 24 questions to be solved in 60 minutes.</li>
+        <li>The questions will vary in difficulty, but not necessarily in increasing order — rather the difficult problems will be randomly distributed.</li>
+        <li>In this round, each correctly solved question is worth points, but each completed and correct Bingo (each of the problems in a given row, column, or long diagonal are solved and correct) is worth bonus points!</li>
+        <li>You are not expected to solve all the questions in this round within the allotted time. Instead, we encourage you to strategize how you might use your time to maximize your points!</li>
+    </ol>
+</Dropdown>
+<Dropdown mainText="ROUND 3: Gallop (Guts)" id="showDropdown">
+    <ol>
+        <li>The Gallop Round will consist of 24 questions to be solved in 60 minutes.</li>
+        <li>The questions will be divided into 8 or 9 sets of 3 questions each, and you <strong>must submit the answers to one set</strong> before accessing the problems for the next. This means you must strategize when to submit each set (incomplete or not) to ensure you get access to as many questions as possible.</li>
+        <li>The problems will get progressively more difficult, and later problems will be worth more points.</li>
+        <li>Submissions will be scored immediately and a live score of all participating teams will be available during the competition. Prepare for the adrenaline rush!</li>
+    </ol>
+</Dropdown>
+<Dropdown mainText="ROUND 4: Mystery Mare" id="showDropdown">
+    <ol>
+        <li>The Mystery Mare round is exactly that — a mystery!</li>
+        <li>Hints about the nature of the round will be revealed as the competition date nears.</li>
+        <li>We promise it will be as fun and engaging as the other rounds. :)</li>
     </ol>
 </Dropdown>
 <Dropdown mainText="FAQ" id="showDropdown">
@@ -190,16 +174,16 @@
         <strong>A:</strong> MMT doesn't require you to be a coach! A parent can act as a coach (and register as a coach on ContestDojo) to create an organization and team(s) for their participating students. <strong>Students should not create coach accounts.</strong>
     </p>
     <p>
-        <strong>Q:</strong> Why aren't there awards for high schoolers? <br />
-        <strong>A:</strong> Our mission and tests are geared towards middle school mathematics, and thus our awards are as well. We welcome high school students to participate for the experience only.
+        <strong>Q:</strong> I have students that are interested in participating, but they are not a full team of 4 and would like to be paired up with other incomplete teams! How can we do this?<br />
+        <strong>A:</strong> Use our <a target="_blank" href="https://tinyurl.com/MMT2023TeamFinder">Teammate Finder Spreadsheet</a>! There, you can input your parent/coach contact information and find others to join your team! <strong>Students should not create coach accounts.</strong>
     </p>
     <p>
-        <strong>Q:</strong> You have three divisions, what are the differences? <br />
-        <strong>A:</strong> Our Foal Division is for students in 6th grade and below and will have easier problems as compared to our Colt Division (7th grade) and Stallion Division (8th grade). Students may compete in divisions higher than their grade level but are not allowed to compete in lower divisions.
+        <strong>Q:</strong> Do we have to participate separately from our own homes? Or can our entire team meet up and take the test together? <br />
+        <strong>A:</strong> Absolutely, your team can meet up and take the test together! We still require that your team is present on Discord with the video on and all members visible so that you can receive information in a timely manner!
     </p>
     <p>
         <strong>Q:</strong> Where can I find practice material for the tests? How can we prepare? <br />
-        <strong>A:</strong> You can take a look at our <a target="_blank" sveltekit:prefetch href="/past-exams">past tests</a>, and we also highly recommend looking at <a target="_blank" sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a target="_blank" sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a target="_blank" sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
+        <strong>A:</strong> You can take a look at our <a target="_blank" sveltekit:prefetch href="/resources">past tests</a>, and we also highly recommend looking at <a target="_blank" sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a target="_blank" sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a target="_blank" sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
     </p>
 </Dropdown>
 
