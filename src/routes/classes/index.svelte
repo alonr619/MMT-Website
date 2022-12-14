@@ -189,6 +189,6 @@
 
 <style>
     strong {
-        color: #1B9AAA;
+        color: #ff3e00;
     }
 </style>
