@@ -56,23 +56,9 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="Mustang Math Tournament (MMT)" description="April 29, 2023: 9:00 AM - 4:30 PM PT" button_url="https://contestdojo.com/" button_text="Registration on ContestDojo!" button_id="registerOnContestDojo" />
+<PageHeader title="Mustang Math Tournament (MMT) Washington" description="April 29, 2023: 9:00 AM - 4:30 PM PT" button_url="https://contestdojo.com/" button_text="Registration on ContestDojo!" button_id="registerOnContestDojo" />
 
 <br /><br />
-
-
-<Heading text="Locations" size={2.5} textColor="#1B9AAA" />
-<div style="margin-left: 10vw; margin-right: 10vw; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));">
-    <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><a target="_blank" href="/competitions/mmt-2023/mmt-2023-CA">California</a></p>
-    </PanelBox>
-    <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><a target="_blank" href="/competitions/mmt-2023/mmt-2023-WA">Washington</a></p>
-    </PanelBox>
-    <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><a target="_blank" href="/competitions/mmt-2023/mmt-2023-online">Online</a></p>
-    </PanelBox>
-</div><br />
 
 <Dropdown mainText="Registration Instructions and Information" showContent={true} id="showDropdown">
     <div style="padding: 10px;">
