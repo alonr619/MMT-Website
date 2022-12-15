@@ -14,7 +14,7 @@
 </svelte:head>
 
 <PageHeader title="Donate" description="Help improve our tournaments, classes, and more!" button_url="
-https://link.mustangmath.com/donate" button_text="SDonate to Mustang Math!" button_id="donateMM"/>
+https://link.mustangmath.com/donate" button_text="Donate to Mustang Math!" button_id="donateMM"/>
 
 
 <Section>
@@ -26,7 +26,7 @@ https://link.mustangmath.com/donate" button_text="SDonate to Mustang Math!" butt
                 We are incredibly passionate about providing middle school students with access to collaborative, challenging, and creative math tournaments, events, and classes.
                 However, while our volunteers put countless hours of time into Mustang Math, in order to provide high quality events and enable our resources to be accessed by as many students as possible,
                 we have a multitude of costs, including but not limited to venue booking, technology services, and teaching resources. Your donation will be attributed directly towards these costs allowing us
-                to work towards our goal of charging minimal to no registration fees for our services.
+                to work towards our goal of <b>charging minimal to no registration fees</b> for our services.
             </p>
         </PanelBox>
     </FlexBox>
@@ -36,7 +36,7 @@ https://link.mustangmath.com/donate" button_text="SDonate to Mustang Math!" butt
     <FlexBox>
         <PanelBox width="60%" style="min-width: 360px;">
             <p style="font-size: 1.2em; margin: 5px">All donations made to Mustang Math may be tax-deductible. Any donations upwards of $250 will be provided a receipt (contemporaneous written acknowledgement)
-                for presentation to the IRS. You can either donate through <a href="link.mustangmath.com/donate">PayPal</a>, or by mailing a check made out to Mustang Math at 8139 231st PL NE, Redmond WA 98053. 
+                for presentation to the IRS. You can either donate through <a href="link.mustangmath.com/donate">PayPal</a>, or by mailing a check made out to Mustang Math at <b>8139 231st PL NE, Redmond WA 98053</b>. 
                 If you have any questions, don't hesitate to <a href="mailto:contact@mustangmath.com">email us</a>.
             </p>
         </PanelBox>
