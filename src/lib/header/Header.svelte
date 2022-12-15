@@ -46,6 +46,7 @@
 		{path: "/our-team", text: "Our Team", hasSubPages: false},
 		{path: "/sponsors", text: "Sponsors", hasSubPages: false},
         {path: "/resources", text: "Resources", hasSubPages: false},
+		{path: "/donate", text: "Donate", hasSubPages: false},
     ]
 	const show = [0, 0];
 </script>
