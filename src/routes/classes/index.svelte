@@ -133,7 +133,7 @@
     </FlexBox>
 </div> <br />
 
-<h1 id="geometry"><strong>GEOMETRY</strong></h1>
+<h1 id="geometry"><strong style="color: #1b9aaa;">GEOMETRY</strong></h1>
 
 <Heading text="Geometry: Class Details" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
@@ -189,6 +189,6 @@
 
 <style>
     strong {
-        color: #1B9AAA;
+        color: #ff3e00;
     }
 </style>
