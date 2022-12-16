@@ -41,7 +41,7 @@ https://link.mustangmath.com/donate" button_text="Donate to Mustang Math!" butto
             </p>
         </PanelBox>
     </FlexBox>
-
+    <br />
 </Section>
 
 
