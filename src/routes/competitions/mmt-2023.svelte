@@ -5,6 +5,7 @@
     import Button from '$lib/components/Button.svelte';
     import PageHeader from '$lib/components/PageHeader.svelte';
     import Competition from '$lib/components/Competition.svelte';
+    import Tournament from '$lib/components/Tournament.svelte';
     import FlexBox from '$lib/components/FlexBox.svelte';
     import Table from "$lib/components/Table.svelte";
     import PanelBox from "$lib/components/PanelBox.svelte";
@@ -60,7 +61,6 @@
 
 <br /><br />
 
-
 <Heading text="Locations" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));">
     <PanelBox>
@@ -74,132 +74,41 @@
     </PanelBox>
 </div><br />
 
-<Dropdown mainText="Registration Instructions and Information" showContent={true} id="showDropdown">
-    <div style="padding: 10px;">
-        <strong>EARLY HORSE COST:</strong> $15 per participant (Register before 3/14 to receive the early horse price!)<br /> <br />
-        <strong>NORMAL COST:</strong> $20 per participant<br /> <br />
-        <strong>REGISTRATION DEADLINE:</strong> April 22, 2023 <br /> <br />
-        <strong>LOCATION:</strong> Washington, California, Online<br /> <br />
-        <a href="https://docs.google.com/document/d/1gdpWZWvTugWZQNTl2L20TkcyfRXfii_Bu62LwlqEQ7E/edit?usp=sharing" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
-    </div>
-</Dropdown> <br />
-
-<Heading text="Schedule" size={2.5} textColor="#1B9AAA" />
-<div class="schedule-wrapper">
-    <FlexBox>
-        <PanelBox>
-            <Table data={scheduleData} width="auto" headerColor="#1B9AAA" rowColors={["#A4D6AF", "#ADCDD6"]} cellPadding={5} cellPaddingRight={20} tableStyle="margin-left: auto; margin-right: auto"/>
-            <p style="margin-top: 2px; margin-bottom: 0px;">*Schedule subject to change. Note that there is built-in buffer time to explain instructions and assist with technical difficulties.*</p>
-        </PanelBox>
+<Heading text="Competitions" size={2.5} textColor="#1B9AAA" />
+<div class="competition-wrapper">
+    <FlexBox align="start">
+        <Tournament imgSource="mmt-2022/puzzlepiece.png" title="MMT Washington" description="A team puzzle round where participants are faced with a variety of logical and mathematical puzzles" button_text = "MMT WA" button_url = "/competitions/mmt-2023/mmt-2023-WA" />
+        <Tournament imgSource="mmt-2022/puzzlepiece.png" title="MMT Washington" description="A team puzzle round where participants are faced with a variety of logical and mathematical puzzles" />
+        <Tournament imgSource="mmt-2022/puzzlepiece.png" title="MMT Washington" description="A team puzzle round where participants are faced with a variety of logical and mathematical puzzles" />
     </FlexBox>
 </div> <br />
 
-<Heading text="Awards" size={2.5} textColor="#1B9AAA" />
+<Heading text="What is MMT?" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Medals will be given to (at minimum) the members of the top 3 teams of each division, along with certificates of participation to all students and certificates of achievement to high-scoring teams. A wide variety of other prizes are available for top scoring teams, winners of activities, and a raffle including but not limited to <a target="_blank" href="https://www.wolfram.com/notebooks/">Wolfram Notebooks</a>.</p>
+        <p style="font-size: 1.5em; text-align: center;">The Mustang Math Tournament is a middle school math competition run for middle school students around the nation.
+            It is put together by Mustang Math, a 501(c)(3) nonprofit organization put together by high school and college students, including the organizers of the Stanford and Berkeley Math Tournaments!
+            The tournament is centered around teamwork and collaboration, incentivizing students to work with their teams not only to navigate the challenging but interesting problems of the tournament, 
+            but also to develop strategies to master the unique and fun game-like rounds. With interesting and fun rounds including a logic-based puzzle round, a strategy-filled bingo round, a race-like gallop round, 
+            and our trademark 'mystery round,' our tournament is guaranteed to be enjoyable for any and all students who have an interest in mathematics. Don't believe us? Check out some comments from past participants!
+        </p>
     </PanelBox>
 </div> <br />
 
-<Heading text="Rules" size={2.5} textColor="#1B9AAA" />
-<Dropdown mainText="General Rules" id="showDropdown">
-    <ol>
-        <li>No cheating - This contest has a zero-tolerance cheating policy. Any evidence of cheating may lead to immediate disqualification, or any other punishment deemed appropriate by competition staff.</li>
-        <li>No calculators, rulers, compasses, protractors, or other aids are permitted.</li>
-        <li>You may not use the Internet as a resource at any point during a test.</li>
-            <ol type="a">
-                <li>In order to help enforce this, we may require individuals to provide a solution for a problem during the competition - so keep track of your work!</li>
-            </ol>
-        <li>All communication will take place through the Discord platform.
-            <ol type="a">
-                Scores, important information, documents, etc. will only be communicated through this platform on the day of the contest.
-            </ol>
-            <ol type="a">
-            All teams should be communicating with each other on this platform ONLY.
+<Heading text="Testimonials" size={2.5} textColor="#1B9AAA" />
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox>
+        <p style="font-size: 1.5em; text-align: center;"><i>"MMT has a unique take on standard math competitions" - 2022 Participant</i></p>
+        <p style="font-size: 1.5em; text-align: center;"><i>“MMT`s style of problems are much better than other tournaments. Unlike other tournaments that has the same style over the years, MMT has new and exciting styles of problems that makes it more fun to try and solve it on the spot” - 2022 Participant</i></p>
+        <p style="font-size: 1.5em; text-align: center;"><i>"MMT focused less on calculations than other math competitions" - 2022 Participant</i></p>
+        <p style="font-size: 1.5em; text-align: center;"><i>“I really appreciate all that MMT has done and I look forward to the competition that is held next year! I must say that the MMT was an impressive execution of math competitions unlike anything I've seen before!”  - 2022 Participant</i></p>
+        <p style="font-size: 1.5em; text-align: center;"><i>"My favorite memory from MMT was the teamwork - both chaotically and organizedly working with each other to solve the problems" - 2022 Participant</i></p>
+        <p style="font-size: 1.5em; text-align: center;"><i>"MMT had people captivated even before the tournament started with their Discord server and problems of the day" - 2022 Participant</i></p>
+        <p style="font-size: 1.5em; text-align: center;"><i>“I think this was a very nice way to spend my day.” - 2021 Participant</i></p>
+    </PanelBox>
+</div> <br />
 
-            </ol>
-            <ol type="a">
-                <strong>Students under 13 years of age should use a parent-created and monitored Discord account.</strong>
-            </ol>
-        </li>
-        <li>The team divisions are determined by the highest grade level amongst the team members. Teams with 1 or more 8th graders will be in the <strong>Stallion</strong> division, teams with 7th graders and below will be in the <strong>Colt</strong> division, and teams with 6th graders and below will be in the <strong>Foal</strong> division. Teams may <em>choose</em> to compete in a higher division, if they&rsquo;d like.</li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="Answer Formatting Rules" id="showDropdown">
-    <ol>
-        <li>Carry out any reasonable calculations. For instance, you should evaluate any expressions which will take negligible time to evaluate (such as 1/2+1/3). You don't have to carry out unreasonable calculations, including large powers (e.g. 7<sup>8</sup>), large factorials, large products, and trigonometric functions which cannot be expressed in terms of radicals.</li>
-        <li>Write rational numbers in lowest terms. Decimals are also acceptable, provided they are exact.</li>
-        <li>Move all square factors outside radicals. For example, write 3√7 instead of √63.</li>
-        <li>Denominators need to be rationalized. For example, write 1/√2 as √2/2 instead.</li>
-        <li>Do not express an answer using a repeated sum or product.</li>
-        <li>Here are some examples of simplified answers, and examples of unsimplified answers with simplified equivalents:
-            <div style="margin-top: 5px"><Image url="../mmt-2022/acceptable-answers.png" alt="Acceptable answer examples" /></div>
-            <div style="margin-top: 5px"><Image url="../mmt-2022/unacceptable-answers.png" alt="Unacceptable answer examples" /></div>
-        </li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="Potential Topics Covered" id="showDropdown">
-    <p id="disclaimer">Disclaimer: While most problems should fall within the scope of these topics, there may be a few that are not.</p>
-    {#if windowWidth > 1000}
-    <Table data={topicsCovered} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/1200}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/1500}em;" />
-    {:else if windowWidth > 800}
-    <Table data={topicsSmall1} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/800}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/800}em;" />
-    <Table data={topicsSmall2} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/800}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/800}em;" />
-    {:else}
-    <Table data={topicsAlgebra} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
-    <Table data={topicsCombo} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
-    <Table data={topicsGeo} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
-    <Table data={topicsNT} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
-    {/if}
-</Dropdown>
-<Dropdown mainText="ROUND 1: Mounting Mayhem (Puzzle)" id="showDropdown">
-    <ol>
-        <li>The Mounting Mayhem Round will consist of some mathematical-based puzzle questions. Students will have 60 minutes to solve as many of them as possible.</li>
-        <li>Puzzles can range from logic to number theory to geometry and more. They often require out-of-the-box thinking although all topics can readily be understood and grasped by middle schoolers.</li>
-        <li>Harder puzzles will be worth more points, but these puzzles will be longer and/or require more creativity — you must decide what problems to focus your time on to optimize your team score.</li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="ROUND 2: Bucking Bingo" id="showDropdown">
-    <ol>
-        <li>The “Bingo” Round will consist of 24 questions to be solved in 60 minutes.</li>
-        <li>The questions will vary in difficulty, but not necessarily in increasing order — rather the difficult problems will be randomly distributed.</li>
-        <li>In this round, each correctly solved question is worth points, but each completed and correct Bingo (each of the problems in a given row, column, or long diagonal are solved and correct) is worth bonus points!</li>
-        <li>You are not expected to solve all the questions in this round within the allotted time. Instead, we encourage you to strategize how you might use your time to maximize your points!</li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="ROUND 3: Gallop (Guts)" id="showDropdown">
-    <ol>
-        <li>The Gallop Round will consist of 24 questions to be solved in 60 minutes.</li>
-        <li>The questions will be divided into 8 or 9 sets of 3 questions each, and you <strong>must submit the answers to one set</strong> before accessing the problems for the next. This means you must strategize when to submit each set (incomplete or not) to ensure you get access to as many questions as possible.</li>
-        <li>The problems will get progressively more difficult, and later problems will be worth more points.</li>
-        <li>Submissions will be scored immediately and a live score of all participating teams will be available during the competition. Prepare for the adrenaline rush!</li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="ROUND 4: Mystery Mare" id="showDropdown">
-    <ol>
-        <li>The Mystery Mare round is exactly that — a mystery!</li>
-        <li>Hints about the nature of the round will be revealed as the competition date nears.</li>
-        <li>We promise it will be as fun and engaging as the other rounds. :)</li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="FAQ" id="showDropdown">
-    <p>
-        <strong>Q:</strong> I'm a parent or a student, not a coach - how can I register? <br />
-        <strong>A:</strong> MMT doesn't require you to be a coach! A parent can act as a coach (and register as a coach on ContestDojo) to create an organization and team(s) for their participating students. <strong>Students should not create coach accounts.</strong>
-    </p>
-    <p>
-        <strong>Q:</strong> I have students that are interested in participating, but they are not a full team of 4 and would like to be paired up with other incomplete teams! How can we do this?<br />
-        <strong>A:</strong> Use our <a target="_blank" href="https://tinyurl.com/MMT2023TeamFinder">Teammate Finder Spreadsheet</a>! There, you can input your parent/coach contact information and find others to join your team! <strong>Students should not create coach accounts.</strong>
-    </p>
-    <p>
-        <strong>Q:</strong> Do we have to participate separately from our own homes? Or can our entire team meet up and take the test together? <br />
-        <strong>A:</strong> Absolutely, your team can meet up and take the test together! We still require that your team is present on Discord with the video on and all members visible so that you can receive information in a timely manner!
-    </p>
-    <p>
-        <strong>Q:</strong> Where can I find practice material for the tests? How can we prepare? <br />
-        <strong>A:</strong> You can take a look at our <a target="_blank" sveltekit:prefetch href="/resources">past tests</a>, and we also highly recommend looking at <a target="_blank" sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a target="_blank" sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a target="_blank" sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
-    </p>
-</Dropdown>
+<br /><br />
 
 <style>
     li {
