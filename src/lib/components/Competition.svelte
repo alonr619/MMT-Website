@@ -7,14 +7,20 @@
 </script>
 
 <PanelBox width="15em" height="20em" borderRadius="15px">
-    <div class="competition-img">
-        <img alt={competition} src={imgSource} />
-    </div>
-    <p class="title-p">{competition}</p>
-    <p class="desc-p">{description}</p>
+    <a href="#{competition.toLowerCase()}">
+        <div class="competition-img">
+            <img alt={competition} src={imgSource} />
+        </div>
+        <p class="title-p">{competition}</p>
+        <p class="desc-p">{description}</p>
+    </a>
 </PanelBox>
 
 <style>
+    a {
+        text-decoration: none;
+        background-color: green;
+    }
     .competition-img{
         margin: 10%;
     }

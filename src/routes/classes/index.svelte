@@ -35,30 +35,30 @@
     let y;
 
     let scheduleData = [
-        { "Class": "Intermediate", "Day of Week": "Sunday", "Time (PT)": "5:00-6:30 PM", "Instructors": "Anna & Harshil"},
-        { "Class": "Beginner 1", "Day of Week": "Monday", "Time (PT)": "5:00-6:30 PM", "Instructors": "Ananya & Kiran" },
-        { "Class": "Beginner 2", "Day of Week": "Wednesday", "Time (PT)": "7:00-8:30 PM", "Instructors": "Aarushi & Michael" },
-        { "Class": "Office Hours 1", "Day of Week": "Sunday", "Time (PT)": "6:30-7:30 PM", "Instructors": "Variable" },
-        { "Class": "Office Hours 2", "Day of Week": "Tuesday", "Time (PT)": "7:00-8:00 PM", "Instructors": "Variable" },
+        { "Class": "Intermediate", "Day of Week": "Sunday", "Time (PT)": "5:00-6:30 PM"},
+        { "Class": "Beginner 1", "Day of Week": "Monday", "Time (PT)": "5:00-6:30 PM"},
+        { "Class": "Beginner 2", "Day of Week": "Wednesday", "Time (PT)": "7:00-8:30 PM"},
+        { "Class": "Office Hours 1", "Day of Week": "Sunday", "Time (PT)": "6:30-7:30 PM"},
+        { "Class": "Office Hours 2", "Day of Week": "Tuesday", "Time (PT)": "7:00-8:00 PM"},
     ]
     
     let topicsData = [
-        { "Week": "1", "Dates": "October 17-October 23, 2022", "Topics Covered": "Introduction & Basic Review" },
-        { "Week": "2", "Dates": "October 24-October 30, 2022", "Topics Covered": "Systems of Equations" },
-        { "Week": "3", "Dates": "October 31-November 6, 2022", "Topics Covered": "Inequalities" },
-        { "Week": "4", "Dates": "November 7-November 13, 2022", "Topics Covered": "Sequences & Series" },
-        { "Week": "5", "Dates": "November 14-November 20, 2022", "Topics Covered": "Functions & Their Graphs" },
-        { "Week": "Break", "Dates": "November 21-November 27, 2022", "Topics Covered": "None!" },
-        { "Week": "6", "Dates": "November 28-December 4, 2022", "Topics Covered": "Polynomials" },
-        { "Week": "7", "Dates": "December 5-December 11, 2022", "Topics Covered": "Contest Tricks" },
-        { "Week": "8", "Dates": "December 12-December 18, 2022", "Topics Covered": "Special Topics" },
+        { "Week": "1", "Dates": "January 8-January 14, 2023", "Topics Covered": "Angle Chasing, Similar Triangles" },
+        { "Week": "2", "Dates": "January 15-January 21, 2023", "Topics Covered": "Triangle Centers" },
+        { "Week": "3", "Dates": "January 22-January 28, 2023", "Topics Covered": "Circles" },
+        { "Week": "4", "Dates": "January 29-February 4, 2023", "Topics Covered": "Quadrilaterals" },
+	{ "Week": "Break", "Dates": "February 5-February 11, 2023", "Topics Covered": "None!" },
+        { "Week": "5", "Dates": "February 12-February 18, 2023", "Topics Covered": "Coordinate Geometry" },
+        { "Week": "6", "Dates": "February 19-February 25, 2023", "Topics Covered": "Other Polygons" },
+        { "Week": "7", "Dates": "February 26-March 4, 2023", "Topics Covered": "3D Geometry" },
+        { "Week": "8", "Dates": "March 5-March 11, 2022", "Topics Covered": "Trigonometry, Miscellaneous" },
     ]
 
     onMount(() => {
         if (windowWidth && windowWidth < 700) {
             for (var i = 0; i < topicsData.length; i++) {
                 var string = topicsData[i]["Dates"];
-                var stringBetter = string.replaceAll("October", "Oct.").replaceAll("November", "Nov.").replaceAll("December", "Dec.");
+                var stringBetter = string.replaceAll("January", "Jan.").replaceAll("February", "Feb.").replaceAll("March", "Mar.");
                 topicsData[i]["Dates"] = stringBetter;
             }
             for (var i = 0; i < scheduleData.length; i++) {
@@ -87,14 +87,14 @@
 				<Heading className="glow" text="Classes" textColor="white" />
                 <div class="flex"><div class="headerline"></div></div>
                 <p class="descript" style="font-weight: 300; font-size: 22px; color: white;">Mustang Math [MM] is an online middle school contest designed around values of collaboration, love for mathematics, and fun</p>
-                <a sveltekit:prefetch href="https://tinyurl.com/BeginnerAlgebraRegistration" class="headerButton" target="_blank">
+                <a sveltekit:prefetch href="https://tinyurl.com/BeginnerGeometryRegistration" class="headerButton" target="_blank">
                     <div class="headerButton" on:mouseenter={toggleBackground} on:mouseleave={toggleBackground}>
                         <p class="headerButton" id="signupformmclasses">Register for Beginner Classes!</p>
                         <img height="25px" class="headerButton" src={background} alt="Right-facing arrow icon" />
                     </div>
                 </a>
                 <br>
-                <a sveltekit:prefetch href="https://tinyurl.com/IntermediateAlgRegistration" class="headerButton" target="_blank">
+                <a sveltekit:prefetch href="https://tinyurl.com/IntermediateGeoRegistration" class="headerButton" target="_blank">
                     <div class="headerButton" on:mouseenter={toggleBackground2} on:mouseleave={toggleBackground2}>
                         <p class="headerButton" id="signupformmclasses">Register for Intermediate Classes!</p>
                         <img height="25px" class="headerButton" src={background2} alt="Right-facing arrow icon" />
@@ -108,7 +108,7 @@
 </div>
 -->
 
-<PageHeader title="Classes" description="High Quality Online Math Contest Prep Classes" button_url="https://tinyurl.com/BeginnerAlgebraRegistration" button_text="Beginner Class Registration!" id="registerBeginner" button2_url="https://tinyurl.com/IntermediateAlgebraReg" button2_text="Intermediate Class Registration!"/>
+<PageHeader title="Classes" description="High Quality Online Math Contest Prep Classes" button_url="https://tinyurl.com/BeginnerGeometryRegistration" button_text="Beginner Class Registration!" id="registerBeginner" button2_url="https://tinyurl.com/IntermediateGeoRegistration" button2_text="Intermediate Class Registration!"/>
 
 <br><br>
 
@@ -133,19 +133,21 @@
     </FlexBox>
 </div> <br />
 
-<Heading text="Algebra Class Details" size={2.5} textColor="#1B9AAA" />
+<h1 id="geometry"><strong>GEOMETRY</strong></h1>
+
+<Heading text="Geometry: Class Details" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Our first class will be on Algebra and will start on the week of <strong>October 17th, 2022</strong> and run through till <strong>December 18, 2022</strong>. There are currently 2 levels of classes planned, <strong>Beginner Algebra (AMC 8 level)</strong> and <strong>Intermediate Algebra (AMC 10/12 level)</strong>.  See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <strong><a href = https://tinyurl.com/BeginnerAlgebraRegistration>beginner class registration form</a></strong> or the <strong><a href = https://tinyurl.com/IntermediateAlgebraReg>intermediate class registration form</a></strong>.</p>
+        <p style="font-size: 1.5em; text-align: center;">Our class will be on Geometry and will start on the week of <strong>January 8th, 2023</strong> and run through till <strong>March 5th, 2023</strong>. There are currently 2 levels of classes planned, <strong>Beginner Geometry (AMC 8 level)</strong> and <strong>Intermediate Geometry (AMC 10/12 level)</strong>. See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://tinyurl.com/BeginnerGeometryRegistration"><strong>beginner class registration form</strong></a> or the <a href="https://tinyurl.com/IntermediateGeoRegistration"><strong>intermediate class registration form</strong></a>.</p>
     </PanelBox>
 </div> <br />
 <br />
 
 
-<Heading text="Pricing" size={2.5} textColor="#1B9AAA" />
+<Heading text="Geometry: Pricing" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Algebra will be <strong>$80</strong>. However, you can also register for all 4 topics throughout the year at a discounted total price of <strong>$280</strong>! Teaching the same students throughout the year allow us to build a personal connection with them and better understand their learning style, so we recommend you sign your students up for all 4 topics. </p>
+        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Geometry will be <strong>$80</strong>.</p>
         <p style="font-size: 1.5em; text-align: center;">We charge for our classes for a multitude of reasons. First, while we are a fully volunteer-run nonprofit organization, we need money to continue <strong>improving upon and providing better classes, competitions, events, and materials</strong>! All money earned from MM Classes will go back into these projects for you, the students. Second, we work very hard to provide high quality classes, and we want students to take them seriously - ascribing a price value to the class naturally leads to more <strong>committed students</strong>.</p>
         <p style="font-size: 1.5em; text-align: center;">If the cost of these classes poses a significant burden to you, please reach out to us! <strong>Financial aid is available upon request</strong>.</p>
         
@@ -154,7 +156,7 @@
 <br />
 <br />
 
-<Heading text="Algebra Weekly Schedule" size={2.5} textColor="#1B9AAA" />
+<Heading text="Geometry: Weekly Schedule" size={2} textColor="#1B9AAA" />
 <div class="schedule-wrapper">
     <FlexBox>
         <PanelBox>
@@ -167,7 +169,7 @@
 </div> <br />
 <br />
 
-<Heading text="Algebra Classes Schedule" size={2.5} textColor="#1B9AAA" />
+<Heading text="Geometry: Classes Schedule" size={2} textColor="#1B9AAA" />
 <div class="schedule-wrapper">
     <FlexBox>
         <PanelBox>
