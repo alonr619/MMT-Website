@@ -13,7 +13,7 @@
     let windowWidth;
     const scheduleData = [
         { "Day": "4/22-4/29", "Start Time (PT)": "All Day", "Event": "Problem of the Day" },
-        [ "4/29", "9:00 AM-9:30 AM", "Check-in" ],
+        [ "4/29", "8:30 AM-9:30 AM", "Check-in" ],
         [ "4/29", "9:30 AM-10:00 AM", "Opening Ceremony" ],
         [ "4/29", "10:00 AM-11:30 AM", "Mounting Mayhem (75 minutes)" ],
         [ "4/29", "11:30 AM-12:30 PM", "Bucking Bingo (60 minutes) " ],
