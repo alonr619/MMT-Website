@@ -17,7 +17,7 @@
             <img alt={title} src={imgSource} />
         </div>
     {/if}
-    <p class="title-p">{title}</p>
+    <p class="title-p"><strong>{title}</strong></p>
     {#if location}
         <p class="loc-p">{location}</p>
     {/if}
@@ -41,6 +41,8 @@
     .title-p{
         font-size: 1.5rem;
         text-align: center;
+        padding: 0;
+        margin: 0;
     }
     .desc-p{
         font-size: 1rem;
@@ -49,6 +51,8 @@
     .loc-p{
         font-size: 1.25rem;
         text-align: center;
+        padding: 0;
+        margin: 0;
     }
     img{
         max-width: 5em;

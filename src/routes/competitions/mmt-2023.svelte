@@ -11,45 +11,6 @@
     import PanelBox from "$lib/components/PanelBox.svelte";
     import Image from '$lib/components/Image.svelte';
     let windowWidth;
-    const scheduleData = [
-        { "Day": "4/22-4/29", "Start Time (PT)": "All Day", "Event": "Problem of the Day" },
-        [ "4/29", "9:00 AM-9:30 AM", "Check-in" ],
-        [ "4/29", "9:30 AM-10:00 AM", "Opening Ceremony" ],
-        [ "4/29", "10:00 AM-11:30 AM", "Mounting Mayhem (75 minutes)" ],
-        [ "4/29", "11:30 AM-12:30 PM", "Bucking Bingo (60 minutes) " ],
-        [ "4/29", "12:30 PM-1:30 PM", "Lunch Break (60 minutes)" ],
-        [ "4/29", "1:30 PM-2:45 PM", "??? (60 minutes)" ],
-        [ "4/29", "2:45 PM-3:30 PM", "Mystery Mare (40 minutes)" ],
-        [ "4/29", "3:30 PM-4:30 PM", "Optional Activities" ],
-        [ "4/29", "4:30 PM-5:00 PM", "Awards Ceremony" ]
-    ];
-
-    const topicsCovered = [
-        { "Algebra": "<ul><li>Systems of equations</li> <li>Quadratics</li> <li>Vieta’s</li> <li>Binomial Theorem</li> <li>Radicals/Exponents</li> <li>Simon’s Favorite Factoring Trick</li> <li>Ratios</li> <li>(Infinite) Geometric Series</li> <li>Arithmetic Series</li> <li>Sum/Difference of Powers</li> <li>Rate/Time</li> <li>Floor/Ceiling</li> <li>Absolute Value</li> <li>Substitution (Nested Roots/Repeated Fractions)</li> <li>Mean, Median, Mode, Range</li> <li>Telescoping</li></ul>",
-        "Combinatorics": "<ul><li>Sticks and Stones</li> <li>Permutation/Combination</li> <li>Properties of Inclusion Exclusion for three or less sets</li> <li>Basic Geometric Probability</li> <li>Conditional Probability</li> <li>Expected Values</li> <li>Complementary Counting</li> <li>Recursion</li> <li>Bijections</li> <li>Casework</li> <li>Pigeonhole Principle</li> <li>Double-counting</li> <li>Basic Invariants</li></ul>",
-        "Geometry": "<ul><li>Area Formulas</li> <li>Volume Formulas</li> <li>Shoelace Formula</li> <li>Pythagorean Theorem</li> <li>Distance Formula</li> <li>Similar Triangles</li> <li>Angle Chasing</li> <li>Power of a Point</li> <li>Basic Mass Points</li> <li>Heron’s Formula</li> <li>Pick’s Theorem</li> <li>Surface Area for Pyramids, Prisms, and Cones</li> <li>Arcs and Sectors</li> <li>Angle Bisector Theorem</li> <li>Internal/External Angles</li></ul>",
-        "Number Theory": "<ul><li>Fermat’s Little Theorem</li> <li>Euclidean Algorithm</li> <li>Chinese Remainder Theorem</li> <li>Divisibility</li> <li>Chicken McNugget Theorem</li> <li>GCD and LCM</li> <li>Number of Factors</li> <li>Sum of Factors</li> <li>Basic Modular Arithmetic</li> <li>Fundamental Theorem of Arithmetic</li></ul>" }
-    ];
-    const topicsSmall1 = [
-        { "Algebra": "<ul><li>Systems of equations</li> <li>Quadratics</li> <li>Vieta’s</li> <li>Binomial Theorem</li> <li>Radicals/Exponents</li> <li>Simon’s Favorite Factoring Trick</li> <li>Ratios</li> <li>(Infinite) Geometric Series</li> <li>Arithmetic Series</li> <li>Sum/Difference of Powers</li> <li>Rate/Time</li> <li>Floor/Ceiling</li> <li>Absolute Value</li> <li>Substitution (Nested Roots/Repeated Fractions)</li> <li>Mean, Median, Mode, Range</li> <li>Telescoping</li></ul>",
-        "Combinatorics": "<ul><li>Sticks and Stones</li> <li>Permutation/Combination</li> <li>Properties of Inclusion Exclusion for three or less sets</li> <li>Basic Geometric Probability</li> <li>Conditional Probability</li> <li>Expected Values</li> <li>Complementary Counting</li> <li>Recursion</li> <li>Bijections</li> <li>Casework</li> <li>Pigeonhole Principle</li> <li>Double-counting</li> <li>Basic Invariants</li></ul>" }
-    ];
-    const topicsSmall2 = [
-        { "Geometry": "<ul><li>Area Formulas</li> <li>Volume Formulas</li> <li>Shoelace Formula</li> <li>Pythagorean Theorem</li> <li>Distance Formula</li> <li>Similar Triangles</li> <li>Angle Chasing</li> <li>Power of a Point</li> <li>Basic Mass Points</li> <li>Heron’s Formula</li> <li>Pick’s Theorem</li> <li>Surface Area for Pyramids, Prisms, and Cones</li> <li>Arcs and Sectors</li> <li>Angle Bisector Theorem</li> <li>Internal/External Angles</li></ul>",
-        "Number Theory": "<ul><li>Fermat’s Little Theorem</li> <li>Euclidean Algorithm</li> <li>Chinese Remainder Theorem</li> <li>Divisibility</li> <li>Chicken McNugget Theorem</li> <li>GCD and LCM</li> <li>Number of Factors</li> <li>Sum of Factors</li> <li>Basic Modular Arithmetic</li> <li>Fundamental Theorem of Arithmetic</li></ul>" }
-    ];
-    const topicsAlgebra = [
-        {"Algebra": "<ul><li>Systems of equations</li> <li>Quadratics</li> <li>Vieta’s</li> <li>Binomial Theorem</li> <li>Radicals/Exponents</li> <li>Simon’s Favorite Factoring Trick</li> <li>Ratios</li> <li>(Infinite) Geometric Series</li> <li>Arithmetic Series</li> <li>Sum/Difference of Powers</li> <li>Rate/Time</li> <li>Floor/Ceiling</li> <li>Absolute Value</li> <li>Substitution (Nested Roots/Repeated Fractions)</li> <li>Mean, Median, Mode, Range</li> <li>Telescoping</li></ul>"}
-    ];
-    const topicsCombo = [
-        {"Combinatorics": "<ul><li>Sticks and Stones</li> <li>Permutation/Combination</li> <li>Properties of Inclusion Exclusion for three or less sets</li> <li>Basic Geometric Probability</li> <li>Conditional Probability</li> <li>Expected Values</li> <li>Complementary Counting</li> <li>Recursion</li> <li>Bijections</li> <li>Casework</li> <li>Pigeonhole Principle</li> <li>Double-counting</li> <li>Basic Invariants</li></ul>"}
-    ];
-    const topicsGeo = [
-        {"Geometry": "<ul><li>Area Formulas</li> <li>Volume Formulas</li> <li>Shoelace Formula</li> <li>Pythagorean Theorem</li> <li>Distance Formula</li> <li>Similar Triangles</li> <li>Angle Chasing</li> <li>Power of a Point</li> <li>Basic Mass Points</li> <li>Heron’s Formula</li> <li>Pick’s Theorem</li> <li>Surface Area for Pyramids, Prisms, and Cones</li> <li>Arcs and Sectors</li> <li>Angle Bisector Theorem</li> <li>Internal/External Angles</li></ul>"}
-    ];
-    const topicsNT = [
-        {"Number Theory": "<ul><li>Fermat’s Little Theorem</li> <li>Euclidean Algorithm</li> <li>Chinese Remainder Theorem</li> <li>Divisibility</li> <li>Chicken McNugget Theorem</li> <li>GCD and LCM</li> <li>Number of Factors</li> <li>Sum of Factors</li> <li>Basic Modular Arithmetic</li> <li>Fundamental Theorem of Arithmetic</li></ul>"}
-    ];
 </script>
 <svelte:head>
     <title>MMT 2023</title>
@@ -64,9 +25,9 @@
 <Heading text="Competitions" size={2.5} textColor="#1B9AAA" />
 <div class="competition-wrapper">
     <FlexBox align="start">
-        <Tournament imgSource="competitions/mmt-2023/washington.png" title="MMT Washington" location="Seattle, WA" description="Held in the Eastside Seattle Area and where MM was founded, this event will be WAsome" button_text = "MMT WA" button_url = "/competitions/mmt-2023/mmt-2023-WA" />
-        <Tournament imgSource="competitions/mmt-2023/california.png" title="MMT California" location= "San Francisco, CA" description="Held in either the East or South Bay, the competition at this event will be CAptivating" button_text = "MMT CA" button_url = "/competitions/mmt-2023/mmt-2023-CA"/>
-        <Tournament imgSource="competitions/mmt-2023/online.png" title="MMT Online" location="Online (Discord)" description="For whomever the in-person competitions are too far, compete with students around the nation in our online synchronous event." button_text = "MMT Online" button_url = "/competitions/mmt-2023/mmt-2023-online"/>
+        <Tournament imgSource="/competitions/mmt-2023/washington.png" title="MMT Washington" location="Seattle, WA" description="Held in the Eastside Seattle Area and where MM was founded, this event will be WAnderful" button_text = "MMT WA" button_url = "/competitions/mmt-2023/mmt-2023-WA" />
+        <Tournament imgSource="/competitions/mmt-2023/california.png" title="MMT California" location= "San Francisco, CA" description="Held in either the East or South Bay, the competition at this event will be CAptivating" button_text = "MMT CA" button_url = "/competitions/mmt-2023/mmt-2023-CA"/>
+        <Tournament imgSource="/competitions/mmt-2023/online.png" title="MMT Online" location="Online (Discord)" description="For whomever the in-person competitions are too far, compete with students around the nation in our online synchronous event" button_text = "MMT Online" button_url = "/competitions/mmt-2023/mmt-2023-online"/>
     </FlexBox>
 </div> <br />
 
