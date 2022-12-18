@@ -165,9 +165,10 @@ button:focus:not(:focus-visible) {
 	}
 }
 
-.grid {
-	display: grid;
-	grid-template-columns: 25% 25% 25% 25%;
+.grid-three {
+    display: grid;
+	column-gap: 10px;
+    grid-template-columns: 33% 33% 33%;
 }
 
 .sign-up {

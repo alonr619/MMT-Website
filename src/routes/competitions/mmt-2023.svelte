@@ -47,14 +47,22 @@
 </div> <br />
 
 <Heading text="Testimonials" size={2.5} textColor="#1B9AAA" />
-<div style="margin-left: 10vw; margin-right: 10vw;">
-    <Testimonial testimonial="MMT has a unique take on standard math competitions" title="2022 Participant" />
-    <Testimonial testimonial="MMT's style of problems are much better than other tournaments. Unlike other tournaments that has the same style over the years, MMT has new and exciting styles of problems that makes it more fun to try and solve it on the spot" title="2022 Participant" />
-    <Testimonial testimonial="MMT focused less on calculations than other math competitions" title="2022 Participant" />
-    <Testimonial testimonial="I really appreciate all that MMT has done and I look forward to the competition that is held next year! I must say that the MMT was an impressive execution of math competitions unlike anything I've seen before!" title="2022 Participant" />
-    <Testimonial testimonial="My favorite memory from MMT was the teamwork - both chaotically and organizedly working with each other to solve the problems" title="2022 Participant" />
-    <Testimonial testimonial="MMT had people captivated even before the tournament started with their Discord server and problems of the day" title="2022 Participant" />
-    <Testimonial testimonial="I think this was a very nice way to spend my day." title="2021 Participant" />
+<div class="grid-three" style="margin-left: 10vw; margin-right: 10vw;">
+    <div>
+        <Testimonial testimonial="MMT has a unique take on standard math competitions" title="2022 Participant" />
+        <Testimonial testimonial="MMT focused less on calculations than other math competitions" title="2022 Participant" />
+        <Testimonial testimonial="I think this was a very nice way to spend my day." title="2021 Participant" />
+    </div>
+
+    <div>
+        <Testimonial testimonial="MMT's style of problems are much better than other tournaments. Unlike other tournaments that has the same style over the years, MMT has new and exciting styles of problems that makes it more fun to try and solve it on the spot" title="2022 Participant" />
+        <Testimonial testimonial="MMT had people captivated even before the tournament started with their Discord server and problems of the day" title="2022 Participant" />
+    </div>
+    
+    <div>
+        <Testimonial testimonial="I really appreciate all that MMT has done and I look forward to the competition that is held next year! I must say that the MMT was an impressive execution of math competitions unlike anything I've seen before!" title="2022 Participant" />
+        <Testimonial testimonial="My favorite memory from MMT was the teamwork - both chaotically and organizedly working with each other to solve the problems" title="2022 Participant" />
+    </div>
 </div> <br />
 
 <br /><br />
