@@ -61,25 +61,12 @@
 
 <br /><br />
 
-<Heading text="Locations" size={2.5} textColor="#1B9AAA" />
-<div style="margin-left: 10vw; margin-right: 10vw; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));">
-    <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><a target="_blank" href="/competitions/mmt-2023/mmt-2023-CA">California</a></p>
-    </PanelBox>
-    <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><a target="_blank" href="/competitions/mmt-2023/mmt-2023-WA">Washington</a></p>
-    </PanelBox>
-    <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><a target="_blank" href="/competitions/mmt-2023/mmt-2023-online">Online</a></p>
-    </PanelBox>
-</div><br />
-
 <Heading text="Competitions" size={2.5} textColor="#1B9AAA" />
 <div class="competition-wrapper">
     <FlexBox align="start">
-        <Tournament imgSource="mmt-2022/puzzlepiece.png" title="MMT Washington" description="A team puzzle round where participants are faced with a variety of logical and mathematical puzzles" button_text = "MMT WA" button_url = "/competitions/mmt-2023/mmt-2023-WA" />
-        <Tournament imgSource="mmt-2022/puzzlepiece.png" title="MMT Washington" description="A team puzzle round where participants are faced with a variety of logical and mathematical puzzles" />
-        <Tournament imgSource="mmt-2022/puzzlepiece.png" title="MMT Washington" description="A team puzzle round where participants are faced with a variety of logical and mathematical puzzles" />
+        <Tournament imgSource="competitions/mmt-2023/washington.png" title="MMT Washington" location="Seattle, WA" description="Held in the Eastside Seattle Area and where MM was founded, this event will be WAsome" button_text = "MMT WA" button_url = "/competitions/mmt-2023/mmt-2023-WA" />
+        <Tournament imgSource="competitions/mmt-2023/california.png" title="MMT California" location= "San Francisco, CA" description="Held in either the East or South Bay, the competition at this event will be CAptivating" button_text = "MMT CA" button_url = "/competitions/mmt-2023/mmt-2023-CA"/>
+        <Tournament imgSource="competitions/mmt-2023/online.png" title="MMT Online" location="Online (Discord)" description="For whomever the in-person competitions are too far, compete with students around the nation in our online synchronous event." button_text = "MMT Online" button_url = "/competitions/mmt-2023/mmt-2023-online"/>
     </FlexBox>
 </div> <br />
 
