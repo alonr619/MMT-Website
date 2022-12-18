@@ -4,6 +4,7 @@
     import Link from '$lib/components/Link.svelte';
     import Button from '$lib/components/Button.svelte';
     import PageHeader from '$lib/components/PageHeader.svelte';
+    import Testimonial from "$lib/components/Testimonial.svelte";
     import Competition from '$lib/components/Competition.svelte';
     import FlexBox from '$lib/components/FlexBox.svelte';
     import Table from "$lib/components/Table.svelte";
@@ -17,7 +18,7 @@
         [ "4/29", "10:00 AM-11:30 AM", "Mounting Mayhem (75 minutes)" ],
         [ "4/29", "11:30 AM-12:30 PM", "Bucking Bingo (60 minutes) " ],
         [ "4/29", "12:30 PM-1:30 PM", "Lunch Break (60 minutes)" ],
-        [ "4/29", "1:30 PM-2:45 PM", "??? (60 minutes)" ],
+        [ "4/29", "1:30 PM-2:45 PM", "Gallop (60 minutes)" ],
         [ "4/29", "2:45 PM-3:30 PM", "Mystery Mare (40 minutes)" ],
         [ "4/29", "3:30 PM-4:30 PM", "Optional Activities" ],
         [ "4/29", "4:30 PM-5:00 PM", "Awards Ceremony" ]
@@ -56,19 +57,28 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="Mustang Math Tournament (MMT) Washington" description="April 29, 2023: 9:00 AM - 4:30 PM PT" button_url="https://contestdojo.com/" button_text="Registration on ContestDojo!" button_id="registerOnContestDojo" />
+<PageHeader title="Mustang Math Tournament (MMT) Washington" description="April 29, 2023: 9:00 AM - 4:30 PM PT" button_url="#registrationInfo" button_text="Register for Competition!" button_id="registerForCompetition" target="" />
 
-<br /><br />
+<br />
 
-<Dropdown mainText="Registration Instructions and Information" showContent={true} id="showDropdown">
-    <div style="padding: 10px;">
-        <strong>EARLY HORSE COST:</strong> $15 per participant (Register before 3/14 to receive the early horse price!)<br /> <br />
-        <strong>NORMAL COST:</strong> $20 per participant<br /> <br />
-        <strong>REGISTRATION DEADLINE:</strong> April 22, 2023 <br /> <br />
-        <strong>LOCATION:</strong> Washington, California, Online<br /> <br />
-        <a href="https://docs.google.com/document/d/1gdpWZWvTugWZQNTl2L20TkcyfRXfii_Bu62LwlqEQ7E/edit?usp=sharing" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
-    </div>
-</Dropdown> <br />
+<br id="registrationInfo" />
+<Heading text="Overview" size={2.5} textColor="#1B9AAA" />
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox>
+        <div style="padding: 10px;">
+        <p>
+            <strong>TEAM SIZE:</strong> 4 <br />
+            <strong>LOCATION:</strong> Washington<br />
+            <strong>EARLY HORSE COST:</strong> $15 per participant (Register before <strong>March 14th, 2023</strong> to receive the early horse price!)<br />
+            <strong>NORMAL COST:</strong> $20 per participant (Register before <strong>April 22nd, 2023</strong> to participate)<br /> <br />
+            <a href="https://docs.google.com/document/d/1gdpWZWvTugWZQNTl2L20TkcyfRXfii_Bu62LwlqEQ7E/edit?usp=sharing" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
+            <br /><br />
+            <i><strong>Note for International Students:</strong> Students not in Canada or the United States should participate in the international version of our tournament being run by SIMCC. Email us at <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a> if you're interested.</i><br /><br />
+            <i><strong>Note for Students in Washington:</strong> Students living within 50 miles of our in-person sites <strong>must</strong> participate in person. If you have an extenuating circumstance that would prevent this please send an email to <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a>, and we'll grant you permission to participate online.</i>
+        </p>
+        </div>
+    </PanelBox>
+</div> <br />
 
 <Heading text="Schedule" size={2.5} textColor="#1B9AAA" />
 <div class="schedule-wrapper">
@@ -186,6 +196,19 @@
         <strong>A:</strong> You can take a look at our <a target="_blank" sveltekit:prefetch href="/resources">past tests</a>, and we also highly recommend looking at <a target="_blank" sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a target="_blank" sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a target="_blank" sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
     </p>
 </Dropdown>
+<br />
+<Heading text="Testimonials" size={2.5} textColor="#1B9AAA" />
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <Testimonial testimonial="MMT has a unique take on standard math competitions" title="2022 Participant" />
+    <Testimonial testimonial="MMT's style of problems are much better than other tournaments. Unlike other tournaments that has the same style over the years, MMT has new and exciting styles of problems that makes it more fun to try and solve it on the spot" title="2022 Participant" />
+    <Testimonial testimonial="MMT focused less on calculations than other math competitions" title="2022 Participant" />
+    <Testimonial testimonial="I really appreciate all that MMT has done and I look forward to the competition that is held next year! I must say that the MMT was an impressive execution of math competitions unlike anything I've seen before!" title="2022 Participant" />
+    <Testimonial testimonial="My favorite memory from MMT was the teamwork - both chaotically and organizedly working with each other to solve the problems" title="2022 Participant" />
+    <Testimonial testimonial="MMT had people captivated even before the tournament started with their Discord server and problems of the day" title="2022 Participant" />
+    <Testimonial testimonial="I think this was a very nice way to spend my day." title="2021 Participant" />
+</div> <br />
+
+<br /><br />
 
 <style>
     li {

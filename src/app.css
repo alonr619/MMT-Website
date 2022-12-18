@@ -165,6 +165,11 @@ button:focus:not(:focus-visible) {
 	}
 }
 
+.grid {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
 .sign-up {
 	margin-bottom: 5px;
 	border: 2px solid lightgreen;

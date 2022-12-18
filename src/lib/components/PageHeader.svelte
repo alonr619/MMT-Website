@@ -8,6 +8,7 @@
     export let button2_url;
     export let button2_text;
     export let button2_id;
+    export let target = "_blank";
 
     import Heading from '$lib/components/Heading.svelte';
     import Header from '$lib/header/Header.svelte';
@@ -36,13 +37,13 @@
             <p class="descript" style="font-weight: 300; font-size: 22px; color: white;">{description}</p>
             <div class="flex">
                 <div class="topbuttons">
-                    <Link url={button_url} target="_blank" className="registrationButton" text={button_text} textColor="white" visitedColor="white" id={button_id} button_id={button_text} />
+                    <Link url={button_url} target={target} className="registrationButton" text={button_text} textColor="white" visitedColor="white" id={button_id} button_id={button_text} />
                 </div>
             </div>
             {#if button2_url}
             <div class="flex">
                 <div class="topbuttons">
-                    <Link url={button2_url} target="_blank" className="registrationButton2" text={button2_text} textColor="white" visitedColor="white" id={button2_id} button_id={button2_text} />
+                    <Link url={button2_url} target={target} className="registrationButton2" text={button2_text} textColor="white" visitedColor="white" id={button2_id} button_id={button2_text} />
                 </div>
             </div>
             {/if}

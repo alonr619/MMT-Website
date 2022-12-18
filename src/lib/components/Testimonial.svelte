@@ -1,0 +1,46 @@
+<!-- Component for that shadow box with glow on hover thing -->
+<script>
+    export let width = "unset";
+    export let height = "unset";
+    export let margin = "10px";
+    export let padding = "10px";
+    export let borderRadius = "5px";
+    export let style = "";
+    export let boxSizing = "border-box";
+
+    export let testimonial = "";
+    export let title = "";
+</script>
+
+<div class="panel-box" style="width: {width}; height: {height}; margin: {margin}; padding: {padding}; border-radius: {borderRadius}; box-sizing: {boxSizing}; {style}">
+    <p class="testimonial">"{testimonial}"</p>
+    <p class="title">- {title}</p>
+</div>
+
+<style>
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .panel-box {
+        background-color: white;
+        box-shadow: 5px 10px 10px rgb(0,0,0,0.1);
+        opacity: 0.8;
+        transition: 0.5s;
+    }
+    
+    .panel-box:hover{
+        background-color: #ecf7f0;
+        opacity: 1;
+    }
+
+    .testimonial {
+        font-size: 1.5em;
+    }
+
+    .title {
+        text-align: right;
+        font-style: italic;
+    }
+</style>
