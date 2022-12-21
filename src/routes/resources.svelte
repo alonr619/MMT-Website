@@ -11,10 +11,10 @@
     let windowWidth;
 
     let handoutData = [
-        [["Quadratics", "archive/handouts/Algebra/Quadratics.pdf"]],
+        [["Quadratics", "handouts/Algebra/Quadratics.pdf"]],
         [],
         [],
-        [["Factors", "archive/handouts/Number Theory/Factors.pdf"], ["LCM & GCD", "archive/handouts/Number Theory/LCM&GCD.pdf"]]
+        [["Factors", "handouts/Number Theory/Factors.pdf"], ["LCM & GCD", "handouts/Number Theory/LCM_GCD.pdf"]]
     ]
 
     let problems = "Problems";
