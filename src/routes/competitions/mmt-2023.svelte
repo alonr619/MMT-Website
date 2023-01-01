@@ -31,7 +31,7 @@
             The tournament is <strong>centered around teamwork and collaboration</strong>, incentivizing students to work with their teams not only to navigate the <strong>challenging but interesting problems</strong> of the tournament, 
             but also to develop strategies to master the unique and fun game-like rounds. With interesting and fun rounds including a logic-based puzzle round, a strategy-filled bingo round, a race-like gallop round, 
             and our trademark 'Mystery Mare' round, our tournament is guaranteed to be <strong>enjoyable for any and all students who have an interest in mathematics</strong>.<br /><br />
-            Don't believe us? Check out some comments from past participants!
+            Don't believe us? Check out some comments from past participants below!
         </p>
     </PanelBox>
 </div>
