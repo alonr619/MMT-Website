@@ -13,15 +13,15 @@
     let windowWidth;
     const scheduleData = [
         { "Day": "4/22-4/29", "Start Time (PT)": "All Day", "Event": "Problem of the Day" },
-        [ "4/29", "8:30 AM-9:30 AM", "Check-in" ],
-        [ "4/29", "9:30 AM-10:00 AM", "Opening Ceremony" ],
-        [ "4/29", "10:00 AM-11:30 AM", "Mounting Mayhem (75 minutes)" ],
-        [ "4/29", "11:30 AM-12:30 PM", "Bucking Bingo (60 minutes) " ],
-        [ "4/29", "12:30 PM-1:30 PM", "Lunch Break (60 minutes)" ],
-        [ "4/29", "1:30 PM-2:45 PM", "Gallop (60 minutes)" ],
-        [ "4/29", "2:45 PM-3:30 PM", "Mystery Mare (40 minutes)" ],
-        [ "4/29", "3:30 PM-4:30 PM", "Optional Activities" ],
-        [ "4/29", "4:30 PM-5:00 PM", "Awards Ceremony" ]
+        [ "4/29", "8:30 AM-9:00 AM", "Check-in" ],
+        [ "4/29", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions" ],
+        [ "4/29", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)" ],
+        [ "4/29", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) " ],
+        [ "4/29", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)" ],
+        [ "4/29", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)" ],
+        [ "4/29", "2:10 PM-3:20 PM", "Gallop (60 minutes)" ],
+        [ "4/29", "3:20 PM-4:30 PM", "Optional Activities" ],
+        [ "4/29", "4:30 PM", "Awards Ceremony" ]
     ];
 
     const topicsCovered = [
@@ -68,10 +68,10 @@
         <div style="padding: 10px;">
         <p>
             <strong>TEAM SIZE:</strong> 3-4* <br />
-            <strong>LOCATION:</strong> California<br />
+            <strong>LOCATION:</strong> California (East Bay)<br />
             <strong>EARLY HORSE COST:</strong> $10 per participant (Register before <strong>March 14th, 2023</strong> to receive the early horse price!)<br />
             <strong>NORMAL COST:</strong> $15 per participant (Register before <strong>April 22nd, 2023</strong> to participate)<br /> <br />
-            <a href="https://docs.google.com/document/d/1gdpWZWvTugWZQNTl2L20TkcyfRXfii_Bu62LwlqEQ7E/edit?usp=sharing" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
+            <a href="https://docs.google.com/document/d/1FRL4DLS2RVbbMRKe2r0t7K2Rhjabwr45TdgM0ISDKnQ/edit?usp=sharing" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
             <br /><br />
             <i><strong>*:</strong> Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4</i><br /><br />
             <i><strong>Note for International Students:</strong> Students not in Canada or the United States should participate in the international version of our tournament being run by SIMCC. Email us at <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a> if you're interested.</i><br /><br />
@@ -94,7 +94,7 @@
 <Heading text="Awards" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Medals will be given to (at minimum) the members of the top 3 teams of each division, along with certificates of participation to all students and certificates of achievement to high-scoring teams. A wide variety of other prizes are available for top scoring teams, winners of activities, and a raffle including but not limited to <a target="_blank" href="https://www.wolfram.com/notebooks/">Wolfram Notebooks</a>.</p>
+        <p style="font-size: 1.5em; text-align: center;">Medals will be given to (at minimum) the members of the top 3 teams of each division, along with certificates of participation to all students and certificates of achievement to high-scoring teams. A wide variety of other prizes are available for top scoring teams, winners of activities, and a raffle including prizes from Wolfram, AoPS, and more!</p>
     </PanelBox>
 </div> <br />
 
@@ -151,34 +151,34 @@
 </Dropdown>
 <Dropdown mainText="ROUND 1: Mounting Mayhem (Puzzle)" id="showDropdown">
     <ol>
-        <li>The Mounting Mayhem Round will consist of some mathematical-based puzzle questions. Students will have 60 minutes to solve as many of them as possible.</li>
-        <li>Puzzles can range from logic to number theory to geometry and more. They often require out-of-the-box thinking although all topics can readily be understood and grasped by middle schoolers.</li>
+        <li>The Mounting Mayhem Round will consist of a series of progressively harder logic puzzles. Students will have 15 minutes to learn the rules and basic strategy of the puzzles, then 60 minutes to solve as many of them as possible.</li>
+        <li>Puzzles often require out-of-the-box thinking although all topics can readily be understood and grasped by middle schoolers.</li>
         <li>Harder puzzles will be worth more points, but these puzzles will be longer and/or require more creativity — you must decide what problems to focus your time on to optimize your team score.</li>
     </ol>
 </Dropdown>
-<Dropdown mainText="ROUND 2: Bucking Bingo" id="showDropdown">
+<Dropdown mainText="ROUND 2: Herding Hexes" id="showDropdown">
     <ol>
-        <li>The “Bingo” Round will consist of 24 questions to be solved in 60 minutes.</li>
-        <li>The questions will vary in difficulty, but not necessarily in increasing order — rather the difficult problems will be randomly distributed.</li>
-        <li>In this round, each correctly solved question is worth points, but each completed and correct Bingo (each of the problems in a given row, column, or long diagonal are solved and correct) is worth bonus points!</li>
-        <li>You are not expected to solve all the questions in this round within the allotted time. Instead, we encourage you to strategize how you might use your time to maximize your points!</li>
+        <li>The “Herding Hexes” Round will consist of 25-30 questions to be solved in 60 minutes.</li>
+        <li>The questions will be laid out on a grid of connected hexagons, with more difficult problems being located furthest from the center.</li>
+        <li>Your score in the round will be determined by the problems you get correct, with bonus points available for having more correct answers connected within the grid!</li>
+        <li>You are not necessarily expected to solve all the questions in this round within the allotted time. Instead, we encourage you to strategize how you might use your time to maximize your points!</li>
     </ol>
 </Dropdown>
-<Dropdown mainText="ROUND 3: Gallop (Guts)" id="showDropdown">
+<Dropdown mainText="ROUND 3: Mystery Mare" id="showDropdown">
+    <ol>
+        <li>The Mystery Mare round is exactly that — a mystery! The rules of the round will be revealed on competition day.</li>
+        <li>Hints about the nature of the round may be revealed as the competition date nears.</li>
+    </ol>
+</Dropdown>
+<Dropdown mainText="ROUND 4: Gallop" id="showDropdown">
     <ol>
         <li>The Gallop Round will consist of 24 questions to be solved in 60 minutes.</li>
-        <li>The questions will be divided into 8 or 9 sets of 3 questions each, and you <strong>must submit the answers to one set</strong> before accessing the problems for the next. This means you must strategize when to submit each set (incomplete or not) to ensure you get access to as many questions as possible.</li>
+        <li>The questions will be divided into 8 sets of 3 questions each, and you <strong>must submit the answers to one set</strong> before accessing the problems for the next. This means you must strategize when to submit each set (incomplete or not) to ensure you get access to as many questions as possible.</li>
         <li>The problems will get progressively more difficult, and later problems will be worth more points.</li>
         <li>Submissions will be scored immediately and a live score of all participating teams will be available during the competition. Prepare for the adrenaline rush!</li>
     </ol>
 </Dropdown>
-<Dropdown mainText="ROUND 4: Mystery Mare" id="showDropdown">
-    <ol>
-        <li>The Mystery Mare round is exactly that — a mystery!</li>
-        <li>Hints about the nature of the round will be revealed as the competition date nears.</li>
-        <li>We promise it will be as fun and engaging as the other rounds. :)</li>
-    </ol>
-</Dropdown>
+<!--
 <Dropdown mainText="FAQ" id="showDropdown">
     <p>
         <strong>Q:</strong> I'm a parent or a student, not a coach - how can I register? <br />
@@ -197,6 +197,7 @@
         <strong>A:</strong> You can take a look at our <a target="_blank" sveltekit:prefetch href="/resources">past tests</a>, and we also highly recommend looking at <a target="_blank" sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a target="_blank" sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a target="_blank" sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
     </p>
 </Dropdown>
+-->
 <br />
 <Heading text="Testimonials" size={2.5} textColor="#1B9AAA" />
 <div class="grid-three" style="margin-left: 10vw; margin-right: 10vw;">
