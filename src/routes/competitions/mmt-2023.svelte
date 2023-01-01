@@ -27,7 +27,7 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;">The Mustang Math Tournament is a middle school math competition run for middle school students around the nation.
-            It is put together by Mustang Math, a 501(c)(3) nonprofit organization put together by high school and college students, including the organizers of the Stanford and Berkeley Math Tournaments!<br /><br />
+            It is put together by Mustang Math, a 501(c)(3) nonprofit organization put together by high school and college students, including the directors of the Stanford and Berkeley Math Tournaments!<br /><br />
             The tournament is <strong>centered around teamwork and collaboration</strong>, incentivizing students to work with their teams not only to navigate the <strong>challenging but interesting problems</strong> of the tournament, 
             but also to develop strategies to master the unique and fun game-like rounds. With interesting and fun rounds including a logic-based puzzle round, a strategy-filled bingo round, a race-like gallop round, 
             and our trademark 'Mystery Mare' round, our tournament is guaranteed to be <strong>enjoyable for any and all students who have an interest in mathematics</strong>.<br /><br />
