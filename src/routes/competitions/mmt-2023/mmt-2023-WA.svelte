@@ -13,15 +13,15 @@
     let windowWidth;
     const scheduleData = [
         { "Day": "4/22-4/29", "Start Time (PT)": "All Day", "Event": "Problem of the Day" },
-        [ "4/29", "8:30 AM-9:30 AM", "Check-in" ],
-        [ "4/29", "9:30 AM-10:00 AM", "Opening Ceremony" ],
-        [ "4/29", "10:00 AM-11:30 AM", "Mounting Mayhem (75 minutes)" ],
-        [ "4/29", "11:30 AM-12:30 PM", "Bucking Bingo (60 minutes) " ],
-        [ "4/29", "12:30 PM-1:30 PM", "Lunch Break (60 minutes)" ],
-        [ "4/29", "1:30 PM-2:45 PM", "Gallop (60 minutes)" ],
-        [ "4/29", "2:45 PM-3:30 PM", "Mystery Mare (40 minutes)" ],
-        [ "4/29", "3:30 PM-4:30 PM", "Optional Activities" ],
-        [ "4/29", "4:30 PM-5:00 PM", "Awards Ceremony" ]
+        [ "4/29", "8:30 AM-9:00 AM", "Check-in" ],
+        [ "4/29", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions" ],
+        [ "4/29", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)" ],
+        [ "4/29", "10:55 AM-12:05 PM", "Herding Hexagons (60 minutes) " ],
+        [ "4/29", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)" ],
+        [ "4/29", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)" ],
+        [ "4/29", "2:10 PM-3:20 PM", "Gallop (60 minutes)" ],
+        [ "4/29", "3:20 PM-4:30 PM", "Optional Activities" ],
+        [ "4/29", "4:30 PM", "Awards Ceremony" ]
     ];
 
     const topicsCovered = [
@@ -71,7 +71,7 @@
             <strong>LOCATION:</strong> Washington<br />
             <strong>EARLY HORSE COST:</strong> $10 per participant (Register before <strong>March 14th, 2023</strong> to receive the early horse price!)<br />
             <strong>NORMAL COST:</strong> $15 per participant (Register before <strong>April 22nd, 2023</strong> to participate)<br /> <br />
-            <a href="https://docs.google.com/document/d/1gdpWZWvTugWZQNTl2L20TkcyfRXfii_Bu62LwlqEQ7E/edit?usp=sharing" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
+            <a href="https://docs.google.com/document/d/1FRL4DLS2RVbbMRKe2r0t7K2Rhjabwr45TdgM0ISDKnQ/edit?usp=sharing" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
             <br /><br />
             <i><strong>*:</strong> Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4</i><br /><br />
             <i><strong>Note for International Students:</strong> Students not in Canada or the United States should participate in the international version of our tournament being run by SIMCC. Email us at <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a> if you're interested.</i><br /><br />
