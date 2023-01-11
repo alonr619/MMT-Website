@@ -3,15 +3,21 @@
         const link = url.searchParams.get('link');
         const get = url.searchParams.get('get').replace("%26", "&") + "&link=" + link.replace("&", "%26");
 
-        if (get) {
+        if (url.searchParams.get('get')) {
             await fetch(get, {
                 method: 'GET'
             });
         }
-
-        return {
-            status: 302,
-            redirect: link
-        };
+        if (link) {
+            return {
+                status: 302,
+                redirect: link
+            };
+        } else {
+            return {
+                status: 302,
+                redirect: "https://mustangmath.com"
+            };
+        }
     }
 </script>
