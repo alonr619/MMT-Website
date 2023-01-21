@@ -1,10 +1,10 @@
 <script>
     export let text;
-    export let textColor = "black";
+    export let textColor = "#1B9AAA";
     export let bold = true;
     export let italic = false;
     export let boxed = false;
-    export let size = "";
+    export let size = 2.5;
     export let marginLeft = "";
     export let align = "center";
     export let className = "";

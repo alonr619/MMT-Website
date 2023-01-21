@@ -1,7 +1,7 @@
 @import '@fontsource/fira-mono';
 
 :root {
-	font-family: "Ubuntu", "Roboto", Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+	font-family: "Quattrocento", "Roboto", Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Quattrocento,
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	--pure-white: #ffffff;
@@ -136,7 +136,7 @@ button:focus:not(:focus-visible) {
 }
 
 .topbuttons {
-	background-color: #65c083;
+	background-color: #981C1D;
 	border-radius: 50px;
 	padding: 10px 20px;
 	margin: 5px;
@@ -146,7 +146,7 @@ button:focus:not(:focus-visible) {
 }
 
 .compbuttons {
-	background-color: #10744c;
+	background-color: #981C1D;
 	border-radius: 50px;
 	padding: 10px 20px;
 	margin: 5px;

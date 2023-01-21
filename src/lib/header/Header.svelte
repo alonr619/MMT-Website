@@ -25,27 +25,16 @@
 	const navPages = [
 		{path: "/", text: "Home", hasSubPages: false},
 		{	path: "/competitions", 
-			text: "Competitions", 
+			text: "SMT 2023", 
 			hasSubPages: true,
 			index: 0,
 			subPages: [
-				{path: "/competitions/mmt-2023", text: "MMT 2023"},
-				{path: "/competitions/past", text: "Past"},
-			]
-		},
-		{
-			path: "/classes", 
-			text: "Classes", 
-			hasSubPages: true,
-			index: 1,
-			subPages: [
-				{path: "/classes/instructors", text: "Instructors"},
+				{path: "/competitions/smt-2023", text: "SMT 2023"},
+				{path: "/competitions/smt-2023-online", text: "SMT 2023 Online"},
 			]
 		},
 		{path: "/our-team", text: "Our Team", hasSubPages: false},
-		{path: "/sponsors", text: "Sponsors", hasSubPages: false},
         {path: "/resources", text: "Resources", hasSubPages: false},
-		{path: "/donate", text: "Donate", hasSubPages: false},
     ]
 	const show = [0, 0];
 </script>
@@ -75,9 +64,9 @@
 			<img src="/favicon.png" alt="mustang math logo" />
 			<h1 style="font-size: 24px;">
 				{#if windowWidth > TITLE_BREAKPOINT}
-					Mustang Math
+					Stanford Math Tournament
 				{:else}
-					MM
+					SMT
 				{/if}
 			</h1>
 		</a>
@@ -154,7 +143,7 @@
 	.navbar {
 		display: flex;
 		justify-content: space-between;
-		background-color: #1c6825;
+		background-color: #981C1D;
 		width: 100%;
 		z-index: 100;
 		padding: 10px;
@@ -187,7 +176,7 @@
 		margin: 0;
 		padding: 0;
 		color: white;
-		font: Ubuntu;
+		font: Quattrocento;
 		font-weight: bold;
 		font-size: 1.25em;
 	}
@@ -224,12 +213,12 @@
 
 	a:hover,
 	button:hover {
-		color: lightgreen;
+		color: #FF9896;
 	}
 	.dropdown-content {
 		display: none;
 		position: absolute;
-		background-color: #1c6825;
+		background-color: #981C1D;
 		min-width: 160px;
 		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 		z-index: 1;
@@ -245,7 +234,7 @@
 	}
 
 	.dropdown-content a:hover {
-		color: lightgreen;
+		color: #FF9896;
 	}
 
 	.dropdown:hover .dropdown-content {
@@ -274,7 +263,7 @@
 	}
 
 	#hamburger-links {
-		background-color: #65c083;
+		background-color: #981C1D;
 		padding: 10px;
 	}
 
@@ -293,7 +282,7 @@
 	}
 
 	#hamburger-links .active {
-		background-color: #5b8064;
+		background-color: #7F0304;
 		text-decoration: none;
 	}
 
