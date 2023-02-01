@@ -68,13 +68,12 @@
         <div style="padding: 10px;">
         <p>
             <strong>TEAM SIZE:</strong> 3-4* <br />
-            <strong>LOCATION:</strong>Castro Valley, California**<br />
+            <strong>LOCATION:</strong>Fremont High School, Sunnyvale, California<br />
             <strong>EARLY HORSE COST:</strong> $10 per participant (Register before <strong>March 14th, 2023</strong> to receive the early horse price!)<br />
             <strong>NORMAL COST:</strong> $15 per participant (Register before <strong>April 22nd, 2023</strong> to participate)<br /> <br />
             <a href="https://docs.google.com/document/d/1FRL4DLS2RVbbMRKe2r0t7K2Rhjabwr45TdgM0ISDKnQ/edit?usp=sharing" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
             <br /><br />
             <i><strong>*:</strong> Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4</i><br />
-            <i><strong>**:</strong> Location subject to change within 20 miles</i><br /><br />
             <i><strong>Note for International Students:</strong> Students not in Canada or the United States should participate in the international version of our tournament being run by SIMCC. Email us at <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a> if you're interested.</i><br /><br />
             <i><strong>Note for Students in California:</strong> Students living within 50 miles of our in-person sites <strong>must</strong> participate in person. If you have an extenuating circumstance that would prevent this please send an email to <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a>, and we'll grant you permission to participate online.</i>
         </p>
