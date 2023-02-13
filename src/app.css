@@ -145,6 +145,16 @@ button:focus:not(:focus-visible) {
 	max-width: 60%;
 }
 
+.compbuttons {
+	background-color: #10744c;
+	border-radius: 50px;
+	padding: 10px 20px;
+	margin: 5px;
+	color: white;
+	width: max-content;
+	max-width: 60%;
+}
+
 @media screen and (max-width: 900px) {
 	.glow {
 		font-size: 50px;
@@ -153,6 +163,12 @@ button:focus:not(:focus-visible) {
 	.topbuttons {
 		padding: 10px 50px;
 	}
+}
+
+.grid-three {
+    display: grid;
+	column-gap: 10px;
+    grid-template-columns: 33% 33% 33%;
 }
 
 .sign-up {

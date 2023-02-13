@@ -71,7 +71,7 @@
 		width: 100%;
 		text-align: center;
 		position: sticky;
-		z-index: 1;
+		z-index: 2;
 		min-height: 50px;
 		background-color: #1c6825;
 	}
