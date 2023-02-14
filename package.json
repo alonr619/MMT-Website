@@ -3,10 +3,10 @@
   "name": "sveltekit",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "package": "svelte-kit package",
-    "preview": "svelte-kit preview"
+    "dev": "vite dev",
+    "build": "vite build",
+    "package": "vite package",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
@@ -19,6 +19,10 @@
     "@fontsource/fira-mono": "^4.5.0",
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.1",
-    "svelte-hamburgers": "^4.0.1"
+    "google-auth-library": "^8.7.0",
+    "googleapis": "^110.0.0",
+    "svelte-hamburgers": "^4.0.1",
+    "svelte-kit": "^1.2.0",
+    "vite-plugin-fs": "^1.0.0-beta.5"
   }
 }
