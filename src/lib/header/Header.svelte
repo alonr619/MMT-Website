@@ -45,6 +45,16 @@
 		{path: "/our-team", text: "Our Team", hasSubPages: false},
 		{path: "/sponsors", text: "Sponsors", hasSubPages: false},
         {path: "/resources", text: "Resources", hasSubPages: false},
+        {   
+            path: "/newsletter",
+            text: "Newsletter",
+            hasSubPages: true,
+            index: 2,
+            subPages: [
+                {path: "/newsletter/2022", text: "2022"},
+                {path: "/newsletter/2023", text: "2023"},
+            ]
+        },
 		{path: "/donate", text: "Donate", hasSubPages: false},
     ]
 	const show = [0, 0];
