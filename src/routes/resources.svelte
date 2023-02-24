@@ -22,8 +22,14 @@
     let solutions = "Solutions";
 
     const issues = {
-        2022: [[["November"], ["PDF", "/newsletter/NovemberNewsletter.pdf"]]],
-        2023: [[["No issues yet!"]]]
+        2022: [
+            [["October"], ["PDF", "/newsletter/October2022.pdf"]],
+            [["November"], ["PDF", "/newsletter/November2022.pdf"]],
+            [["December"], ["PDF", "/newsletter/December2022.pdf"]]
+        ],
+        2023: [
+            [["January"], ["PDF", "/newsletter/January2023.pdf"]],
+        ]
     };
 
     const years = [2022, 2023];
