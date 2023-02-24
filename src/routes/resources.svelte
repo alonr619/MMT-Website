@@ -21,6 +21,19 @@
     let answers = "Answers";
     let solutions = "Solutions";
 
+    const issues = {
+        2022: [
+            [["October"], ["PDF", "/newsletter/October2022.pdf"]],
+            [["November"], ["PDF", "/newsletter/November2022.pdf"]],
+            [["December"], ["PDF", "/newsletter/December2022.pdf"]]
+        ],
+        2023: [
+            [["January"], ["PDF", "/newsletter/January2023.pdf"]],
+        ]
+    };
+
+    const years = [2022, 2023];
+
     onMount(() => {
         if (windowWidth < 700) {
             problems = "Probl.";
@@ -84,6 +97,13 @@
             </p>
         </PanelBox>
     </div> 
+</section>
+
+<section>
+    <Heading text="Newsletter" size={2.5} textColor="#1B9AAA" />
+    {#each years as year, i}
+    <DropdownArchive id="showDropdown" year={year} tests={issues[year]}/>
+    {/each}
 </section>
 
 <section>
