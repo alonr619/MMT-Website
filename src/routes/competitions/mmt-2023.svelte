@@ -40,7 +40,7 @@
 <Heading text="Competitions" size={2.5} textColor="#1B9AAA" />
 <div class="competition-wrapper">
     <FlexBox align="start">
-        <Tournament imgSource="/competitions/mmt-2023/washington.png" title="MMT Washington" location="Kent, WA" description="Held in Kent, Washington near where MM was founded, this event will be WAnderful" button_text = "MMT WA" button_url = "/competitions/mmt-2023/mmt-2023-WA" />
+        <Tournament imgSource="/competitions/mmt-2023/washington.png" title="MMT Washington" location="Kent, WA" description="Held at Mill Creek Middle School, near where MM was founded, this event will be WAnderful" button_text = "MMT WA" button_url = "/competitions/mmt-2023/mmt-2023-WA" />
         <Tournament imgSource="/competitions/mmt-2023/california.png" title="MMT California" location= "Sunnyvale, CA" description="Held at Fremont High School, the competition at this event will be CAptivating" button_text = "MMT CA" button_url = "/competitions/mmt-2023/mmt-2023-CA"/>
         <Tournament imgSource="/competitions/mmt-2023/online.png" title="MMT Online" location="Online (Discord)" description="For whomever the in-person competitions are too far, compete with students around the nation in our online synchronous event" button_text = "MMT Online" button_url = "/competitions/mmt-2023/mmt-2023-online"/>
     </FlexBox>
