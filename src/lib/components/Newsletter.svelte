@@ -1,4 +1,5 @@
 <script>
+    import { user } from '$lib/store';
     export let show = false;
     let firstName = "";
     let lastName = "";
@@ -9,6 +10,7 @@
     let school = "";
 
     async function setAction() {
+        user.update((u) => (u = false));
         if (firstName == "" || lastName == "" || email == "" || grade == "" || !email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
             alert("Please fill out all required fields");
             return;
@@ -41,7 +43,7 @@
 <!-- Begin Mailchimp Signup Form -->
     <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
     <div id="mc_embed_signup">
-        <div style="position: absolute; top: 10px; right: 10px;"><i class="fa-solid fa-x" style="color: gray;cursor:pointer;" on:click={() => {show = !show;}}></i></div>
+        <div style="position: absolute; top: 10px; right: 10px;"><i class="fa-solid fa-x" style="color: gray;cursor:pointer;" on:click={() => {show = !show; user.update((u) => (u = false));}}></i></div>
         <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
             <div>
