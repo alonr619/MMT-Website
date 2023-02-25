@@ -3,17 +3,15 @@
     import Newsletter from '$lib/components/Newsletter.svelte';
     import { fly } from "svelte/transition";
     import { onMount } from "svelte";
-    import { user } from '$lib/store';
 
     // need to do this to make the animation play on page load
     let visible = false;
     let windowWidth;
     let background = "right-arrow.png";
-    let show;
+    let show = false;
  
     onMount(() => {
         visible = true;
-        user.subscribe((u) => (show = u));
     })
 
     function toggleBackground() {
