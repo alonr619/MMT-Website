@@ -68,7 +68,7 @@
         <div style="padding: 10px;">
         <p>
             <strong>TEAM SIZE:</strong> 3-4* <br />
-            <strong>LOCATION:</strong>Fremont High School, Sunnyvale, California<br />
+            <strong>LOCATION:</strong> Fremont High School (Sunnyvale, California)<br />
             <strong>EARLY HORSE COST:</strong> $10 per participant (Register before <strong>March 14th, 2023</strong> to receive the early horse price!)<br />
             <strong>NORMAL COST:</strong> $15 per participant (Register before <strong>April 22nd, 2023</strong> to participate)<br /> <br />
             <a href="https://docs.google.com/document/d/1FRL4DLS2RVbbMRKe2r0t7K2Rhjabwr45TdgM0ISDKnQ/edit?usp=sharing" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
