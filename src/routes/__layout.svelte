@@ -4,8 +4,14 @@
 	import '../app.css';
     import { page } from "$app/stores";
 	import Newsletter from '$lib/components/Newsletter.svelte';
+	import { user } from '$lib/store';
+	import { onMount } from "svelte";
 
 	let show = false;
+
+	onMount(() => {
+        user.subscribe((u) => (show = u));
+    })
 </script>
 
 <div class="all-container">
