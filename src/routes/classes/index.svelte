@@ -35,7 +35,8 @@
     let y;
 
     let scheduleData = [
-        { "Class": "Intermediate", "Day of Week": "Sunday", "Time (PT)": "5:00-6:30 PM"},
+        { "Class": "Intermediate 1", "Day of Week": "Sunday", "Time (PT)": "5:00-6:30 PM"},
+        { "Class": "Intermediate 2", "Day of Week": "TBD", "Time (PT)": "TBD: Dependent on interest"},
         { "Class": "Beginner 1", "Day of Week": "Monday", "Time (PT)": "5:00-6:30 PM"},
         { "Class": "Beginner 2", "Day of Week": "Wednesday", "Time (PT)": "7:00-8:30 PM"},
         { "Class": "Office Hours 1", "Day of Week": "Sunday", "Time (PT)": "6:30-7:30 PM"},
@@ -43,15 +44,15 @@
     ]
     
     let topicsData = [
-        { "Week": "1", "Dates": "January 8-January 14, 2023", "Topics Covered": "Angle Chasing, Similar Triangles" },
-        { "Week": "2", "Dates": "January 15-January 21, 2023", "Topics Covered": "Triangle Centers" },
-        { "Week": "3", "Dates": "January 22-January 28, 2023", "Topics Covered": "Circles" },
-        { "Week": "4", "Dates": "January 29-February 4, 2023", "Topics Covered": "Quadrilaterals" },
-	{ "Week": "Break", "Dates": "February 5-February 11, 2023", "Topics Covered": "None!" },
-        { "Week": "5", "Dates": "February 12-February 18, 2023", "Topics Covered": "Coordinate Geometry" },
-        { "Week": "6", "Dates": "February 19-February 25, 2023", "Topics Covered": "Other Polygons" },
-        { "Week": "7", "Dates": "February 26-March 4, 2023", "Topics Covered": "3D Geometry" },
-        { "Week": "8", "Dates": "March 5-March 11, 2022", "Topics Covered": "Trigonometry, Miscellaneous" },
+        { "Week": "1", "Dates": "April 3-April 9, 2023", "Topics Covered": "TBD" },
+        { "Week": "2", "Dates": "April 10-April 16, 2023", "Topics Covered": "TBD" },
+        { "Week": "3", "Dates": "April 17-April 23, 2023", "Topics Covered": "TBD" },
+        { "Week": "Break", "Dates": "April 23-April 29, 2023", "Topics Covered": "MMT Weekend!" },
+	    { "Week": "4", "Dates": "April 30-May 6, 2023", "Topics Covered": "TBD" },
+        { "Week": "5", "Dates": "May 7-May 13, 2023", "Topics Covered": "TBD" },
+        { "Week": "6", "Dates": "May 14-May 20, 2023", "Topics Covered": "TBD" },
+        { "Week": "7", "Dates": "May 21-May 27, 2023", "Topics Covered": "TBD" },
+        { "Week": "8", "Dates": "May 28-June 3, 2023", "Topics Covered": "TBD" },
     ]
 
     onMount(() => {
@@ -108,7 +109,7 @@
 </div>
 -->
 
-<PageHeader title="Classes" description="High Quality Online Math Contest Prep Classes" button_url="https://tinyurl.com/BeginnerGeometryRegistration" button_text="Beginner Class Registration!" id="registerBeginner" button2_url="https://tinyurl.com/IntermediateGeoRegistration" button2_text="Intermediate Class Registration!"/>
+<PageHeader title="Classes" description="High Quality Online Math Contest Prep Classes" button_url="https://link.mustangmath.com/DiscreteRegistration" button_text="Class Registration!" id="register"/>
 
 <br><br>
 
@@ -133,21 +134,21 @@
     </FlexBox>
 </div> <br />
 
-<h1 id="geometry"><strong style="color: #1b9aaa;">GEOMETRY</strong></h1>
+<h1 id="discrete"><strong style="color: #1b9aaa;">Discrete Topics: Combinatorics + Number Theory</strong></h1>
 
-<Heading text="Geometry: Class Details" size={2} textColor="#1B9AAA" />
+<Heading text="Discrete: Class Details" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Our class will be on Geometry and will start on the week of <strong>January 8th, 2023</strong> and run through till <strong>March 5th, 2023</strong>. There are currently 2 levels of classes planned, <strong>Beginner Geometry (AMC 8 level)</strong> and <strong>Intermediate Geometry (AMC 10/12 level)</strong>. See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://tinyurl.com/BeginnerGeometryRegistration"><strong>beginner class registration form</strong></a> or the <a href="https://tinyurl.com/IntermediateGeoRegistration"><strong>intermediate class registration form</strong></a>.</p>
+        <p style="font-size: 1.5em; text-align: center;">Our class will be on Discrete Topics (Combinatorics & Number Theory) and will start on the week of <strong>April 3, 2023</strong> and run through till <strong>June 3, 2023</strong>. There are currently 2 levels of classes planned, <strong>Beginner Discrete Topics (AMC 8 level)</strong> and <strong>Intermediate Discrete Topics (AMC 10/12 level)</strong>. See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://link.mustangmath.com/DiscreteRegistration"><strong>registration form</strong></a>.</p>
     </PanelBox>
 </div> <br />
 <br />
 
 
-<Heading text="Geometry: Pricing" size={2} textColor="#1B9AAA" />
+<Heading text="Discrete: Pricing" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Geometry will be <strong>$80</strong>.</p>
+        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Discrete will be <strong>$80</strong>.</p>
         <p style="font-size: 1.5em; text-align: center;">We charge for our classes for a multitude of reasons. First, while we are a fully volunteer-run nonprofit organization, we need money to continue <strong>improving upon and providing better classes, competitions, events, and materials</strong>! All money earned from MM Classes will go back into these projects for you, the students. Second, we work very hard to provide high quality classes, and we want students to take them seriously - ascribing a price value to the class naturally leads to more <strong>committed students</strong>.</p>
         <p style="font-size: 1.5em; text-align: center;">If the cost of these classes poses a significant burden to you, please reach out to us! <strong>Financial aid is available upon request</strong>.</p>
         
@@ -156,7 +157,7 @@
 <br />
 <br />
 
-<Heading text="Geometry: Weekly Schedule" size={2} textColor="#1B9AAA" />
+<Heading text="Discrete: Weekly Schedule" size={2} textColor="#1B9AAA" />
 <div class="schedule-wrapper">
     <FlexBox>
         <PanelBox>
@@ -169,7 +170,7 @@
 </div> <br />
 <br />
 
-<Heading text="Geometry: Classes Schedule" size={2} textColor="#1B9AAA" />
+<Heading text="Discrete: Classes Schedule" size={2} textColor="#1B9AAA" />
 <div class="schedule-wrapper">
     <FlexBox>
         <PanelBox>
