@@ -136,7 +136,7 @@
 
 <h1 id="discrete"><strong style="color: #1b9aaa;">Discrete Topics: Combinatorics + Number Theory</strong></h1>
 
-<Heading text="Discrete: Class Details" size={2} textColor="#1B9AAA" />
+<Heading text="Class Details" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;">Our class will be on Discrete Topics (Combinatorics & Number Theory) and will start on the week of <strong>April 3, 2023</strong> and run through till <strong>June 3, 2023</strong>. There are currently 2 levels of classes planned, <strong>Beginner Discrete Topics (AMC 8 level)</strong> and <strong>Intermediate Discrete Topics (AMC 10/12 level)</strong>. See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://link.mustangmath.com/DiscreteRegistration"><strong>registration form</strong></a>.</p>
@@ -145,7 +145,7 @@
 <br />
 
 
-<Heading text="Discrete: Pricing" size={2} textColor="#1B9AAA" />
+<Heading text="Pricing" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Discrete will be <strong>$80</strong>.</p>
@@ -157,7 +157,7 @@
 <br />
 <br />
 
-<Heading text="Discrete: Weekly Schedule" size={2} textColor="#1B9AAA" />
+<Heading text="Weekly Schedule" size={2} textColor="#1B9AAA" />
 <div class="schedule-wrapper">
     <FlexBox>
         <PanelBox>
@@ -170,7 +170,7 @@
 </div> <br />
 <br />
 
-<Heading text="Discrete: Classes Schedule" size={2} textColor="#1B9AAA" />
+<Heading text="Classes Schedule" size={2} textColor="#1B9AAA" />
 <div class="schedule-wrapper">
     <FlexBox>
         <PanelBox>
