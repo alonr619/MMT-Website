@@ -29,6 +29,7 @@
         ],
         2023: [
             [["January"], ["PDF", "/newsletter/January2023.pdf"]],
+            [["February"], ["PDF", "/newsletter/February2023.pdf"]],
         ]
     };
 
