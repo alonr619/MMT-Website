@@ -85,7 +85,7 @@
         <select name="COUNTRY" class="" bind:value={country} id="mce-COUNTRY">
             <option value=""></option>
             <option value="United States of America">United States of America</option>
-            <option value="Singapore">Singapore</option>
+            <option value="Canada">Canada</option>
             <option value="Afghanistan">Afghanistan</option>
             <option value="Albania">Albania</option>
             <option value="Algeria">Algeria</option>
@@ -116,7 +116,6 @@
             <option value="Burundi">Burundi</option>
             <option value="Cambodia">Cambodia</option>
             <option value="Cameroon">Cameroon</option>
-            <option value="Canada">Canada</option>
             <option value="Cape Verde">Cape Verde</option>
             <option value="Central African Republic">Central African Republic</option>
             <option value="Chad">Chad</option>
