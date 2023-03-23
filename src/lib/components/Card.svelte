@@ -47,5 +47,6 @@
     .top-right {
         bottom: 20px;
         right: 20px;
+        transform: rotate(180deg);
     }
 </style>

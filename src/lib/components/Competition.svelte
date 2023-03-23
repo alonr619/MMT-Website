@@ -7,7 +7,7 @@
     export let initials;
 </script>
 
-<Card width="15em" height="20em" {imgSource} {initials}>
+<Card width="15em" height="23em" {imgSource} {initials}>
     <a href="#{competition.toLowerCase()}">
         <div class="competition-img">
             <img alt={competition} src={imgSource} />

@@ -11,7 +11,7 @@
     export let location;
 </script>
 
-<Card {initials} {imgSource} width="30em" height="100%">
+<Card {initials} {imgSource} width="17em" height="100%">
     {#if imgSource}
         <div class="competition-img">
             <img alt={title} src={imgSource} />
