@@ -1,9 +1,9 @@
 <script>
-    import PanelBox from "$lib/components/PanelBox.svelte";
     import Link from '$lib/components/Link.svelte';
-    import Button from '$lib/components/Button.svelte';
+    import Card from '$lib/components/Card.svelte';
 
     export let title;
+    export let initials;
     export let imgSource;
     export let description;
     export let button_url;
@@ -11,7 +11,7 @@
     export let location;
 </script>
 
-<PanelBox width="30em" borderRadius="15px">
+<Card {initials} {imgSource} width="30em" height="100%">
     {#if imgSource}
         <div class="competition-img">
             <img alt={title} src={imgSource} />
@@ -32,12 +32,13 @@
         </div>
     {/if}
     <br>
-</PanelBox>
+</Card>
 
 <style>
     .competition-img{
         margin: 10%;
     }
+
     .title-p{
         font-size: 1.5rem;
         text-align: center;
