@@ -51,6 +51,44 @@
 <PageHeader title="Resources" description="Study for upcoming tournaments or classes with these resources!" button_url="/classes" button_text="Learn more with our classes!" button_id="trainingPortal"/>
 
 <section>
+    <Heading text="Past Exams" size={2.5} textColor="#1B9AAA" />
+    <DropdownArchive id="showDropdown" year="2022" tests={[
+        [["Mounting Mayhem"], ["Rules","archive/2022/MountingMayhemRules.pdf"], ["Puzzles", "https://tinyurl.com/MMT2022MountingMayhemPuzzles"], [solutions, "https://tinyurl.com/MM2022MountingMayhemAnswers"]], 
+        [["Bucking Bingo"], [problems,"archive/2022/BuckingBingoProblems.pdf"], [answers, "archive/2022/BuckingBingoAnswers.pdf"], [solutions, "archive/2022/BuckingBingoSolutions.pdf"]], 
+        [["Gallop"], [problems,"archive/2022/GallopProblems.pdf"], [answers, "archive/2022/GallopAnswers.pdf"], [solutions, "archive/2022/GallopSolutions.pdf"]], 
+        [["Pressure Round 1 (Mystery Mare)"], [problems,"archive/2022/Pressure1Problems.pdf"], [answers, "archive/2022/Pressure1Answers.pdf"], [solutions, "archive/2022/Pressure1Solutions.pdf"]], 
+        [["Pressure Round 2 (Mystery Mare)"], [problems,"archive/2022/Pressure2Problems.pdf"], [answers, "archive/2022/Pressure2Answers.pdf"], [solutions, "archive/2022/Pressure2Solutions.pdf"]], 
+        ]}/>
+    <DropdownArchive id="showDropdown" year="2021" tests={[
+        [["Mounting Mayhem"], [problems,"archive/2021/MountingMayhem.pdf"]], 
+        [["Bucking Bingo"], [problems,"archive/2021/BuckingBingo.pdf"]], 
+        [["Relay Rodeo (Mystery Mare)"], [problems,"archive/2021/RelayRodeo.pdf"]], 
+        [["Gallop Round 1"], [problems, "archive/2021/Gallop Set 1.pdf"]], 
+        [["Gallop Round 2"], [problems, "archive/2021/Gallop Set 2.pdf"]], 
+        [["Gallop Round 3"], [problems, "archive/2021/Gallop Set 3.pdf"]], 
+        [["Gallop Round 4"], [problems, "archive/2021/Gallop Set 4.pdf"]], 
+        [["Gallop Round 5"], [problems, "archive/2021/Gallop Set 5.pdf"]], 
+        [["Gallop Round 6"], [problems, "archive/2021/Gallop Set 6.pdf"]], 
+        [["Gallop Round 7"], [problems, "archive/2021/Gallop Set 7.pdf"]], 
+        [["Gallop Round 8"], [problems, "archive/2021/Gallop Set 8.pdf"]], 
+        [[answers, "archive/2021/Answers.pdf"], ["Results", "archive/2021/Results.pdf"]]
+        ]}/>
+    <DropdownArchive id="showDropdown" year="2020" tests={[
+        [["Mounting Mayhem"], [problems,"archive/2020/MountingMayhem.pdf"]], 
+        [["Unbridled Approximation"], [problems,"archive/2020/UnbridledApproximation.pdf"]], 
+        [["Gallop Round 1"], [problems, "archive/2020/Gallop Set 1.pdf"]], 
+        [["Gallop Round 2"], [problems, "archive/2020/Gallop Set 2.pdf"]], 
+        [["Gallop Round 3"], [problems, "archive/2020/Gallop Set 3.pdf"]], 
+        [["Gallop Round 4"], [problems, "archive/2020/Gallop Set 4.pdf"]], 
+        [["Gallop Round 5"], [problems, "archive/2020/Gallop Set 5.pdf"]], 
+        [["Gallop Round 6"], [problems, "archive/2020/Gallop Set 6.pdf"]], 
+        [["Gallop Round 7"], [problems, "archive/2020/Gallop Set 7.pdf"]], 
+        [["Gallop Round 8"], [problems, "archive/2020/Gallop Set 8.pdf"]], 
+        [[answers, "archive/2020/Answers.pdf"], ["Results", "archive/2020/Results.pdf"]]
+        ]}/>
+</section>
+
+<section>
     <Heading text="Topic-Based Handouts" size={2.5} textColor="#1B9AAA" />
     <div style="margin-left: 10vw; margin-right: 10vw;">
         <PanelBox>
@@ -104,44 +142,6 @@
     {#each years as year, i}
     <DropdownArchive id="showDropdown" year={year} tests={issues[year]}/>
     {/each}
-</section>
-
-<section>
-    <Heading text="Past Exams" size={2.5} textColor="#1B9AAA" />
-    <DropdownArchive id="showDropdown" year="2022" tests={[
-        [["Mounting Mayhem"], ["Rules","archive/2022/MountingMayhemRules.pdf"], ["Puzzles", "https://tinyurl.com/MMT2022MountingMayhemPuzzles"], [solutions, "https://tinyurl.com/MM2022MountingMayhemAnswers"]], 
-        [["Bucking Bingo"], [problems,"archive/2022/BuckingBingoProblems.pdf"], [answers, "archive/2022/BuckingBingoAnswers.pdf"], [solutions, "archive/2022/BuckingBingoSolutions.pdf"]], 
-        [["Gallop"], [problems,"archive/2022/GallopProblems.pdf"], [answers, "archive/2022/GallopAnswers.pdf"], [solutions, "archive/2022/GallopSolutions.pdf"]], 
-        [["Pressure Round 1 (Mystery Mare)"], [problems,"archive/2022/Pressure1Problems.pdf"], [answers, "archive/2022/Pressure1Answers.pdf"], [solutions, "archive/2022/Pressure1Solutions.pdf"]], 
-        [["Pressure Round 2 (Mystery Mare)"], [problems,"archive/2022/Pressure2Problems.pdf"], [answers, "archive/2022/Pressure2Answers.pdf"], [solutions, "archive/2022/Pressure2Solutions.pdf"]], 
-        ]}/>
-    <DropdownArchive id="showDropdown" year="2021" tests={[
-        [["Mounting Mayhem"], [problems,"archive/2021/MountingMayhem.pdf"]], 
-        [["Bucking Bingo"], [problems,"archive/2021/BuckingBingo.pdf"]], 
-        [["Relay Rodeo (Mystery Mare)"], [problems,"archive/2021/RelayRodeo.pdf"]], 
-        [["Gallop Round 1"], [problems, "archive/2021/Gallop Set 1.pdf"]], 
-        [["Gallop Round 2"], [problems, "archive/2021/Gallop Set 2.pdf"]], 
-        [["Gallop Round 3"], [problems, "archive/2021/Gallop Set 3.pdf"]], 
-        [["Gallop Round 4"], [problems, "archive/2021/Gallop Set 4.pdf"]], 
-        [["Gallop Round 5"], [problems, "archive/2021/Gallop Set 5.pdf"]], 
-        [["Gallop Round 6"], [problems, "archive/2021/Gallop Set 6.pdf"]], 
-        [["Gallop Round 7"], [problems, "archive/2021/Gallop Set 7.pdf"]], 
-        [["Gallop Round 8"], [problems, "archive/2021/Gallop Set 8.pdf"]], 
-        [[answers, "archive/2021/Answers.pdf"], ["Results", "archive/2021/Results.pdf"]]
-        ]}/>
-    <DropdownArchive id="showDropdown" year="2020" tests={[
-        [["Mounting Mayhem"], [problems,"archive/2020/MountingMayhem.pdf"]], 
-        [["Unbridled Approximation"], [problems,"archive/2020/UnbridledApproximation.pdf"]], 
-        [["Gallop Round 1"], [problems, "archive/2020/Gallop Set 1.pdf"]], 
-        [["Gallop Round 2"], [problems, "archive/2020/Gallop Set 2.pdf"]], 
-        [["Gallop Round 3"], [problems, "archive/2020/Gallop Set 3.pdf"]], 
-        [["Gallop Round 4"], [problems, "archive/2020/Gallop Set 4.pdf"]], 
-        [["Gallop Round 5"], [problems, "archive/2020/Gallop Set 5.pdf"]], 
-        [["Gallop Round 6"], [problems, "archive/2020/Gallop Set 6.pdf"]], 
-        [["Gallop Round 7"], [problems, "archive/2020/Gallop Set 7.pdf"]], 
-        [["Gallop Round 8"], [problems, "archive/2020/Gallop Set 8.pdf"]], 
-        [[answers, "archive/2020/Answers.pdf"], ["Results", "archive/2020/Results.pdf"]]
-        ]}/>
 </section>
 
 <style>

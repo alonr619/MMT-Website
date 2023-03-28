@@ -19,10 +19,21 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="Mustang Math Tournament (MMT)" description="April 29, 2023: 9:00 AM - 4:30 PM PT" button_url="#competition" button_text="Register for Competition!" button_id="registerForCompetition" target="" />
+<PageHeader title="Mustang Math Tournament [MMT] 2023" description="April 29, 2023: 9:00 AM - 4:30 PM PT" button_url="#competition" button_text="Learn More" button_id="registerForCompetition" target="" />
 
-<br /><br />
+<br />
 
+<br id="competition" />
+<Heading text="Competitions" size={2.5} textColor="#1B9AAA" />
+<div class="competition-wrapper">
+    <FlexBox align="start">
+        <Tournament imgSource="/competitions/mmt-2023/washington.png" title="MMT Washington" location="Kent, WA" description="Held at Mill Creek Middle School, near where MM was founded, this event will be WAnderful" button_text = "MMT WA" button_url = "/competitions/mmt-2023/mmt-2023-WA" />
+        <Tournament imgSource="/competitions/mmt-2023/california.png" title="MMT California" location= "Sunnyvale, CA" description="Held at Fremont High School, the competition at this event will be CAptivating" button_text = "MMT CA" button_url = "/competitions/mmt-2023/mmt-2023-CA"/>
+        <Tournament imgSource="/competitions/mmt-2023/online.png" title="MMT Online" location="Online (Discord)" description="For whomever the in-person competitions are too far, compete with students around the nation in our online synchronous event" button_text = "MMT Online" button_url = "/competitions/mmt-2023/mmt-2023-online"/>
+    </FlexBox>
+</div> 
+
+<br />
 <Heading text="What is MMT?" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
@@ -36,16 +47,7 @@
     </PanelBox>
 </div>
 
-<br id="competition" />
-<Heading text="Competitions" size={2.5} textColor="#1B9AAA" />
-<div class="competition-wrapper">
-    <FlexBox align="start">
-        <Tournament imgSource="/competitions/mmt-2023/washington.png" title="MMT Washington" location="Kent, WA" description="Held at Mill Creek Middle School, near where MM was founded, this event will be WAnderful" button_text = "MMT WA" button_url = "/competitions/mmt-2023/mmt-2023-WA" />
-        <Tournament imgSource="/competitions/mmt-2023/california.png" title="MMT California" location= "Sunnyvale, CA" description="Held at Fremont High School, the competition at this event will be CAptivating" button_text = "MMT CA" button_url = "/competitions/mmt-2023/mmt-2023-CA"/>
-        <Tournament imgSource="/competitions/mmt-2023/online.png" title="MMT Online" location="Online (Discord)" description="For whomever the in-person competitions are too far, compete with students around the nation in our online synchronous event" button_text = "MMT Online" button_url = "/competitions/mmt-2023/mmt-2023-online"/>
-    </FlexBox>
-</div> <br />
-
+<br />
 <Heading text="Testimonials" size={2.5} textColor="#1B9AAA" />
 <div class="grid-three" style="margin-left: 10vw; margin-right: 10vw;">
     <div>
