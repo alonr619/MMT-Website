@@ -19,7 +19,7 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="Mustang Math Tournament (MMT)" description="April 29, 2023: 9:00 AM - 4:30 PM PT" button_url="#competition" button_text="Learn More" button_id="registerForCompetition" target="" />
+<PageHeader title="Mustang Math Tournament [MMT] 2023" description="April 29, 2023: 9:00 AM - 4:30 PM PT" button_url="#competition" button_text="Learn More" button_id="registerForCompetition" target="" />
 
 <br />
 
