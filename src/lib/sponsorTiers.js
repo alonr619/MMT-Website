@@ -9,6 +9,11 @@ const sponsorTiers = [
         alt: "Wolfram Alpha",
         link: "https://www.wolfram.com/",
       },
+      {
+        url: "sponsors/foal/AlphaStar.png",
+        alt: "Alphastar Academy",
+        link: "https://alphastar.academy/",
+      },
     ],
   },
   {
@@ -26,6 +31,11 @@ const sponsorTiers = [
         alt: "Brilliant",
         link: "https://www.brilliant.org",
       },
+      {
+        url: "sponsors/foal/BBMC Math.png",
+        alt: "BBMC Math",
+        link: "https://bbmc-math.com/",
+      },
     ],
   },
   {
@@ -34,19 +44,9 @@ const sponsorTiers = [
     headerColor: "#ad8c9e",
     sponsors: [
       {
-        url: "sponsors/foal/BBMC Math.png",
-        alt: "BBMC Math",
-        link: "https://bbmc-math.com/",
-      },
-      {
         url: "sponsors/foal/AoPS.png",
         alt: "Art of Problem Solving",
         link: "https://aops.com",
-      },
-      {
-        url: "sponsors/foal/AlphaStar.png",
-        alt: "Alphastar Academy",
-        link: "https://alphastar.academy/",
       },
       {
         url: "sponsors/foal/Texas Instruments.png",
