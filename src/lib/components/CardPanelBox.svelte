@@ -2,7 +2,6 @@
     import PanelBox from "$lib/components/PanelBox.svelte";
 
     export let initials;
-    export let imgSource;
     export let width;
     export let height;
     export let borderRadius="15px";
@@ -10,16 +9,14 @@
 
 <div style="position: relative;">
     <PanelBox {width} {borderRadius} {height}>
-        {#if imgSource}
-            <div class="icon top-left">
-                <p><strong>{initials}</strong></p>
-                <img src={imgSource} alt="logo" />
-            </div>
-            <div class="icon top-right">
-                <p><strong>{initials}</strong></p>
-                <img src={imgSource} alt="logo" />
-            </div>
-        {/if}
+        <div class="icon top-left">
+            <p><strong>{initials}</strong></p>
+            <img src="/favicon.png" alt="logo" />
+        </div>
+        <div class="icon top-right">
+            <p><strong>{initials}</strong></p>
+            <img src="/favicon.png" alt="logo" />
+        </div>
         <slot />
     </PanelBox>
 </div>

@@ -1,9 +1,9 @@
 <script>
     import Link from '$lib/components/Link.svelte';
-    import Card from '$lib/components/Card.svelte';
+    import Card from '$lib/components/CardPanelBox.svelte';
 
     export let title;
-    export let initials;
+    export let initials = "ha";
     export let imgSource;
     export let description;
     export let button_url;
@@ -11,7 +11,7 @@
     export let location;
 </script>
 
-<Card {initials} {imgSource} width="17em" height="23em">
+<Card initials={initials} width="17em" height="23em">
     {#if imgSource}
         <div class="competition-img">
             <img alt={title} src={imgSource} />

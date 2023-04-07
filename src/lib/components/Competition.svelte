@@ -1,5 +1,5 @@
 <script>
-    import Card from "$lib/components/Card.svelte";
+    import Card from "$lib/components/CardPanelBox.svelte";
 
     export let competition;
     export let imgSource;

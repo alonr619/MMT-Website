@@ -51,62 +51,6 @@
 <PageHeader title="Resources" description="Study for upcoming tournaments or classes with these resources!" button_url="/classes" button_text="Learn more with our classes!" button_id="trainingPortal"/>
 
 <section>
-    <Heading text="Topic-Based Handouts" size={2.5} textColor="#1B9AAA" />
-    <div style="margin-left: 10vw; margin-right: 10vw;">
-        <PanelBox>
-            <table>
-                <tr>
-                    <th>Algebra</th>
-                    {#each handoutData[0] as handout}
-                        <td><a target="_blank" sveltekit:prefetch href={handout[1]}>{handout[0]}</a></td>
-                    {/each}
-                </tr>
-                <tr>
-                    <th>{windowWidth < 700 ? "Combo" : "Combinatorics"}</th>
-                    {#each handoutData[1] as handout}
-                        <td><a target="_blank" sveltekit:prefetch href={handout[1]}>{handout[0]}</a></td>
-                    {/each}
-                </tr>
-                <tr>
-                    <th>{windowWidth < 700 ? "Geo" : "Geometry"}</th>
-                    {#each handoutData[2] as handout}
-                        <td><a target="_blank" sveltekit:prefetch href={handout[1]}>{handout[0]}</a></td>
-                    {/each}
-                </tr>
-                <tr>
-                    <th>{windowWidth < 700 ? "NT" : "Number Theory"}</th>
-                    {#each handoutData[3] as handout}
-                        <td><a target="_blank" sveltekit:prefetch href={handout[1]}>{handout[0]}</a></td>
-                    {/each}
-                </tr>
-            </table>
-        </PanelBox>
-    </div> 
-    
-</section>
-
-<section>
-    <Heading text="Youtube Videos" size={2.5} textColor="#1B9AAA" />
-    <div style="margin-left: 10vw; margin-right: 10vw;">
-        <PanelBox>
-            <p style="font-size: 1.5em; text-align: center;">Check out our first solution video!<br></p>
-            <p align="center">
-            <iframe align = "center" title="MMT 2022 Solutions Video" width="100%" height="450" style="text-align: center"
-                src="https://www.youtube.com/embed/pl17fwL8dE0?start=1">
-            </iframe>
-            </p>
-        </PanelBox>
-    </div> 
-</section>
-
-<section>
-    <Heading text="Newsletter" size={2.5} textColor="#1B9AAA" />
-    {#each years as year, i}
-    <DropdownArchive id="showDropdown" year={year} tests={issues[year]}/>
-    {/each}
-</section>
-
-<section>
     <Heading text="Past Exams" size={2.5} textColor="#1B9AAA" />
     <DropdownArchive id="showDropdown" year="2022" tests={[
         [["Mounting Mayhem"], ["Rules","archive/2022/MountingMayhemRules.pdf"], ["Puzzles", "https://tinyurl.com/MMT2022MountingMayhemPuzzles"], [solutions, "https://tinyurl.com/MM2022MountingMayhemAnswers"]], 
@@ -142,6 +86,64 @@
         [["Gallop Round 8"], [problems, "archive/2020/Gallop Set 8.pdf"]], 
         [[answers, "archive/2020/Answers.pdf"], ["Results", "archive/2020/Results.pdf"]]
         ]}/>
+</section>
+
+<!--
+<section>
+    <Heading text="Topic-Based Handouts" size={2.5} textColor="#1B9AAA" />
+    <div style="margin-left: 10vw; margin-right: 10vw;">
+        <PanelBox>
+            <table>
+                <tr>
+                    <th>Algebra</th>
+                    {#each handoutData[0] as handout}
+                        <td><a target="_blank" sveltekit:prefetch href={handout[1]}>{handout[0]}</a></td>
+                    {/each}
+                </tr>
+                <tr>
+                    <th>{windowWidth < 700 ? "Combo" : "Combinatorics"}</th>
+                    {#each handoutData[1] as handout}
+                        <td><a target="_blank" sveltekit:prefetch href={handout[1]}>{handout[0]}</a></td>
+                    {/each}
+                </tr>
+                <tr>
+                    <th>{windowWidth < 700 ? "Geo" : "Geometry"}</th>
+                    {#each handoutData[2] as handout}
+                        <td><a target="_blank" sveltekit:prefetch href={handout[1]}>{handout[0]}</a></td>
+                    {/each}
+                </tr>
+                <tr>
+                    <th>{windowWidth < 700 ? "NT" : "Number Theory"}</th>
+                    {#each handoutData[3] as handout}
+                        <td><a target="_blank" sveltekit:prefetch href={handout[1]}>{handout[0]}</a></td>
+                    {/each}
+                </tr>
+            </table>
+        </PanelBox>
+    </div> 
+    
+</section>
+-->
+
+<section>
+    <Heading text="Youtube Videos" size={2.5} textColor="#1B9AAA" />
+    <div style="margin-left: 10vw; margin-right: 10vw;">
+        <PanelBox>
+            <p style="font-size: 1.5em; text-align: center;">Check out our first solution video!<br></p>
+            <p align="center">
+            <iframe align = "center" title="MMT 2022 Solutions Video" width="100%" height="450" style="text-align: center"
+                src="https://www.youtube.com/embed/pl17fwL8dE0?start=1">
+            </iframe>
+            </p>
+        </PanelBox>
+    </div> 
+</section>
+
+<section>
+    <Heading text="Newsletter" size={2.5} textColor="#1B9AAA" />
+    {#each years as year, i}
+    <DropdownArchive id="showDropdown" year={year} tests={issues[year]}/>
+    {/each}
 </section>
 
 <style>

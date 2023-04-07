@@ -10,6 +10,9 @@
     import Table from "$lib/components/Table.svelte";
     import PanelBox from "$lib/components/PanelBox.svelte";
     import Image from '$lib/components/Image.svelte';
+    import CardPanelBox from '$lib/components/CardPanelBox.svelte';
+    import FlipCard from '$lib/components/FlipCard.svelte';
+
     let windowWidth;
     const scheduleData = [
         { "Day": "4/22-4/29", "Start Time (PT)": "All Day", "Event": "Problem of the Day" },
@@ -57,6 +60,7 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
+<div class="page"></div>
 <PageHeader title="Mustang Math Tournament (MMT) California" description="April 29, 2023: 9:00 AM - 4:30 PM PT" button_url="https://contestdojo.com" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
 
 <br />
@@ -64,13 +68,13 @@
 <br id="registrationInfo" />
 <Heading text="Overview" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
-    <PanelBox>
-        <div style="padding: 10px;">
+    <CardPanelBox initials="MM">
+        <div style="padding: 10px; padding-left: 30px; padding-top: 25px;">
         <p>
             <strong>TEAM SIZE:</strong> 3-4* <br />
             <strong>LOCATION:</strong> Fremont High School (Sunnyvale, California)<br />
             <strong>EARLY HORSE COST:</strong> $10 per participant (Register before <strong>March 17th, 2023</strong> to receive the early horse price!)<br />
-            <strong>NORMAL COST:</strong> $15 per participant (Register before <strong>April 22nd, 2023</strong> to participate)<br /> <br />
+            <strong>NORMAL COST:</strong> $15 per participant (Register before <strong>April 19th, 2023</strong> to participate)<br /> <br />
             <a href="https://docs.google.com/document/d/1FRL4DLS2RVbbMRKe2r0t7K2Rhjabwr45TdgM0ISDKnQ/edit?usp=sharing" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
             <br /><br />
             <i><strong>*:</strong> Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4</i><br />
@@ -78,7 +82,7 @@
             <i><strong>Note for Students in California:</strong> Students living within 50 miles of our in-person sites <strong>must</strong> participate in person. If you have an extenuating circumstance that would prevent this please send an email to <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a>, and we'll grant you permission to participate online.</i>
         </p>
         </div>
-    </PanelBox>
+    </CardPanelBox>
 </div> <br />
 
 <Heading text="Schedule" size={2.5} textColor="#1B9AAA" />
@@ -93,91 +97,102 @@
 
 <Heading text="Awards" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
-    <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Medals will be given to (at minimum) the members of the top 3 teams of each division, along with certificates of participation to all students and certificates of achievement to high-scoring teams. A wide variety of other prizes are available for top scoring teams, winners of activities, and a raffle including prizes from Wolfram, AoPS, and more!</p>
-    </PanelBox>
+    <CardPanelBox initials="MM">
+        <div style="padding: 20px;">
+            <p style="font-size: 1.5em; text-align: center;">Medals will be given to (at minimum) the members of the top 3 teams of each division, along with certificates of participation to all students and certificates of achievement to high-scoring teams. A wide variety of other prizes are available for top scoring teams, winners of activities, and a raffle including prizes from Wolfram, AoPS, and more!</p>
+        </div>
+    </CardPanelBox>
 </div> <br />
 
 <Heading text="Rules" size={2.5} textColor="#1B9AAA" />
-<Dropdown mainText="General Rules" id="showDropdown">
-    <ol>
-        <li>No cheating - This contest has a zero-tolerance cheating policy. Any evidence of cheating may lead to immediate disqualification, or any other punishment deemed appropriate by competition staff.</li>
-        <li>No calculators, rulers, compasses, protractors, or other aids are permitted.</li>
-        <li>You may not use the Internet as a resource at any point during a test.</li>
-            <ol type="a">
-                <li>In order to help enforce this, we may require individuals to provide a solution for a problem during the competition - so keep track of your work!</li>
-            </ol>
-        <li>All communication will take place through the Discord platform.
-            <ol type="a">
-                Scores, important information, documents, etc. will only be communicated through this platform on the day of the contest.
-            </ol>
-            <ol type="a">
-            All teams should be communicating with each other on this platform ONLY.
-
-            </ol>
-            <ol type="a">
-                <strong>Students under 13 years of age should use a parent-created and monitored Discord account.</strong>
-            </ol>
-        </li>
-        <li>The team divisions are determined by the highest grade level amongst the team members. Teams with 1 or more 8th graders will be in the <strong>Stallion</strong> division, teams with 7th graders and below will be in the <strong>Colt</strong> division, and teams with 6th graders and below will be in the <strong>Foal</strong> division. Teams may <em>choose</em> to compete in a higher division, if they&rsquo;d like.</li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="Answer Formatting Rules" id="showDropdown">
-    <ol>
-        <li>Carry out any reasonable calculations. For instance, you should evaluate any expressions which will take negligible time to evaluate (such as 1/2+1/3). You don't have to carry out unreasonable calculations, including large powers (e.g. 7<sup>8</sup>), large factorials, large products, and trigonometric functions which cannot be expressed in terms of radicals.</li>
-        <li>Write rational numbers in lowest terms. Decimals are also acceptable, provided they are exact.</li>
-        <li>Move all square factors outside radicals. For example, write 3√7 instead of √63.</li>
-        <li>Denominators need to be rationalized. For example, write 1/√2 as √2/2 instead.</li>
-        <li>Do not express an answer using a repeated sum or product.</li>
-        <li>Here are some examples of simplified answers, and examples of unsimplified answers with simplified equivalents:
-            <div style="margin-top: 5px"><Image url="../mmt-2022/acceptable-answers.png" alt="Acceptable answer examples" /></div>
-            <div style="margin-top: 5px"><Image url="../mmt-2022/unacceptable-answers.png" alt="Unacceptable answer examples" /></div>
-        </li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="Potential Topics Covered" id="showDropdown">
-    <p id="disclaimer">Disclaimer: While most problems should fall within the scope of these topics, there may be a few that are not.</p>
-    {#if windowWidth > 1000}
-    <Table data={topicsCovered} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/1200}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/1500}em;" />
-    {:else if windowWidth > 800}
-    <Table data={topicsSmall1} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/800}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/800}em;" />
-    <Table data={topicsSmall2} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/800}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/800}em;" />
-    {:else}
-    <Table data={topicsAlgebra} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
-    <Table data={topicsCombo} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
-    <Table data={topicsGeo} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
-    <Table data={topicsNT} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
-    {/if}
-</Dropdown>
-<Dropdown mainText="ROUND 1: Mounting Mayhem (Puzzle)" id="showDropdown">
-    <ol>
-        <li>The Mounting Mayhem Round will consist of a series of progressively harder logic puzzles. Students will have 15 minutes to learn the rules and basic strategy of the puzzles, then 60 minutes to solve as many of them as possible.</li>
-        <li>Puzzles often require out-of-the-box thinking although all topics can readily be understood and grasped by middle schoolers.</li>
-        <li>Harder puzzles will be worth more points, but these puzzles will be longer and/or require more creativity — you must decide what problems to focus your time on to optimize your team score.</li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="ROUND 2: Herding Hexes" id="showDropdown">
-    <ol>
-        <li>The “Herding Hexes” Round will consist of 25-30 questions to be solved in 60 minutes.</li>
-        <li>The questions will be laid out on a grid of connected hexagons, with more difficult problems being located furthest from the center.</li>
-        <li>Your score in the round will be determined by the problems you get correct, with bonus points available for having more correct answers connected within the grid!</li>
-        <li>You are not necessarily expected to solve all the questions in this round within the allotted time. Instead, we encourage you to strategize how you might use your time to maximize your points!</li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="ROUND 3: Mystery Mare" id="showDropdown">
-    <ol>
-        <li>The Mystery Mare round is exactly that — a mystery! The rules of the round will be revealed on competition day.</li>
-        <li>Hints about the nature of the round may be revealed as the competition date nears.</li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="ROUND 4: Gallop" id="showDropdown">
-    <ol>
-        <li>The Gallop Round will consist of 24 questions to be solved in 60 minutes.</li>
-        <li>The questions will be divided into 8 sets of 3 questions each, and you <strong>must submit the answers to one set</strong> before accessing the problems for the next. This means you must strategize when to submit each set (incomplete or not) to ensure you get access to as many questions as possible.</li>
-        <li>The problems will get progressively more difficult, and later problems will be worth more points.</li>
-        <li>Submissions will be scored immediately and a live score of all participating teams will be available during the competition. Prepare for the adrenaline rush!</li>
-    </ol>
-</Dropdown>
+<br />
+<div class="cards">
+    <FlipCard mainText="General Rules" id="showDropdown">
+        <ol>
+            <li>No cheating - This contest has a zero-tolerance cheating policy. Any evidence of cheating may lead to immediate disqualification, or any other punishment deemed appropriate by competition staff.</li>
+            <li>No calculators, rulers, compasses, protractors, or other aids are permitted.</li>
+            <li>You may not use the Internet as a resource at any point during a test.</li>
+                <ol type="a">
+                    <li>In order to help enforce this, we may require individuals to provide a solution for a problem during the competition - so keep track of your work!</li>
+                </ol>
+            <li>All communication will take place through the Discord platform.
+                <ol type="a">
+                    Scores, important information, documents, etc. will only be communicated through this platform on the day of the contest.
+                </ol>
+                <ol type="a">
+                All teams should be communicating with each other on this platform ONLY.
+    
+                </ol>
+                <ol type="a">
+                    <strong>Students under 13 years of age should use a parent-created and monitored Discord account.</strong>
+                </ol>
+            </li>
+            <li>The team divisions are determined by the highest grade level amongst the team members. Teams with 1 or more 8th graders will be in the <strong>Stallion</strong> division, teams with 7th graders and below will be in the <strong>Colt</strong> division, and teams with 6th graders and below will be in the <strong>Foal</strong> division. Teams may <em>choose</em> to compete in a higher division, if they&rsquo;d like.</li>
+        </ol>
+    </FlipCard>
+    <br />
+    <FlipCard mainText="Answer Formatting Rules" id="showDropdown">
+        <ol>
+            <li>Carry out any reasonable calculations. For instance, you should evaluate any expressions which will take negligible time to evaluate (such as 1/2+1/3). You don't have to carry out unreasonable calculations, including large powers (e.g. 7<sup>8</sup>), large factorials, large products, and trigonometric functions which cannot be expressed in terms of radicals.</li>
+            <li>Write rational numbers in lowest terms. Decimals are also acceptable, provided they are exact.</li>
+            <li>Move all square factors outside radicals. For example, write 3√7 instead of √63.</li>
+            <li>Denominators need to be rationalized. For example, write 1/√2 as √2/2 instead.</li>
+            <li>Do not express an answer using a repeated sum or product.</li>
+            <li>Here are some examples of simplified answers, and examples of unsimplified answers with simplified equivalents:
+                <div style="margin-top: 5px"><Image url="../mmt-2022/acceptable-answers.png" alt="Acceptable answer examples" /></div>
+                <div style="margin-top: 5px"><Image url="../mmt-2022/unacceptable-answers.png" alt="Unacceptable answer examples" /></div>
+            </li>
+        </ol>
+    </FlipCard>
+    <br />
+    <FlipCard mainText="Potential Topics Covered" id="showDropdown">
+        <p id="disclaimer">Disclaimer: While most problems should fall within the scope of these topics, there may be a few that are not.</p>
+        {#if windowWidth > 1000}
+        <Table data={topicsCovered} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/1200}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/1500}em;" />
+        {:else if windowWidth > 800}
+        <Table data={topicsSmall1} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/800}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/800}em;" />
+        <Table data={topicsSmall2} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/800}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/800}em;" />
+        {:else}
+        <Table data={topicsAlgebra} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
+        <Table data={topicsCombo} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
+        <Table data={topicsGeo} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
+        <Table data={topicsNT} width="100%" headerColor="#1B9AAA" rowColors={["#A4D6AF"]} cellPadding={5} cellPaddingRight={20} textSize={1} cellStyle="vertical-align: top; font-size: {windowWidth/500}em;" tableStyle="table-layout: fixed; padding: 10px;" headerStyle="font-size: {windowWidth/500}em;" />
+        {/if}
+    </FlipCard>
+    <br />
+    <FlipCard mainText="ROUND 1: Mounting Mayhem (Puzzle)" id="showDropdown">
+        <ol>
+            <li>The Mounting Mayhem Round will consist of a series of progressively harder logic puzzles. Students will have 15 minutes to learn the rules and basic strategy of the puzzles, then 60 minutes to solve as many of them as possible.</li>
+            <li>Puzzles often require out-of-the-box thinking although all topics can readily be understood and grasped by middle schoolers.</li>
+            <li>Harder puzzles will be worth more points, but these puzzles will be longer and/or require more creativity — you must decide what problems to focus your time on to optimize your team score.</li>
+        </ol>
+    </FlipCard>
+    <br />
+    <FlipCard mainText="ROUND 2: Herding Hexes" id="showDropdown">
+        <ol>
+            <li>The “Herding Hexes” Round will consist of 25-30 questions to be solved in 60 minutes.</li>
+            <li>The questions will be laid out on a grid of connected hexagons, with more difficult problems being located furthest from the center.</li>
+            <li>Your score in the round will be determined by the problems you get correct, with bonus points available for having more correct answers connected within the grid!</li>
+            <li>You are not necessarily expected to solve all the questions in this round within the allotted time. Instead, we encourage you to strategize how you might use your time to maximize your points!</li>
+        </ol>
+    </FlipCard>
+    <br />
+    <FlipCard mainText="ROUND 3: Mystery Mare" id="showDropdown">
+        <ol>
+            <li>The Mystery Mare round is exactly that — a mystery! The rules of the round will be revealed on competition day.</li>
+            <li>Hints about the nature of the round may be revealed as the competition date nears.</li>
+        </ol>
+    </FlipCard>
+    <br />
+    <FlipCard mainText="ROUND 4: Gallop" id="showDropdown">
+        <ol>
+            <li>The Gallop Round will consist of 24 questions to be solved in 60 minutes.</li>
+            <li>The questions will be divided into 8 sets of 3 questions each, and you <strong>must submit the answers to one set</strong> before accessing the problems for the next. This means you must strategize when to submit each set (incomplete or not) to ensure you get access to as many questions as possible.</li>
+            <li>The problems will get progressively more difficult, and later problems will be worth more points.</li>
+            <li>Submissions will be scored immediately and a live score of all participating teams will be available during the competition. Prepare for the adrenaline rush!</li>
+        </ol>
+    </FlipCard>
+</div>
 <!--
 <Dropdown mainText="FAQ" id="showDropdown">
     <p>
@@ -221,6 +236,31 @@
 <br /><br />
 
 <style>
+
+    .cards {
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+
+    .page { 
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-image: url("/competitions/mmt-2023/cardbackground.png");
+    }
+
+    .page::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(211, 223, 235, 0.96);
+    }
     li {
         list-style-type: disc;
         margin-left: 20px;
