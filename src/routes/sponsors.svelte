@@ -37,8 +37,13 @@ https://tinyurl.com/MMSponsors2023" button_text="Sponsor Mustang Math!" button_i
                 {#if lvl.sponsors.length > 0}
                     {#each lvl.sponsors as sponsor}
                         <PanelBox borderRadius="20px" width="40%" style="max-width: 300px; min-height: 250px; min-width: 250px;">
-                            <a target="_blank" href={sponsor.link} style="height: 100%; display: flex; align-items: center;">
-                                <img src={sponsor.url} alt={sponsor.alt} style="max-width: 100%;">
+                            <a target="_blank" href={sponsor.link} style="height: 100%; display: flex; align-items: center;text-decoration:none;">
+                                <div>
+                                    <img src={sponsor.url} alt={sponsor.alt} style="max-width: 100%;">
+                                    {#if sponsor.blurb}
+                                        <p style="font-size: 11px; text-align: center;">{sponsor.blurb}</p>
+                                    {/if}
+                                </div>
                             </a>
                         </PanelBox>
                     {/each}
