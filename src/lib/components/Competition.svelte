@@ -1,12 +1,13 @@
 <script>
-    import PanelBox from "$lib/components/PanelBox.svelte";
+    import Card from "$lib/components/CardPanelBox.svelte";
 
     export let competition;
     export let imgSource;
     export let description;
+    export let initials;
 </script>
 
-<PanelBox width="15em" height="20em" borderRadius="15px">
+<Card width="17em" height="23em" {imgSource} {initials}>
     <a href="#{competition.toLowerCase()}">
         <div class="competition-img">
             <img alt={competition} src={imgSource} />
@@ -14,7 +15,7 @@
         <p class="title-p">{competition}</p>
         <p class="desc-p">{description}</p>
     </a>
-</PanelBox>
+</Card>
 
 <style>
     a {

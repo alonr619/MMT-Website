@@ -11,6 +11,8 @@
     import Table from "$lib/components/Table.svelte";
     import PanelBox from "$lib/components/PanelBox.svelte";
     import Image from '$lib/components/Image.svelte';
+    import Card from '$lib/components/CardPanelBox.svelte';
+
     let windowWidth;
 </script>
 <svelte:head>
@@ -19,6 +21,7 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
+<div class="page"></div>
 <PageHeader title="Mustang Math Tournament [MMT] 2023" description="April 29, 2023: 9:00 AM - 4:30 PM PT" button_url="#competition" button_text="Learn More" button_id="registerForCompetition" target="" />
 
 <br />
@@ -27,27 +30,28 @@
 <Heading text="Competitions" size={2.5} textColor="#1B9AAA" />
 <div class="competition-wrapper">
     <FlexBox align="start">
-        <Tournament imgSource="/competitions/mmt-2023/washington.png" title="MMT Washington" location="Kent, WA" description="Held at Mill Creek Middle School, near where MM was founded, this event will be WAnderful" button_text = "MMT WA" button_url = "/competitions/mmt-2023/mmt-2023-WA" />
-        <Tournament imgSource="/competitions/mmt-2023/california.png" title="MMT California" location= "Sunnyvale, CA" description="Held at Fremont High School, the competition at this event will be CAptivating" button_text = "MMT CA" button_url = "/competitions/mmt-2023/mmt-2023-CA"/>
-        <Tournament imgSource="/competitions/mmt-2023/online.png" title="MMT Online" location="Online (Discord)" description="For whomever the in-person competitions are too far, compete with students around the nation in our online synchronous event" button_text = "MMT Online" button_url = "/competitions/mmt-2023/mmt-2023-online"/>
+        <Tournament initials="WA" imgSource="/competitions/mmt-2023/washington.png" title="MMT Washington" location="Kent, WA" description="Held at Mill Creek Middle School, near where MM was founded, this event will be WAnderful" button_text = "MMT WA" button_url = "/competitions/mmt-2023/mmt-2023-WA" />
+        <Tournament initials="CA" imgSource="/competitions/mmt-2023/california.png" title="MMT California" location= "Sunnyvale, CA" description="Held at Fremont High School, the competition at this event will be CAptivating" button_text = "MMT CA" button_url = "/competitions/mmt-2023/mmt-2023-CA"/>
+        <Tournament initials="O" imgSource="/competitions/mmt-2023/online.png" title="MMT Online" location="Online (Discord)" description="For whomever the in-person competitions are too far, compete with students around the nation in our online synchronous event" button_text = "MMT Online" button_url = "/competitions/mmt-2023/mmt-2023-online"/>
     </FlexBox>
 </div> 
 
 <br />
 <Heading text="What is MMT?" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
-    <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">The Mustang Math Tournament is a middle school math competition run for middle school students around the nation.
-            It is put together by Mustang Math, a 501(c)(3) nonprofit organization put together by high school and college students, including the directors of the Stanford and Berkeley Math Tournaments!<br /><br />
-            The tournament is <strong>centered around teamwork and collaboration</strong>, incentivizing students to work with their teams not only to navigate the <strong>challenging but interesting problems</strong> of the tournament, 
-            but also to develop strategies to master the unique and fun game-like rounds. With interesting and fun rounds including a logic-based puzzle round, a strategy-filled bingo round, a race-like gallop round, 
-            and our trademark 'Mystery Mare' round, our tournament is guaranteed to be <strong>enjoyable for any and all students who have an interest in mathematics</strong>.<br /><br />
-            Don't believe us? Check out some comments from past participants below!
-        </p>
-    </PanelBox>
+    <Card initials="MM">
+        <div style="padding: 20px;">
+            <p style="font-size: 1.5em; text-align: center;">The Mustang Math Tournament is a middle school math competition run for middle school students around the nation.
+                It is put together by Mustang Math, a 501(c)(3) nonprofit organization put together by high school and college students, including the directors of the Stanford and Berkeley Math Tournaments!<br /><br />
+                The tournament is <strong>centered around teamwork and collaboration</strong>, incentivizing students to work with their teams not only to navigate the <strong>challenging but interesting problems</strong> of the tournament, 
+                but also to develop strategies to master the unique and fun game-like rounds. With interesting and fun rounds including a logic-based puzzle round, a strategy-filled bingo round, a race-like gallop round, 
+                and our trademark 'Mystery Mare' round, our tournament is guaranteed to be <strong>enjoyable for any and all students who have an interest in mathematics</strong>.<br /><br />
+                Don't believe us? Check out some comments from past participants below!
+            </p>
+        </div>
+    </Card>
 </div>
 
-<br />
 <Heading text="Testimonials" size={2.5} textColor="#1B9AAA" />
 <div class="grid-three" style="margin-left: 10vw; margin-right: 10vw;">
     <div>
@@ -70,6 +74,26 @@
 <br /><br />
 
 <style>
+    .page { 
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-image: url("/competitions/mmt-2023/cardbackground.png");
+    }
+
+    .page::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(211, 223, 235, 0.96);
+    }
+
     li {
         list-style-type: disc;
         margin-left: 20px;
