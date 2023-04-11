@@ -11,7 +11,7 @@
     import PanelBox from "$lib/components/PanelBox.svelte";
     import Image from '$lib/components/Image.svelte';
     import CardPanelBox from '$lib/components/CardPanelBox.svelte';
-    import FlipCard from '$lib/components/FlipCard.svelte';
+    import FlipCard from '$lib/components/InfoBox.svelte';
 
     let windowWidth;
     const scheduleData = [
