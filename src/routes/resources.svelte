@@ -88,6 +88,7 @@
         ]}/>
 </section>
 
+<!--
 <section>
     <Heading text="Topic-Based Handouts" size={2.5} textColor="#1B9AAA" />
     <div style="margin-left: 10vw; margin-right: 10vw;">
@@ -122,6 +123,7 @@
     </div> 
     
 </section>
+-->
 
 <section>
     <Heading text="Youtube Videos" size={2.5} textColor="#1B9AAA" />
