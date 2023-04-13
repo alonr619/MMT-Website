@@ -57,7 +57,7 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="Mustang Math Tournament (MMT) Washington" description="April 29, 2023: 9:00 AM - 4:30 PM PT" button_url="https://contestdojo.com" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
+<PageHeader title="Mustang Math Tournament: Washington" description="April 29, 2023: 9:00 AM - 4:30 PM PT" button_url="https://contestdojo.com" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
 
 <br />
 
