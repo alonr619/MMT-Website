@@ -57,7 +57,7 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="Mustang Math Tournament: Washington" description="April 29, 2023: 9:00 AM - 4:30 PM PT" button_url="https://contestdojo.com" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
+<PageHeader title="Mustang Math Tournament: Washington" description="April 29, 2023: 9:00 AM - 4:30 PM PT" button_url="https://tinyurl.com/MMT2023Registration" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
 
 <br />
 
@@ -71,7 +71,7 @@
             <strong>LOCATION:</strong> Mill Creek Middle School (Kent, Washington)<br />
             <strong>EARLY HORSE COST:</strong> $10 per participant (Register before <strong>March 17th, 2023</strong> to receive the early horse price!)<br />
             <strong>NORMAL COST:</strong> $15 per participant (Register before <strong>April 19th, 2023</strong> to participate)<br /> <br />
-            <a href="https://docs.google.com/document/d/1FRL4DLS2RVbbMRKe2r0t7K2Rhjabwr45TdgM0ISDKnQ/edit?usp=sharing" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
+            <a href="https://tinyurl.com/MMT2023Registration" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
             <br /><br />
             <i><strong>*:</strong> Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4</i><br /><br />
             <i><strong>Note for International Students:</strong> Students not in Canada or the United States should participate in the international version of our tournament being run by SIMCC. Email us at <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a> if you're interested.</i><br /><br />
