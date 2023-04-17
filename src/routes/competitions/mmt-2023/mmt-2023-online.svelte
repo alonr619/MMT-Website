@@ -73,8 +73,8 @@
             <strong>TEAM SIZE:</strong> 3-4* <br />
             <strong>LOCATION:</strong> Online<br />
             <strong>EARLY HORSE COST:</strong> $10 per participant (Register before <strong>March 17th, 2023</strong> to receive the early horse price!)<br />
-            <strong>NORMAL COST:</strong> $15 per participant (Register before <strong>April 19th, 2023</strong> to participate)<br /> <br />
-            <strong>LATE COST:</strong> $20 per participant (Register before <strong>April 27th, 2023</strong> to participate)<br /> <br />
+            <strong>NORMAL COST:</strong> $15 per participant (Register before <strong>April 21st, 2023</strong> to participate)<br /> <br />
+            <strong>LATE COST:</strong> $20 per participant (Register before <strong>April 26th, 2023</strong> to participate)<br /> <br />
             <a href="https://tinyurl.com/MMT2023Registration" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
             <br /><br />
             <i><strong>*:</strong> Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4</i><br /><br />
