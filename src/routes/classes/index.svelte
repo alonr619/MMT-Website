@@ -44,15 +44,15 @@
     ]
     
     let topicsData = [
-        { "Week": "1", "Dates": "April 3-April 9, 2023", "Topics Covered": "TBD" },
-        { "Week": "2", "Dates": "April 10-April 16, 2023", "Topics Covered": "TBD" },
-        { "Week": "3", "Dates": "April 17-April 23, 2023", "Topics Covered": "TBD" },
+        { "Week": "1", "Dates": "April 3-April 9, 2023", "Topics Covered": "Divisibility, Multiples, and Factors" },
+        { "Week": "2", "Dates": "April 10-April 16, 2023", "Topics Covered": "Modular Arithmetic A" },
+        { "Week": "3", "Dates": "April 17-April 23, 2023", "Topics Covered": "Modular Arithmetic B" },
         { "Week": "Break", "Dates": "April 23-April 29, 2023", "Topics Covered": "MMT Weekend!" },
-	    { "Week": "4", "Dates": "April 30-May 6, 2023", "Topics Covered": "TBD" },
-        { "Week": "5", "Dates": "May 7-May 13, 2023", "Topics Covered": "TBD" },
-        { "Week": "6", "Dates": "May 14-May 20, 2023", "Topics Covered": "TBD" },
-        { "Week": "7", "Dates": "May 21-May 27, 2023", "Topics Covered": "TBD" },
-        { "Week": "8", "Dates": "May 28-June 3, 2023", "Topics Covered": "TBD" },
+	    { "Week": "4", "Dates": "April 30-May 6, 2023", "Topics Covered": "Primes, Fermat's Little Theorem, Inverses" },
+        { "Week": "5", "Dates": "May 7-May 13, 2023", "Topics Covered": "Basics of Counting" },
+        { "Week": "6", "Dates": "May 14-May 20, 2023", "Topics Covered": "Advanced Counting" },
+        { "Week": "7", "Dates": "May 21-May 27, 2023", "Topics Covered": "Probability" },
+        { "Week": "8", "Dates": "May 28-June 3, 2023", "Topics Covered": "Expected Value and Combinatorial Identities" },
     ]
 
     onMount(() => {
@@ -127,10 +127,10 @@
 <Heading text="Topic-Based Courses" size={2.5} textColor="#1B9AAA" />
 <div class="competition-wrapper">
     <FlexBox align="start">
-        <Competition imgSource="classes/fx.png" competition="Algebra" description="Invariably fun. Key topics include Polynomials, Sequences, and Inequalities." />
-        <Competition imgSource="classes/dice.png" competition="Combinatorics" description="You can always count on it. Key topics include Counting Techniques, Distinguishability, and Probability " />
-        <Competition imgSource="classes/compass.png" competition="Geometry" description="Just plane interesting. Key topics include Similar Triangles, Circles, and 3D Geometry" />
-        <Competition imgSource="classes/numbers.png" competition="Number Theory" description="Prime learning material. Key topics include Primes, Bases, Modular Arithmetic" />
+        <Competition initials="A" imgSource="classes/fx.png" competition="Algebra" description="Invariably fun. Key topics include Polynomials, Sequences, and Inequalities." />
+        <Competition initials="C" imgSource="classes/dice.png" competition="Combinatorics" description="You can always count on it. Key topics include Counting Techniques, Distinguishability, and Probability " />
+        <Competition initials="G" imgSource="classes/compass.png" competition="Geometry" description="Just plane interesting. Key topics include Similar Triangles, Circles, and 3D Geometry" />
+        <Competition initials="NT" imgSource="classes/numbers.png" competition="Number Theory" description="Prime learning material. Key topics include Primes, Bases, Modular Arithmetic" />
     </FlexBox>
 </div> <br />
 

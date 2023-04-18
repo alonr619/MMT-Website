@@ -48,6 +48,7 @@
             <div id="mc_embed_signup_scroll">
             <div>
                 <h2 style="margin: 0; padding:0;"><strong>Join Mustang Math Newsletter</strong></h2>
+                <br />
                 <p style="margin: 0; padding:0;">Our Monthly Newsletter will include a lot of information about our various classes, competitions, and events, as well as interesting math tidbits and information about other cool opportunities! We use location information to help tell you about local math opportunities, and we highly recommend you join!</p>
                 <br />
             </div>
@@ -402,7 +403,13 @@
     .button {
         width: 100% !important;
         margin: 0 !important;
+        padding: 4px !important;
+        border-radius: 50px !important;
         background-color: #2c9c39 !important;
+    }
+
+    .button:hover {
+        background-color: #34b543 !important;
     }
 
     #mc_embed_signup_scroll {
@@ -417,8 +424,15 @@
     #mc_embed_signup .mc-field-group input {
         border: 1px solid rgb(199, 199, 199);
         outline: none;
-        border-radius: 5px;
-        width: 100%;
+        border-radius: 50px;
+        width: 98% !important;
+        color: rgb(95, 95, 95);
+        font-size: 15px;
+        padding: 10px 0px 10px 7px !important;
+    }
+
+    #mc_embed_signup .mc-field-group select {
+        width: 100% !important;
     }
 
     #mc_embed_signup .mc-field-group select:focus,
