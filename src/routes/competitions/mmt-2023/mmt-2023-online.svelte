@@ -60,6 +60,7 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
+<div class="page"></div>
 <PageHeader title="Mustang Math Tournament (MMT) Online" description="April 29, 2023: 9:00 AM - 4:30 PM PT" button_url="https://tinyurl.com/MMT2023Registration" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
 
 <br />
