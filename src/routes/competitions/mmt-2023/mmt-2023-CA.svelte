@@ -21,7 +21,7 @@
         [ "4/29", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)" ],
         [ "4/29", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) " ],
         [ "4/29", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)" ],
-        [ "4/29", "1:00 PM-1:55 PM", "Mystery Mare (60 minutes)" ],
+        [ "4/29", "1:00 PM-1:55 PM", "Mystery Mare (45 minutes)" ],
         [ "4/29", "1:55 PM-3:20 PM", "Gallop (60 minutes)" ],
         [ "4/29", "3:20 PM-4:30 PM", "Optional Activities" ],
         [ "4/29", "4:30 PM", "Awards Ceremony" ]
