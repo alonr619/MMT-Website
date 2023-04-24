@@ -52,6 +52,8 @@
 
 <section>
     <Heading text="Past Exams" size={2.5} textColor="#1B9AAA" />
+    <DropdownArchive id="showDropdown" year="2023" tests={[
+        [["Example Herding Hexes"], [problems,"archive/2023/HerdingHexesExample.pdf"], ["Answers (Bucking Bingo Section)", "archive/2021/Answers.pdf"]]]}/>
     <DropdownArchive id="showDropdown" year="2022" tests={[
         [["Mounting Mayhem"], ["Rules","archive/2022/MountingMayhemRules.pdf"], ["Puzzles", "https://tinyurl.com/MMT2022MountingMayhemPuzzles"], [solutions, "https://tinyurl.com/MM2022MountingMayhemAnswers"]], 
         [["Bucking Bingo"], [problems,"archive/2022/BuckingBingoProblems.pdf"], [answers, "archive/2022/BuckingBingoAnswers.pdf"], [solutions, "archive/2022/BuckingBingoSolutions.pdf"]], 
