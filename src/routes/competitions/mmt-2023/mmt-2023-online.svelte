@@ -170,7 +170,7 @@
     <br />
     <FlipCard mainText="ROUND 2: Herding Hexes" id="showDropdown">
         <ol>
-            <li>The “Herding Hexes” Round will consist of 25-30 questions to be solved in 60 minutes.</li>
+            <li>The “Herding Hexes” Round will consist of 26 questions to be solved in 45 minutes.</li>
             <li>The questions will be laid out on a grid of connected hexagons, with more difficult problems being located furthest from the center.</li>
             <li>Your score in the round will be determined by the problems you get correct, with bonus points available for having more correct answers connected within the grid!</li>
             <li>You are not necessarily expected to solve all the questions in this round within the allotted time. Instead, we encourage you to strategize how you might use your time to maximize your points!</li>
@@ -186,8 +186,8 @@
     <br />
     <FlipCard mainText="ROUND 4: Gallop" id="showDropdown">
         <ol>
-            <li>The Gallop Round will consist of 24 questions to be solved in 60 minutes.</li>
-            <li>The questions will be divided into 8 sets of 3 questions each, and you <strong>must submit the answers to one set</strong> before accessing the problems for the next. This means you must strategize when to submit each set (incomplete or not) to ensure you get access to as many questions as possible.</li>
+            <li>The Gallop Round will consist of 27 questions to be solved in 60 minutes.</li>
+            <li>The questions will be divided into 9 sets of 3 questions each, and you <strong>must submit the answers to one set</strong> before accessing the problems for the next. This means you must strategize when to submit each set (incomplete or not) to ensure you get access to as many questions as possible.</li>
             <li>The problems will get progressively more difficult, and later problems will be worth more points.</li>
             <li>Submissions will be scored immediately and a live score of all participating teams will be available during the competition. Prepare for the adrenaline rush!</li>
         </ol>
@@ -198,10 +198,6 @@
     <p>
         <strong>Q:</strong> I'm a parent or a student, not a coach - how can I register? <br />
         <strong>A:</strong> MMT doesn't require you to be a coach! A parent can act as a coach (and register as a coach on ContestDojo) to create an organization and team(s) for their participating students. <strong>Students should not create coach accounts.</strong>
-    </p>
-    <p>
-        <strong>Q:</strong> I have students that are interested in participating, but they are not a full team of 4 and would like to be paired up with other incomplete teams! How can we do this?<br />
-        <strong>A:</strong> Use our <a target="_blank" href="https://tinyurl.com/MMT2023TeamFinder">Teammate Finder Spreadsheet</a>! There, you can input your parent/coach contact information and find others to join your team! <strong>Students should not create coach accounts.</strong>
     </p>
     <p>
         <strong>Q:</strong> Do we have to participate separately from our own homes? Or can our entire team meet up and take the test together? <br />
