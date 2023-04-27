@@ -115,18 +115,6 @@
                 <ol type="a">
                     <li>In order to help enforce this, we may require individuals to provide a solution for a problem during the competition - so keep track of your work!</li>
                 </ol>
-            <li>All communication will take place through the Discord platform.
-                <ol type="a">
-                    Scores, important information, documents, etc. will only be communicated through this platform on the day of the contest.
-                </ol>
-                <ol type="a">
-                All teams should be communicating with each other on this platform ONLY.
-    
-                </ol>
-                <ol type="a">
-                    <strong>Students under 13 years of age should use a parent-created and monitored Discord account.</strong>
-                </ol>
-            </li>
             <li>The team divisions are determined by the highest grade level amongst the team members. Teams with 1 or more 8th graders will be in the <strong>Stallion</strong> division, teams with 7th graders and below will be in the <strong>Colt</strong> division, and teams with 6th graders and below will be in the <strong>Foal</strong> division. Teams may <em>choose</em> to compete in a higher division, if they&rsquo;d like.</li>
         </ol>
     </FlipCard>
