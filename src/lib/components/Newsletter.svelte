@@ -47,7 +47,7 @@
         <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
             <div>
-                <h2 style="margin: 0; padding:0;"><strong>Join Mustang Math Newsletter</strong></h2>
+                <h2 style="margin: 0; padding:0;"><strong>Join Mustang Math's Newsletter!</strong></h2>
                 <br />
                 <p style="margin: 0; padding:0;">Our Monthly Newsletter will include a lot of information about our various classes, competitions, and events, as well as interesting math tidbits and information about other cool opportunities! We use location information to help tell you about local math opportunities, and we highly recommend you join!</p>
                 <br />
@@ -69,15 +69,15 @@
         <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
     </div>
     <div class="mc-field-group">
-        <label for="mce-GRADE">Student Grade (2022-23) <span class="asterisk">*</span></label>
-        <select name="GRADE" bind:value={grade} class="" id="mce-GRADE" required>
-            <option value=""></option>
-            <option value="4-">4-</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9+">9+</option>
+        <label for="mce-GRADE">Student Grade (2023-24) </label>
+        <select name="GRADE" class="" id="mce-GRADE">
+        <option value=""></option>
+        <option value="5-">5-</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9+">9+</option>
+    
         </select>
         <span id="mce-GRADE-HELPERTEXT" class="helper_text"></span>
     </div>
