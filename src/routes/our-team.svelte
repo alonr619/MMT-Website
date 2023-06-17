@@ -17,7 +17,7 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="Meet the Team" description="The Ones Making MMT Possible" button_url="https://contestdojo.com/" button_text="Register on ContestDojo!" id="registerOnContestDojo"/>
+<PageHeader title="Meet the Team" description="The Ones Making Mustang Math Possible" button_url="https://contestdojo.com/" button_text="Register on ContestDojo!" id="registerOnContestDojo"/>
 <section>
 	<FlexBox wrap={true}>
 		{#each Members as Member}
