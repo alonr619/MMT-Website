@@ -17,7 +17,7 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="Join the Mustang Math Team" description="Become a part of the herd!" button_url="https://tinyurl.com/JoinMMT2023" button_text="Join our Team!"  id="joinTheMustangMathTeam" />
+<PageHeader title="Join the Mustang Math Team" description="Become a part of the herd!" button_url="https://link.mustangmath.com/join" button_text="Join our Team!"  id="joinTheMustangMathTeam" />
 <br /> <br />
 
 <Heading text="What is MMT?" size={2.5} textColor="#1B9AAA" />
@@ -62,7 +62,7 @@
     <p>
         The <b style="color: #1B9AAA;">Tournament Development</b> team is responsible for <b style="color: #1B9AAA;">organization-level</b> communication and all communications relating to the tournament. In general, this will consist of <b style="color: #1B9AAA;">marketing</b> and <b style="color: #1B9AAA;">advertising</b>, working with <b style="color: #1B9AAA;">sponsors</b>, <b style="color: #1B9AAA;">communicating</b> with registrants of Mustang Math Tournament, and making sure that all partners are kept up-to-date with necessary information. Additionally, the Tournament Development team plans and manages all day-of operations for Mustang Math Tournament’s in-person competition(s).
     </p>
-    <p>For 2023-2024, we are looking to expand our in-person offerings to include Washington (Seattle), California (Bay), Illinois (Chicago), Massachusetts (Boston), Virginia (Alexandria/D.C./Baltimore), and Texas (Austin/Houston/Dallas). If you're from these areas and want to help give a wonderful contest experience to your local middle school students, highly consider joining!</p>
+</Dropdown>
 <Dropdown mainText="Curriculum Development" id="showDropdown">
     <p>
         The <b style="color: #1B9AAA;">Curriculum Development</b> team is in charge of <b style="color: #1B9AAA;">developing content</b> for all Mustang Math classes as well as for YouTube videos if needed. This may consist of planning lecture material, finding example problems, and <b style="color: #1B9AAA;">teaching students</b>. This is a new team this year, meaning that there is a large potential for innovation, adaptation, and new ideas.
