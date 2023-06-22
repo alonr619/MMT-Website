@@ -44,22 +44,21 @@
     ]
     
     let topicsData = [
-        { "Week": "1", "Dates": "April 3-April 9, 2023", "Topics Covered": "Divisibility, Multiples, and Factors" },
-        { "Week": "2", "Dates": "April 10-April 16, 2023", "Topics Covered": "Modular Arithmetic A" },
-        { "Week": "3", "Dates": "April 17-April 23, 2023", "Topics Covered": "Modular Arithmetic B" },
-        { "Week": "Break", "Dates": "April 23-April 29, 2023", "Topics Covered": "MMT Weekend!" },
-	    { "Week": "4", "Dates": "April 30-May 6, 2023", "Topics Covered": "Primes, Fermat's Little Theorem, Inverses" },
-        { "Week": "5", "Dates": "May 7-May 13, 2023", "Topics Covered": "Basics of Counting" },
-        { "Week": "6", "Dates": "May 14-May 20, 2023", "Topics Covered": "Advanced Counting" },
-        { "Week": "7", "Dates": "May 21-May 27, 2023", "Topics Covered": "Probability" },
-        { "Week": "8", "Dates": "May 28-June 3, 2023", "Topics Covered": "Expected Value and Combinatorial Identities" },
+        { "Week": "1", "Dates": "July 2-July 8, 2023", "Topics Covered": "Algebra A" },
+        { "Week": "2", "Dates": "July 9-July 15, 2023", "Topics Covered": "Algebra B" },
+        { "Week": "3", "Dates": "July 16-July 22, 2023", "Topics Covered": "Geometry A" },
+	    { "Week": "4", "Dates": "July 23-July 29, 2023", "Topics Covered": "Geometry B" },
+        { "Week": "5", "Dates": "July 30-August 5, 2023", "Topics Covered": "Counting & Probability A" },
+        { "Week": "6", "Dates": "August 6-August 12, 2023", "Topics Covered": "Counting & Probability B" },
+        { "Week": "7", "Dates": "August 13-August 19, 2023", "Topics Covered": "Number Theory A" },
+        { "Week": "8", "Dates": "August 20-August 26, 2023", "Topics Covered": "Number Theory B" },
     ]
 
     onMount(() => {
         if (windowWidth && windowWidth < 700) {
             for (var i = 0; i < topicsData.length; i++) {
                 var string = topicsData[i]["Dates"];
-                var stringBetter = string.replaceAll("January", "Jan.").replaceAll("February", "Feb.").replaceAll("March", "Mar.");
+                var stringBetter = string.replaceAll("January", "Jan.").replaceAll("February", "Feb.").replaceAll("March", "Mar.").replaceAll("April", "Apr.").replaceAll("June", "Jun.").replaceAll("July", "Jul.").replaceAll("August", "Aug.").replaceAll("September", "Sep.").replaceAll("October", "Oct.").replaceAll("November", "Nov.").replaceAll("December", "Dec.");
                 topicsData[i]["Dates"] = stringBetter;
             }
             for (var i = 0; i < scheduleData.length; i++) {
@@ -118,7 +117,7 @@
     <PanelBox>
         <p style="font-size: 1.5em; text-align: center;"><strong>Mustang Math classes</strong> bring together students from around the world with one thing in common: an outstanding passion for math. Our highly qualified instructors prepare students for competitions in a fun and engaging way. Beyond instruction, we want to build a <strong>community</strong> of students and teachers sharing their love of math.</p>
         <br />
-        <p style="font-size: 1.5em; text-align: center;">These classes will be run year-round and will be split into 4 main topics: Algebra, Combinatorics, Number Theory, and Geometry, each run for <strong>8 weeks</strong>. Instructive sessions will run for <strong>90 minutes</strong> every week over Zoom. Additionally, teachers will hold <strong>office hours</strong> each week, during which students can seek assistance with the content or ask any lingering questions. Each class will have <strong>10-15 students</strong> and, depending on the interest we receive, there may be multiple classes run for each level. The total cost for 8 weeks of classes will be <strong>$80</strong> with financial aid available.</p>
+        <p style="font-size: 1.5em; text-align: center;">These classes will be run year-round and will be split into 4 quarters: Algebra, Geometry, Combinatorics/Number Theory, and Problem Solving/AMC Prep, each run for <strong>8 weeks</strong>. Instructive sessions will run for <strong>90 minutes</strong> every week over Zoom. Additionally, teachers will hold <strong>office hours</strong> each week, during which students can seek assistance with the content or ask any lingering questions. Each class will have <strong>10-15 students</strong> and, depending on the interest we receive, there may be multiple classes run for each level. The total cost for 8 weeks of classes will be <strong>$80</strong> with financial aid available.</p>
     </PanelBox>
 </div> 
 <br />
@@ -128,18 +127,18 @@
 <div class="competition-wrapper">
     <FlexBox align="start">
         <Competition initials="A" imgSource="classes/fx.png" competition="Algebra" description="Invariably fun. Key topics include Polynomials, Sequences, and Inequalities." />
-        <Competition initials="C" imgSource="classes/dice.png" competition="Combinatorics" description="You can always count on it. Key topics include Counting Techniques, Distinguishability, and Probability " />
         <Competition initials="G" imgSource="classes/compass.png" competition="Geometry" description="Just plane interesting. Key topics include Similar Triangles, Circles, and 3D Geometry" />
-        <Competition initials="NT" imgSource="classes/numbers.png" competition="Number Theory" description="Prime learning material. Key topics include Primes, Bases, Modular Arithmetic" />
+        <Competition initials="C/NT" imgSource="classes/dice.png" competition="Combinatorics" description="You can always count on it. Key topics include Counting Techniques, Distinguishability, Probability, Primes, Bases, and Modular Arithmetic" />
+        <Competition initials="PS" imgSource="classes/numbers.png" competition="Problem Solving" description="Prime learning material. Key focus is on preparing students for the AMC Series and other contests that come in the Fall." />
     </FlexBox>
 </div> <br />
 
-<h1 id="discrete"><strong style="color: #1b9aaa;">Discrete Topics: Combinatorics + Number Theory</strong></h1>
+<h1 id="discrete"><strong style="color: #1b9aaa;">AMC Prep: Problem Solving</strong></h1>
 
 <Heading text="Class Details" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Our class will be on Discrete Topics (Combinatorics & Number Theory) and will start on the week of <strong>April 3, 2023</strong> and run through till <strong>June 3, 2023</strong>. There are currently 2 levels of classes planned, <strong>Beginner Discrete Topics (AMC 8 level)</strong> and <strong>Intermediate Discrete Topics (AMC 10/12 level)</strong>. See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://link.mustangmath.com/DiscreteRegistration"><strong>registration form</strong></a>.</p>
+        <p style="font-size: 1.5em; text-align: center;">Our class will be on Problem Solving Techniques/Competition Prep and will start on the week of <strong>July 2, 2023</strong> and run through the end of the week of <strong>August 20, 2023</strong>. There are currently 2 levels of classes planned, <strong>Beginner Problem Solving (AMC 8-10 prep)</strong> and <strong>Intermediate Problem Solving (AMC 10-12 level)</strong>. See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://link.mustangmath.com/ProblemSolvingRegistration"><strong>registration form</strong></a>.</p>
     </PanelBox>
 </div> <br />
 <br />
@@ -148,7 +147,7 @@
 <Heading text="Pricing" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Discrete will be <strong>$80</strong>.</p>
+        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Problem Solving will be <strong>$80</strong>.</p>
         <p style="font-size: 1.5em; text-align: center;">We charge for our classes for a multitude of reasons. First, while we are a fully volunteer-run nonprofit organization, we need money to continue <strong>improving upon and providing better classes, competitions, events, and materials</strong>! All money earned from MM Classes will go back into these projects for you, the students. Second, we work very hard to provide high quality classes, and we want students to take them seriously - ascribing a price value to the class naturally leads to more <strong>committed students</strong>.</p>
         <p style="font-size: 1.5em; text-align: center;">If the cost of these classes poses a significant burden to you, please reach out to us! <strong>Financial aid is available upon request</strong>.</p>
         
