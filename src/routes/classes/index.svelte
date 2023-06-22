@@ -108,7 +108,7 @@
 </div>
 -->
 
-<PageHeader title="Classes" description="High Quality Online Math Contest Prep Classes" button_url="https://link.mustangmath.com/DiscreteRegistration" button_text="Class Registration!" id="register"/>
+<PageHeader title="Classes" description="High Quality Online Math Contest Prep Classes" button_url="https://link.mustangmath.com/ProblemSolvingRegistration" button_text="Class Registration!" id="register"/>
 
 <br><br>
 
@@ -138,7 +138,7 @@
 <Heading text="Class Details" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Our class will be on Problem Solving Techniques/Competition Prep and will start on the week of <strong>July 2, 2023</strong> and run through the end of the week of <strong>August 20, 2023</strong>. There are currently 2 levels of classes planned, <strong>Beginner Problem Solving (AMC 8-10 prep)</strong> and <strong>Intermediate Problem Solving (AMC 10-12 level)</strong>. See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://link.mustangmath.com/ProblemSolvingRegistration"><strong>registration form</strong></a>.</p>
+        <p style="font-size: 1.5em; text-align: center;">Our class will be on Problem Solving Techniques/Competition Prep and will start on the week of <strong>July 2, 2023</strong> and run through the end of the week of <strong>August 20, 2023</strong>. There are currently 2 levels of classes planned, <strong>Beginner Problem Solving (AMC 8-10 prep)</strong> and <strong>Intermediate Problem Solving (AMC 10-12 prep)</strong>. See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://link.mustangmath.com/ProblemSolvingRegistration"><strong>registration form</strong></a>.</p>
     </PanelBox>
 </div> <br />
 <br />
