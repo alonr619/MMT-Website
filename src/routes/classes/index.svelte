@@ -138,7 +138,7 @@
 <Heading text="Class Details" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Our class will be on Problem Solving Techniques/Competition Prep and will start on the week of <strong>July 2, 2023</strong> and run through the end of the week of <strong>August 20, 2023</strong>. There are currently 2 levels of classes planned, <strong>Beginner Problem Solving (AMC 8-10 prep)</strong> and <strong>Intermediate Problem Solving (AMC 10-12 prep)</strong>. See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://link.mustangmath.com/ProblemSolvingRegistration"><strong>registration form</strong></a>.</p>
+        <p style="font-size: 1.5em; text-align: center;">Our class will be on Problem Solving Techniques/Competition Prep and will start on the week of <strong>July 2, 2023</strong> and run through the end of the week of <strong>August 20, 2023</strong>. There are currently 2 levels of classes planned, <strong>Beginner Problem Solving (AMC 8/10 prep)</strong> and <strong>Intermediate Problem Solving (AMC 12/AIME prep)</strong>. See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://link.mustangmath.com/ProblemSolvingRegistration"><strong>registration form</strong></a>.</p>
     </PanelBox>
 </div> <br />
 <br />
@@ -150,7 +150,6 @@
         <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Problem Solving will be <strong>$80</strong>.</p>
         <p style="font-size: 1.5em; text-align: center;">We charge for our classes for a multitude of reasons. First, while we are a fully volunteer-run nonprofit organization, we need money to continue <strong>improving upon and providing better classes, competitions, events, and materials</strong>! All money earned from MM Classes will go back into these projects for you, the students. Second, we work very hard to provide high quality classes, and we want students to take them seriously - ascribing a price value to the class naturally leads to more <strong>committed students</strong>.</p>
         <p style="font-size: 1.5em; text-align: center;">If the cost of these classes poses a significant burden to you, please reach out to us! <strong>Financial aid is available upon request</strong>.</p>
-        
     </PanelBox>
 </div> 
 <br />
