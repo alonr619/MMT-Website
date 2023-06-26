@@ -12,12 +12,12 @@
     let windowWidth;
 </script>
 <svelte:head>
-    <title>MM: Join Us</title>
+    <title>Join Mustang Math</title>
 </svelte:head>
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="Join the Mustang Math Team" description="Become a part of the herd!" button_url="https://link.mustangmath.com/join" button_text="Join our Team!"  id="joinTheMustangMathTeam" />
+<PageHeader title="Join the Mustang Math Team" description="Become a part of the herd!" button_url="https://link.mustangmath.com/RecruitmentInfo" button_text="Join our Team!"  id="joinTheMustangMathTeam" />
 <br /> <br />
 
 <Heading text="What is MMT?" size={2.5} textColor="#1B9AAA" />
