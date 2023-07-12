@@ -11,11 +11,12 @@
 
     async function setAction() {
         user.update((u) => (u = false));
-        if (firstName == "" || lastName == "" || email == "" || grade == "" || !email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
+        if (firstName == "" || lastName == "" || email == "" || !email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
             alert("Please fill out all required fields");
             return;
         } else {
             let formData = new FormData();
+
             formData.append('FNAME', firstName);
             formData.append('LNAME', lastName);
             formData.append('EMAIL', email);
@@ -24,15 +25,19 @@
             formData.append('STATE', state);
             formData.append('SCHOOL', school);
 
-            await fetch("https://mustangmath.us14.list-manage.com/subscribe/post?u=c80101147f7690b2cd88056c7&amp;id=10f0771adf&amp;f_id=007a87e0f0",
-                {
-                    body: formData,
-                    method: "post",
-                    mode: 'no-cors'
-                }
-            );
-            show = !show;
+            try {
+                await fetch("https://mustangmath.us14.list-manage.com/subscribe/post?u=c80101147f7690b2cd88056c7&amp;id=10f0771adf&amp;f_id=007a87e0f0",
+                    {
+                        body: formData,
+                        method: "post",
+                        mode: 'no-cors'
+                    }
+                )
+                show = !show;
             alert("Subscribed!");
+            } catch (e) {
+                console.log(e.message);
+            }
         }
     }
 </script>
@@ -52,6 +57,9 @@
                 <p style="margin: 0; padding:0;">Our Monthly Newsletter will include a lot of information about our various classes, competitions, and events, as well as interesting math tidbits and information about other cool opportunities! We use location information to help tell you about local math opportunities, and we highly recommend you join!</p>
                 <br />
             </div>
+            <br />
+            <a href="http://eepurl.com/h0AOmf" target="_blank" style="color: white; background-color: green; padding: 10px 10px;">Click here to sign up for the newsletter</a>
+            <!--
     <div class="mc-field-group">
         <label for="mce-FNAME">First Name <span class="asterisk">*</span></label>
         <input type="text" bind:value={firstName} name="FNAME" class="" id="mce-FNAME" required>
@@ -70,7 +78,7 @@
     </div>
     <div class="mc-field-group">
         <label for="mce-GRADE">Student Grade (2023-24) </label>
-        <select name="GRADE" class="" id="mce-GRADE">
+        <select name="GRADE" class="" id="mce-GRADE" bind:value={grade}>
         <option value=""></option>
         <option value="5-">5-</option>
     <option value="6">6</option>
@@ -363,7 +371,7 @@
             </div>
         </div>
     </div>
-    </div>
+    </div>-->
     </form>
     </div>
 </div>
@@ -385,13 +393,25 @@
 
     #mc_embed_signup{
         background:#fff; 
-        clear:left; 
-        width:400px;
+        clear:left;
+        width: 400px;
         padding: 5px;
         padding-right: 10px;
         border-radius: 15px;
         position: relative;
         grid-template-columns: 4fr;
+    }
+
+    @media only screen and (max-width: 450px) {
+        #mc_embed_signup {
+            width: 300px;
+        }
+    }
+
+    @media only screen and (max-width: 350px) {
+        #mc_embed_signup {
+            width: 90%;
+        }
     }
 
     #mc_embed_signup .foot {
