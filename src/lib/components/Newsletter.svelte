@@ -25,15 +25,19 @@
             formData.append('STATE', state);
             formData.append('SCHOOL', school);
 
-            await fetch("https://mustangmath.us14.list-manage.com/subscribe/post?u=c80101147f7690b2cd88056c7&amp;id=10f0771adf&amp;f_id=007a87e0f0",
-                {
-                    body: formData,
-                    method: "post",
-                    mode: 'no-cors'
-                }
-            );
-            show = !show;
+            try {
+                await fetch("https://mustangmath.us14.list-manage.com/subscribe/post?u=c80101147f7690b2cd88056c7&amp;id=10f0771adf&amp;f_id=007a87e0f0",
+                    {
+                        body: formData,
+                        method: "post",
+                        mode: 'no-cors'
+                    }
+                )
+                show = !show;
             alert("Subscribed!");
+            } catch (e) {
+                console.log(e.message);
+            }
         }
     }
 </script>
