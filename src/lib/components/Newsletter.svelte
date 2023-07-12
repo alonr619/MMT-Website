@@ -58,7 +58,7 @@
                 <br />
             </div>
             <br />
-            <a href="http://eepurl.com/h0AOmf" target="_blank">Click here to sign up for the newsletter</a>
+            <a href="http://eepurl.com/h0AOmf" target="_blank" style="color: white; background-color: green; padding: 10px 10px;">Click here to sign up for the newsletter</a>
             <!--
     <div class="mc-field-group">
         <label for="mce-FNAME">First Name <span class="asterisk">*</span></label>
