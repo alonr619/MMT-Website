@@ -11,11 +11,14 @@
 
     async function setAction() {
         user.update((u) => (u = false));
-        if (firstName == "" || lastName == "" || email == "" || grade == "" || !email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
+        if (firstName == "" || lastName == "" || email == "" || !email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
             alert("Please fill out all required fields");
             return;
         } else {
             let formData = new FormData();
+            
+            console.log(grade);
+
             formData.append('FNAME', firstName);
             formData.append('LNAME', lastName);
             formData.append('EMAIL', email);
@@ -69,8 +72,8 @@
         <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
     </div>
     <div class="mc-field-group">
-        <label for="mce-GRADE">Student Grade (2023-24) </label>
-        <select name="GRADE" class="" id="mce-GRADE">
+        <label for="mce-undefined">Student Grade (2023-24) </label>
+        <select name="GRADE" class="" id="mce-undefined" bind:value={grade}>
         <option value=""></option>
         <option value="5-">5-</option>
     <option value="6">6</option>
@@ -82,8 +85,8 @@
         <span id="mce-GRADE-HELPERTEXT" class="helper_text"></span>
     </div>
     <div class="mc-field-group">
-        <label for="mce-COUNTRY">Country </label>
-        <select name="COUNTRY" class="" bind:value={country} id="mce-COUNTRY">
+        <label for="mce-undefined">Country </label>
+        <select name="COUNTRY" class="" bind:value={country} id="mce-undefined">
             <option value=""></option>
             <option value="United States of America">United States of America</option>
             <option value="Canada">Canada</option>
@@ -385,13 +388,25 @@
 
     #mc_embed_signup{
         background:#fff; 
-        clear:left; 
-        width:400px;
+        clear:left;
+        width: 400px;
         padding: 5px;
         padding-right: 10px;
         border-radius: 15px;
         position: relative;
         grid-template-columns: 4fr;
+    }
+
+    @media only screen and (max-width: 450px) {
+        #mc_embed_signup {
+            width: 300px;
+        }
+    }
+
+    @media only screen and (max-width: 350px) {
+        #mc_embed_signup {
+            width: 90%;
+        }
     }
 
     #mc_embed_signup .foot {
