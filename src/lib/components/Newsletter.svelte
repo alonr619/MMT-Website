@@ -11,7 +11,7 @@
 
     async function setAction() {
         user.update((u) => (u = false));
-        if (firstName == "" || lastName == "" || email == "" || !email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
+        if (firstName == "" || lastName == "" || email == "" || grade == "" | !email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
             alert("Please fill out all required fields");
             return;
         } else {
@@ -25,19 +25,15 @@
             formData.append('STATE', state);
             formData.append('SCHOOL', school);
 
-            try {
-                await fetch("https://mustangmath.us14.list-manage.com/subscribe/post?u=c80101147f7690b2cd88056c7&amp;id=10f0771adf&amp;f_id=007a87e0f0",
-                    {
-                        body: formData,
-                        method: "post",
-                        mode: 'no-cors'
-                    }
-                )
-                show = !show;
+            await fetch("https://mustangmath.us14.list-manage.com/subscribe/post?u=c80101147f7690b2cd88056c7&amp;id=10f0771adf&amp;f_id=007a87e0f0",
+                {
+                    body: formData,
+                    method: "post",
+                    mode: 'no-cors'
+                }
+            );
+            show = !show;
             alert("Subscribed!");
-            } catch (e) {
-                console.log(e.message);
-            }
         }
     }
 </script>
@@ -57,9 +53,6 @@
                 <p style="margin: 0; padding:0;">Our Monthly Newsletter will include a lot of information about our various classes, competitions, and events, as well as interesting math tidbits and information about other cool opportunities! We use location information to help tell you about local math opportunities, and we highly recommend you join!</p>
                 <br />
             </div>
-            <br />
-            <a href="http://eepurl.com/h0AOmf" target="_blank" style="color: white; background-color: green; padding: 10px 10px;">Click here to sign up for the newsletter</a>
-            <!--
     <div class="mc-field-group">
         <label for="mce-FNAME">First Name <span class="asterisk">*</span></label>
         <input type="text" bind:value={firstName} name="FNAME" class="" id="mce-FNAME" required>
@@ -77,8 +70,8 @@
         <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
     </div>
     <div class="mc-field-group">
-        <label for="mce-GRADE">Student Grade (2023-24) </label>
-        <select name="GRADE" class="" id="mce-GRADE" bind:value={grade}>
+        <label for="mce-undefined">Student Grade (2023-24) <span class="asterisk">*</span></label>
+        <select name="GRADE" class="" id="mce-undefined" bind:value={grade}>
         <option value=""></option>
         <option value="5-">5-</option>
     <option value="6">6</option>
@@ -90,8 +83,8 @@
         <span id="mce-GRADE-HELPERTEXT" class="helper_text"></span>
     </div>
     <div class="mc-field-group">
-        <label for="mce-COUNTRY">Country </label>
-        <select name="COUNTRY" class="" bind:value={country} id="mce-COUNTRY">
+        <label for="mce-undefined">Country </label>
+        <select name="COUNTRY" class="" bind:value={country} id="mce-undefined">
             <option value=""></option>
             <option value="United States of America">United States of America</option>
             <option value="Canada">Canada</option>
@@ -371,7 +364,7 @@
             </div>
         </div>
     </div>
-    </div>-->
+    </div>
     </form>
     </div>
 </div>
