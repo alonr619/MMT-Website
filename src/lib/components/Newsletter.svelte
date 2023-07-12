@@ -16,8 +16,6 @@
             return;
         } else {
             let formData = new FormData();
-            
-            console.log(grade);
 
             formData.append('FNAME', firstName);
             formData.append('LNAME', lastName);
@@ -72,8 +70,8 @@
         <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
     </div>
     <div class="mc-field-group">
-        <label for="mce-undefined">Student Grade (2023-24) </label>
-        <select name="GRADE" class="" id="mce-undefined" bind:value={grade}>
+        <label for="mce-GRADE">Student Grade (2023-24) </label>
+        <select name="GRADE" class="" id="mce-GRADE" bind:value={grade}>
         <option value=""></option>
         <option value="5-">5-</option>
     <option value="6">6</option>
@@ -85,8 +83,8 @@
         <span id="mce-GRADE-HELPERTEXT" class="helper_text"></span>
     </div>
     <div class="mc-field-group">
-        <label for="mce-undefined">Country </label>
-        <select name="COUNTRY" class="" bind:value={country} id="mce-undefined">
+        <label for="mce-COUNTRY">Country </label>
+        <select name="COUNTRY" class="" bind:value={country} id="mce-COUNTRY">
             <option value=""></option>
             <option value="United States of America">United States of America</option>
             <option value="Canada">Canada</option>
