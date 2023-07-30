@@ -1,48 +1,62 @@
 <script>
-    export let pic;
-    export let name;
-    export let grade;
-    // export let position;
+  export let pic;
+  export let name;
+  export let grade;
+  export let email;
+  // export let position;
 
-    import Text from '$lib/components/Text.svelte';
-    import Heading from '$lib/components/Heading.svelte';
-    import PanelBox from '$lib/components/PanelBox.svelte';
+  import Text from "$lib/components/Text.svelte";
+  import Heading from "$lib/components/Heading.svelte";
+  import PanelBox from "$lib/components/PanelBox.svelte";
 </script>
 
 <PanelBox width="21em">
-    <div class="person-flex">
-        <div class="person-pic">
-            <img class="person-img" src={pic} alt={name} width="130" height="130" style="object-fit: cover; border-radius: 9999px;"/>
-        </div>
-        <div class="person-details">
-            <p style="color: black; font-size: 1.2em;font-weight:400;">{name}</p>
-        </div>
+  <div class="person-flex">
+    <div class="person-pic">
+      <img
+        class="person-img"
+        src={pic}
+        alt={name}
+        width="130"
+        height="130"
+        style="object-fit: cover; border-radius: 9999px;"
+      />
     </div>
+    <div class="person-details">
+      <p style="color: black; font-size: 1.2em;font-weight:400;">{name}</p>
+      <div style="margin:0px">
+        <a href="mailto:{email}?subject=Mail from our Website"
+          ><i class="fa-solid fa-envelope" />
+        </a>
+      </div>
+    </div>
+  </div>
 </PanelBox>
 
 <style>
-    .person-flex{
-        display: flex;
-        width: 20em;
-        height: fit-content;
-    }
-    .person-img{
-        margin: 3px;
-        max-height: 100%;
-    }
-    .person-pic {
-        min-width: 0;
-    }
-    .person-details {
-        display: flex;
-        flex-basis: 0;
-        flex-grow: 1;
-        align-items: center;
-        justify-content: center;
-        padding-left: 5px;
-        text-align: center;
-    }
-    .person-pic{
-        min-width:0;
-    }
+  .person-flex {
+    display: flex;
+    width: 20em;
+    height: fit-content;
+  }
+  .person-img {
+    margin: 3px;
+    max-height: 100%;
+  }
+  .person-pic {
+    min-width: 0;
+  }
+  .person-details {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+    text-align: center;
+  }
+  .person-pic {
+    min-width: 0;
+  }
 </style>
