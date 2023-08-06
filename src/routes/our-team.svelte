@@ -7,7 +7,7 @@
   import Person from "$lib/components/Person.svelte";
   import PageHeader from "$lib/components/PageHeader.svelte";
   import Alumni from "$lib/components/Alumni.svelte";
-  import Members from "$lib/Members.json";
+  import Members from "$lib/Members_New.json";
   let windowWidth;
 </script>
 
@@ -30,9 +30,18 @@
       <Person
         width="21em"
         pic={Member.image}
-        name={Member.fullName}
+        namef={Member.First}
+        namel={Member.Last}
         grade={Member.grade}
-        email={Member.email}
+        email={Member["Mustang Math Email"]}
+        pos={Member["Team Role"]}
+        rolePW={Member["Problem Writing"]}
+        roleT={Member["Technology"]}
+        roleD={Member["Design"]}
+        roleTD={Member["Tournament Development"]}
+        roleCD={Member["Curriculum Development"]}
+        roleCE={Member["Communitiy Engagement"]}
+        roleVP={Member["Video Production"]}
       />
     {/each}
   </FlexBox>
