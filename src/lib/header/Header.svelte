@@ -24,7 +24,7 @@
 
 	const navPages = [
 		{path: "/", text: "Home", hasSubPages: false},
-		{path: "/join", text: "Join Our Team", hasSubPages: false},
+		{path: "/join", text: "Join Us", hasSubPages: false},
 		{	path: "/competitions", 
 			text: "Competitions", 
 			hasSubPages: true,
