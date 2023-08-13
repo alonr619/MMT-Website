@@ -19,12 +19,12 @@
     courseExpanded = !courseExpanded;
   }
 
-  const MOBILE = 1200;
+  const MOBILE = 1120;
   const TITLE_BREAKPOINT = MOBILE + 150;
 
   const navPages = [
     { path: "/", text: "Home", hasSubPages: false },
-    { path: "/join", text: "Join Our Team", hasSubPages: false },
+    { path: "/join", text: "Join Us", hasSubPages: false },
     {
       path: "/competitions",
       text: "Competitions",
@@ -64,7 +64,7 @@
   />
 </svelte:head>
 
-<svelte:window bind:innerWidth={windowWidth} />
+<svelte:window bind:outerWidth={windowWidth} />
 
 <div class="navbar" style="position: relative;">
   <div
@@ -293,7 +293,7 @@
     display: block;
   }
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1120px) {
     .navbar {
       height: 50px;
     }
