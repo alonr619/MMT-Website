@@ -1,38 +1,49 @@
 <script>
-    export let url;
-    export let type;
-    export let icon;
-    export let text = false;
+  export let url;
+  export let type;
+  export let icon;
+  export let text = false;
 </script>
 
-<a href={url} target="_blank" rel="noopener noreferrer" class="social-link" class:text>
-    {#if text}
-        {icon}
-    {:else}
-        <i class="fa-{type} fa-{icon}"></i>
-    {/if}
+<a
+  href={url}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="social-link"
+  class:text
+>
+  {#if text}
+    {icon}
+  {:else}
+    <i class="fa-{type} fa-{icon}" />
+    <span class="hidden">{type} {icon}</span>
+  {/if}
 </a>
 
 <style>
+  .social-link {
+    padding: 10px;
+    color: white;
+    opacity: 0.6;
+  }
+
+  @media screen and (max-width: 900px) {
     .social-link {
-        padding: 10px;
-		color: white;
-		opacity: 0.6;
+      padding: 4px;
     }
+  }
 
-    @media screen and (max-width: 900px) {
-        .social-link {
-            padding: 4px;
-        }
-    }
+  .social-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+  }
 
-    .social-link:hover {
-        text-decoration: underline;
-        opacity: 0.8;
-    }
+  .text {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
 
-    .text {
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
+  .hidden {
+    display: none;
+  }
 </style>
