@@ -29,7 +29,7 @@
     {#each Members as Member}
       <Person
         width="21em"
-        pic={Member.image}
+        pic={"about-us-images/Arpit-Ranasaria.jpg"}
         namef={Member.First}
         namel={Member.Last}
         grade={Member.grade}
@@ -42,6 +42,8 @@
         roleCD={Member["Curriculum Development"]}
         roleCE={Member["Communitiy Engagement"]}
         roleVP={Member["Video Production"]}
+        bio={"Arpit Ranasaria is a Senior in College studying Computer Science. Besides teaching math to younger students, Arpit enjoys solving puzzles playing frisbee, and singing in his free time."}
+        pic2={"about-us-images/Amogh-Janganure.jpg"}
       />
     {/each}
   </FlexBox>
