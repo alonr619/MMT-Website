@@ -46,14 +46,25 @@
       </div>
       <div class="card-side-back person-details">
         <div class="person-pic">
-          <img
-            class="person-img"
-            src={pic2}
-            alt={namef}
-            width="130"
-            height="130"
-            style="object-fit: cover; border-radius: 9999px;"
-          />
+          {#if pic2}
+            <img
+              class="person-img"
+              src={pic2}
+              alt={namef}
+              width="130"
+              height="130"
+              style="object-fit: cover; border-radius: 9999px;"
+            />
+          {:else}
+            <img
+              class="person-img"
+              src={pic}
+              alt={namef}
+              width="130"
+              height="130"
+              style="object-fit: cover; border-radius: 9999px;"
+            />
+          {/if}
         </div>
 
         <div

@@ -32,38 +32,6 @@
     "bio": "Aarushi Mehrotra"
   },
   {
-    "email": "aileenl@mustangmath.com",
-    "first": "Aileen",
-    "last": "Liang",
-    "role": "Leads",
-    "pw": false,
-    "t": false,
-    "d": true,
-    "td": false,
-    "cd": false,
-    "ce": false,
-    "vp": false,
-    "pic1path": "logo.png",
-    "pic2path": "logo.png",
-    "bio": "Aileen Liang"
-  },
-  {
-    "email": "aland@mustangmath.com",
-    "first": "Alan",
-    "last": "Duan",
-    "role": "Leads",
-    "pw": true,
-    "t": true,
-    "d": false,
-    "td": false,
-    "cd": false,
-    "ce": false,
-    "vp": false,
-    "pic1path": "logo.png",
-    "pic2path": "logo.png",
-    "bio": "Alan Duan"
-  },
-  {
     "email": "alexc@mustangmath.com",
     "first": "Alex",
     "last": "Chen",
@@ -92,7 +60,6 @@
     "ce": false,
     "vp": true,
     "pic1path": "about-us-images/serious/Alon_Ragoler_Serious - Alon Ragoler.png",
-    "pic2path": "logo.png",
     "bio": "Alon is a junior at Eastlake High School in the state of Washington. Besides being a tech lead at Mustang Math, Alon enjoys playing piano and snare drum, running, and reading xkcd comics."
   },
   {
@@ -172,7 +139,6 @@
     "ce": false,
     "vp": false,
     "pic1path": "about-us-images/serious/Daniel_Chirakarn_Serious - Daniel Chirakarn.png",
-    "pic2path": "logo.png",
     "bio": "Daniel is a junior at Redmond High School in the state of Washington. Outside of Mustang Math, Daniel enjoys puzzle-hunting, Yu-Gi-Oh, playing video games, and is a huge Pokemon fan."
   },
   {
@@ -316,7 +282,6 @@
     "ce": true,
     "vp": false,
     "pic1path": "about-us-images/serious/rithwick_edited (1) - Rithwick Pal.jpg",
-    "pic2path": "logo.png",
     "bio": "Rithwick is a junior at Redmond High School in Washington. Besides being the Community Engagement Lead at MM, Rithwick enjoys playing sports, reading, and hanging out with his friends in his free time. His favorite math subject is Algebra and his favorite subject at school is AP World."
   },
   {
@@ -352,6 +317,38 @@
     "bio": "Yuuki Sawanoi"
   },
   {
+    "email": "aileenl@mustangmath.com",
+    "first": "Aileen",
+    "last": "Liang",
+    "role": "Mustang",
+    "pw": false,
+    "t": false,
+    "d": true,
+    "td": false,
+    "cd": false,
+    "ce": false,
+    "vp": false,
+    "pic1path": "logo.png",
+    "pic2path": "logo.png",
+    "bio": "Aileen Liang"
+  },
+  {
+    "email": "aland@mustangmath.com",
+    "first": "Alan",
+    "last": "Duan",
+    "role": "Mustang",
+    "pw": true,
+    "t": true,
+    "d": false,
+    "td": false,
+    "cd": false,
+    "ce": false,
+    "vp": false,
+    "pic1path": "logo.png",
+    "pic2path": "logo.png",
+    "bio": "Alan Duan"
+  },
+  {
     "email": "adris@mustangmath.com",
     "first": "Adri",
     "last": "Singh",
@@ -380,7 +377,6 @@
     "ce": false,
     "vp": false,
     "pic1path": "about-us-images/serious/Agastya_Vangala_Serious - Agastya V.png",
-    "pic2path": "logo.png",
     "bio": "Hi! I am Agastya, a junior at Lakeside School in Washington. I work in Curriculum Development, and my hobbies include solving physics problems, running, and punning."
   },
   {
@@ -428,7 +424,6 @@
     "ce": false,
     "vp": false,
     "pic1path": "about-us-images/serious/alexander_du_serious - Alexander Du.png",
-    "pic2path": "logo.png",
     "bio": "Alexander is a junior at Interlake High School in the state of Washington. Besides helping the tech team at Mustang Math, he also enjoys swimming, poker, and griefing on 2b2t."
   },
   {
@@ -444,7 +439,6 @@
     "ce": true,
     "vp": true,
     "pic1path": "about-us-images/serious/Ali_Fasihuddin_Serious.png - Ali Fasihuddin.png",
-    "pic2path": "logo.png",
     "bio": "Ali is a sophomore at West Career and Technical Academy in Nevada. Besides being a part of MM’s Community Engagement and Tournament Development teams, Ali enjoys playing golf, playing Valorant, watching football and basketball, participating in math competitions, learning about artificial intelligence, and hanging out with his two cats. "
   },
   {
@@ -588,7 +582,6 @@
     "ce": false,
     "vp": false,
     "pic1path": "about-us-images/serious/Claire_Shen_Serious - Claire Shen.png",
-    "pic2path": "logo.png",
     "bio": "Claire is a sophomore at the Wellington School in Ohio. Outside of writing problems and helping with the classes for Mustang Math, Claire enjoys playing the piano, Guzheng (a Chinese instrument), and doing robotics. Her favorite math subject is geometry."
   },
   {
@@ -604,7 +597,6 @@
     "ce": false,
     "vp": false,
     "pic1path": "about-us-images/serious/Daksh_Gupta_Serious - Daksh Gupta.png",
-    "pic2path": "logo.png",
     "bio": "Daksh is a junior at Interlake High School in Washington, USA. Outside of being involved in math competitions and organizations, he enjoys coding, biking, and playing tennis in his free time. "
   },
   {
@@ -764,7 +756,6 @@
     "ce": false,
     "vp": false,
     "pic1path": "about-us-images/serious/Grace_Tan_Serious - Grace Tan.png",
-    "pic2path": "logo.png",
     "bio": "Grace is a senior at Redmond High School in the state of Washington. Besides helping out with MMT, Grace enjoys playing tennis, taking pictures of nature, and programming. "
   },
   {
@@ -827,9 +818,8 @@
     "cd": false,
     "ce": false,
     "vp": false,
-    "pic1path": "logo.png",
-    "pic2path": "logo.png",
-    "bio": "Iris Zheng"
+    "pic1path": "about-us-images/serious/image0 (17) - Iris Zheng.jpeg",
+    "bio": "Iris is a sophomore at Redmond High School in the state of Washington. Besides writing problems for MM, she likes to spend her time on dance and music."
   },
   {
     "email": "jacksonl@mustangmath.com",
@@ -860,7 +850,6 @@
     "ce": true,
     "vp": false,
     "pic1path": "about-us-images/serious/Jacob_Zeng_Serious.png - Jacob Zeng.png",
-    "pic2path": "logo.png",
     "bio": "Jacob is a Sophomore at Weston High School in Massachusetts. Besides helping with Massachusetts' MM tournament, he enjoys rowing around North America and reading. His favorite math subject is algebra."
   },
   {
@@ -876,7 +865,6 @@
     "ce": false,
     "vp": false,
     "pic1path": "about-us-images/serious/Jerry_Sun_Serious - Jerry Sun.png",
-    "pic2path": "logo.png",
     "bio": "Jerry is a junior at Irvington High School in California. He writes problems for Mustang Math and helps with creating and editing class materials. In his spare time, he plays tennis and codes games."
   },
   {
@@ -908,7 +896,6 @@
     "ce": true,
     "vp": false,
     "pic1path": "about-us-images/serious/Julia_Gao_Serious - Julia Gao.PNG",
-    "pic2path": "logo.png",
     "bio": "Julia is a freshman at Fairview High School in Colorado. Besides working with Community Engagement at Mustang Math, she enjoys playing tennis and listening to music. Julia would like to study high-energy theoretical astrophysics in college."
   },
   {
@@ -1004,7 +991,6 @@
     "ce": false,
     "vp": false,
     "pic1path": "about-us-images/serious/Maggie_Shen_Serious - Maggie Shen.png",
-    "pic2path": "logo.png",
     "bio": "Maggie is a sophomore from Leland High, California. In addition to writing problems and helping with MM’s CA Tournament, Maggie enjoys playing piano, speaking and debating, and taking warm showers."
   },
   {
@@ -1132,7 +1118,6 @@
     "ce": false,
     "vp": false,
     "pic1path": "about-us-images/serious/Reese_Long_Serious - Reese Long.png",
-    "pic2path": "logo.png",
     "bio": "Reese is a junior at Tesla STEM High School in Washington. In Mustang Math, Reese helps with problem writing and activities, and in her free time, she likes to solve puzzles, draw, and do crosswords."
   },
   {
@@ -1148,7 +1133,6 @@
     "ce": false,
     "vp": false,
     "pic1path": "about-us-images/serious/Rishabh_Vakil_Serious - Rishabh Vakil.png",
-    "pic2path": "logo.png",
     "bio": "Rishabh is a sophomore at Interlake High School in Washington state. Besides helping out with MM's Washington Tournament, Rishabh enjoys hiking and playing his trumpet. He is often found staring at rocks and stars, and his favorite math subject is number theory."
   },
   {
@@ -1164,7 +1148,6 @@
     "ce": false,
     "vp": false,
     "pic1path": "about-us-images/serious/Rishabh_Venkataramani_Serious - Rishabh Venkataramani.png",
-    "pic2path": "logo.png",
     "bio": "Rishabh Venkataramani is a sophomore at Vista Del Lago High School in California. Besides writing problems for Mustang Math tournaments, Rishabh enjoys playing chess and basketball in his free time. "
   },
   {
@@ -1340,7 +1323,6 @@
     "ce": false,
     "vp": false,
     "pic1path": "about-us-images/serious/Srihari_Srikanth_Serious - Srihari Srikanth.png",
-    "pic2path": "logo.png",
     "bio": "Srihari is a senior at Eastlake High School in the state of Washington. Besides helping out with MM's Washington tournament and marketing, Srihari enjoys hiking, listening to music & playing soccer."
   },
   {
@@ -1420,7 +1402,6 @@
     "ce": false,
     "vp": false,
     "pic1path": "about-us-images/serious/Tiana_Chi_Serious - Tiana Chi.png",
-    "pic2path": "logo.png",
     "bio": "Tiana is a junior at Eastlake High School in the state of Washington. Besides helping out with MM's Washington Tournament as part of the tournament development team, Tiana enjoys hiking and reading in her free time."
   },
   {
@@ -1468,7 +1449,6 @@
     "ce": false,
     "vp": false,
     "pic1path": "about-us-images/serious/Vivian_Li_Serious - Vivian Li.png",
-    "pic2path": "logo.png",
     "bio": "Vivian is a sophomore at Tesla STEM High School in Washington state. While she's part of the design team in MM, she also enjoys drawing in various mediums in her free time, as well as debating."
   },
   {
