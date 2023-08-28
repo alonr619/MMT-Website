@@ -29,21 +29,20 @@
     {#each Members as Member}
       <Person
         width="21em"
-        pic={"about-us-images/Arpit-Ranasaria.jpg"}
-        namef={Member.First}
-        namel={Member.Last}
-        grade={Member.grade}
-        email={Member["Mustang Math Email"]}
-        pos={Member["Team Role"]}
-        rolePW={Member["Problem Writing"]}
-        roleT={Member["Technology"]}
-        roleD={Member["Design"]}
-        roleTD={Member["Tournament Development"]}
-        roleCD={Member["Curriculum Development"]}
-        roleCE={Member["Communitiy Engagement"]}
-        roleVP={Member["Video Production"]}
-        bio={"Arpit Ranasaria is a Senior in College studying Computer Science. Besides teaching math to younger students, Arpit enjoys solving puzzles playing frisbee, and singing in his free time."}
-        pic2={"about-us-images/Amogh-Janganure.jpg"}
+        pic={Member.pic1path}
+        namef={Member.first}
+        namel={Member.last}
+        email={Member.email}
+        pos={Member.role}
+        rolePW={Member.pw}
+        roleT={Member.t}
+        roleD={Member.d}
+        roleTD={Member.td}
+        roleCD={Member.cd}
+        roleCE={Member.ce}
+        roleVP={Member.vp}
+        bio={Member.bio}
+        pic2={Member.pic2path}
       />
     {/each}
   </FlexBox>

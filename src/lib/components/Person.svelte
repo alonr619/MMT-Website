@@ -62,7 +62,7 @@
         >
           <!-- <Tooltip title={email}> 
           <BoopAction boopParams={{ y: 5, timing: 200 }}> -->
-          <a href="mailto:{email}?subject=Mail from our Website">
+          <a href="mailto:{email}?subject=Mail to {namef} {namel}">
             <i class="fa-solid fa-envelope icon" />
           </a>
           <!--  </BoopAction>
@@ -70,7 +70,7 @@
 
           <!-- <Tooltip title="Problem Writing"> 
           <BoopAction boopParams={{ y: 5, timing: 200 }}> -->
-          {#if rolePW == "TRUE"}
+          {#if rolePW == "true"}
             <i class="fa-solid fa-calculator icon" />
           {/if}
           <!--  </BoopAction>
@@ -78,7 +78,7 @@
 
           <!-- <Tooltip title="Technology"> 
           <BoopAction boopParams={{ y: 5, timing: 200 }}> -->
-          {#if roleT == "TRUE"}
+          {#if roleT == "true"}
             <i class="fa-solid fa-computer icon" />
           {/if}
           <!--  </BoopAction>
@@ -86,7 +86,7 @@
 
           <!-- <Tooltip title="Design"> 
           <BoopAction boopParams={{ y: 5, timing: 200 }}> -->
-          {#if roleD == "TRUE"}
+          {#if roleD == "true"}
             <i class="fa-solid fa-pen-fancy icon" />
           {/if}
           <!--  </BoopAction>
@@ -94,7 +94,7 @@
 
           <!-- <Tooltip title="Tournament Development"> 
           <BoopAction boopParams={{ y: 5, timing: 200 }}> -->
-          {#if roleTD == "TRUE"}
+          {#if roleTD == "true"}
             <i class="fa-solid fa-pen-ruler icon" />
           {/if}
           <!--  </BoopAction>
@@ -102,7 +102,7 @@
 
           <!-- <Tooltip title="Curriculum Development"> 
           <BoopAction boopParams={{ y: 5, timing: 200 }}> -->
-          {#if roleCD == "TRUE"}
+          {#if roleCD == "true"}
             <i class="fa-solid fa-chalkboard-user icon" />
           {/if}
           <!--  </BoopAction>
@@ -110,7 +110,7 @@
 
           <!-- <Tooltip title="Community Engagement"> 
           <BoopAction boopParams={{ y: 5, timing: 200 }}> -->
-          {#if roleCE == "TRUE"}
+          {#if roleCE == "true"}
             <i class="fa-solid fa-people-group icon" />
           {/if}
           <!--  </BoopAction>
@@ -118,7 +118,7 @@
 
           <!-- <Tooltip title="Video Presentation"> 
           <BoopAction boopParams={{ y: 5, timing: 200 }}> -->
-          {#if roleVP == "TRUE"}
+          {#if roleVP == "true"}
             <i class="fa-solid fa-camera-retro icon" />
           {/if}
           <!--  </BoopAction>
