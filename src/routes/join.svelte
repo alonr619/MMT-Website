@@ -17,8 +17,14 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader title="Join the Mustang Math Team" description="Become a part of the herd!" button_url="https://link.mustangmath.com/RecruitmentInfo" button_text="Join our Team!"  id="joinTheMustangMathTeam" />
+<PageHeader title="Join the Mustang Math Team" description="Become a part of the herd!" button_url="https://forms.gle/vFz396ivct19bSRA8" button_text="Join our Team!"  id="joinTheMustangMathTeam" />
 <br /> <br />
+
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox>
+        <p style="font-size: 1.5em; text-align: center;"><strong>Notice:</strong><br /> We are mainly recruiting for Tournament Development from Massachusetts, Illinois, and British Columbia. However, you may get the opportunity to join other teams.</p>
+    </PanelBox>
+</div> <br />
 
 <Heading text="What is MMT?" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
@@ -38,7 +44,7 @@
 <Heading text="In-Person Locations" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">For 2023-2024, we are looking to expand our in-person offerings to include Washington (Seattle), California (Bay), Illinois (Chicago), Massachusetts (Boston), Virginia (Alexandria/D.C./Baltimore), and Texas (Austin/Houston/Dallas). These locations would be responsible for running an in-person location of MMT 2023 to the students from their state and nearby areas, and will also receive support from Mustang Math to run other similar events. If you're from these areas and want to help give a wonderful contest experience to your local middle school students, highly consider joining!</p>
+        <p style="font-size: 1.5em; text-align: center;">For 2023-2024, we are looking to expand our in-person offerings to include Washington (Seattle), California (Bay), Illinois (Chicago), British Columbia (Vancouver), and Massachusetts (Boston). These locations would be responsible for running an in-person location of MMT 2023 to the students from their state and nearby areas, and will also receive support from Mustang Math to run other similar events. If you're from these areas and want to help give a wonderful contest experience to your local middle school students, highly consider joining!</p>
     </PanelBox>
 </div> <br />
 
