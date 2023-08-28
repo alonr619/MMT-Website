@@ -33,7 +33,7 @@
         namef={Member.first}
         namel={Member.last}
         email={Member.email}
-        pos={Member.role}
+        role={Member.role}
         rolePW={Member.pw}
         roleT={Member.t}
         roleD={Member.d}
