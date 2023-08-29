@@ -12,6 +12,8 @@
   function mouseMove(event) {
     x = event.pageX + 5;
     y = event.pageY + 5;
+    //console.log(x);
+    //console.log(y);
   }
   function mouseLeave() {
     isHovered = false;
@@ -22,6 +24,7 @@
   on:mouseover={mouseOver}
   on:mouseleave={mouseLeave}
   on:mousemove={mouseMove}
+  on:focus={mouseOver}
 >
   <slot />
 </div>
