@@ -18,3 +18,4 @@ To contribute, choose an issue from the Taskade to work on and create a new bran
 - [Svelte Tutorial](https://svelte.dev/tutorial/basics)
 - [SvelteKit](https://kit.svelte.dev)
 - [Children with Svelte Components](https://linguinecode.com/post/how-to-pass-children-elements-in-svelte)
+ 
