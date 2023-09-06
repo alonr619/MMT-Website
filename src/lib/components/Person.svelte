@@ -51,7 +51,7 @@
               alt={namef}
               width="130"
               height="130"
-              style="object-fit: cover; border-radius: 100px;"
+              style="object-fit: cover; border-radius: 25px;"
             />
           </div>
           <div class="icons">
@@ -131,7 +131,7 @@
               alt={namef}
               width="130"
               height="130"
-              style="object-fit: cover; border-radius: 9999px;"
+              style="object-fit: cover; border-radius: 25px;"
             />
           {:else}
             <img
@@ -140,7 +140,7 @@
               alt={namef}
               width="130"
               height="130"
-              style="object-fit: cover; border-radius: 9999px;"
+              style="object-fit: cover; border-radius: 25px;"
             />
           {/if}
         </div>
@@ -295,14 +295,13 @@
 
   .flip-card:hover .card-side-inner {
     transform: rotateY(180deg);
-    background-color: rgb(201, 207, 200);
   }
 
   .card-side-front,
   .card-side-back {
     position: absolute;
     border-radius: 10px;
-    background-color: rgb(232, 238, 231);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
