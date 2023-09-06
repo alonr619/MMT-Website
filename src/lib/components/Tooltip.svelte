@@ -30,7 +30,9 @@
 </div>
 
 {#if isHovered}
-  <div style="top: {y}px; left: {x}px;" class="tooltip">{title}</div>
+  <div style="top: {30}px; left: 0px;" class="tooltip">
+    {title}
+  </div>
 {/if}
 
 <style>
@@ -41,5 +43,6 @@
     border-radius: 4px;
     padding: 4px;
     position: absolute;
+    z-index: 2;
   }
 </style>

@@ -8,7 +8,33 @@
   import PageHeader from "$lib/components/PageHeader.svelte";
   import Alumni from "$lib/components/Alumni.svelte";
   import Members from "$lib/Members_New.json";
+  import MultiSelect from "svelte-multiselect";
+  import Heading from "$lib/components/Heading.svelte";
+  import { text } from "svelte/internal";
+
+  let roles = {
+    pw: "Problem Writing",
+    t: "Tech",
+    d: "Design",
+    td: "Tournament Development",
+    cd: "Curriculum Development",
+    ce: "Community Engagement",
+    vp: "Video Production",
+  };
+
   let windowWidth;
+
+  let allRoles = Object.keys(roles);
+  let selected = allRoles;
+  $: displayedMembers = Members.filter((user) => {
+    let containsAllRoles = false;
+    selected.forEach((role) => {
+      if (user[role]) {
+        containsAllRoles = true;
+      }
+    });
+    return containsAllRoles;
+  });
 </script>
 
 <svelte:head>
@@ -25,10 +51,31 @@
   id="registerOnContestDojo"
 />
 <section>
+  <br /> <br />
+  <Heading text="Our Team" size={4} textColor="#1B9AAA" />
+  <br /> <br />
+
+  <Heading text="Filter by Roles" size={2} textColor="#1B9AAA" />
+
+  <div class="multiselect-box">
+    <div class="multiselect">
+      <MultiSelect
+        id="select-roles"
+        options={allRoles}
+        placeholder="Take your pick..."
+        bind:selected
+        let:option
+      >
+        <p class="option">{roles[option]}</p>
+      </MultiSelect>
+    </div>
+  </div>
+
   <FlexBox wrap={true}>
-    {#each Members as Member}
+    {#each displayedMembers as Member}
       <Person
         width="21em"
+        displayname={Member.displayname}
         pic={Member.pic1path}
         namef={Member.first}
         namel={Member.last}
@@ -147,5 +194,23 @@
 <style>
   li {
     font-size: 1.5em;
+  }
+
+  .multiselect-box {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+  }
+
+  .multiselect {
+    padding: 10px;
+    width: 60%;
+  }
+
+  .option {
+    padding: 0;
+    margin: 0;
   }
 </style>

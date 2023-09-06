@@ -13,6 +13,17 @@
   export let roleVP;
   export let bio;
   export let pic2;
+  export let displayname;
+
+  let textsize = 0.9;
+  let len = bio.length;
+  if (len > 400) {
+    textsize = 0.4;
+  } else if (len > 300) {
+    textsize = 0.6;
+  } else if (len > 200) {
+    textsize = 0.8;
+  }
 
   // export let position;
   import BoopAction from "$lib/components/BoopAction.svelte";
@@ -37,14 +48,83 @@
               style="object-fit: cover; border-radius: 9999px;"
             />
           </div>
+          <div class="icons">
+            <Tooltip title={email}>
+              <BoopAction boopParams={{ y: 5, timing: 200 }}>
+                <a href="mailto:{email}?subject=Mail to {namef} {namel}">
+                  <i class="fa-solid fa-envelope icon" />
+                </a>
+              </BoopAction>
+            </Tooltip>
 
+            <Tooltip title="Problem Writing">
+              <BoopAction boopParams={{ y: 5, timing: 200 }}>
+                {#if rolePW == true}
+                  <i class="fa-solid fa-calculator icon" />
+                {/if}
+              </BoopAction>
+            </Tooltip>
+
+            <Tooltip title="Technology">
+              <BoopAction boopParams={{ y: 5, timing: 200 }}>
+                {#if roleT == true}
+                  <i class="fa-solid fa-computer icon" />
+                {/if}
+              </BoopAction>
+            </Tooltip>
+
+            <Tooltip title="Design">
+              <BoopAction boopParams={{ y: 5, timing: 200 }}>
+                {#if roleD == true}
+                  <i class="fa-solid fa-pen-fancy icon" />
+                {/if}
+              </BoopAction>
+            </Tooltip>
+
+            <Tooltip title="Tournament Development">
+              <BoopAction boopParams={{ y: 5, timing: 200 }}>
+                {#if roleTD == true}
+                  <i class="fa-solid fa-pen-ruler icon" />
+                {/if}
+              </BoopAction>
+            </Tooltip>
+
+            <Tooltip title="Curriculum Development">
+              <BoopAction boopParams={{ y: 5, timing: 200 }}>
+                {#if roleCD == true}
+                  <i class="fa-solid fa-chalkboard-user icon" />
+                {/if}
+              </BoopAction>
+            </Tooltip>
+
+            <Tooltip title="Community Engagement">
+              <BoopAction boopParams={{ y: 5, timing: 200 }}>
+                {#if roleCE == true}
+                  <i class="fa-solid fa-people-group icon" />
+                {/if}
+              </BoopAction>
+            </Tooltip>
+
+            <Tooltip title="Video Presentation">
+              <BoopAction boopParams={{ y: 5, timing: 200 }}>
+                {#if roleVP == true}
+                  <i class="fa-solid fa-camera-retro icon" />
+                {/if}
+              </BoopAction>
+            </Tooltip>
+          </div>
           <p class="name">
-            {namef}
-            {namel}
+            {displayname}
           </p>
         </div>
       </div>
       <div class="card-side-back person-details">
+        <a href="mailto:{email}?subject=Mail to {namef} {namel}">
+          <i
+            class="fa-solid fa-envelope icon"
+            style="position:absolute; top:20px; left:240px; font-size:2.5em;"
+          />
+        </a>
         <div class="person-pic">
           {#if pic2}
             <img
@@ -68,16 +148,8 @@
         </div>
 
         <div
-          style="display:flex;align-items:right;margin-top:0.3em;margin-bottom:0em;"
+          style="display:flex;align-items:right;margin-top:0.3em;margin-bottom:0em;position:relative;"
         >
-          <Tooltip title={email}>
-            <BoopAction boopParams={{ y: 5, timing: 200 }}>
-              <a href="mailto:{email}?subject=Mail to {namef} {namel}">
-                <i class="fa-solid fa-envelope icon" />
-              </a>
-            </BoopAction>
-          </Tooltip>
-
           <Tooltip title="Problem Writing">
             <BoopAction boopParams={{ y: 5, timing: 200 }}>
               {#if rolePW == true}
@@ -134,7 +206,7 @@
             </BoopAction>
           </Tooltip>
         </div>
-        <p class="bio">
+        <p class="bio" style="font-size: {textsize}em;">
           {bio}
         </p>
       </div>
@@ -147,6 +219,8 @@
     display: grid;
     width: 20em;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
   }
   .person-img {
     margin: 3px;
@@ -192,11 +266,14 @@
 
   .flip-card:hover .card-side-inner {
     transform: rotateY(180deg);
+    background-color: rgb(201, 207, 200);
   }
 
   .card-side-front,
   .card-side-back {
     position: absolute;
+    border-radius: 10px;
+    background-color: rgb(232, 238, 231);
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
@@ -204,7 +281,6 @@
   }
 
   .card-side-front {
-    background-color: transparent;
     color: black;
   }
 
@@ -215,12 +291,22 @@
 
   .bio {
     margin: 5px;
-    font-size: 0.9em;
   }
 
   .name {
     color: rgb(5, 93, 33);
     font-size: 1.9em;
     font-weight: 400;
+  }
+
+  .icons {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .icon:hover {
+    color: #59e888;
   }
 </style>

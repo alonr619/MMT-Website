@@ -18,14 +18,13 @@
 
 <style>
   .panel-box {
-    background-color: #ffffff;
-    box-shadow: 5px 10px 10px rgb(0, 0, 0, 0.1);
+    background-color: transparent;
     opacity: 0.8;
     transition: 0.5s;
   }
 
   .panel-box:hover {
-    background-color: #ecf7f0;
+    background-color: transparent;
     opacity: 1;
   }
 </style>
