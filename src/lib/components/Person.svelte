@@ -37,6 +37,12 @@
   <div class="flip-card">
     <div class="card-side-inner">
       <div class="card-side-front person-details">
+        <a href="mailto:{email}?subject=Mail to {namef} {namel}">
+          <i
+            class="fa-solid fa-envelope icon"
+            style="position:absolute; top:8px; right:10px; font-size:2.2em;"
+          />
+        </a>
         <div class="person">
           <div class="person-pic">
             <img
@@ -45,70 +51,62 @@
               alt={namef}
               width="130"
               height="130"
-              style="object-fit: cover; border-radius: 9999px;"
+              style="object-fit: cover; border-radius: 100px;"
             />
           </div>
           <div class="icons">
-            <Tooltip title={email}>
-              <BoopAction boopParams={{ y: 5, timing: 200 }}>
-                <a href="mailto:{email}?subject=Mail to {namef} {namel}">
-                  <i class="fa-solid fa-envelope icon" />
-                </a>
-              </BoopAction>
-            </Tooltip>
-
-            <Tooltip title="Problem Writing">
-              <BoopAction boopParams={{ y: 5, timing: 200 }}>
-                {#if rolePW == true}
-                  <i class="fa-solid fa-calculator icon" />
-                {/if}
-              </BoopAction>
-            </Tooltip>
-
-            <Tooltip title="Technology">
-              <BoopAction boopParams={{ y: 5, timing: 200 }}>
-                {#if roleT == true}
-                  <i class="fa-solid fa-computer icon" />
-                {/if}
-              </BoopAction>
-            </Tooltip>
-
             <Tooltip title="Design">
               <BoopAction boopParams={{ y: 5, timing: 200 }}>
                 {#if roleD == true}
-                  <i class="fa-solid fa-pen-fancy icon" />
+                  <i class="fa-solid fa-pen-fancy icon design" />
                 {/if}
               </BoopAction>
             </Tooltip>
-
-            <Tooltip title="Tournament Development">
-              <BoopAction boopParams={{ y: 5, timing: 200 }}>
-                {#if roleTD == true}
-                  <i class="fa-solid fa-pen-ruler icon" />
-                {/if}
-              </BoopAction>
-            </Tooltip>
-
-            <Tooltip title="Curriculum Development">
-              <BoopAction boopParams={{ y: 5, timing: 200 }}>
-                {#if roleCD == true}
-                  <i class="fa-solid fa-chalkboard-user icon" />
-                {/if}
-              </BoopAction>
-            </Tooltip>
-
+  
             <Tooltip title="Community Engagement">
               <BoopAction boopParams={{ y: 5, timing: 200 }}>
                 {#if roleCE == true}
-                  <i class="fa-solid fa-people-group icon" />
+                  <i class="fa-solid fa-people-group icon community-engagement" />
                 {/if}
               </BoopAction>
             </Tooltip>
-
-            <Tooltip title="Video Presentation">
+  
+            <Tooltip title="Curriculum Development">
+              <BoopAction boopParams={{ y: 5, timing: 200 }}>
+                {#if roleCD == true}
+                  <i class="fa-solid fa-chalkboard-user icon curriculum-development" />
+                {/if}
+              </BoopAction>
+            </Tooltip>
+  
+            <Tooltip title="Problem Writing">
+              <BoopAction boopParams={{ y: 5, timing: 200 }}>
+                {#if rolePW == true}
+                  <i class="fa-solid fa-calculator icon problem-writing" />
+                {/if}
+              </BoopAction>
+            </Tooltip>
+  
+            <Tooltip title="Technology">
+              <BoopAction boopParams={{ y: 5, timing: 200 }}>
+                {#if roleT == true}
+                  <i class="fa-solid fa-computer icon technology" />
+                {/if}
+              </BoopAction>
+            </Tooltip>
+  
+            <Tooltip title="Tournament Development">
+              <BoopAction boopParams={{ y: 5, timing: 200 }}>
+                {#if roleTD == true}
+                  <i class="fa-solid fa-pen-ruler icon tournament-development" />
+                {/if}
+              </BoopAction>
+            </Tooltip>          
+  
+            <Tooltip title="Video Production">
               <BoopAction boopParams={{ y: 5, timing: 200 }}>
                 {#if roleVP == true}
-                  <i class="fa-solid fa-camera-retro icon" />
+                  <i class="fa-solid fa-camera-retro icon video-production" />
                 {/if}
               </BoopAction>
             </Tooltip>
@@ -122,7 +120,7 @@
         <a href="mailto:{email}?subject=Mail to {namef} {namel}">
           <i
             class="fa-solid fa-envelope icon"
-            style="position:absolute; top:20px; left:240px; font-size:2.5em;"
+            style="position:absolute; top:8px; right:10px; font-size:2.2em;"
           />
         </a>
         <div class="person-pic">
@@ -150,42 +148,11 @@
         <div
           style="display:flex;align-items:right;margin-top:0.3em;margin-bottom:0em;position:relative;"
         >
-          <Tooltip title="Problem Writing">
-            <BoopAction boopParams={{ y: 5, timing: 200 }}>
-              {#if rolePW == true}
-                <i class="fa-solid fa-calculator icon" />
-              {/if}
-            </BoopAction>
-          </Tooltip>
-
-          <Tooltip title="Technology">
-            <BoopAction boopParams={{ y: 5, timing: 200 }}>
-              {#if roleT == true}
-                <i class="fa-solid fa-computer icon" />
-              {/if}
-            </BoopAction>
-          </Tooltip>
 
           <Tooltip title="Design">
             <BoopAction boopParams={{ y: 5, timing: 200 }}>
               {#if roleD == true}
-                <i class="fa-solid fa-pen-fancy icon" />
-              {/if}
-            </BoopAction>
-          </Tooltip>
-
-          <Tooltip title="Tournament Development">
-            <BoopAction boopParams={{ y: 5, timing: 200 }}>
-              {#if roleTD == true}
-                <i class="fa-solid fa-pen-ruler icon" />
-              {/if}
-            </BoopAction>
-          </Tooltip>
-
-          <Tooltip title="Curriculum Development">
-            <BoopAction boopParams={{ y: 5, timing: 200 }}>
-              {#if roleCD == true}
-                <i class="fa-solid fa-chalkboard-user icon" />
+                <i class="fa-solid fa-pen-fancy icon design" />
               {/if}
             </BoopAction>
           </Tooltip>
@@ -193,15 +160,47 @@
           <Tooltip title="Community Engagement">
             <BoopAction boopParams={{ y: 5, timing: 200 }}>
               {#if roleCE == true}
-                <i class="fa-solid fa-people-group icon" />
+                <i class="fa-solid fa-people-group icon community-engagement" />
               {/if}
             </BoopAction>
           </Tooltip>
 
-          <Tooltip title="Video Presentation">
+          <Tooltip title="Curriculum Development">
+            <BoopAction boopParams={{ y: 5, timing: 200 }}>
+              {#if roleCD == true}
+                <i class="fa-solid fa-chalkboard-user icon curriculum-development" />
+              {/if}
+            </BoopAction>
+          </Tooltip>
+
+          <Tooltip title="Problem Writing">
+            <BoopAction boopParams={{ y: 5, timing: 200 }}>
+              {#if rolePW == true}
+                <i class="fa-solid fa-calculator icon problem-writing" />
+              {/if}
+            </BoopAction>
+          </Tooltip>
+
+          <Tooltip title="Technology">
+            <BoopAction boopParams={{ y: 5, timing: 200 }}>
+              {#if roleT == true}
+                <i class="fa-solid fa-computer icon technology" />
+              {/if}
+            </BoopAction>
+          </Tooltip>
+
+          <Tooltip title="Tournament Development">
+            <BoopAction boopParams={{ y: 5, timing: 200 }}>
+              {#if roleTD == true}
+                <i class="fa-solid fa-pen-ruler icon tournament-development" />
+              {/if}
+            </BoopAction>
+          </Tooltip>          
+
+          <Tooltip title="Video Production">
             <BoopAction boopParams={{ y: 5, timing: 200 }}>
               {#if roleVP == true}
-                <i class="fa-solid fa-camera-retro icon" />
+                <i class="fa-solid fa-camera-retro icon video-production" />
               {/if}
             </BoopAction>
           </Tooltip>
@@ -247,6 +246,36 @@
     font-size: 1.2em;
     margin: 3px;
   }
+
+  .design {
+    color: #9bd87e;
+  }
+
+  .community-engagement {
+    color: #7ed8af;
+  }
+
+  .curriculum-development {
+    color: #7eb5d8;
+  }
+
+  .problem-writing {
+    color: #957ed8;
+  }
+
+  .technology {
+    color: #d87ece;
+  }
+
+  .tournament-development {
+    color: #d87e80;
+  }
+
+  .video-production {
+    color: #d8c87e;
+  }
+
+
 
   .flip-card {
     background-color: transparent;
@@ -307,6 +336,6 @@
   }
 
   .icon:hover {
-    color: #59e888;
+    filter: brightness(90%)
   }
 </style>
