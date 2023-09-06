@@ -969,7 +969,6 @@
   },
   {
     "email": "krishnai@mustangmath.com",
-    "displayname": "Krishna Iyer",
     "first": "Krishna",
     "last": "Iyer",
     "role": "Mustang",
@@ -1357,8 +1356,8 @@
     "cd": false,
     "ce": false,
     "vp": false,
-    "pic1path": "about-us-images/serious/Sophia_Smola Matsui_Serious.png",
-    "pic2path": "about-us-images/silly/Sophia_Smola Matsui_Silly.png",
+    "pic1path": "about-us-images/serious/Sophia_Smola_Matsui_Serious.png",
+    "pic2path": "about-us-images/silly/Sophia_Smola_Matsui_Silly.png",
     "bio": "Sophia is a freshman at Homestead High School in California. Besides helping out in the tournament development of MMT, she enjoys watching anime, playing the violin and doing judo."
   },
   {
@@ -1541,5 +1540,25 @@
     "pic1path": "logo.png",
     "pic2path": "logo.png",
     "bio": "Zain Shields"
+  },
+  {
+    "pic1path": "logo.png",
+    "pic2path": "logo.png"
+  },
+  {
+    "pic1path": "logo.png",
+    "pic2path": "logo.png"
+  },
+  {
+    "pic1path": "logo.png",
+    "pic2path": "logo.png"
+  },
+  {
+    "pic1path": "logo.png",
+    "pic2path": "logo.png"
+  },
+  {
+    "pic1path": "logo.png",
+    "pic2path": "logo.png"
   }
 ]
