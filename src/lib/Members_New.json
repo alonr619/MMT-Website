@@ -734,7 +734,7 @@
     "cd": false,
     "ce": false,
     "vp": false,
-    "pic1path": "about-us-images/serious/Ethan_(Yushen) Li_Serious.png",
+    "pic1path": "about-us-images/serious/Ethan_(Yushen)_Li_Serious.png",
     "bio": "Ethan is a sophomore at Redmond High School in the state of Washington. Besides being on the Problem Writing team at MM, Ethan enjoys playing violin, badminton, listening to music, and losing the game (1434). His favorite math subjects are geometry and number theory. "
   },
   {
@@ -969,6 +969,7 @@
   },
   {
     "email": "krishnai@mustangmath.com",
+    "displayname": "Krishna Iyer",
     "first": "Krishna",
     "last": "Iyer",
     "role": "Mustang",
@@ -1438,8 +1439,8 @@
     "cd": false,
     "ce": false,
     "vp": false,
-    "pic1path": "logo.png",
-    "pic2path": "logo.png",
+    "pic1path": "about-us-images/serious/Sydney_Park_Serious.png",
+    "pic2path": "about-us-images/silly/Sydney_Park_Silly.png",
     "bio": "Sydney is a junior at the California Academy of Math and Science. She's part of the Design and Community Engagement team in Mustang Math, and she enjoys drawing, photography, music, and figure skating! Her favorite math topics include algebra and statistics. "
   },
   {
