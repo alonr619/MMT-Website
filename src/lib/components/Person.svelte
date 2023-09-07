@@ -18,11 +18,21 @@
   let textsize = 0.9;
   let len = bio.length;
   if (len > 400) {
-    textsize = 0.4;
-  } else if (len > 300) {
     textsize = 0.6;
+  } else if (len > 300) {
+    textsize = 0.7;
   } else if (len > 200) {
     textsize = 0.8;
+  }
+
+  let namesize = 1.8;
+  let namelen = displayname.length;
+  if (namelen > 18) {
+    namesize = 1.6;
+  } else if (namelen < 16) {
+    namesize = 2.0;
+  } else if (namelen < 14) {
+    namesize = 2.2;
   }
 
   // export let position;
@@ -111,7 +121,7 @@
               </BoopAction>
             </Tooltip>
           </div>
-          <p class="name">
+          <p class="name" style="font-size: {namesize}em;">
             {displayname}
           </p>
         </div>
@@ -216,13 +226,13 @@
 <style>
   .person {
     display: grid;
-    width: 20em;
+    width: 18em;
     height: fit-content;
     display: flex;
     flex-direction: column;
   }
   .person-img {
-    margin: 3px;
+    margin: 1px;
     max-height: 100%;
   }
   .person-pic {
@@ -235,7 +245,8 @@
     flex-grow: 1;
     align-items: center;
     justify-content: center;
-    padding-left: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     text-align: center;
   }
   .person-pic {
@@ -275,8 +286,6 @@
     color: #d8c87e;
   }
 
-
-
   .flip-card {
     background-color: transparent;
     width: 300px;
@@ -289,7 +298,7 @@
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 1.4s;
+    transition: transform 1.5s;
     transform-style: preserve-3d;
   }
 
@@ -318,12 +327,12 @@
   }
 
   .bio {
-    margin: 5px;
+    margin: 1px;
   }
 
   .name {
     color: rgb(5, 93, 33);
-    font-size: 1.9em;
+    font-size: 1.8em;
     font-weight: 400;
   }
 
