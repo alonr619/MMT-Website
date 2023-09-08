@@ -44,15 +44,20 @@
   import Tooltip from "$lib/components/Tooltip.svelte";
 </script>
 
-<PanelBox width="21em">
+<div
+  class="panel-box"
+  style="width: 20; height: 20; margin: 5px; border-radius: 5px; box-sizing: border-box;"
+>
   <div class="flip-card">
     <div class="card-side-inner">
       <div class="card-side-front person-details">
-        <a href="mailto:{email}?subject=Mail to {namef} {namel}">
-          <i
-            class="fa-solid fa-envelope icon"
-            style="position:absolute; top:8px; right:10px; font-size:2.2em; color: {themecolor}"
-          />
+        <a href="mailto:{email}?subject=Mail to {namef} {namel}" style="position:absolute; top:8px; right:10px;">
+          <BoopAction boopParams={{ y: 5, timing: 200 }}>
+            <i
+              class="fa-solid fa-envelope icon"
+              style="font-size:2.2em; color: {themecolor}"
+            />
+          </BoopAction>
         </a>
         <div class="person">
           <div class="person-pic">
@@ -134,12 +139,16 @@
         </div>
       </div>
       <div class="card-side-back person-details">
-        <a href="mailto:{email}?subject=Mail to {namef} {namel}">
-          <i
-            class="fa-solid fa-envelope icon"
-            style="position:absolute; top:8px; right:10px; font-size:2.2em; color: {themecolor}"
-          />
-        </a>
+        
+          <a href="mailto:{email}?subject=Mail to {namef} {namel}" style="position:absolute; top:8px; right:10px;">
+            <BoopAction boopParams={{ y: 5, timing: 200 }}>
+              <i
+                class="fa-solid fa-envelope icon"
+                style="font-size:2.2em; color: {themecolor}"
+              />
+            </BoopAction>
+          </a>
+        
         <div class="person-pic">
           {#if pic2}
             <img
@@ -229,7 +238,7 @@
       </div>
     </div>
   </div>
-</PanelBox>
+</div>
 
 <style>
   .person {
@@ -255,8 +264,6 @@
     flex-grow: 1;
     align-items: center;
     justify-content: center;
-    padding-left: 5px;
-    padding-right: 5px;
     text-align: center;
   }
   .person-pic {
@@ -304,7 +311,7 @@
 
   .card-side-inner {
     position: relative;
-    width: 300px;
+    width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 1.5s;
@@ -337,7 +344,7 @@
   }
 
   .bio {
-    margin: 1px;
+    margin: 5px;
   }
 
   .name {

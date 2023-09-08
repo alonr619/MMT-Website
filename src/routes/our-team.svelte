@@ -7,16 +7,17 @@
   import Person from "$lib/components/Person.svelte";
   import PageHeader from "$lib/components/PageHeader.svelte";
   import Alumni from "$lib/components/Alumni.svelte";
-  import Members from "$lib/Members_New.json";
+  import Members from "$lib/Members.json";
   import MultiSelect from "svelte-multiselect";
   import Heading from "$lib/components/Heading.svelte";
   import { text } from "svelte/internal";
   import Tabs from "$lib/components/Tabs.svelte";
   import PanelBox from "$lib/components/PanelBox.svelte";
+  import {LightenDarkenColor} from "$lib/utils/LightenDarkenColors.svelte";
 
   // List of tab items with labels, values and assigned components
   let items = [
-    { label: "All Members", role: "all", value: 1, hex: "#d3dde3" },
+    { label: "All Members", role: "all", value: 1, hex: "#cccccc" },
     { label: "Community Engagement", role: "ce", value: 2, hex: "#d7efcb" },
     { label: "Curriculum Development", role: "cd", value: 3, hex: "#cbefdf" },
     { label: "Design", role: "d", value: 4, hex: "#cbe1ef" },
@@ -50,33 +51,7 @@
     return containsAllRoles;
   });
 
-  function LightenDarkenColor(col, amt) {
-    var usePound = false;
-
-    if (col[0] == "#") {
-      col = col.slice(1);
-      usePound = true;
-    }
-
-    var num = parseInt(col, 16);
-
-    var r = (num >> 16) + amt;
-
-    if (r > 255) r = 255;
-    else if (r < 0) r = 0;
-
-    var b = ((num >> 8) & 0x00ff) + amt;
-
-    if (b > 255) b = 255;
-    else if (b < 0) b = 0;
-
-    var g = (num & 0x0000ff) + amt;
-
-    if (g > 255) g = 255;
-    else if (g < 0) g = 0;
-
-    return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16);
-  }
+  
 </script>
 
 <svelte:head>
@@ -93,18 +68,19 @@
   id="registerOnContestDojo"
 />
 <section>
-  <br /> <br />
-  <Heading text="Our Team" size={4} textColor="#1B9AAA" />
-  <br /> <br />
+  <br>  
 
-  <Tabs {items} let:item={tab}>
+
+  <Tabs {items} let:item={tab} style="margin-left: 2vw; margin-right: 2vw; border-radius: 20px">
     <div class="tab">
-      <PanelBox style="background-color: {tab.hex}; opacity: 1">
+      <div style="background-color: {tab.hex};">
+        <br>
         <Heading
           text={tab.label}
           size={3}
           textColor={LightenDarkenColor(tab.hex, -120)}
         />
+        <br>
         <FlexBox wrap={true}>
           {#each displayedMembers as Member}
             {#if tab.role === "all"}
@@ -150,7 +126,7 @@
             {/if}
           {/each}
         </FlexBox>
-      </PanelBox>
+      </div>
     </div>
   </Tabs>
 
@@ -254,25 +230,7 @@
 </section>
 
 <style>
-  li {
-    font-size: 1.5em;
-  }
-
-  .multiselect-box {
-    text-align: center;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 2rem;
-  }
-
-  .multiselect {
-    padding: 10px;
-    width: 60%;
-  }
-
-  .option {
-    padding: 0px;
-    margin: 0px;
+  .tab {
+    border-radius: 200px;
   }
 </style>

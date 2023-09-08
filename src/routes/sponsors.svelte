@@ -7,7 +7,27 @@
     import PanelBox from '$lib/components/PanelBox.svelte';
     import Link from '$lib/components/Link.svelte';
     import sponsorTiers from '$lib/sponsorTiers';
+
+    let windowWidth;
+    let windowHeight;
+    let learnMoreIsVisible = true;
+    let y;
+    let scrollOpacity = 1;
+    $: scrollOpacity = Math.max((windowHeight - 2 * y) / windowHeight, 0);
+    $: learnMoreIsVisible = scrollOpacity > 0;
+
+    function scrollToElem(e) {
+        e.scrollIntoView({
+            behavior: "smooth",
+        });
+    }
 </script>
+
+<svelte:window
+    bind:scrollY={y}
+    bind:innerWidth={windowWidth}
+    bind:innerHeight={windowHeight}
+/>
 
 <svelte:head>
 	<title>Partners and Sponsors</title>
@@ -15,6 +35,7 @@
 
 <PageHeader title="Partners & Sponsors" description="The Organizations Making MM Possible" button_url="
 https://tinyurl.com/MMSponsors2023" button_text="Sponsor Mustang Math!" button_id="sponsorMM"/>
+
 
 
 <Section>
@@ -53,3 +74,6 @@ https://tinyurl.com/MMSponsors2023" button_text="Sponsor Mustang Math!" button_i
             </FlexBox>
     </Section>
 {/each}
+<style>
+    
+</style>
