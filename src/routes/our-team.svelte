@@ -11,54 +11,50 @@
   import MultiSelect from "svelte-multiselect";
   import Heading from "$lib/components/Heading.svelte";
   import { text } from "svelte/internal";
-
-  import Tab1 from "$lib/components/Tab1.svelte";
-	import Tab2 from "$lib/components/Tab2.svelte";
-	import Tab3 from "$lib/components/Tab3.svelte";
   import Tabs from "$lib/components/Tabs.svelte";
   import PanelBox from "$lib/components/PanelBox.svelte";
 
   // List of tab items with labels, values and assigned components
   let items = [
-    { label: "All teams",
+    { label: "All Members",
       role: "all",
       value: 1,
-      hex: "#CCCCCC"
+      hex: "#d3dde3"
 		},
     { label: "Community Engagement",
       role: "ce",
       value: 2,
-      hex: "#9bd87e"
+      hex: "#d7efcb"
 		},
     { label: "Curriculum Development",
       role: "cd",
       value: 3,
-      hex: "#7ed8af"
+      hex: "#cbefdf"
 		},
     { label: "Design",
       role: "d",
       value: 4,
-      hex: "#7eb5d8"
+      hex: "#cbe1ef"
 		},
     { label: "Problem Writing",
       role: "pw",
       value: 5,
-      hex: "#957ed8"
+      hex: "#d5cbef"
 		},
     { label: "Technology",
       role: "t",
       value: 6,
-      hex: "#d87ece"
+      hex: "#efcbeb"
 		},
     { label: "Tournament Development",
       role: "td",
       value: 7,
-      hex: "#d87e80"
+      hex: "#efcbcc"
 		},
     { label: "Video Production",
       role: "vp",
       value: 8,
-      hex: "#d8c87e"
+      hex: "#efe9cb"
 		}
   ];
 
@@ -85,6 +81,36 @@
     });
     return containsAllRoles;
   });
+
+  function LightenDarkenColor(col, amt) {
+    var usePound = false;
+
+    if (col[0] == "#") {
+        col = col.slice(1);
+        usePound = true;
+    }
+
+    var num = parseInt(col,16);
+
+    var r = (num >> 16) + amt;
+
+    if (r > 255) r = 255;
+    else if  (r < 0) r = 0;
+
+    var b = ((num >> 8) & 0x00FF) + amt;
+
+    if (b > 255) b = 255;
+    else if  (b < 0) b = 0;
+
+    var g = (num & 0x0000FF) + amt;
+
+    if (g > 255) g = 255;
+    else if (g < 0) g = 0;
+
+    return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
+
+  }
+
 </script>
 
 <svelte:head>
@@ -107,8 +133,8 @@
 
   <Tabs {items} let:item={tab}>
     <div class="tab">
-      <PanelBox style="background-color: {tab.hex}">
-        <span class="label">{tab.label}</span>
+      <PanelBox style="background-color: {tab.hex}; opacity: 1">
+        <Heading text={tab.label} size={3} textColor={LightenDarkenColor(tab.hex, -120)} />
         <FlexBox wrap={true}>
           {#each displayedMembers as Member}
             {#if tab.role === "all"}
@@ -129,6 +155,7 @@
                 roleVP={Member.vp}
                 bio={Member.bio}
                 pic2={Member.pic2path}
+                themecolor={LightenDarkenColor(tab.hex, -120)}
               />
             {:else if Member[tab.role]}
               <Person
@@ -148,6 +175,7 @@
                 roleVP={Member.vp}
                 bio={Member.bio}
                 pic2={Member.pic2path}
+                themecolor={LightenDarkenColor(tab.hex, -120)}
               />
             {/if}
           {/each}

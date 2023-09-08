@@ -14,6 +14,7 @@
   export let bio;
   export let pic2;
   export let displayname;
+  export let themecolor;
 
   let textsize = 0.9;
   let len = bio.length;
@@ -50,7 +51,7 @@
         <a href="mailto:{email}?subject=Mail to {namef} {namel}">
           <i
             class="fa-solid fa-envelope icon"
-            style="position:absolute; top:8px; right:10px; font-size:2.2em;"
+            style="position:absolute; top:8px; right:10px; font-size:2.2em; color: {themecolor}"
           />
         </a>
         <div class="person">
@@ -121,7 +122,7 @@
               </BoopAction>
             </Tooltip>
           </div>
-          <p class="name" style="font-size: {namesize}em;">
+          <p class="name" style="font-size: {namesize}em; color:{themecolor}">
             {displayname}
           </p>
         </div>
@@ -130,7 +131,7 @@
         <a href="mailto:{email}?subject=Mail to {namef} {namel}">
           <i
             class="fa-solid fa-envelope icon"
-            style="position:absolute; top:8px; right:10px; font-size:2.2em;"
+            style="position:absolute; top:8px; right:10px; font-size:2.2em; color: {themecolor}"
           />
         </a>
         <div class="person-pic">
@@ -253,7 +254,6 @@
     min-width: 0;
   }
   .icon {
-    color: #65c083;
     font-size: 1.2em;
     margin: 3px;
   }
@@ -331,7 +331,6 @@
   }
 
   .name {
-    color: rgb(5, 93, 33);
     font-size: 1.8em;
     font-weight: 400;
   }
