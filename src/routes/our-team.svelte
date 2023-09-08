@@ -154,6 +154,7 @@
     </div>
   </Tabs>
 
+  <!--
   <h1>Other Contributors</h1>
   <div style="display: flex; justify-content: center; align-items: center;">
     {#if windowWidth > 800}
@@ -249,6 +250,7 @@
       college="Carnegie Mellon University"
     />
   </FlexBox>
+-->
 </section>
 
 <style>
@@ -270,7 +272,7 @@
   }
 
   .option {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
   }
 </style>

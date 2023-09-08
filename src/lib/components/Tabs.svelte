@@ -31,6 +31,7 @@
     border: 1px solid #dee2e6;
     border-radius: 0 0 0.5rem 0.5rem;
     border-top: 0;
+    margin-top: 0px;
   }
   ul {
     display: flex;
@@ -47,7 +48,7 @@
     padding-left: 10px;
   }
   li {
-    margin-bottom: -11px;
+    margin-bottom: -7px;
     border-radius: 17px 17px 0 0;
     margin-right: 3px;
   }
