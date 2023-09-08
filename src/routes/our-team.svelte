@@ -12,6 +12,56 @@
   import Heading from "$lib/components/Heading.svelte";
   import { text } from "svelte/internal";
 
+  import Tab1 from "$lib/components/Tab1.svelte";
+	import Tab2 from "$lib/components/Tab2.svelte";
+	import Tab3 from "$lib/components/Tab3.svelte";
+  import Tabs from "$lib/components/Tabs.svelte";
+  import PanelBox from "$lib/components/PanelBox.svelte";
+
+  // List of tab items with labels, values and assigned components
+  let items = [
+    { label: "All teams",
+      role: "all",
+      value: 1,
+      hex: "#CCCCCC"
+		},
+    { label: "Community Engagement",
+      role: "ce",
+      value: 2,
+      hex: "#9bd87e"
+		},
+    { label: "Curriculum Development",
+      role: "cd",
+      value: 3,
+      hex: "#7ed8af"
+		},
+    { label: "Design",
+      role: "d",
+      value: 4,
+      hex: "#7eb5d8"
+		},
+    { label: "Problem Writing",
+      role: "pw",
+      value: 5,
+      hex: "#957ed8"
+		},
+    { label: "Technology",
+      role: "t",
+      value: 6,
+      hex: "#d87ece"
+		},
+    { label: "Tournament Development",
+      role: "td",
+      value: 7,
+      hex: "#d87e80"
+		},
+    { label: "Video Production",
+      role: "vp",
+      value: 8,
+      hex: "#d8c87e"
+		}
+  ];
+
   let roles = {
     pw: "Problem Writing",
     t: "Tech",
@@ -55,44 +105,59 @@
   <Heading text="Our Team" size={4} textColor="#1B9AAA" />
   <br /> <br />
 
-  <Heading text="Filter by Roles" size={2} textColor="#1B9AAA" />
-
-  <div class="multiselect-box">
-    <div class="multiselect">
-      <MultiSelect
-        id="select-roles"
-        options={allRoles}
-        placeholder="Take your pick..."
-        bind:selected
-        let:option
-      >
-        <p class="option">{roles[option]}</p>
-      </MultiSelect>
+  <Tabs {items} let:item={tab}>
+    <div class="tab">
+      <PanelBox style="background-color: {tab.hex}">
+        <span class="label">{tab.label}</span>
+        <FlexBox wrap={true}>
+          {#each displayedMembers as Member}
+            {#if tab.role === "all"}
+              <Person
+                width="21em"
+                displayname={Member.displayname}
+                pic={Member.pic1path}
+                namef={Member.first}
+                namel={Member.last}
+                email={Member.email}
+                role={Member.role}
+                rolePW={Member.pw}
+                roleT={Member.t}
+                roleD={Member.d}
+                roleTD={Member.td}
+                roleCD={Member.cd}
+                roleCE={Member.ce}
+                roleVP={Member.vp}
+                bio={Member.bio}
+                pic2={Member.pic2path}
+              />
+            {:else if Member[tab.role]}
+              <Person
+                width="21em"
+                displayname={Member.displayname}
+                pic={Member.pic1path}
+                namef={Member.first}
+                namel={Member.last}
+                email={Member.email}
+                role={Member.role}
+                rolePW={Member.pw}
+                roleT={Member.t}
+                roleD={Member.d}
+                roleTD={Member.td}
+                roleCD={Member.cd}
+                roleCE={Member.ce}
+                roleVP={Member.vp}
+                bio={Member.bio}
+                pic2={Member.pic2path}
+              />
+            {/if}
+          {/each}
+        </FlexBox>
+      </PanelBox>
+      
     </div>
-  </div>
+  </Tabs>
 
-  <FlexBox wrap={true}>
-    {#each displayedMembers as Member}
-      <Person
-        width="21em"
-        displayname={Member.displayname}
-        pic={Member.pic1path}
-        namef={Member.first}
-        namel={Member.last}
-        email={Member.email}
-        role={Member.role}
-        rolePW={Member.pw}
-        roleT={Member.t}
-        roleD={Member.d}
-        roleTD={Member.td}
-        roleCD={Member.cd}
-        roleCE={Member.ce}
-        roleVP={Member.vp}
-        bio={Member.bio}
-        pic2={Member.pic2path}
-      />
-    {/each}
-  </FlexBox>
+  
 
   <h1>Other Contributors</h1>
   <div style="display: flex; justify-content: center; align-items: center;">

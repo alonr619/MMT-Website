@@ -258,15 +258,15 @@
     margin: 3px;
   }
 
-  .design {
+  .community-engagement {
     color: #9bd87e;
   }
 
-  .community-engagement {
+  .curriculum-development {
     color: #7ed8af;
   }
 
-  .curriculum-development {
+  .design {
     color: #7eb5d8;
   }
 
