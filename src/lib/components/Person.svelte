@@ -44,7 +44,10 @@
   import Tooltip from "$lib/components/Tooltip.svelte";
 </script>
 
-<PanelBox width="21em">
+<div
+  class="panel-box"
+  style="width: 20; height: 20; margin: 5px; border-radius: 5px; box-sizing: border-box;k"
+>
   <div class="flip-card">
     <div class="card-side-inner">
       <div class="card-side-front person-details">
@@ -229,7 +232,7 @@
       </div>
     </div>
   </div>
-</PanelBox>
+</div>
 
 <style>
   .person {
@@ -255,8 +258,6 @@
     flex-grow: 1;
     align-items: center;
     justify-content: center;
-    padding-left: 5px;
-    padding-right: 5px;
     text-align: center;
   }
   .person-pic {
@@ -304,7 +305,7 @@
 
   .card-side-inner {
     position: relative;
-    width: 300px;
+    width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 1.5s;
