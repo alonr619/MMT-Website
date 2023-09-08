@@ -46,16 +46,18 @@
 
 <div
   class="panel-box"
-  style="width: 20; height: 20; margin: 5px; border-radius: 5px; box-sizing: border-box;k"
+  style="width: 20; height: 20; margin: 5px; border-radius: 5px; box-sizing: border-box;"
 >
   <div class="flip-card">
     <div class="card-side-inner">
       <div class="card-side-front person-details">
-        <a href="mailto:{email}?subject=Mail to {namef} {namel}">
-          <i
-            class="fa-solid fa-envelope icon"
-            style="position:absolute; top:8px; right:10px; font-size:2.2em; color: {themecolor}"
-          />
+        <a href="mailto:{email}?subject=Mail to {namef} {namel}" style="position:absolute; top:8px; right:10px;">
+          <BoopAction boopParams={{ y: 5, timing: 200 }}>
+            <i
+              class="fa-solid fa-envelope icon"
+              style="font-size:2.2em; color: {themecolor}"
+            />
+          </BoopAction>
         </a>
         <div class="person">
           <div class="person-pic">
@@ -137,12 +139,16 @@
         </div>
       </div>
       <div class="card-side-back person-details">
-        <a href="mailto:{email}?subject=Mail to {namef} {namel}">
-          <i
-            class="fa-solid fa-envelope icon"
-            style="position:absolute; top:8px; right:10px; font-size:2.2em; color: {themecolor}"
-          />
-        </a>
+        
+          <a href="mailto:{email}?subject=Mail to {namef} {namel}" style="position:absolute; top:8px; right:10px;">
+            <BoopAction boopParams={{ y: 5, timing: 200 }}>
+              <i
+                class="fa-solid fa-envelope icon"
+                style="font-size:2.2em; color: {themecolor}"
+              />
+            </BoopAction>
+          </a>
+        
         <div class="person-pic">
           {#if pic2}
             <img
@@ -338,7 +344,7 @@
   }
 
   .bio {
-    margin: 1px;
+    margin: 5px;
   }
 
   .name {
