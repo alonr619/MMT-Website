@@ -21,6 +21,7 @@
     background-color: transparent;
     opacity: 0.8;
     transition: 0.5s;
+    width: 100%;
   }
 
   .panel-box:hover {

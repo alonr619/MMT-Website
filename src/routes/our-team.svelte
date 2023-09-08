@@ -11,6 +11,20 @@
   import MultiSelect from "svelte-multiselect";
   import Heading from "$lib/components/Heading.svelte";
   import { text } from "svelte/internal";
+  import Tabs from "$lib/components/Tabs.svelte";
+  import PanelBox from "$lib/components/PanelBox.svelte";
+
+  // List of tab items with labels, values and assigned components
+  let items = [
+    { label: "All Members", role: "all", value: 1, hex: "#d3dde3" },
+    { label: "Community Engagement", role: "ce", value: 2, hex: "#d7efcb" },
+    { label: "Curriculum Development", role: "cd", value: 3, hex: "#cbefdf" },
+    { label: "Design", role: "d", value: 4, hex: "#cbe1ef" },
+    { label: "Problem Writing", role: "pw", value: 5, hex: "#d5cbef" },
+    { label: "Technology", role: "t", value: 6, hex: "#efcbeb" },
+    { label: "Tournament Development", role: "td", value: 7, hex: "#efcbcc" },
+    { label: "Video Production", role: "vp", value: 8, hex: "#efe9cb" },
+  ];
 
   let roles = {
     pw: "Problem Writing",
@@ -35,6 +49,34 @@
     });
     return containsAllRoles;
   });
+
+  function LightenDarkenColor(col, amt) {
+    var usePound = false;
+
+    if (col[0] == "#") {
+      col = col.slice(1);
+      usePound = true;
+    }
+
+    var num = parseInt(col, 16);
+
+    var r = (num >> 16) + amt;
+
+    if (r > 255) r = 255;
+    else if (r < 0) r = 0;
+
+    var b = ((num >> 8) & 0x00ff) + amt;
+
+    if (b > 255) b = 255;
+    else if (b < 0) b = 0;
+
+    var g = (num & 0x0000ff) + amt;
+
+    if (g > 255) g = 255;
+    else if (g < 0) g = 0;
+
+    return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16);
+  }
 </script>
 
 <svelte:head>
@@ -55,45 +97,64 @@
   <Heading text="Our Team" size={4} textColor="#1B9AAA" />
   <br /> <br />
 
-  <Heading text="Filter by Roles" size={2} textColor="#1B9AAA" />
-
-  <div class="multiselect-box">
-    <div class="multiselect">
-      <MultiSelect
-        id="select-roles"
-        options={allRoles}
-        placeholder="Take your pick..."
-        bind:selected
-        let:option
-      >
-        <p class="option">{roles[option]}</p>
-      </MultiSelect>
+  <Tabs {items} let:item={tab}>
+    <div class="tab">
+      <PanelBox style="background-color: {tab.hex}; opacity: 1">
+        <Heading
+          text={tab.label}
+          size={3}
+          textColor={LightenDarkenColor(tab.hex, -120)}
+        />
+        <FlexBox wrap={true}>
+          {#each displayedMembers as Member}
+            {#if tab.role === "all"}
+              <Person
+                width="21em"
+                displayname={Member.displayname}
+                pic={Member.pic1path}
+                namef={Member.first}
+                namel={Member.last}
+                email={Member.email}
+                role={Member.role}
+                rolePW={Member.pw}
+                roleT={Member.t}
+                roleD={Member.d}
+                roleTD={Member.td}
+                roleCD={Member.cd}
+                roleCE={Member.ce}
+                roleVP={Member.vp}
+                bio={Member.bio}
+                pic2={Member.pic2path}
+                themecolor={LightenDarkenColor(tab.hex, -120)}
+              />
+            {:else if Member[tab.role]}
+              <Person
+                width="21em"
+                displayname={Member.displayname}
+                pic={Member.pic1path}
+                namef={Member.first}
+                namel={Member.last}
+                email={Member.email}
+                role={Member.role}
+                rolePW={Member.pw}
+                roleT={Member.t}
+                roleD={Member.d}
+                roleTD={Member.td}
+                roleCD={Member.cd}
+                roleCE={Member.ce}
+                roleVP={Member.vp}
+                bio={Member.bio}
+                pic2={Member.pic2path}
+                themecolor={LightenDarkenColor(tab.hex, -120)}
+              />
+            {/if}
+          {/each}
+        </FlexBox>
+      </PanelBox>
     </div>
-  </div>
+  </Tabs>
 
-  <FlexBox wrap={true}>
-    {#each displayedMembers as Member}
-      <Person
-        width="21em"
-        displayname={Member.displayname}
-        pic={Member.pic1path}
-        namef={Member.first}
-        namel={Member.last}
-        email={Member.email}
-        role={Member.role}
-        rolePW={Member.pw}
-        roleT={Member.t}
-        roleD={Member.d}
-        roleTD={Member.td}
-        roleCD={Member.cd}
-        roleCE={Member.ce}
-        roleVP={Member.vp}
-        bio={Member.bio}
-        pic2={Member.pic2path}
-      />
-    {/each}
-  </FlexBox>
-
+  <!--
   <h1>Other Contributors</h1>
   <div style="display: flex; justify-content: center; align-items: center;">
     {#if windowWidth > 800}
@@ -189,6 +250,7 @@
       college="Carnegie Mellon University"
     />
   </FlexBox>
+-->
 </section>
 
 <style>
@@ -210,7 +272,7 @@
   }
 
   .option {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
   }
 </style>

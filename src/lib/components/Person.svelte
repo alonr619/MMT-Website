@@ -14,6 +14,7 @@
   export let bio;
   export let pic2;
   export let displayname;
+  export let themecolor;
 
   let textsize = 0.9;
   let len = bio.length;
@@ -50,7 +51,7 @@
         <a href="mailto:{email}?subject=Mail to {namef} {namel}">
           <i
             class="fa-solid fa-envelope icon"
-            style="position:absolute; top:8px; right:10px; font-size:2.2em;"
+            style="position:absolute; top:8px; right:10px; font-size:2.2em; color: {themecolor}"
           />
         </a>
         <div class="person">
@@ -72,23 +73,27 @@
                 {/if}
               </BoopAction>
             </Tooltip>
-  
+
             <Tooltip title="Community Engagement">
               <BoopAction boopParams={{ y: 5, timing: 200 }}>
                 {#if roleCE == true}
-                  <i class="fa-solid fa-people-group icon community-engagement" />
+                  <i
+                    class="fa-solid fa-people-group icon community-engagement"
+                  />
                 {/if}
               </BoopAction>
             </Tooltip>
-  
+
             <Tooltip title="Curriculum Development">
               <BoopAction boopParams={{ y: 5, timing: 200 }}>
                 {#if roleCD == true}
-                  <i class="fa-solid fa-chalkboard-user icon curriculum-development" />
+                  <i
+                    class="fa-solid fa-chalkboard-user icon curriculum-development"
+                  />
                 {/if}
               </BoopAction>
             </Tooltip>
-  
+
             <Tooltip title="Problem Writing">
               <BoopAction boopParams={{ y: 5, timing: 200 }}>
                 {#if rolePW == true}
@@ -96,7 +101,7 @@
                 {/if}
               </BoopAction>
             </Tooltip>
-  
+
             <Tooltip title="Technology">
               <BoopAction boopParams={{ y: 5, timing: 200 }}>
                 {#if roleT == true}
@@ -104,15 +109,17 @@
                 {/if}
               </BoopAction>
             </Tooltip>
-  
+
             <Tooltip title="Tournament Development">
               <BoopAction boopParams={{ y: 5, timing: 200 }}>
                 {#if roleTD == true}
-                  <i class="fa-solid fa-pen-ruler icon tournament-development" />
+                  <i
+                    class="fa-solid fa-pen-ruler icon tournament-development"
+                  />
                 {/if}
               </BoopAction>
-            </Tooltip>          
-  
+            </Tooltip>
+
             <Tooltip title="Video Production">
               <BoopAction boopParams={{ y: 5, timing: 200 }}>
                 {#if roleVP == true}
@@ -121,7 +128,7 @@
               </BoopAction>
             </Tooltip>
           </div>
-          <p class="name" style="font-size: {namesize}em;">
+          <p class="name" style="font-size: {namesize}em; color:{themecolor}">
             {displayname}
           </p>
         </div>
@@ -130,7 +137,7 @@
         <a href="mailto:{email}?subject=Mail to {namef} {namel}">
           <i
             class="fa-solid fa-envelope icon"
-            style="position:absolute; top:8px; right:10px; font-size:2.2em;"
+            style="position:absolute; top:8px; right:10px; font-size:2.2em; color: {themecolor}"
           />
         </a>
         <div class="person-pic">
@@ -141,7 +148,7 @@
               alt={namef}
               width="130"
               height="130"
-              style="object-fit: cover; border-radius: 25px;"
+              style="object-fit: cover; border-radius: 25px; padding-left:15px"
             />
           {:else}
             <img
@@ -150,7 +157,7 @@
               alt={namef}
               width="130"
               height="130"
-              style="object-fit: cover; border-radius: 25px;"
+              style="object-fit: cover; border-radius: 25px; padding-left:15px"
             />
           {/if}
         </div>
@@ -158,7 +165,6 @@
         <div
           style="display:flex;align-items:right;margin-top:0.3em;margin-bottom:0em;position:relative;"
         >
-
           <Tooltip title="Design">
             <BoopAction boopParams={{ y: 5, timing: 200 }}>
               {#if roleD == true}
@@ -178,7 +184,9 @@
           <Tooltip title="Curriculum Development">
             <BoopAction boopParams={{ y: 5, timing: 200 }}>
               {#if roleCD == true}
-                <i class="fa-solid fa-chalkboard-user icon curriculum-development" />
+                <i
+                  class="fa-solid fa-chalkboard-user icon curriculum-development"
+                />
               {/if}
             </BoopAction>
           </Tooltip>
@@ -205,7 +213,7 @@
                 <i class="fa-solid fa-pen-ruler icon tournament-development" />
               {/if}
             </BoopAction>
-          </Tooltip>          
+          </Tooltip>
 
           <Tooltip title="Video Production">
             <BoopAction boopParams={{ y: 5, timing: 200 }}>
@@ -226,14 +234,16 @@
 <style>
   .person {
     display: grid;
-    width: 18em;
+    width: 300px;
     height: fit-content;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .person-img {
     margin: 1px;
     max-height: 100%;
+    padding-top: 0px;
   }
   .person-pic {
     min-width: 0;
@@ -253,20 +263,19 @@
     min-width: 0;
   }
   .icon {
-    color: #65c083;
     font-size: 1.2em;
     margin: 3px;
   }
 
-  .design {
+  .community-engagement {
     color: #9bd87e;
   }
 
-  .community-engagement {
+  .curriculum-development {
     color: #7ed8af;
   }
 
-  .curriculum-development {
+  .design {
     color: #7eb5d8;
   }
 
@@ -295,7 +304,7 @@
 
   .card-side-inner {
     position: relative;
-    width: 100%;
+    width: 300px;
     height: 100%;
     text-align: center;
     transition: transform 1.5s;
@@ -311,7 +320,7 @@
     position: absolute;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    width: 100%;
+    width: 300px;
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
@@ -324,6 +333,7 @@
   .card-side-back {
     display: flex;
     transform: rotateY(180deg);
+    max-width: 300px;
   }
 
   .bio {
@@ -331,9 +341,9 @@
   }
 
   .name {
-    color: rgb(5, 93, 33);
     font-size: 1.8em;
     font-weight: 400;
+    height: 40px;
   }
 
   .icons {
@@ -344,6 +354,6 @@
   }
 
   .icon:hover {
-    filter: brightness(90%)
+    filter: brightness(90%);
   }
 </style>
