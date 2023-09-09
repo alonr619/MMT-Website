@@ -181,7 +181,15 @@
 <Heading text="One-on-One Tutoring" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Do you prefer a smaller learning environment with more personalized instruction? Mustang Math will also be offering one-on-one tutoring! One-on-one sessions will be more flexible with instruction tailored specifically towards the student's needs. Pricing is flexible depending on level of instruction required, and will be generally more than our group classes. Do note that instructor availability may be limited. If you are interested in one-on-one tutoring, email us at <a target="_blank" href="mailto:contact@mustangmath.com" style="word-break: break-all;">contact@mustangmath.com</a>.</p>
+        <p style="font-size: 1.5em; text-align: center;">Mustang Math is now offering 1-on-1 tutoring! This is a great opportunity for students who want more individualized attention compared to our regular curriculum classes.<br /><br />
+        
+        If you've ever participated in one of our tournaments or classes, these tutoring sessions will be taught by the same high-quality volunteers that make those possible. If this is your first time hearing about Mustang Math, it may help to look at some of our instructor bios. All tutors for 1-on-1 tutoring and Mustang Math classes go through careful screening, training, and all have a strong passion for helping students like you.<br /><br />
+        
+        We offer tutoring in a variety of math subjects: ranging from help with school material (Algebra 1 to Calculus) to competition training (AMC 8 and Mathcounts to AIME). If you're interested in our services, please sign up using the [form]! The price is $40/hour, of which $15 is fully reinvested into Mustang Math and $25 is paid to the instructor. Upon expressing interest, we will match you with a student who is specifically experienced and highly comfortable with the material that you need help with.<br /><br />
+            
+        If you have any questions or concerns (for example, if you/your student are interested in being tutored in a subject that is not mentioned above), please reach out to <a target="_blank" href="mailto:owenz@mustangmath.com" style="word-break: break-all;">owenz@mustangmath.com</a>! We're happy to answer any questions.<br /><br />
+            
+        We look forward to meeting and working with you!</p>
     </PanelBox>
 </div> <br />
 <br />
