@@ -1,23 +1,10 @@
 <script>
-  export let pic;
-  export let namef;
-  export let namel;
-  export let email;
-  export let role;
-  export let rolePW;
-  export let roleT;
-  export let roleD;
-  export let roleTD;
-  export let roleCD;
-  export let roleCE;
-  export let roleVP;
-  export let bio;
-  export let pic2;
-  export let displayname;
+  export let Member;
   export let themecolor;
+  export let tab;
 
   let textsize = 0.9;
-  let len = bio.length;
+  let len = Member.bio.length;
   if (len > 400) {
     textsize = 0.6;
   } else if (len > 300) {
@@ -27,7 +14,7 @@
   }
 
   let namesize = 1.8;
-  let namelen = displayname.length;
+  let namelen = Member.displayname.length;
   if (namelen > 18) {
     namesize = 1.6;
   } else if (namelen < 16) {
@@ -51,7 +38,7 @@
   <div class="flip-card">
     <div class="card-side-inner">
       <div class="card-side-front person-details">
-        <a href="mailto:{email}?subject=Mail to {namef} {namel}" style="position:absolute; top:8px; right:10px;">
+        <a href="mailto:{Member.email}?subject=Mail to {Member.namef} {Member.namel}" style="position:absolute; top:8px; right:10px;">
           <BoopAction boopParams={{ y: 5, timing: 200 }}>
             <i
               class="fa-solid fa-envelope icon"
@@ -63,8 +50,8 @@
           <div class="person-pic">
             <img
               class="person-img"
-              src={pic}
-              alt={namef}
+              src={Member.pic1path}
+              alt={Member.namef}
               width="130"
               height="130"
               style="object-fit: cover; border-radius: 25px;"
@@ -73,7 +60,7 @@
           <div class="icons">
             <Tooltip title="Design">
               <BoopAction boopParams={{ y: 5, timing: 200 }}>
-                {#if roleD == true}
+                {#if Member.d == true}
                   <i class="fa-solid fa-pen-fancy icon design" />
                 {/if}
               </BoopAction>
@@ -81,7 +68,7 @@
 
             <Tooltip title="Community Engagement">
               <BoopAction boopParams={{ y: 5, timing: 200 }}>
-                {#if roleCE == true}
+                {#if Member.ce == true}
                   <i
                     class="fa-solid fa-people-group icon community-engagement"
                   />
@@ -91,7 +78,7 @@
 
             <Tooltip title="Curriculum Development">
               <BoopAction boopParams={{ y: 5, timing: 200 }}>
-                {#if roleCD == true}
+                {#if Member.cd == true}
                   <i
                     class="fa-solid fa-chalkboard-user icon curriculum-development"
                   />
@@ -101,7 +88,7 @@
 
             <Tooltip title="Problem Writing">
               <BoopAction boopParams={{ y: 5, timing: 200 }}>
-                {#if rolePW == true}
+                {#if Member.pw == true}
                   <i class="fa-solid fa-calculator icon problem-writing" />
                 {/if}
               </BoopAction>
@@ -109,7 +96,7 @@
 
             <Tooltip title="Technology">
               <BoopAction boopParams={{ y: 5, timing: 200 }}>
-                {#if roleT == true}
+                {#if Member.t == true}
                   <i class="fa-solid fa-computer icon technology" />
                 {/if}
               </BoopAction>
@@ -117,7 +104,7 @@
 
             <Tooltip title="Tournament Development">
               <BoopAction boopParams={{ y: 5, timing: 200 }}>
-                {#if roleTD == true}
+                {#if Member.td == true}
                   <i
                     class="fa-solid fa-pen-ruler icon tournament-development"
                   />
@@ -127,20 +114,29 @@
 
             <Tooltip title="Video Production">
               <BoopAction boopParams={{ y: 5, timing: 200 }}>
-                {#if roleVP == true}
+                {#if Member.vp == true}
                   <i class="fa-solid fa-camera-retro icon video-production" />
                 {/if}
               </BoopAction>
             </Tooltip>
           </div>
-          <p class="name" style="font-size: {namesize}em; color:{themecolor}">
-            {displayname}
+          <p style="color:{themecolor}">
+            <span class="name" style="font-size: {namesize}em;" >
+              {Member.displayname}
+            </span>
+            {#if Member[tab.role + "role"]}
+              <br>
+              <span class="role" style="font-size: 1.5em;" >
+                {Member[tab.role + "role"]}
+              </span>
+            {/if}
           </p>
+          
         </div>
       </div>
       <div class="card-side-back person-details">
         
-          <a href="mailto:{email}?subject=Mail to {namef} {namel}" style="position:absolute; top:8px; right:10px;">
+          <a href="mailto:{Member.email}?subject=Mail to {Member.namef} {Member.namel}" style="position:absolute; top:8px; right:10px;">
             <BoopAction boopParams={{ y: 5, timing: 200 }}>
               <i
                 class="fa-solid fa-envelope icon"
@@ -150,11 +146,11 @@
           </a>
         
         <div class="person-pic">
-          {#if pic2}
+          {#if Member.pic2path}
             <img
               class="person-img"
-              src={pic2}
-              alt={namef}
+              src={Member.pic2path}
+              alt={Member.namef}
               width="130"
               height="130"
               style="object-fit: cover; border-radius: 25px; padding-left:15px"
@@ -162,8 +158,8 @@
           {:else}
             <img
               class="person-img"
-              src={pic}
-              alt={namef}
+              src={Member.pic1path}
+              alt={Member.namef}
               width="130"
               height="130"
               style="object-fit: cover; border-radius: 25px; padding-left:15px"
@@ -176,7 +172,7 @@
         >
           <Tooltip title="Design">
             <BoopAction boopParams={{ y: 5, timing: 200 }}>
-              {#if roleD == true}
+              {#if Member.d == true}
                 <i class="fa-solid fa-pen-fancy icon design" />
               {/if}
             </BoopAction>
@@ -184,7 +180,7 @@
 
           <Tooltip title="Community Engagement">
             <BoopAction boopParams={{ y: 5, timing: 200 }}>
-              {#if roleCE == true}
+              {#if Member.ce == true}
                 <i class="fa-solid fa-people-group icon community-engagement" />
               {/if}
             </BoopAction>
@@ -192,7 +188,7 @@
 
           <Tooltip title="Curriculum Development">
             <BoopAction boopParams={{ y: 5, timing: 200 }}>
-              {#if roleCD == true}
+              {#if Member.cd == true}
                 <i
                   class="fa-solid fa-chalkboard-user icon curriculum-development"
                 />
@@ -202,7 +198,7 @@
 
           <Tooltip title="Problem Writing">
             <BoopAction boopParams={{ y: 5, timing: 200 }}>
-              {#if rolePW == true}
+              {#if Member.pw == true}
                 <i class="fa-solid fa-calculator icon problem-writing" />
               {/if}
             </BoopAction>
@@ -210,7 +206,7 @@
 
           <Tooltip title="Technology">
             <BoopAction boopParams={{ y: 5, timing: 200 }}>
-              {#if roleT == true}
+              {#if Member.t == true}
                 <i class="fa-solid fa-computer icon technology" />
               {/if}
             </BoopAction>
@@ -218,7 +214,7 @@
 
           <Tooltip title="Tournament Development">
             <BoopAction boopParams={{ y: 5, timing: 200 }}>
-              {#if roleTD == true}
+              {#if Member.td == true}
                 <i class="fa-solid fa-pen-ruler icon tournament-development" />
               {/if}
             </BoopAction>
@@ -226,14 +222,14 @@
 
           <Tooltip title="Video Production">
             <BoopAction boopParams={{ y: 5, timing: 200 }}>
-              {#if roleVP == true}
+              {#if Member.vp == true}
                 <i class="fa-solid fa-camera-retro icon video-production" />
               {/if}
             </BoopAction>
           </Tooltip>
         </div>
         <p class="bio" style="font-size: {textsize}em;">
-          {bio}
+          {Member.bio}
         </p>
       </div>
     </div>
@@ -252,10 +248,10 @@
   .person-img {
     margin: 1px;
     max-height: 100%;
-    padding-top: 0px;
+    padding-top: 2px;
   }
   .person-pic {
-    min-width: 0;
+    
   }
   .person-details {
     display: flex;
@@ -266,9 +262,7 @@
     justify-content: center;
     text-align: center;
   }
-  .person-pic {
-    min-width: 0;
-  }
+
   .icon {
     font-size: 1.2em;
     margin: 3px;
@@ -327,7 +321,7 @@
     position: absolute;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    width: 300px;
+    width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
@@ -340,7 +334,6 @@
   .card-side-back {
     display: flex;
     transform: rotateY(180deg);
-    max-width: 300px;
   }
 
   .bio {

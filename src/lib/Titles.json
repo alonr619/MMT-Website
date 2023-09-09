@@ -1,0 +1,35 @@
+[
+  {
+    "priority": 1,
+    "org": "Director",
+    "pw": "Leads",
+    "t": "Leads",
+    "d": "Leads",
+    "td": "National Leads",
+    "cd": "Leads",
+    "ce": "Leads",
+    "vp": "Leads"
+  },
+  {
+    "priority": 2,
+    "org": "Leadership",
+    "td": "Region Leads"
+  },
+  {
+    "priority": 3
+  },
+  {
+    "priority": 4
+  },
+  {
+    "priority": 5,
+    "org": "Members",
+    "pw": "Problem Writers",
+    "t": "Coders",
+    "d": "Designers",
+    "td": "Tournament Developers",
+    "cd": "Curriculum Developers",
+    "ce": "Community Engagers",
+    "vp": "Video Producers"
+  }
+]
