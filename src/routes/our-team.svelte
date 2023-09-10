@@ -8,6 +8,7 @@
   import PageHeader from "$lib/components/PageHeader.svelte";
   import Alumni from "$lib/components/Alumni.svelte";
   import Members from "$lib/Members.json";
+  import Titles from "$lib/Titles.json";
   import MultiSelect from "svelte-multiselect";
   import Heading from "$lib/components/Heading.svelte";
   import { text } from "svelte/internal";
@@ -17,14 +18,14 @@
 
   // List of tab items with labels, values and assigned components
   let items = [
-    { label: "All Members", role: "all", value: 1, hex: "#cccccc" },
-    { label: "Community Engagement", role: "ce", value: 2, hex: "#d7efcb" },
-    { label: "Curriculum Development", role: "cd", value: 3, hex: "#cbefdf" },
-    { label: "Design", role: "d", value: 4, hex: "#cbe1ef" },
-    { label: "Problem Writing", role: "pw", value: 5, hex: "#d5cbef" },
-    { label: "Technology", role: "t", value: 6, hex: "#efcbeb" },
-    { label: "Tournament Development", role: "td", value: 7, hex: "#efcbcc" },
-    { label: "Video Production", role: "vp", value: 8, hex: "#efe9cb" },
+    { label: "All Members", role: "org", value: 1, hex: "#cccccc" },
+    { label: "Community Engagement", role: "ce", value: 2, hex: "#efe9cb" },
+    { label: "Curriculum Development", role: "cd", value: 3, hex: "#d7efcb" },
+    { label: "Design", role: "d", value: 4, hex: "#cbefdf" },
+    { label: "Problem Writing", role: "pw", value: 5, hex: "#cbe1ef" },
+    { label: "Technology", role: "t", value: 6, hex: "#d5cbef" },
+    { label: "Tournament Development", role: "td", value: 7, hex: "#efcbeb"},
+    { label: "Video Production", role: "vp", value: 8, hex: "#efcbcc" },
   ];
 
   let roles = {
@@ -40,16 +41,9 @@
   let windowWidth;
 
   let allRoles = Object.keys(roles);
-  let selected = allRoles;
-  $: displayedMembers = Members.filter((user) => {
-    let containsAllRoles = false;
-    selected.forEach((role) => {
-      if (user[role]) {
-        containsAllRoles = true;
-      }
-    });
-    return containsAllRoles;
-  });
+  let currentPriority = 0;
+
+  let setPriority = (priority) => currentPriority = priority;
 
   
 </script>
@@ -82,48 +76,27 @@
         />
         <br>
         <FlexBox wrap={true}>
-          {#each displayedMembers as Member}
-            {#if tab.role === "all"}
-              <Person
-                width="21em"
-                displayname={Member.displayname}
-                pic={Member.pic1path}
-                namef={Member.first}
-                namel={Member.last}
-                email={Member.email}
-                role={Member.role}
-                rolePW={Member.pw}
-                roleT={Member.t}
-                roleD={Member.d}
-                roleTD={Member.td}
-                roleCD={Member.cd}
-                roleCE={Member.ce}
-                roleVP={Member.vp}
-                bio={Member.bio}
-                pic2={Member.pic2path}
-                themecolor={LightenDarkenColor(tab.hex, -120)}
-              />
-            {:else if Member[tab.role]}
-              <Person
-                width="21em"
-                displayname={Member.displayname}
-                pic={Member.pic1path}
-                namef={Member.first}
-                namel={Member.last}
-                email={Member.email}
-                role={Member.role}
-                rolePW={Member.pw}
-                roleT={Member.t}
-                roleD={Member.d}
-                roleTD={Member.td}
-                roleCD={Member.cd}
-                roleCE={Member.ce}
-                roleVP={Member.vp}
-                bio={Member.bio}
-                pic2={Member.pic2path}
-                themecolor={LightenDarkenColor(tab.hex, -120)}
-              />
-            {/if}
+          {#each [...new Set(Members.map((member) => member[tab.role + "priority"]))].sort() as priority}
+            <Heading
+              text={Titles.filter(function (title) {
+                return(title.priority == priority)
+              })[0][tab.role]}
+              size={2.5}
+              textColor={LightenDarkenColor(tab.hex, -120)}
+            />
+            <div class="break"></div>
+            {#each Members
+              .filter(function (member) {
+                return (member[tab.role] && member[tab.role + "priority"] == priority)
+              }) as Member}
+                <Person
+                  width="21em"
+                  {Member}
+                  {tab}
+                  themecolor={LightenDarkenColor(tab.hex, -120)}
+                />
+            {/each}
+            <div class="break"></div>
           {/each}
         </FlexBox>
       </div>
@@ -232,5 +205,13 @@
 <style>
   .tab {
     border-radius: 200px;
+  }
+  .break {
+    flex-basis: 100%;
+    height: 20px;
+  }
+  .enter {
+    flex-basis: 100%;
+    height: 0px;
   }
 </style>
