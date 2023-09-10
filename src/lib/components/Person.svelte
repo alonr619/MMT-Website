@@ -29,6 +29,7 @@
   import Heading from "$lib/components/Heading.svelte";
   import PanelBox from "$lib/components/PanelBox.svelte";
   import Tooltip from "$lib/components/Tooltip.svelte";
+  import {LightenDarkenColor} from "$lib/utils/LightenDarkenColors.svelte";
 </script>
 
 <div
@@ -42,7 +43,7 @@
           <BoopAction boopParams={{ y: 5, timing: 200 }}>
             <i
               class="fa-solid fa-envelope icon"
-              style="font-size:2.2em; color: {themecolor}"
+              style="font-size:2.2em; color: {LightenDarkenColor(themecolor, 20)}"
             />
           </BoopAction>
         </a>
@@ -120,13 +121,13 @@
               </BoopAction>
             </Tooltip>
           </div>
-          <p style="color:{themecolor}">
-            <span class="name" style="font-size: {namesize}em;" >
+          <p>
+            <span class="name" style="font-size: {namesize}em; color:{themecolor};" >
               {Member.displayname}
             </span>
             {#if Member[tab.role + "role"]}
               <br>
-              <span class="role" style="font-size: 1.5em;" >
+              <span class="role" style="font-size: 1.5em; color:{LightenDarkenColor(themecolor, 50)};" >
                 {Member[tab.role + "role"]}
               </span>
             {/if}
@@ -140,7 +141,7 @@
             <BoopAction boopParams={{ y: 5, timing: 200 }}>
               <i
                 class="fa-solid fa-envelope icon"
-                style="font-size:2.2em; color: {themecolor}"
+                style="font-size:2.2em; color: {LightenDarkenColor(themecolor, 20)}"
               />
             </BoopAction>
           </a>
@@ -269,31 +270,31 @@
   }
 
   .community-engagement {
-    color: #9bd87e;
+    color: #d8c87e;
   }
 
   .curriculum-development {
-    color: #7ed8af;
+    color: #9bd87e;
   }
 
   .design {
-    color: #7eb5d8;
+    color: #7ed8af;
   }
 
   .problem-writing {
-    color: #957ed8;
+    color: #7eb5d8;
   }
 
   .technology {
-    color: #d87ece;
+    color: #957ed8;
   }
 
   .tournament-development {
-    color: #d87e80;
+    color: #d87ece;
   }
 
   .video-production {
-    color: #d8c87e;
+    color: #d87e80;
   }
 
   .flip-card {

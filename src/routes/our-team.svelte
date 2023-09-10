@@ -19,13 +19,13 @@
   // List of tab items with labels, values and assigned components
   let items = [
     { label: "All Members", role: "org", value: 1, hex: "#cccccc" },
-    { label: "Community Engagement", role: "ce", value: 2, hex: "#d7efcb" },
-    { label: "Curriculum Development", role: "cd", value: 3, hex: "#cbefdf" },
-    { label: "Design", role: "d", value: 4, hex: "#cbe1ef" },
-    { label: "Problem Writing", role: "pw", value: 5, hex: "#d5cbef" },
-    { label: "Technology", role: "t", value: 6, hex: "#efcbeb" },
-    { label: "Tournament Development", role: "td", value: 7, hex: "#efcbcc" },
-    { label: "Video Production", role: "vp", value: 8, hex: "#efe9cb" },
+    { label: "Community Engagement", role: "ce", value: 2, hex: "#efe9cb" },
+    { label: "Curriculum Development", role: "cd", value: 3, hex: "#d7efcb" },
+    { label: "Design", role: "d", value: 4, hex: "#cbefdf" },
+    { label: "Problem Writing", role: "pw", value: 5, hex: "#cbe1ef" },
+    { label: "Technology", role: "t", value: 6, hex: "#d5cbef" },
+    { label: "Tournament Development", role: "td", value: 7, hex: "#efcbeb"},
+    { label: "Video Production", role: "vp", value: 8, hex: "#efcbcc" },
   ];
 
   let roles = {
