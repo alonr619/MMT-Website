@@ -23,18 +23,19 @@
     namesize = 2.2;
   }
 
+  let rgbthemecolor = hexToRgb(themecolor)
+
   // export let position;
   import BoopAction from "$lib/components/BoopAction.svelte";
   import Text from "$lib/components/Text.svelte";
   import Heading from "$lib/components/Heading.svelte";
   import PanelBox from "$lib/components/PanelBox.svelte";
   import Tooltip from "$lib/components/Tooltip.svelte";
-  import {LightenDarkenColor} from "$lib/utils/LightenDarkenColors.svelte";
+  import {LightenDarkenColor, hexToRgb} from "$lib/utils/Colors.svelte";
 </script>
 
 <div
   class="panel-box"
-  style="width: 20; height: 20; margin: 5px; border-radius: 5px; box-sizing: border-box;"
 >
   <div class="flip-card">
     <div class="card-side-inner">
@@ -135,7 +136,7 @@
           
         </div>
       </div>
-      <div class="card-side-back person-details">
+      <div class="card-side-back person-details" >
         
           <a href="mailto:{Member.email}?subject=Mail to {Member.namef} {Member.namel}" style="position:absolute; top:8px; right:10px;">
             <BoopAction boopParams={{ y: 5, timing: 200 }}>
@@ -154,7 +155,7 @@
               alt={Member.namef}
               width="130"
               height="130"
-              style="object-fit: cover; border-radius: 25px; padding-left:15px"
+              style="object-fit: cover; border-radius: 25px; "
             />
           {:else}
             <img
@@ -163,7 +164,7 @@
               alt={Member.namef}
               width="130"
               height="130"
-              style="object-fit: cover; border-radius: 25px; padding-left:15px"
+              style="object-fit: cover; border-radius: 25px; "
             />
           {/if}
         </div>
@@ -238,6 +239,14 @@
 </div>
 
 <style>
+  .panel-box {
+    
+    width: 20; 
+    height: 20; 
+    margin: 5px; 
+    border-radius: 5px; 
+    box-sizing: border-box;
+  }
   .person {
     display: grid;
     width: 300px;
@@ -255,6 +264,7 @@
     
   }
   .person-details {
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.1); 
     display: flex;
     flex-direction: column;
     flex-basis: 0;
@@ -321,7 +331,7 @@
   .card-side-back {
     position: absolute;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
@@ -329,7 +339,6 @@
   }
 
   .card-side-front {
-    color: black;
   }
 
   .card-side-back {
