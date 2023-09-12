@@ -155,7 +155,7 @@
               alt={Member.namef}
               width="130"
               height="130"
-              style="object-fit: cover; border-radius: 25px; padding-left:15px"
+              style="object-fit: cover; border-radius: 25px; "
             />
           {:else}
             <img
@@ -164,7 +164,7 @@
               alt={Member.namef}
               width="130"
               height="130"
-              style="object-fit: cover; border-radius: 25px; padding-left:15px"
+              style="object-fit: cover; border-radius: 25px; "
             />
           {/if}
         </div>
@@ -331,7 +331,7 @@
   .card-side-back {
     position: absolute;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
