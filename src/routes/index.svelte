@@ -3,6 +3,9 @@
     import Newsletter from '$lib/components/Newsletter.svelte';
     import { fly } from "svelte/transition";
     import { onMount } from "svelte";
+    import BarChart from '$lib/components/BarChart.svelte';
+    import { data, options, plugins} from '$lib/MMT_graph_config.js';
+    import Count from "$lib/components/Count.svelte";
 
     // need to do this to make the animation play on page load
     let visible = false;
@@ -57,6 +60,12 @@
         {/if}
     </div>
 </div>
+<BarChart {data} {options}/>
+<Count
+  value={94}
+  duration={1000}
+  title={"Student Volunteers"}
+/>
 
 <style>
 .outside {
