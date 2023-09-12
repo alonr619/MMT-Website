@@ -22,6 +22,7 @@
     "chartjs-plugin-deferred": "^2.0.0",
     "cookie": "^0.4.1",
     "svelte-chartjs": "^3.1.2",
+    "svelte-countup": "^0.2.6",
     "svelte-hamburgers": "^4.0.1",
     "svelte-markdown": "^0.2.3",
     "svelte-multiselect": "^10.1.0"

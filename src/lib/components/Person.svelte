@@ -333,10 +333,6 @@
     backface-visibility: hidden;
   }
 
-  .card-side-front {
-    color: black;
-  }
-
   .card-side-back {
     display: flex;
     transform: rotateY(180deg);

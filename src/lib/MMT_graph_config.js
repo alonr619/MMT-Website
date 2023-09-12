@@ -1,19 +1,19 @@
 import ChartDeferred from "chartjs-plugin-deferred";
 
 export const data = {
-  labels: ["MMT 2020", "MMT 2021", "MMT 2022", "3MT 2022", "MMT 2023"],
+  labels: ["MMT 2020", "MMT 2021", "MMT 2022", "MMT 2023"],
   datasets: [
     {
       label: "Domestic",
-      data: [195, 229, 314, 155, 346],
+      data: [195, 229, 314, 346],
       backgroundColor: "rgba(255, 134,159,0.4)",
       borderWidth: 2,
       borderColor: "rgba(255, 134, 159, 1)",
     },
     {
       label: "International",
-      data: [0, 0, 314, 470, 561],
-      backgroundColor: "rgba(98,  182, 239,0.4)",
+      data: [0, 0, 314, 561],
+      backgroundColor: "rgba(98, 182, 239,0.4)",
       borderWidth: 2,
       borderColor: "rgba(98,  182, 239, 1)",
     },
