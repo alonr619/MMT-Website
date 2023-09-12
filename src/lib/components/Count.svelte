@@ -9,8 +9,7 @@
     export let format = true;
     export let title = "";
   </script>
-<div
-class="flexbox">
+<div class="flexbox">
   <div class="countup">
     <Countup 
       {initial}
