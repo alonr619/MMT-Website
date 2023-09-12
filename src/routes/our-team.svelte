@@ -14,7 +14,7 @@
   import { text } from "svelte/internal";
   import Tabs from "$lib/components/Tabs.svelte";
   import PanelBox from "$lib/components/PanelBox.svelte";
-  import {LightenDarkenColor} from "$lib/utils/LightenDarkenColors.svelte";
+  import {LightenDarkenColor} from "$lib/utils/Colors.svelte";
 
   // List of tab items with labels, values and assigned components
   let items = [

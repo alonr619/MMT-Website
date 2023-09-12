@@ -2,7 +2,7 @@
   export let items = [];
   export let style;
   export let activeTabValue = 1;
-  import {LightenDarkenColor} from "$lib/utils/LightenDarkenColors.svelte";
+  import {LightenDarkenColor} from "$lib/utils/Colors.svelte";
 
   const handleClick = (tabValue) => () => (activeTabValue = tabValue);
   

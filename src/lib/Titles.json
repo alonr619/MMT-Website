@@ -13,7 +13,9 @@
   {
     "priority": 2,
     "org": "Leadership",
-    "td": "Region Leads"
+    "pw": "Test Coordinators",
+    "t": "Project Leads",
+    "td": "State Leads"
   },
   {
     "priority": 3
@@ -25,11 +27,11 @@
     "priority": 5,
     "org": "Members",
     "pw": "Problem Writers",
-    "t": "Coders",
+    "t": "Developers",
     "d": "Designers",
-    "td": "Tournament Developers",
-    "cd": "Curriculum Developers",
+    "td": "Organizers",
+    "cd": "Educators",
     "ce": "Community Engagers",
-    "vp": "Video Producers"
+    "vp": "Content Creators"
   }
 ]
