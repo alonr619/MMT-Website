@@ -1,0 +1,37 @@
+[
+  {
+    "priority": 1,
+    "org": "Director",
+    "pw": "Leads",
+    "t": "Leads",
+    "d": "Leads",
+    "td": "National Leads",
+    "cd": "Leads",
+    "ce": "Leads",
+    "vp": "Leads"
+  },
+  {
+    "priority": 2,
+    "org": "Leadership",
+    "pw": "Test Coordinators",
+    "t": "Project Leads",
+    "td": "State Leads"
+  },
+  {
+    "priority": 3
+  },
+  {
+    "priority": 4
+  },
+  {
+    "priority": 5,
+    "org": "Members",
+    "pw": "Problem Writers",
+    "t": "Developers",
+    "d": "Designers",
+    "td": "Organizers",
+    "cd": "Educators",
+    "ce": "Community Engagers",
+    "vp": "Content Creators"
+  }
+]
