@@ -148,7 +148,7 @@
               alt={namef}
               width="130"
               height="130"
-              style="object-fit: cover; border-radius: 25px; padding-left:15px"
+              style="object-fit: cover; border-radius: 25px; padding-left:0px;"
             />
           {:else}
             <img
@@ -157,7 +157,7 @@
               alt={namef}
               width="130"
               height="130"
-              style="object-fit: cover; border-radius: 25px; padding-left:15px"
+              style="object-fit: cover; border-radius: 25px; padding-left:0px"
             />
           {/if}
         </div>
