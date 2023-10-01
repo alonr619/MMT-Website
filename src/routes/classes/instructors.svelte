@@ -12,7 +12,7 @@
 	<title>Classes | Instructors</title>
 </svelte:head>
 
-<PageHeader title="Instructors" description="Meet the Experienced Instructors for our Prep Classes" button_url="https://link.mustangmath.com/DiscreteRegistration" button_text="Registration" id="registerBeginner"/>
+<PageHeader title="Instructors" description="Meet the Experienced Instructors for our Prep Classes" button_url="https://forms.gle/vWFaBj8Ubis9a2Vu5" button_text="Class Registration" id="registerBeginner"/>
 
 <br><br>
 
