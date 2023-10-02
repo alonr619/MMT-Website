@@ -34,7 +34,7 @@
 </svelte:head>
 
 <PageHeader title="Partners & Sponsors" description="The Organizations Making MM Possible" button_url="
-https://tinyurl.com/MMSponsors2023" button_text="Sponsor Mustang Math!" button_id="sponsorMM"/>
+https://tinyurl.com/MMSponsors2024" button_text="Sponsor Mustang Math!" button_id="sponsorMM"/>
 
 
 
