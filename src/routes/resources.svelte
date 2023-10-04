@@ -64,9 +64,45 @@
     year="2023"
     tests={[
       [
+        ["Gallop Colt Solutions"],
+        [solutions, "archive/2023/Gallop_Colt_Solutions.pdf"],
+      ],
+      [
+        ["Gallop Foal Solutions"],
+        [solutions, "archive/2023/Gallop_Foal_Solutions.pdf"],
+      ],
+      [
+        ["Gallop Stallion Solutions"],
+        [solutions, "archive/2023/Gallop_Stallion_Solutions.pdf"],
+      ],
+      [
+        ["Herding Hexes Colt Solutions"],
+        [solutions, "archive/2023/Herding_Hexes_Colt_Solutions.pdf"],
+      ],
+      [
+        ["Herding Hexes Foal Solutions"],
+        [solutions, "archive/2023/Herding_Hexes_Foal_Solutions.pdf"],
+      ],
+      [
+        ["Herding Hexes Stallion Solutions"],
+        [solutions, "archive/2023/Herding_Hexes_Stallion_Solutions.pdf"],
+      ],
+      [
         ["Example Herding Hexes"],
         [problems, "archive/2023/HerdingHexesExample.pdf"],
         ["Answers (Bucking Bingo Section)", "archive/2021/Answers.pdf"],
+      ],
+      [
+        ["Risky Riding Colt Solutions"],
+        [solutions, "archive/2023/Risky_Riding_Colt_Solutions.pdf"],
+      ],
+      [
+        ["Risky Riding Foal Solutions"],
+        [solutions, "archive/2023/Risky_Riding_Foal_Solutions.pdf"],
+      ],
+      [
+        ["Risky Riding Stallion Solutions"],
+        [solutions, "archive/2023/Risky_Riding_Stallion_Solutions.pdf"],
       ],
     ]}
   />
