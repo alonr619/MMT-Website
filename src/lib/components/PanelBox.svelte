@@ -9,10 +9,7 @@
   export let boxSizing = "border-box";
 </script>
 
-<div
-  class="panel-box"
-  style="width: {width}; height: {height}; margin: {margin}; padding: {padding}; border-radius: {borderRadius}; box-sizing: {boxSizing}; {style}"
->
+<div class="panel-box"  style="width: {width}; height: {height}; margin: {margin}; padding: {padding}; border-radius: {borderRadius}; box-sizing: {boxSizing}; {style}">
   <slot />
 </div>
 

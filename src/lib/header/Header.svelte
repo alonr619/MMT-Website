@@ -31,6 +31,7 @@
       hasSubPages: true,
       index: 0,
       subPages: [
+        { path: "/competitions/3mt-2023", text: "3MT 2023"},
         { path: "/competitions/mmt-2023", text: "MMT 2023" },
         { path: "/competitions/past", text: "Past" },
       ],
