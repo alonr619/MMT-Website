@@ -23,7 +23,7 @@
     namesize = 2.2;
   }
 
-  let rgbthemecolor = hexToRgb(themecolor)
+  let rgbthemecolor = hexToRgb(themecolor);
 
   // export let position;
   import BoopAction from "$lib/components/BoopAction.svelte";
@@ -31,20 +31,24 @@
   import Heading from "$lib/components/Heading.svelte";
   import PanelBox from "$lib/components/PanelBox.svelte";
   import Tooltip from "$lib/components/Tooltip.svelte";
-  import {LightenDarkenColor, hexToRgb} from "$lib/utils/Colors.svelte";
+  import { LightenDarkenColor, hexToRgb } from "$lib/utils/Colors.svelte";
 </script>
 
-<div
-  class="panel-box"
->
+<div class="panel-box">
   <div class="flip-card">
     <div class="card-side-inner">
       <div class="card-side-front person-details">
-        <a href="mailto:{Member.email}?subject=Mail to {Member.namef} {Member.namel}" style="position:absolute; top:8px; right:10px;">
+        <a
+          href="mailto:{Member.email}?subject=Mail to {Member.namef} {Member.namel}"
+          style="position:absolute; top:8px; right:10px;"
+        >
           <BoopAction boopParams={{ y: 5, timing: 200 }}>
             <i
               class="fa-solid fa-envelope icon"
-              style="font-size:2.2em; color: {LightenDarkenColor(themecolor, 20)}"
+              style="font-size:2.2em; color: {LightenDarkenColor(
+                themecolor,
+                20
+              )}"
             />
           </BoopAction>
         </a>
@@ -123,30 +127,43 @@
             </Tooltip>
           </div>
           <p>
-            <span class="name" style="font-size: {namesize}em; color:{themecolor};" >
+            <span
+              class="name"
+              style="font-size: {namesize}em; color:{themecolor};"
+            >
               {Member.displayname}
             </span>
             {#if Member[tab.role + "role"]}
-              <br>
-              <span class="role" style="font-size: 1.5em; color:{LightenDarkenColor(themecolor, 50)};" >
+              <br />
+              <span
+                class="role"
+                style="font-size: 1.5em; color:{LightenDarkenColor(
+                  themecolor,
+                  50
+                )};"
+              >
                 {Member[tab.role + "role"]}
               </span>
             {/if}
           </p>
-          
         </div>
       </div>
-      <div class="card-side-back person-details" >
-        
-          <a href="mailto:{Member.email}?subject=Mail to {Member.namef} {Member.namel}" style="position:absolute; top:8px; right:10px;">
-            <BoopAction boopParams={{ y: 5, timing: 200 }}>
-              <i
-                class="fa-solid fa-envelope icon"
-                style="font-size:2.2em; color: {LightenDarkenColor(themecolor, 20)}"
-              />
-            </BoopAction>
-          </a>
-        
+      <div class="card-side-back person-details">
+        <a
+          href="mailto:{Member.email}?subject=Mail to {Member.namef} {Member.namel}"
+          style="position:absolute; top:8px; right:10px;"
+        >
+          <BoopAction boopParams={{ y: 5, timing: 200 }}>
+            <i
+              class="fa-solid fa-envelope icon"
+              style="font-size:2.2em; color: {LightenDarkenColor(
+                themecolor,
+                20
+              )}"
+            />
+          </BoopAction>
+        </a>
+
         <div class="person-pic">
           {#if Member.pic2path}
             <img
@@ -155,7 +172,7 @@
               alt={Member.namef}
               width="130"
               height="130"
-              style="object-fit: cover; border-radius: 25px; "
+              style="object-fit: cover; border-radius: 25px; padding-left:0px"
             />
           {:else}
             <img
@@ -164,7 +181,7 @@
               alt={Member.namef}
               width="130"
               height="130"
-              style="object-fit: cover; border-radius: 25px; "
+              style="object-fit: cover; border-radius: 25px; padding-left:0px"
             />
           {/if}
         </div>
@@ -240,11 +257,10 @@
 
 <style>
   .panel-box {
-    
-    width: 20; 
-    height: 20; 
-    margin: 5px; 
-    border-radius: 5px; 
+    width: 20;
+    height: 20;
+    margin: 5px;
+    border-radius: 5px;
     box-sizing: border-box;
   }
   .person {
@@ -261,10 +277,9 @@
     padding-top: 2px;
   }
   .person-pic {
-    
   }
   .person-details {
-    box-shadow: 5px 10px 10px rgba(0,0,0,0.1); 
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     flex-basis: 0;
