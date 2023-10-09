@@ -14,7 +14,6 @@
     export let marginLeft = "";
     export let align = "center";
     export let className = "";
-    export let ani = false;
 </script>
 <div
 class="wrapper"

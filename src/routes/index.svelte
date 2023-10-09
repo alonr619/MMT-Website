@@ -155,7 +155,7 @@
     </div>
 </div>
 
-<div> 
+<!-- <div> 
 <Heading text="Mission Statement" size={6} textColor="#1B9AAA" />
 </div>
 
@@ -209,7 +209,7 @@
             </div>
         </PanelBox>
     </div>
-</div>
+</div> -->
 
 
 

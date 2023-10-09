@@ -10,8 +10,8 @@
     import Table from "$lib/components/Table.svelte";
     import PanelBox from "$lib/components/PanelBox.svelte";
     import Image from '$lib/components/Image.svelte';
-    import FlipCard from '$lib/components/InfoBox.svelte';
     import CardPanelBox from '$lib/components/CardPanelBox.svelte';
+    import FlipCard from '$lib/components/InfoBox.svelte';
 
     let windowWidth;
     const scheduleData = [
@@ -61,28 +61,26 @@
 <svelte:window bind:innerWidth={windowWidth} />
 
 <div class="page"></div>
-<PageHeader title="Mustang Math Tournament: Washington" description="April 29, 2023: 9:00 AM - 4:30 PM PT" button_url="https://tinyurl.com/MMT2023Registration" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
+<PageHeader title="Mustang Math Tournament (MMT) California" description="April 29, 2023: 9:00 AM - 4:30 PM PT" button_url="https://tinyurl.com/MMT2023Registration" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
 
 <br />
 
 <br id="registrationInfo" />
 <Heading text="Overview" size={2.5} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
-
     <CardPanelBox initials="MM">
         <div style="padding: 10px; padding-left: 30px; padding-top: 25px;">
-            <p>
-                <strong>TEAM SIZE:</strong> 3-4* <br />
-                <strong>LOCATION:</strong> Mill Creek Middle School (Kent, Washington)<br />
-                <strong>EARLY HORSE COST:</strong> $10 per participant (Register before <strong>March 17th, 2023</strong> to receive the early horse price!)<br />
-                <strong>NORMAL COST:</strong> $15 per participant (Register before <strong>April 21st, 2023</strong> to participate)<br /> <br />
-                <a href="https://docs.google.com/document/d/1FRL4DLS2RVbbMRKe2r0t7K2Rhjabwr45TdgM0ISDKnQ/edit?usp=sharing" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
-                <br /><br />
-                <i><strong>*:</strong> Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4</i><br /><br />
-                <i><strong>Note for International Students:</strong> Students not in Canada or the United States should participate in the international version of our tournament being run by SIMCC. Email us at <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a> if you're interested.</i><br /><br />
-                <i><strong>Note for Students in Washington:</strong> Students living within 50 miles of our in-person sites <strong>must</strong> participate in person. If you have an extenuating circumstance that would prevent this please send an email to <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a>, and we'll grant you permission to participate online.</i>
-            </p>
-
+        <p>
+            <strong>TEAM SIZE:</strong> 3-4* <br />
+            <strong>LOCATION:</strong> Fremont High School (Sunnyvale, California)<br />
+            <strong>EARLY HORSE COST:</strong> $10 per participant (Register before <strong>March 17th, 2023</strong> to receive the early horse price!)<br />
+            <strong>NORMAL COST:</strong> $15 per participant (Register before <strong>April 19th, 2023</strong> to participate)<br /> <br />
+            <a href="https://tinyurl.com/MMT2023Registration" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
+            <br /><br />
+            <i><strong>*:</strong> Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4</i><br />
+            <i><strong>Note for International Students:</strong> Students not in Canada or the United States should participate in the international version of our tournament being run by SIMCC. Email us at <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a> if you're interested.</i><br /><br />
+            <i><strong>Note for Students in California:</strong> Students living within 50 miles of our in-person sites <strong>must</strong> participate in person. If you have an extenuating circumstance that would prevent this please send an email to <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a>, and we'll grant you permission to participate online.</i>
+        </p>
         </div>
     </CardPanelBox>
 </div> <br />
@@ -101,7 +99,8 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <CardPanelBox initials="MM">
         <div style="padding: 20px;">
-        <p style="font-size: 1.5em; text-align: center;">Medals will be given to (at minimum) the members of the top 3 teams of each division, along with certificates of participation to all students and certificates of achievement to high-scoring teams. A wide variety of other prizes are available for top scoring teams, winners of activities, and a raffle including prizes from Wolfram, AoPS, and more!</p>
+            <p style="font-size: 1.5em; text-align: center;">Medals will be given to (at minimum) the members of the top 3 teams of each division, along with certificates of participation to all students and certificates of achievement to high-scoring teams. A wide variety of other prizes are available for top scoring teams, winners of activities, and a raffle including prizes from Wolfram, AoPS, and more!</p>
+        </div>
     </CardPanelBox>
 </div> <br />
 
@@ -128,8 +127,8 @@
             <li>Denominators need to be rationalized. For example, write 1/√2 as √2/2 instead.</li>
             <li>Do not express an answer using a repeated sum or product.</li>
             <li>Here are some examples of simplified answers, and examples of unsimplified answers with simplified equivalents:
-                <div style="margin-top: 5px"><Image url="../mmt-2022/acceptable-answers.png" alt="Acceptable answer examples" /></div>
-                <div style="margin-top: 5px"><Image url="../mmt-2022/unacceptable-answers.png" alt="Unacceptable answer examples" /></div>
+                <div style="margin-top: 5px"><Image url="../../mmt-2022/acceptable-answers.png" alt="Acceptable answer examples" /></div>
+                <div style="margin-top: 5px"><Image url="../../mmt-2022/unacceptable-answers.png" alt="Unacceptable answer examples" /></div>
             </li>
         </ol>
     </FlipCard>
@@ -188,6 +187,7 @@
         <strong>Q:</strong> I'm a parent or a student, not a coach - how can I register? <br />
         <strong>A:</strong> MMT doesn't require you to be a coach! A parent can act as a coach (and register as a coach on ContestDojo) to create an organization and team(s) for their participating students. <strong>Students should not create coach accounts.</strong>
     </p>
+    <p>
         <strong>Q:</strong> Where can I find practice material for the tests? How can we prepare? <br />
         <strong>A:</strong> You can take a look at our <a target="_blank" sveltekit:prefetch href="/resources">past tests</a>, and we also highly recommend looking at <a target="_blank" sveltekit:prefetch href="https://www.mathcounts.org/resources/past-competitions">past MathCounts</a>, <a target="_blank" sveltekit:prefetch href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC 8/10</a>, and <a target="_blank" sveltekit:prefetch href="https://www.ocf.berkeley.edu/~bmt/archive/">BmMT</a> tests as these are similar in level to the problems at MMT.
     </p>
@@ -216,6 +216,7 @@
 <br /><br />
 
 <style>
+
     .cards {
         margin-left: 8vw;
         margin-right: 8vw;
@@ -240,7 +241,6 @@
         left: 0px;
         background-color: rgba(211, 223, 235, 0.96);
     }
-
     li {
         list-style-type: disc;
         margin-left: 20px;

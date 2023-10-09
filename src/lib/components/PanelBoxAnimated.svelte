@@ -13,6 +13,7 @@
   export let borderRadius = "5px";
   export let style = "";
   export let boxSizing = "border-box";
+  export let time = 0;
 </script>
 
 <div
@@ -25,7 +26,7 @@
 >
   {#if isInView}
 
-<div  transition:fade={{duration:2000}} class="panel-box"  style="width: {width}; height: {height}; margin: {margin}; padding: {padding}; border-radius: {borderRadius}; box-sizing: {boxSizing}; {style}">
+<div  transition:fade={{duration:1000, delay:time}} class="panel-box"  style="width: {width}; height: {height}; margin: {margin}; padding: {padding}; border-radius: {borderRadius}; box-sizing: {boxSizing}; {style}">
   <slot />
 </div>
 
