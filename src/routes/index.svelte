@@ -57,80 +57,718 @@
         {/if}
     </div>
 </div>
+<div class="bg"></div>
+<div>
+    <h1 id="ms">Mission Statement</h1>
+    <div class="quote"> 
+        <center><h2>Lorem ipsum <span class="text-green">dolor</span> sit amet Consectetuer adipiscing elit, Sed diam nonummy
+Nibh euismod <span class="text-green">tincidunt</span> ut laoreet dolore magna aliquam erat volutpat.</h2></center> 
+    </div>
+    <h1 id="statistics">Statistics</h1>
+    <div class="comp" >
+        <h2 class="stat">1200+ Competitors</h2>
+        <div class="semicircle" id="scone"></div>
+        <div class="semicircle" id="sctwo"></div>
+        <div class="semicircle" id="scthree"></div>
+        <div class="circle" id="cone"></div>
+        <div class="circle" id="ctwo"></div>
+        <div class="circle" id="cthree"></div>
+    </div>
+    <div class="countries">
+        <h2 class="stat" style="left:110px">12 Countries</h2>
+        <svg id="landmasses" width="192" height="204" viewBox="0 0 192 204" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M83.9585 69.7719C81.9125 58.524 75.609 23.8706 91.5 5L53 24.5L34.5 41.5L11.5 75.5L5.5 104L10 160C12.3333 162.833 16.5 160 24.5 156C33.8059 151.347 56.5 151.5 61 133.5C65.5 115.5 60 109 65 96C70 83 86 81 84 70L83.9585 69.7719Z" stroke="#3C7151" stroke-width="10"/>
+<path d="M100 112.5C95.5 103 108.5 91 124.5 82.5C129.5 79.8438 146.2 90.3 149 85.5C152.5 79.5 152 79 164 73.5C176 68 175.5 89 183.5 96C191.5 103 181 120.5 180.5 127.5C180 134.5 160 148 152 150C144 152 145.5 184 138.5 188C131.5 192 123 197.5 114 198.5C105 199.5 108.5 175 106 165C103.5 155 112.5 144.5 114 137C115.5 129.5 104.5 122 100 112.5Z" stroke="#3C7151" stroke-width="10"/>
+        </svg>
+        <svg id="landmass" width="52" height="102" viewBox="0 0 52 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 11.5C3.5 37.5 3.5 51 12 68.5C20.5 86 47 82 47 95C47 105.4 41.6667 67 39 46.5L12 11.5Z" stroke="#3C7151" stroke-width="10"/>
+        </svg>
+        <div id="earth"></div>
+    </div>
+    <div class="mem">
+        <h2 id="members">Grew to 50 members</h2>
+        <svg id="line1" width="114" height="72" viewBox="0 0 114 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.74516 67.52L110.964 4.50003" stroke="#508776" stroke-width="10"/>
+        </svg>
+        <svg id="point1" width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M29.9644 14.5C29.9644 22.5081 23.4725 29 15.4644 29C7.45623 29 0.964355 22.5081 0.964355 14.5C0.964355 6.49187 7.45623 0 15.4644 0C23.4725 0 29.9644 6.49187 29.9644 14.5Z" fill="#508776"/>
+        </svg>
+        <svg id="line2" width="118" height="31" viewBox="0 0 118 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="1.07366" y1="26.08" x2="117.074" y2="5.07997" stroke="#508776" stroke-width="10"/>
+        </svg>
+
+        <svg id="point2" width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15.4644" cy="14.5" r="14.5" fill="#508776"/>
+        </svg>
+        <svg id="line3" width="117" height="66" viewBox="0 0 117 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.96437 61.5L113.965 5.00004" stroke="#508776" stroke-width="10"/>
+        </svg>
+        <svg id="point3" width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15.4644" cy="14.5" r="14.5" fill="#508776"/>
+        </svg>
+        <svg id="line4" width="120" height="93" viewBox="0 0 120 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="2.99836" y1="88.9747" x2="116.998" y2="4.97472" stroke="#508776" stroke-width="10"/>
+        </svg>
+        <svg id="point4" width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15.4644" cy="14.5" r="14.5" fill="#508776"/>
+        </svg>
+
+        <svg id="yaxis" width="58" height="290" viewBox="0 0 58 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.9644 285C23.9644 287.761 26.2029 290 28.9644 290C31.7258 290 33.9644 287.761 33.9644 285L23.9644 285ZM28.9644 0L0.0968521 50L57.8319 50L28.9644 0ZM33.9644 285L33.9644 45L23.9644 45L23.9644 285L33.9644 285Z" fill="#516370"/>
+        </svg>
+        <svg id="xaxis" width="531" height="58" viewBox="0 0 531 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 24C2.23858 24 0 26.2386 0 29C0 31.7614 2.23858 34 5 34V24ZM531 29L481 0.132486V57.8675L531 29ZM5 34H486V24H5V34Z" fill="#516370"/>
+        </svg>
+    </div>
+    <h1 class="history">MMT's History</h1>
+    
+    <div class="twenty">
+        <h2 class="years"><span class="year">2020:</span> Lorem ipsum dolor sit amet</h2>
+    </div>
+    <div class="twentydrop">
+        <h2 class="dropdown">This will show up when you click on the box above, similar to the subteam descriptions under “join us”</h2>
+    </div>
+    <div class="twentyone">
+        <h2 class="years"><span class="year">2021:</span> Lorem ipsum dolor sit amet</h2>
+    </div>
+    <div class="twentyonedrop">
+        <h2 class="dropdown">This will show up when you click on the box above, similar to the subteam descriptions under “join us”</h2>
+    </div>
+    <div class="twentytwo">
+        <h2 class="years"><span class="year">2022:</span> Lorem ipsum dolor sit amet</h2>
+    </div>
+    <div class="twentytwodrop">
+        <h2 class="dropdown">This will show up when you click on the box above, similar to the subteam descriptions under “join us”</h2>
+    </div>
+    <div class="twentythree">
+        <h2 class="years"><span class="year">2023:</span> Lorem ipsum dolor sit amet</h2>
+    </div>
+    <div class="twentythreedrop">
+        <h2 class="dropdown">This will show up when you click on the box above, similar to the subteam descriptions under “join us”</h2>
+    </div>
+    <div class="vert"></div>
+    <div class="bgb"></div>
+</div>
+
 
 <style>
-.outside {
-    background-image: url("/splash.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
+    .bg {
+        background-color: #edf0f8;
+        position: absolute;
+        width: 1500px;
+        height: 1550px;
+        left: 0px;
+        top: 1525px;
+    }
 
-.sign-up {
-    background-color: #65c083;
-    color: white;
-}
-
-@media (max-width: 700px) {
     .outside {
-        background-image: url("/splash-mobile.svg");
+        background-image: url("/splash.svg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        overflow: hidden;
     }
-}
 
-.header {
-	text-align: center;
-    position: relative;
-    height: calc(100% - 70px);
-}
+    .sign-up {
+        background-color: #65c083;
+        color: white;
+    }
 
-.svg {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
+    @media (max-width: 700px) {
+        .outside {
+            background-image: url("/splash-mobile.svg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
 
-.minidiv {
-    z-index: 9;
-    margin: 20px;
-    max-width: 80%;
-}
+    .header {
+        text-align: center;
+        position: relative;
+        height: calc(100% - 70px);
+    }
 
-.headerline {
-	border-bottom: 1px solid white;
-	height: 20px;
-	width: 60%;
-	min-width: 300px;
-}
+    .svg {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
 
-div.headerButton {
-    display: flex;
-    background-color: #65c083;
-	border-radius: 50px;
-    padding: 10px;
-	color: white;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-}
+    .minidiv {
+        z-index: 9;
+        margin: 20px;
+        max-width: 80%;
+    }
 
-p.headerButton {
-    color: white;
-    align-self: center;
-    font-size: 1em;
-    margin: 5px;
-    margin-right: 20px;
-}
+    .headerline {
+        border-bottom: 1px solid white;
+        height: 20px;
+        width: 60%;
+        min-width: 300px;
+    }
 
-a.headerButton:hover {
-    text-decoration: none;
-}
+    div.headerButton {
+        display: flex;
+        background-color: #65c083;
+        border-radius: 50px;
+        padding: 10px;
+        color: white;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+
+    p.headerButton {
+        color: white;
+        align-self: center;
+        font-size: 1em;
+        margin: 5px;
+        margin-right: 20px;
+    }
+
+    a.headerButton:hover {
+        text-decoration: none;
+    }
+
+    #ms {
+        position: absolute;
+        width: 894px;
+        height: 115px;
+        left: 230px;
+        top: 763px;
+
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 115px;
+
+        color: #4998A8;
+    }
+
+    .quote {
+        box-sizing: border-box;
+        position: absolute;
+        width: 964px;
+        height: 335px;
+        left: 190px;
+        top: 932px;
+
+        background: #FBFBFB;
+        border: 1px solid #FBFBFB;
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.18);
+        border-radius: 15px;
+    }
+
+    h2 {
+        position: absolute;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        text-align: center;
+        color: #444444;
+        box-sizing: border-box;
+    }
+
+    .text-green {
+        font-weight: 700;
+        color: #508776;
+    }
+
+    #statistics {
+        position: absolute;
+        width: 894px;
+        height: 115px;
+        left: 230px;
+        top: 1300px;
+
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 115px;
+
+        color: #4998A8;
+    }
+
+    .comp {
+        box-sizing: border-box;
+        position: absolute;
+        width: 500px;
+        height: 335px;
+        left: 130px;
+        top: 1482px;
+
+        background: #FBFBFB;
+        border: 1px solid #FBFBFB;
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.18);
+        border-radius: 15px;
+    }
+
+    .stat {
+        left: 40px;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 63px;
+
+        color: #516370;
+    }
+    
+    .semicircle {
+        position: absolute;
+        width: 110px;
+        height: 110px;
+
+        background-color: #508776;
+        border-radius: 50% / 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    #scone {
+        left: 70px;
+        top: 200px;
+    }
+    
+    #sctwo {
+        left: 190px;
+        top: 200px;
+    }
+
+    #scthree {
+        left: 310px;
+        top: 200px;
+    }
+
+    .circle {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+
+        background-color: #508776;
+        border-radius: 100% / 100%;
+    }
+
+    #cone {
+        left: 90px;
+        top: 120px;
+    }
+
+    #ctwo {
+        left: 210px;
+        top: 120px;
+    }
+    #cthree {
+        left: 330px;
+        top: 120px;
+    }
+
+    .countries {
+        box-sizing: border-box;
+        position: absolute;
+        width: 500px;
+        height: 335px;
+        left: 750px;
+        top: 1482px;
+
+        background: #FBFBFB;
+        border: 1px solid #FBFBFB;
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.18);
+        border-radius: 15px;
+    }
+
+    #earth {
+        box-sizing: border-box;
+        border-radius: 50%;
+
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 150px;
+        top: 110px;
+
+        border: 15px solid #1F4970;
+    }
+
+    #landmasses {
+        position: absolute;
+        scale: 75%;
+        left: 130px;
+        top: 90px;
+    }
+    
+    #landmass {
+        position: absolute;
+        scale: 75%;
+        left: 300px;
+        top: 130px;
+    }
+
+    .mem {
+        box-sizing: border-box;
+        position: absolute;
+        width: 832px;
+        height: 418px;
+        left: 270px;
+        top: 1885px;
+
+        background: #FBFBFB;
+        border: 1px solid #FBFBFB;
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.18);
+        border-radius: 15px;
+    }
+
+    #members {
+        position: absolute;
+        width: 883px;
+        height: 178px;
+        left: -30px;
+        top: -30px;
+
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 74px;
+
+        color: #516370;
+    }
+
+    #yaxis {
+        scale: 75%;
+        position: absolute;
+        left: 210px;
+        top: 80px;
+    }
+
+    #xaxis {
+        scale: 75%;
+        position: absolute;
+        left: 169px;
+        top: 303px;
+    }
+
+    #line1 {
+        scale: 75%;
+        position: absolute;
+        left: 226px;
+        top: 269px;
+    }
+
+    #point1 {
+        scale: 75%;
+        position: absolute;
+        left: 310px;
+        top: 267px;
+    }
+
+    #line2 {
+        scale: 75%;
+        position: absolute;
+        left: 310px;
+        top: 257px;
+    }
+
+    #point2 {
+        scale: 75%;
+        position: absolute;
+        left: 396px;
+        top: 250px;
+    }
+
+    #line3 {
+        scale: 75%;
+        position: absolute;
+        left: 396px;
+        top: 210px;
+    }
+
+    #point3 {
+        scale: 75%;
+        position: absolute;
+        left: 479px;
+        top: 208px;
+    }
+
+    #line4 {
+        scale: 75%;
+        position: absolute;
+        left: 479px;
+        top: 144px;
+    }
+
+    #point4 {
+        scale: 75%;
+        position: absolute;
+        left: 560px;
+        top: 150px;
+    }
+
+    .history {
+        position: absolute;
+        width: 894px;
+        height: 115px;
+        left: 230px;
+        top: 2300px;
+
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 115px;
+
+        color: #4998A8;
+    }
+
+    .twenty {
+        position: absolute;
+        width: 1000px;
+        height: 120px;
+        left: 172px;
+        top: 2500px;
+
+        background: #FBFBFB;
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.18);
+        border-radius: 15px;
+    }
+
+    .twentydrop {
+        z-index: 1;
+        display: none;
+        
+        position: absolute;
+        width: 1000px;
+        height: 130px;
+        left: 172px;
+        top: 2640px;
+
+        background: #FBFBFB;
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.18);
+        border-radius: 15px;
+    }
+
+    .twentyone {
+        position: absolute;
+        width: 1000px;
+        height: 120px;
+        left: 172px;
+        top: 2640px;
+
+        background: #FBFBFB;
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.18);
+        border-radius: 15px;
+    }
+
+    .twentyonedrop {
+        z-index: 1;
+        display: none;
+        
+        position: absolute;
+        width: 1000px;
+        height: 130px;
+        left: 172px;
+        top: 2780px;
+
+        background: #FBFBFB;
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.18);
+        border-radius: 15px;
+    }
+
+    .twentytwo {
+        position: absolute;
+        width: 1000px;
+        height: 120px;
+        left: 172px;
+        top: 2780px;
+
+        background: #FBFBFB;
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.18);
+        border-radius: 15px;
+    }
+
+    .twentytwodrop {
+        z-index: 1;
+        display: none;
+        
+        position: absolute;
+        width: 1000px;
+        height: 130px;
+        left: 172px;
+        top: 2920px;
+
+        background: #FBFBFB;
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.18);
+        border-radius: 15px;
+    }
+
+    .twentythree {
+        z-index: 1;
+        position: absolute;
+        width: 1000px;
+        height: 120px;
+        left: 172px;
+        top: 2920px;
+
+        background: #FBFBFB;
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.18);
+        border-radius: 15px;
+    }
+
+    .twentythreedrop {
+        z-index: 1;
+        display: none;
+        
+        position: absolute;
+        width: 1000px;
+        height: 130px;
+        left: 172px;
+        top: 3060px;
+
+        background: #FBFBFB;
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.18);
+        border-radius: 15px;
+    }
+
+    .vert {
+        position: absolute;
+        width: 30px;
+        height: 540px;
+        left: 120px;
+        top: 2500px;
+
+        z-index: 1;
+
+        background: #508776;
+    }
+
+    .bgb {
+        display: none;
+        position: absolute;
+        top: 3075px;
+        width: 1500px;
+        height: 140px;
+       
+        background-color: #edf0f8;
+    }
+    .years {
+        position: absolute;
+        top: -10px;
+        right: 150px;
+    }
+
+    .year {
+        color: #508776;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+
+        text-align: center;
+    }
+
+    .dropdown {
+        color: #444444;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 44px;
+    
+        top: -20px;
+        text-align: center;
+    }
+
+    .twenty:hover ~ .twentydrop {
+        display: block;
+        animation: fadeIn 1s;
+    }
+    
+    .twenty:hover ~ .twentyone {
+        postion: absolute;
+        top: 2780px;
+    }
+
+    .twenty:hover ~ .twentytwo {
+        postion: absolute;
+        top: 2920px;
+    }
+
+    .twenty:hover ~ .twentythree {
+        postion: absolute;
+        top: 3060px;
+    }
+
+    .twenty:hover ~ .vert {
+        height: 680px;
+    }
+
+    .twenty:hover ~ .bgb {
+        display: block;
+        z-index: 0;
+    }
+    .twentyone:hover ~ .twentyonedrop {
+        display: block;
+        animation: fadeIn 1s;
+    }
+    
+    .twentyone:hover ~ .twentytwo {
+        postion: absolute;
+        top: 2920px;
+    }
+
+    .twentyone:hover ~ .twentythree {
+        postion: absolute;
+        top: 3060px;
+    }
+
+    .twentyone:hover ~ .vert {
+        height: 680px;
+    }
+
+    .twentyone:hover ~ .bgb {
+        display: block;
+        z-index: 0;
+    }
+    .twentytwo:hover ~ .twentytwodrop {
+        display: block;
+        animation: fadeIn 1s;
+    }
+    
+    .twentytwo:hover ~ .twentythree {
+        postion: absolute;
+        top: 3060px;
+    }
+
+    .twentytwo:hover ~ .vert {
+        height: 680px;
+    }
+
+    .twentytwo:hover ~ .bgb {
+        display: block;
+        z-index: 0;
+    }
+
+    .twentythree:hover ~ .twentythreedrop {
+        display: block;
+        animation: fadeIn 1s;
+    }
+
+    .twentythree:hover ~ .vert {
+        height: 680px;
+    }
+
+    .twentythree:hover ~ .bgb {
+        display: block;
+        z-index: 0;
+    }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
 
 </style>
