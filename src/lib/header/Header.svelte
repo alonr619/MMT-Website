@@ -40,7 +40,10 @@
       text: "Classes",
       hasSubPages: true,
       index: 1,
-      subPages: [{ path: "/classes/instructors", text: "Instructors" }],
+      subPages: [
+        { path: "/classes/instructors", text: "Instructors" },
+        { path: "/classes/tutoring", text: "Tutoring" }
+      ],
     },
     { path: "/our-team", text: "Our Team", hasSubPages: false },
     { path: "/sponsors", text: "Sponsors", hasSubPages: false },
