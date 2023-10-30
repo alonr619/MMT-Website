@@ -44,7 +44,7 @@ https://tinyurl.com/MMSponsors2024" button_text="Sponsor Mustang Math!" button_i
     <FlexBox>
         <PanelBox width="60%" style="min-width: 360px;">
             <p style="font-size: 1.2em; margin: 5px">Thank you to our sponsors and partners for supporting the Mustang Math Tournament and our vision of providing a fun, collaborative team competition to motivated and bright middle school students!<br><br>
-            Interested in sponsoring or partnering? Check out our <b><a href = https://tinyurl.com/MMSponsors2023>sponsorship packet</a></b> and reach out to us at <Link target="_blank" url="mailto:contact@mustangmath.com" text="contact@mustangmath.com" />.
+            Interested in sponsoring or partnering? Check out our <b><a href="https://tinyurl.com/MMSponsors2024">sponsorship packet</a></b> and reach out to us at <Link target="_blank" url="mailto:contact@mustangmath.com" text="contact@mustangmath.com" />.
             All sponsorships are used to help fund our competitions, classes, and other activities and improving the quality of such events.</p>
         </PanelBox>
     </FlexBox>
