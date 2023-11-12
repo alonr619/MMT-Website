@@ -13,7 +13,7 @@
     import Testimonial from '$lib/components/Testimonial.svelte';
     let windowWidth;
     const scheduleData = [
-        { "Day": "11/11-11/17", "Start Time (PT)": "All Day", "Event": "Problem of the Day" },
+        { "Day": "11/13-11/17", "Start Time (PT)": "All Day", "Event": "Problem of the Day" },
         [ "11/18", "9:00 AM-9:30 AM", "Opening Ceremony" ],
         [ "11/18", "9:30 AM-10:40 AM", "3MT Round (1 hour)" ],
         [ "11/18", "10:40 AM-11:30 AM", "Activities" ],
@@ -132,7 +132,7 @@
 
 <div style="margin-left: 5vw; margin-right: 5vw; font-size: 1.5em;">
     <PanelBoxAnimated style="padding-left:5vw; padding-right:5vw;">
-        <p>POTD is a small mini-contest that will be held in the week leading up to 3MT. We will post a problem every day, starting on 11/11, and participants will have the chance to answer these problems through ContestDojo. Points are earned for each correct answer, and the person with the most points at the end will be the winner!</p>
+        <p>POTD is a small mini-contest that will be held in the week leading up to 3MT. We will post a problem every day, starting on 11/13, and participants will have the chance to answer these problems through ContestDojo. Points are earned for each correct answer, and the person with the most points at the end will be the winner!</p>
     </PanelBoxAnimated>
 </div> <br />
 
@@ -222,7 +222,7 @@
 <div style="margin-left: 5vw; margin-right: 5vw; font-size: 1em;">    
     
         <ol>
-            <li>The Daily POTD will be made available on ContestDojo at around 3 PM PT daily from 11/12 to 11/18 (7 total). POTDs may be solved and answers updated in ContestDojo for up to 24 hours from the release of the daily problem.</li>
+            <li>The Daily POTD will be made available on ContestDojo at around 3 PM PT daily from 11/13 to 11/17 (5 total). POTDs may be solved and answers updated in ContestDojo for up to 24 hours from the release of the daily problem.</li>
             <li>Solutions to the previous day's POTD will be posted the day after in #potd [link to channel]</li>
             <li>Anyone who has registered for 3MT is eligible to participate in this contest. You must be fully set up on ContestDojo and Discord to properly participate.</li>
             <li>Answers to the POTD will be submitted via ContestDojo. Log into your student portal in order to do so (See detailed info below)</li>
