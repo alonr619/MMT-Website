@@ -4,8 +4,14 @@
 	import '../app.css';
     import { page } from "$app/stores";
 	import Newsletter from '$lib/components/Newsletter.svelte';
+	import { user } from '$lib/store';
+	import { onMount } from "svelte";
 
 	let show = false;
+
+	onMount(() => {
+        user.subscribe((u) => (show = u));
+    })
 </script>
 
 <div class="all-container">
@@ -71,7 +77,7 @@
 		width: 100%;
 		text-align: center;
 		position: sticky;
-		z-index: 1;
+		z-index: 2;
 		min-height: 50px;
 		background-color: #1c6825;
 	}

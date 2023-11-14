@@ -6,15 +6,16 @@
     import Button from '$lib/components/Button.svelte';
     import PageHeader from '$lib/components/PageHeader.svelte';
 
-    const competitions = [
+    const competitions = [        
         {
-            title: "Mustang Math Tournament 2023 (MMT)",
-            location: "mmt-2023"
+            title: "Mustang Math 3MT 2023",
+            location: "3mt-2023",
         },
         {
             title: "Past Competitions",
             location: "past"
         },
+
     ];
     // A value of false represents that the ith button is unfilled
     let buttonStates = Array(competitions.length).fill(false);

@@ -7,14 +7,35 @@
     import PanelBox from '$lib/components/PanelBox.svelte';
     import Link from '$lib/components/Link.svelte';
     import sponsorTiers from '$lib/sponsorTiers';
+
+    let windowWidth;
+    let windowHeight;
+    let learnMoreIsVisible = true;
+    let y;
+    let scrollOpacity = 1;
+    $: scrollOpacity = Math.max((windowHeight - 2 * y) / windowHeight, 0);
+    $: learnMoreIsVisible = scrollOpacity > 0;
+
+    function scrollToElem(e) {
+        e.scrollIntoView({
+            behavior: "smooth",
+        });
+    }
 </script>
+
+<svelte:window
+    bind:scrollY={y}
+    bind:innerWidth={windowWidth}
+    bind:innerHeight={windowHeight}
+/>
 
 <svelte:head>
 	<title>Partners and Sponsors</title>
 </svelte:head>
 
 <PageHeader title="Partners & Sponsors" description="The Organizations Making MM Possible" button_url="
-https://tinyurl.com/MMSponsors2023" button_text="Sponsor Mustang Math!" button_id="sponsorMM"/>
+https://tinyurl.com/MMSponsors2024" button_text="Sponsor Mustang Math!" button_id="sponsorMM"/>
+
 
 
 <Section>
@@ -37,8 +58,13 @@ https://tinyurl.com/MMSponsors2023" button_text="Sponsor Mustang Math!" button_i
                 {#if lvl.sponsors.length > 0}
                     {#each lvl.sponsors as sponsor}
                         <PanelBox borderRadius="20px" width="40%" style="max-width: 300px; min-height: 250px; min-width: 250px;">
-                            <a target="_blank" href={sponsor.link} style="height: 100%; display: flex; align-items: center;">
-                                <img src={sponsor.url} alt={sponsor.alt} style="max-width: 100%;">
+                            <a target="_blank" href={sponsor.link} style="height: 100%; display: flex; align-items: center;text-decoration:none;">
+                                <div>
+                                    <img src={sponsor.url} alt={sponsor.alt} style="max-width: 100%;">
+                                    {#if sponsor.blurb}
+                                        <p style="font-size: 11px; text-align: center;">{sponsor.blurb}</p>
+                                    {/if}
+                                </div>
                             </a>
                         </PanelBox>
                     {/each}
@@ -48,3 +74,6 @@ https://tinyurl.com/MMSponsors2023" button_text="Sponsor Mustang Math!" button_i
             </FlexBox>
     </Section>
 {/each}
+<style>
+    
+</style>

@@ -1,13 +1,27 @@
 const sponsorTiers = [
   {
-    name: "Stallion Sponsors",
-    singular: "Stallion Sponsor",
-    headerColor: "#5ba89a",
+    name: "Unicorn Sponsors",
+    singular: "Unicorn Sponsor",
+    headerColor: "#F9C4CA",
     sponsors: [
       {
         url: "sponsors/stallion/Wolfram.png",
         alt: "Wolfram Alpha",
         link: "https://www.wolfram.com/",
+      },
+    ],
+  },
+  {
+    name: "Stallion Sponsors",
+    singular: "Stallion Sponsor",
+    headerColor: "#5ba89a",
+    sponsors: [
+      {
+        url: "sponsors/foal/AlphaStar.png",
+        alt: "Alphastar Academy",
+        link: "https://alphastar.academy/",
+        blurb:
+          "AlphaStar Academy (alphastar.academy) offers extensive training programs for gifted and high achieving students towards national and international Math and Science competitions such as MathCounts, American Mathematics Competitions, USA Math Olympiads, USA Computing Olympiads, and USA Physics Olympiads.",
       },
     ],
   },
@@ -42,11 +56,6 @@ const sponsorTiers = [
         url: "sponsors/foal/AoPS.png",
         alt: "Art of Problem Solving",
         link: "https://aops.com",
-      },
-      {
-        url: "sponsors/foal/AlphaStar.png",
-        alt: "Alphastar Academy",
-        link: "https://alphastar.academy/",
       },
       {
         url: "sponsors/foal/Texas Instruments.png",
