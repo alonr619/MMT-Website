@@ -35,24 +35,23 @@
     let y;
 
     let scheduleData = [
-        { "Class": "Intermediate 1", "Day of Week": "Saturdays", "Time (PT)": "3:00 - 4:30 PM"},
-        { "Class": "Intermediate 2", "Day of Week": "Mondays", "Time (PT)": "7:00 - 8:30 PM"},
+        { "Class": "Intermediate 1", "Day of Week": "Monday", "Time (PT)": "7:00 - 8:30 PM"},
         { "Class": "Beginner 1", "Day of Week": "Sunday", "Time (PT)": "4:00 - 5:30 PM"},
         { "Class": "Beginner 2", "Day of Week": "Wednesday", "Time (PT)": "6:00 - 7:30 PM"},
-        { "Class": "Office Hours 1", "Day of Week": "TBD", "Time (PT)": "TBD"},
-        { "Class": "Office Hours 2", "Day of Week": "TBD", "Time (PT)": "TBD"},
+        { "Class": "Office Hours 1", "Day of Week": "Tuesday", "Time (PT)": "5:00 - 6:00 PM"},
+        { "Class": "Office Hours 2", "Day of Week": "Thursday", "Time (PT)": "5:00 - 6:00 PM"},
     ]
     
     let topicsData = [
-        { "Week": "1", "Dates": "October 15 - October 21, 2023", "Topics Covered": "Introduction & Basic Review" },
-        { "Week": "2", "Dates": "October 22 - October 28, 2023", "Topics Covered": "Systems of Equations" },
-        { "Week": "3", "Dates": "October 29 - November 4, 2023", "Topics Covered": "Inequalities" },
-	    { "Week": "4", "Dates": "November 5 - November 11, 2023", "Topics Covered": "Sequences & Series" },
-        { "Week": "5", "Dates": "November 12 - November 18, 2023", "Topics Covered": "Functions & Their Graphs" },
-        { "Week": "6", "Dates": "November 19 - November 25, 2023", "Topics Covered": "Polynomials" },
-        { "Week": "Break", "Dates": "November 26 - December 2, 2022", "Topics Covered": "None!" },
-        { "Week": "7", "Dates": "December 3 - December 9, 2023", "Topics Covered": "Contest Tricks" },
-        { "Week": "8", "Dates": "December 10 - December 16, 2023", "Topics Covered": "Special Topics" },
+        { "Week": "1", "Dates": "January 21 - January 27th, 2024", "Topics Covered": "Triangles A" },
+        { "Week": "2", "Dates": "January 28 - February 3rd, 2024", "Topics Covered": "Triangles B" },
+        { "Week": "3", "Dates": "February 4th - February 10th, 2024", "Topics Covered": "Circles" },
+	    { "Week": "4", "Dates": "February 11th - February 17th, 2024", "Topics Covered": "Coordinates" },
+        { "Week": "Break", "Dates": "February 18th - February 24th, 2024", "Topics Covered": "None!" },
+        { "Week": "5", "Dates": "February 25th - March 2nd, 2024", "Topics Covered": "Complex Numbers" },
+        { "Week": "6", "Dates": "March 3rd - March 9th, 2024", "Topics Covered": "N-Gons" },
+        { "Week": "7", "Dates": "March 10th - March 16th, 2024", "Topics Covered": "3D" },
+        { "Week": "8", "Dates": "March 17th - March 23rd, 2024", "Topics Covered": "Miscellaneous and Advanced Techniques" },
     ]
 
     onMount(() => {
@@ -109,7 +108,7 @@
 </div>
 -->
 
-<PageHeader title="Classes" description="High Quality Online Math Contest Prep Classes" button_url="https://forms.gle/vWFaBj8Ubis9a2Vu5" button_text="Class Registration!" id="register"/>
+<PageHeader title="Classes" description="High Quality Online Math Contest Prep Classes" button_url="https://forms.gle/rLStpfXRKbmaynD46" button_text="Class Registration!" id="register"/>
 
 <br><br>
 
@@ -134,12 +133,12 @@
     </FlexBox>
 </div> <br />
 
-<h1 id="discrete"><strong style="color: #1b9aaa;">Algebra</strong></h1>
+<h1 id="discrete"><strong style="color: #1b9aaa;">Geometry</strong></h1>
 
 <Heading text="Class Details" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Our class will be on Algebra and will start on the week of <strong>October 15, 2023</strong> and run through the end of the week of <strong>December 17, 2023</strong>. There are currently 2 levels of classes planned: <strong>Beginner Algebra</strong> and <strong>Intermediate Algebra</strong>. See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://forms.gle/vWFaBj8Ubis9a2Vu5"><strong>registration form</strong></a>.</p>
+        <p style="font-size: 1.5em; text-align: center;">Our class will be on Geometry and will start on the week of <strong>January 21, 2024</strong> and run through the end of the week of <strong>March 17, 2024</strong>. There are currently 2 levels of classes planned: <strong>Beginner Geometry</strong> and <strong>Intermediate Geometry</strong>. See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://forms.gle/rLStpfXRKbmaynD46"><strong>registration form</strong></a>.</p>
     </PanelBox>
 </div> <br />
 <br />
@@ -148,7 +147,7 @@
 <Heading text="Pricing" size={2} textColor="#1B9AAA" />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Algebra will be <strong>$160</strong>. The cost of 32 sessions (full-year) is <strong>$500</strong>.</p>
+        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Geometry will be <strong>$80</strong>.</p>
         <p style="font-size: 1.5em; text-align: center;">We charge for our classes for a multitude of reasons. First, while we are a fully volunteer-run nonprofit organization, we need money to continue <strong>improving upon and providing better classes, competitions, events, and materials</strong>! All money earned from MM Classes will go back into these projects for you, the students. Second, we work very hard to provide high quality classes, and we want students to take them seriously - ascribing a price value to the class naturally leads to more <strong>committed students</strong>.</p>
         <p style="font-size: 1.5em; text-align: center;">If the cost of these classes poses a significant burden to you, please reach out to us! <strong>Financial aid is available upon request</strong>.</p>
     </PanelBox>
