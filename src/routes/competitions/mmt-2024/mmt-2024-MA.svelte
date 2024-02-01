@@ -15,16 +15,16 @@
 
     let windowWidth;
     const scheduleData = [
-        { "Day": "4/24-4/29", "Start Time (PT)": "All Day", "Event": "Problem of the Day" },
-        [ "4/29", "8:30 AM-9:00 AM", "Check-in" ],
-        [ "4/29", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions" ],
-        [ "4/29", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)" ],
-        [ "4/29", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) " ],
-        [ "4/29", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)" ],
-        [ "4/29", "1:00 PM-1:55 PM", "Mystery Mare (45 minutes)" ],
-        [ "4/29", "1:55 PM-3:20 PM", "Gallop (60 minutes)" ],
-        [ "4/29", "3:20 PM-4:30 PM", "Optional Activities" ],
-        [ "4/29", "4:30 PM", "Awards Ceremony" ]
+        { "Day": "4/22-4/26", "Start Time (PT)": "All Day", "Event": "Problem of the Day" },
+        [ "4/26", "8:30 AM-9:00 AM", "Check-in" ],
+        [ "4/26", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions" ],
+        [ "4/26", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)" ],
+        [ "4/26", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) " ],
+        [ "4/26", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)" ],
+        [ "4/26", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)" ],
+        [ "4/26", "2:10 PM-3:20 PM", "Gallop (60 minutes)" ],
+        [ "4/26", "3:20 PM-4:30 PM", "Optional Activities" ],
+        [ "4/26", "4:30 PM", "Awards Ceremony" ]
     ];
 
     const topicsCovered = [
@@ -55,13 +55,13 @@
     ];
 </script>
 <svelte:head>
-    <title>MMT 2024</title>
+    <title>MMT 2024 MA</title>
 </svelte:head>
 
 <svelte:window bind:innerWidth={windowWidth} />
 
 <div class="page"></div>
-<PageHeader title="Mustang Math Tournament (MMT) California" description="April 29, 2024: 9:00 AM - 4:30 PM PT" button_url="https://tinyurl.com/MMT2024Registration" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
+<PageHeader title="Mustang Math Tournament (MMT) Massachusetts" description="April 27, 2024: 9:00 AM - 5:00 PM PT" button_url="http://tinyurl.com/MMT2024Registration" button_text="Register for Competition!" button_id="registerOnContestDojo" target="_blank" />
 
 <br />
 
@@ -72,14 +72,15 @@
         <div style="padding: 10px; padding-left: 30px; padding-top: 25px;">
         <p>
             <strong>TEAM SIZE:</strong> 3-4* <br />
-            <strong>LOCATION:</strong> Fremont High School (Sunnyvale, California)<br />
-            <strong>EARLY HORSE COST:</strong> $10 per participant (Register before <strong>March 17th, 2024</strong> to receive the early horse price!)<br />
-            <strong>NORMAL COST:</strong> $15 per participant (Register before <strong>April 19th, 2024</strong> to participate)<br /> <br />
+            <strong>LOCATION:</strong> Boston, Massachusetts<br />
+            <strong>EARLY HORSE COST:</strong> $15 per participant (Register before <strong>March 14th, 2024</strong>)<br />
+            <strong>NORMAL COST:</strong> $20 per participant (Register before <strong>April 17th, 2024</strong>)<br /> <br />
+            <strong>LATE COST:</strong> $25 per participant (Register before <strong>April 24th, 2024</strong>)<br /> <br />
             <a href="https://tinyurl.com/MMT2024Registration" target="_blank"><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong></a>
             <br /><br />
             <i><strong>*:</strong> Incomplete teams of 1-2 may be merged with other teams to make a full team of 3-4</i><br />
             <i><strong>Note for International Students:</strong> Students not in Canada or the United States should participate in the international version of our tournament being run by SIMCC. Email us at <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a> if you're interested.</i><br /><br />
-            <i><strong>Note for Students in California:</strong> Students living within 50 miles of our in-person sites <strong>must</strong> participate in person. If you have an extenuating circumstance that would prevent this please send an email to <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a>, and we'll grant you permission to participate online.</i>
+            <i><strong>Note for Students in the US:</strong> Students living within 50 miles of our in-person sites <strong>must</strong> participate in person. If you have an extenuating circumstance that would prevent this please send an email to <a href="mailto:tournament@mustangmath.com">tournament@mustangmath.com</a>, and we may grant you permission to participate online.</i>
         </p>
         </div>
     </CardPanelBox>
