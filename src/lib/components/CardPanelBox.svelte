@@ -9,14 +9,14 @@
 
 <div style="position: relative;">
     <PanelBox {width} {borderRadius} {height}>
-        <div class="icon top-left">
+        <!--<div class="icon top-left">
             <p><strong>{initials}</strong></p>
             <img src="/favicon.png" alt="logo" />
         </div>
         <div class="icon top-right">
             <p><strong>{initials}</strong></p>
             <img src="/favicon.png" alt="logo" />
-        </div>
+        </div>-->
         <slot />
     </PanelBox>
 </div>

@@ -11,10 +11,10 @@
     export let location;
 </script>
 
-<Card initials={initials} width="17em" height="23em">
+<Card initials={initials} width="17em" >
     {#if imgSource}
         <div class="competition-img">
-            <img alt={title} src={imgSource} />
+            <img alt={title} src={imgSource}  />
         </div>
     {/if}
     <p class="title-p"><strong>{title}</strong></p>
@@ -36,7 +36,14 @@
 
 <style>
     .competition-img{
-        margin: 10%;
+        margin: 5%;
+        text-align: center;
+    }
+
+    img {
+        width: 1em; /* Set the maximum width to 100% to make the image responsive */
+        margin: auto;
+        display: block;
     }
 
     .title-p{

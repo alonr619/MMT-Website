@@ -8,8 +8,8 @@
 
     const competitions = [        
         {
-            title: "Mustang Math 3MT 2023",
-            location: "3mt-2023",
+            title: "Mustang Math Tournament 2024 (MMT)",
+            location: "mmt-2024",
         },
         {
             title: "Past Competitions",
