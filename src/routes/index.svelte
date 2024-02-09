@@ -62,14 +62,14 @@
                     middle school students around the world and piquing their
                     curiosity in mathematics.
                 </p>
-                <a sveltekit:prefetch href="/join" class="headerButton">
+                <a sveltekit:prefetch href="/competitions/mmt-2024" class="headerButton">
                     <div
                         class="headerButton"
                         on:mouseenter={toggleBackground}
                         on:mouseleave={toggleBackground}
                     >
                         <p class="headerButton" id="signupformmt">
-                            Join the Mustang Math Team!
+                            Register for MMT 2024
                         </p>
                         <img
                             height="25px"
