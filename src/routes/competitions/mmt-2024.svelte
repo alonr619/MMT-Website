@@ -15,7 +15,7 @@
 <svelte:window bind:innerWidth={windowWidth} />
 
 <div class="page"></div>
-<PageHeader title="Mustang Math Tournament [MMT] 2024" description="Coming April 2024" button_url="#competition" button_text="Learn More" button_id="registerForCompetition" target="" />
+<PageHeader title="Mustang Math Tournament [MMT] 2024" description="Coming April/May 2024" button_url="#competition" button_text="Learn More" button_id="registerForCompetition" target="" />
 
 <br />
 
@@ -23,10 +23,11 @@
 <Heading text="Competitions" size={2.5} textColor="#1B9AAA" />
 <div class="competition-wrapper">
     <FlexBox align="start">
-        <Tournament initials="WA" imgSource="/competitions/states/WashingtonOutlineCursive.svg" title="MMT Washington" location="Bellevue, WA" description="" button_text = "MMT WA" button_url = "/competitions/mmt-2024/mmt-2024-WA" />
         <Tournament initials="CA" imgSource="/competitions/states/CaliforniaOutlineCursive.svg" title="MMT California" location= "San Jose, CA" description="" button_text = "MMT CA" button_url = "/competitions/mmt-2024/mmt-2024-CA"/>
-        <Tournament initials="MA" imgSource="/competitions/states/MassachusettsOutlineCursive.svg" title="MMT Massachusetts" location= "Boston, MA" description="" button_text = "MMT MA" button_url = "/competitions/mmt-2024/mmt-2024-MA"/>
+        <Tournament initials="GA" imgSource="/competitions/states/CaliforniaOutlineCursive.svg" title="MMT Georgia" location= "Forsyth, GA" description="" button_text = "MMT GA" button_url = "/competitions/mmt-2024/mmt-2024-GA"/>
         <Tournament initials="IL" imgSource="/competitions/states/IllinoisOutlineCursive.svg" title="MMT Illinois" location= "Chicago, IL" description="" button_text = "MMT IL" button_url = "/competitions/mmt-2024/mmt-2024-IL"/>
+        <Tournament initials="MA" imgSource="/competitions/states/MassachusettsOutlineCursive.svg" title="MMT Massachusetts" location= "Boston, MA" description="" button_text = "MMT MA" button_url = "/competitions/mmt-2024/mmt-2024-MA"/>
+        <Tournament initials="WA" imgSource="/competitions/states/WashingtonOutlineCursive.svg" title="MMT Washington" location="Bellevue, WA" description="" button_text = "MMT WA" button_url = "/competitions/mmt-2024/mmt-2024-WA" />
         <Tournament initials="O" imgSource="/competitions/mmt-2024/online.png" title="MMT Online" location="Online (Discord)" description="" button_text = "MMT Online" button_url = "/competitions/mmt-2024/mmt-2024-online"/>
     </FlexBox>
 </div> 
