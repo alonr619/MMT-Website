@@ -24,7 +24,7 @@
 <div class="competition-wrapper">
     <FlexBox align="start">
         <Tournament initials="CA" imgSource="/competitions/states/CaliforniaOutlineCursive.svg" title="MMT California" location= "San Jose, CA" description="" button_text = "MMT CA" button_url = "/competitions/mmt-2024/mmt-2024-CA"/>
-        <Tournament initials="GA" imgSource="/competitions/states/CaliforniaOutlineCursive.svg" title="MMT Georgia" location= "Forsyth, GA" description="" button_text = "MMT GA" button_url = "/competitions/mmt-2024/mmt-2024-GA"/>
+        <Tournament initials="GA" imgSource="/competitions/states/GeorgiaOutlineCursive.svg" title="MMT Georgia" location= "Atlanta, GA" description="" button_text = "MMT GA" button_url = "/competitions/mmt-2024/mmt-2024-GA"/>
         <Tournament initials="IL" imgSource="/competitions/states/IllinoisOutlineCursive.svg" title="MMT Illinois" location= "Chicago, IL" description="" button_text = "MMT IL" button_url = "/competitions/mmt-2024/mmt-2024-IL"/>
         <Tournament initials="MA" imgSource="/competitions/states/MassachusettsOutlineCursive.svg" title="MMT Massachusetts" location= "Boston, MA" description="" button_text = "MMT MA" button_url = "/competitions/mmt-2024/mmt-2024-MA"/>
         <Tournament initials="WA" imgSource="/competitions/states/WashingtonOutlineCursive.svg" title="MMT Washington" location="Bellevue, WA" description="" button_text = "MMT WA" button_url = "/competitions/mmt-2024/mmt-2024-WA" />
