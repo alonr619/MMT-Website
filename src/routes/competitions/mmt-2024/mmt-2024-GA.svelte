@@ -72,7 +72,7 @@
         <div style="padding: 10px; padding-left: 30px; padding-top: 25px;">
         <p>
             <strong>TEAM SIZE:</strong> 3-4* <br />
-            <strong>LOCATION:</strong> Forsyth, Georgia<br />
+            <strong>LOCATION:</strong> Greater Atlanta Area, Georgia<br />
             <strong>EARLY HORSE COST:</strong> $15 per participant (Register before <strong>March 14th, 2024</strong>)<br />
             <strong>NORMAL COST:</strong> $20 per participant (Register before <strong>April 24th, 2024</strong>)<br /> 
             <strong>LATE COST:</strong> $25 per participant (Register before <strong>April 31th, 2024</strong>)<br /> <br />
